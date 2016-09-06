@@ -1,0 +1,6 @@
+framework module Pods_LongLatMap {
+  umbrella header "Pods-LongLatMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

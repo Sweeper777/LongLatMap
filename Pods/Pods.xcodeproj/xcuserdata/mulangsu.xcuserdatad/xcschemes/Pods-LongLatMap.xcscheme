@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5AFF702F1D7EB02200252E53"
-               BuildableName = "LongLatMap.app"
-               BlueprintName = "LongLatMap"
-               ReferencedContainer = "container:LongLatMap.xcodeproj">
+               BlueprintIdentifier = "421F82E4661BF880B7A8812AA70FA5B4"
+               BuildableName = "Pods_LongLatMap.framework"
+               BlueprintName = "Pods-LongLatMap"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5AFF702F1D7EB02200252E53"
-            BuildableName = "LongLatMap.app"
-            BlueprintName = "LongLatMap"
-            ReferencedContainer = "container:LongLatMap.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5AFF702F1D7EB02200252E53"
-            BuildableName = "LongLatMap.app"
-            BlueprintName = "LongLatMap"
-            ReferencedContainer = "container:LongLatMap.xcodeproj">
+            BlueprintIdentifier = "421F82E4661BF880B7A8812AA70FA5B4"
+            BuildableName = "Pods_LongLatMap.framework"
+            BlueprintName = "Pods-LongLatMap"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5AFF702F1D7EB02200252E53"
-            BuildableName = "LongLatMap.app"
-            BlueprintName = "LongLatMap"
-            ReferencedContainer = "container:LongLatMap.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

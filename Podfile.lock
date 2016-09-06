@@ -1,0 +1,18 @@
+PODS:
+  - ASToast (1.0.3)
+  - EZSwiftExtensions (1.6)
+  - ISHHoverBar (1.0.1)
+
+DEPENDENCIES:
+  - ASToast
+  - EZSwiftExtensions
+  - ISHHoverBar
+
+SPEC CHECKSUMS:
+  ASToast: 3ca73a088e2c0b4c2cf0af3ef7b83a19cfd98733
+  EZSwiftExtensions: 6c5e29ae473b3d2edbf5472eab0a3d7bdb20215c
+  ISHHoverBar: 44d5161b7c815a60468d181e3ce70fbbfa5bef2a
+
+PODFILE CHECKSUM: 2a8d86765bf9f9ee64478e38286f8692ea2ab62c
+
+COCOAPODS: 1.1.0.beta.1

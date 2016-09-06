@@ -13,9 +13,15 @@
 		5AFF703C1D7EB02200252E53 /* LongLatMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF703A1D7EB02200252E53 /* LongLatMap.xcdatamodeld */; };
 		5AFF703E1D7EB02200252E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703D1D7EB02200252E53 /* Assets.xcassets */; };
 		5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */; };
+		5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70481D7EB1B100252E53 /* ASToast.framework */; };
+		5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */; };
+		5AFF704D1D7EB1B100252E53 /* ISHHoverBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */; };
+		5AFF704F1D7EB1B800252E53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF704E1D7EB1B800252E53 /* MapKit.framework */; };
+		C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF70301D7EB02200252E53 /* LongLatMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongLatMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF70331D7EB02200252E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFF70351D7EB02200252E53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		5AFF703D1D7EB02200252E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AFF70401D7EB02200252E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AFF70421D7EB02200252E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFF70481D7EB1B100252E53 /* ASToast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASToast.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/ASToast/ASToast.framework"; sourceTree = "<group>"; };
+		5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/EZSwiftExtensions/EZSwiftExtensions.framework"; sourceTree = "<group>"; };
+		5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISHHoverBar.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/ISHHoverBar/ISHHoverBar.framework"; sourceTree = "<group>"; };
+		5AFF704E1D7EB1B800252E53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap.debug.xcconfig"; sourceTree = "<group>"; };
+		E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFF704F1D7EB1B800252E53 /* MapKit.framework in Frameworks */,
+				5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */,
+				5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */,
+				5AFF704D1D7EB1B100252E53 /* ISHHoverBar.framework in Frameworks */,
+				C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				5AFF70321D7EB02200252E53 /* LongLatMap */,
 				5AFF70311D7EB02200252E53 /* Products */,
+				784E515126E8EAE3ACEC428A /* Pods */,
+				FA81AA67FC7E81878EAA822B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,27 @@
 			path = LongLatMap;
 			sourceTree = "<group>";
 		};
+		784E515126E8EAE3ACEC428A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */,
+				E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA81AA67FC7E81878EAA822B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF704E1D7EB1B800252E53 /* MapKit.framework */,
+				5AFF70481D7EB1B100252E53 /* ASToast.framework */,
+				5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */,
+				5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */,
+				011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AFF70451D7EB02200252E53 /* Build configuration list for PBXNativeTarget "LongLatMap" */;
 			buildPhases = (
+				F6CDAEC0DB4E3D3A098E5D96 /* [CP] Check Pods Manifest.lock */,
 				5AFF702C1D7EB02200252E53 /* Sources */,
 				5AFF702D1D7EB02200252E53 /* Frameworks */,
 				5AFF702E1D7EB02200252E53 /* Resources */,
+				379EF42A6EEB473D1F20E859 /* [CP] Embed Pods Frameworks */,
+				10EBB7215F30C49E74520279 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +175,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10EBB7215F30C49E74520279 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		379EF42A6EEB473D1F20E859 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6CDAEC0DB4E3D3A098E5D96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5AFF702C1D7EB02200252E53 /* Sources */ = {
@@ -253,9 +344,11 @@
 		};
 		5AFF70461D7EB02200252E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LongLatMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LongLatMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,9 +357,11 @@
 		};
 		5AFF70471D7EB02200252E53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LongLatMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LongLatMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +387,7 @@
 				5AFF70471D7EB02200252E53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

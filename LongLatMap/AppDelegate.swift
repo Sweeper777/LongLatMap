@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  LongLatMap
-//
-//  Created by Mulang Su on 9/6/16.
-//  Copyright © 2016 Mulang Su. All rights reserved.
-//
-
 import UIKit
 import CoreData
+import EZSwiftExtensions
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        window?.tintColor = UIColor(hexString: "5abb5a")
         return true
     }
 

@@ -24,10 +24,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="longPressRecog" destination="DsR-yF-5ww" id="hux-6P-4ff"/>
                         <outlet property="mapView" destination="QCg-gr-dWy" id="cgn-kl-Fu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DsR-yF-5ww">
+                    <connections>
+                        <action selector="onLongPress:" destination="BYZ-38-t0r" id="83k-2l-hx0"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="199" y="307"/>
         </scene>

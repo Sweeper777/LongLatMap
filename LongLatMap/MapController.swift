@@ -5,6 +5,8 @@ class MapController: UIViewController {
 
     @IBOutlet var mapView: MKMapView!
     @IBOutlet var longPressRecog: UILongPressGestureRecognizer!
+    var pressedDown = false
+    var pressedLocation: CLLocationCoordinate2D?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +20,24 @@ class MapController: UIViewController {
     }
 
     @IBAction func onLongPress(sender: UILongPressGestureRecognizer) {
-        let point = sender.locationInView(view)
-        let coordinate = mapView.convertPoint(point, toCoordinateFromView: view)
-        let anno = MKPointAnnotation()
-        anno.coordinate = coordinate
-        anno.title = "\(NSLocalizedString("Longitude", comment: "")): \(coordinate.longitude)"
-        anno.subtitle = "\(NSLocalizedString("Latitude", comment: "")): \(coordinate.latitude)"
-        mapView.addAnnotation(anno)
+        pressedDown = true
+        pressedLocation = mapView.convertPoint(sender.locationInView(view), toCoordinateFromView: view)
+        print(pressedLocation)
+    }
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if pressedDown {
+            print(pressedLocation)
+            let anno = MKPointAnnotation()
+            anno.coordinate = pressedLocation!
+            anno.title = "\(NSLocalizedString("Longitude", comment: "")): \(pressedLocation!.longitude)"
+            anno.subtitle = "\(NSLocalizedString("Latitude", comment: "")): \(pressedLocation!.latitude)"
+            mapView.addAnnotation(anno)
+            print(mapView.annotations)
+        }
+        
+        pressedDown = false
+        pressedLocation = nil
     }
 }
 

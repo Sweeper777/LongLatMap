@@ -1,15 +1,10 @@
-//
-//  ViewController.swift
-//  LongLatMap
-//
-//  Created by Mulang Su on 9/6/16.
-//  Copyright © 2016 Mulang Su. All rights reserved.
-//
-
+import MapKit
 import UIKit
 
-class ViewController: UIViewController {
+class MapController: UIViewController {
 
+    @IBOutlet var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

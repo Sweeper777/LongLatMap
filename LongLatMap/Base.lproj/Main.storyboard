@@ -17,11 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-gr-dWy">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QCg-gr-dWy">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QCg-gr-dWy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="KW5-Az-5DI"/>
+                            <constraint firstItem="QCg-gr-dWy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L6e-WO-Mpb"/>
+                            <constraint firstAttribute="trailing" secondItem="QCg-gr-dWy" secondAttribute="trailing" id="c4D-Md-e4q"/>
+                            <constraint firstItem="QCg-gr-dWy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="elH-S1-3T2"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="longPressRecog" destination="DsR-yF-5ww" id="hux-6P-4ff"/>

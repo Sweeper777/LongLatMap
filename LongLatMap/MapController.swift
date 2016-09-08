@@ -1,43 +1,31 @@
-import MapKit
+import GoogleMaps
 import UIKit
 
-class MapController: UIViewController {
-
-    @IBOutlet var mapView: MKMapView!
-    @IBOutlet var longPressRecog: UILongPressGestureRecognizer!
-    var pressedDown = false
-    var pressedLocation: CLLocationCoordinate2D?
+class MapController: UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        let camera = GMSCameraPosition.cameraWithLatitude(0, longitude: 0, zoom: 3)
+        let mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
+        mapView.myLocationEnabled = true
+        view = mapView
         
-        view.addGestureRecognizer(longPressRecog)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func onLongPress(sender: UILongPressGestureRecognizer) {
-        pressedDown = true
-        pressedLocation = mapView.convertPoint(sender.locationInView(view), toCoordinateFromView: view)
-        print(pressedLocation)
+        mapView.delegate = self
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if pressedDown {
-            print(pressedLocation)
-            let anno = MKPointAnnotation()
-            anno.coordinate = pressedLocation!
-            anno.title = "\(NSLocalizedString("Longitude", comment: "")): \(pressedLocation!.longitude)"
-            anno.subtitle = "\(NSLocalizedString("Latitude", comment: "")): \(pressedLocation!.latitude)"
-            mapView.addAnnotation(anno)
-            print(mapView.annotations)
-        }
-        
-        pressedDown = false
-        pressedLocation = nil
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
+        let alert = UIAlertController(title: "Location:", message: "Longitude: \(marker.position.longitude)\nLatitude: \(marker.position.latitude)", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentVC(alert)
+        return true
+    }
+    
+    func mapView(mapView: GMSMapView, didLongPressAtCoordinate coordinate: CLLocationCoordinate2D) {
+        let marker = GMSMarker(position: coordinate)
+        marker.map = mapView
     }
 }
 

@@ -17,7 +17,6 @@
 		5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70481D7EB1B100252E53 /* ASToast.framework */; };
 		5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */; };
 		5AFF704D1D7EB1B100252E53 /* ISHHoverBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */; };
-		5AFF704F1D7EB1B800252E53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF704E1D7EB1B800252E53 /* MapKit.framework */; };
 		C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AFF704F1D7EB1B800252E53 /* MapKit.framework in Frameworks */,
 				5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */,
 				5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */,
 				5AFF704D1D7EB1B100252E53 /* ISHHoverBar.framework in Frameworks */,

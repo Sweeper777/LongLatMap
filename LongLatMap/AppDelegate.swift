@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 import EZSwiftExtensions
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window?.tintColor = UIColor(hexString: "5abb5a")
+        GMSServices.provideAPIKey(gmsAPIKey)
         return true
     }
 

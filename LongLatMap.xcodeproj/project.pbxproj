@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70331D7EB02200252E53 /* AppDelegate.swift */; };
 		5AFF70361D7EB02200252E53 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70351D7EB02200252E53 /* MapController.swift */; };
 		5AFF70391D7EB02200252E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF70371D7EB02200252E53 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFE2B991D81C73800F483DD /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		5AFF70301D7EB02200252E53 /* LongLatMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongLatMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF70331D7EB02200252E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AFF70351D7EB02200252E53 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */,
 				5AFF70421D7EB02200252E53 /* Info.plist */,
 				5AFF703A1D7EB02200252E53 /* LongLatMap.xcdatamodeld */,
+				5AFE2B991D81C73800F483DD /* SecretStuff.swift */,
 			);
 			path = LongLatMap;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				5AFF70361D7EB02200252E53 /* MapController.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
+				5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */,
 				5AFF703C1D7EB02200252E53 /* LongLatMap.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

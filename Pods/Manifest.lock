@@ -6,20 +6,17 @@ PODS:
   - GoogleMaps/Base (2.0.1)
   - GoogleMaps/Maps (2.0.1):
     - GoogleMaps/Base (= 2.0.1)
-  - ISHHoverBar (1.0.1)
 
 DEPENDENCIES:
   - ASToast
   - EZSwiftExtensions
   - GoogleMaps
-  - ISHHoverBar
 
 SPEC CHECKSUMS:
   ASToast: 3ca73a088e2c0b4c2cf0af3ef7b83a19cfd98733
   EZSwiftExtensions: 6c5e29ae473b3d2edbf5472eab0a3d7bdb20215c
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
-  ISHHoverBar: 44d5161b7c815a60468d181e3ce70fbbfa5bef2a
 
-PODFILE CHECKSUM: 8ba7ba699d106846c59844be5db12f0e7fdb3228
+PODFILE CHECKSUM: 1f0c48bf5262262be8e083d64530d52d3e92b615
 
 COCOAPODS: 1.1.0.beta.1

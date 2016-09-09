@@ -16,7 +16,6 @@
 		5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */; };
 		5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70481D7EB1B100252E53 /* ASToast.framework */; };
 		5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */; };
-		5AFF704D1D7EB1B100252E53 /* ISHHoverBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */; };
 		C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +45,6 @@
 			files = (
 				5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */,
 				5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */,
-				5AFF704D1D7EB1B100252E53 /* ISHHoverBar.framework in Frameworks */,
 				C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

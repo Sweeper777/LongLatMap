@@ -26,7 +26,11 @@ class MapController: UIViewController, GMSMapViewDelegate {
         let vc = storyboard.instantiateViewControllerWithIdentifier("MarkerInfoController")
         vc.modalInPopover = true
         vc.modalPresentationStyle = .Popover
-        vc.popoverPresentationController!.sourceView = marker.iconView
+        
+        let point = mapView.projection.pointForCoordinate(marker.position)
+        
+        vc.popoverPresentationController!.sourceRect = CGRectMake(point.x - 11, point.y - 39, 22, 39)
+        vc.popoverPresentationController?.sourceView = self.view
         
         self.presentVC(vc)
         

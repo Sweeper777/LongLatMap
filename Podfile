@@ -8,4 +8,5 @@ target 'LongLatMap' do
   pod 'EZSwiftExtensions'
   pod 'ASToast'
   pod 'GoogleMaps'
+  pod 'Eureka'
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFBF5801D83F64D00B95D2D /* Eureka.framework */; };
 		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70331D7EB02200252E53 /* AppDelegate.swift */; };
 		5AFF70361D7EB02200252E53 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70351D7EB02200252E53 /* MapController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		5AFE2B991D81C73800F483DD /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		5AFF70301D7EB02200252E53 /* LongLatMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongLatMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF70331D7EB02200252E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */,
 				5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */,
 				5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */,
 				C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */,
@@ -97,6 +100,7 @@
 		FA81AA67FC7E81878EAA822B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5AFBF5801D83F64D00B95D2D /* Eureka.framework */,
 				5AFF704E1D7EB1B800252E53 /* MapKit.framework */,
 				5AFF70481D7EB1B100252E53 /* ASToast.framework */,
 				5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */,

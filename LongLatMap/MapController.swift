@@ -37,6 +37,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
         if shouldPlaceMarker {
             let marker = GMSMarker(position: coordinate)
             marker.draggable = true
+            marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
         }
     }

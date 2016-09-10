@@ -2,6 +2,7 @@ import GoogleMaps
 import UIKit
 
 class MapController: UIViewController, GMSMapViewDelegate {
+    var shouldPlaceMarker = true
     
     override func viewDidLoad() {
         let camera = GMSCameraPosition.cameraWithLatitude(0, longitude: 0, zoom: 3)
@@ -25,7 +26,6 @@ class MapController: UIViewController, GMSMapViewDelegate {
         let vc = storyboard.instantiateViewControllerWithIdentifier("MarkerInfoController")
         vc.modalInPopover = true
         vc.modalPresentationStyle = .Popover
-        print(marker.iconView)
         vc.popoverPresentationController!.sourceView = marker.iconView
         
         self.presentVC(vc)
@@ -34,8 +34,19 @@ class MapController: UIViewController, GMSMapViewDelegate {
     }
     
     func mapView(mapView: GMSMapView, didLongPressAtCoordinate coordinate: CLLocationCoordinate2D) {
-        let marker = GMSMarker(position: coordinate)
-        marker.map = mapView
+        if shouldPlaceMarker {
+            let marker = GMSMarker(position: coordinate)
+            marker.draggable = true
+            marker.map = mapView
+        }
+    }
+    
+    func mapView(mapView: GMSMapView, didBeginDraggingMarker marker: GMSMarker) {
+        shouldPlaceMarker = false
+    }
+    
+    func mapView(mapView: GMSMapView, didEndDraggingMarker marker: GMSMarker) {
+        shouldPlaceMarker = true
     }
 }
 

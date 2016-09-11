@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="189" y="-439"/>
         </scene>
-        <!--View Controller-->
+        <!--Marker Info Controller-->
         <scene sceneID="eWB-MZ-wdX">
             <objects>
-                <viewController id="Y8i-zg-U4q" sceneMemberID="viewController">
+                <viewController id="Y8i-zg-U4q" customClass="MarkerInfoController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfi-Hw-nGU"/>
                         <viewControllerLayoutGuide type="bottom" id="d5k-Im-o4t"/>
@@ -59,7 +59,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IIw-HK-1hT"/>
+                    <navigationItem key="navigationItem" id="IIw-HK-1hT">
+                        <barButtonItem key="rightBarButtonItem" image="close" id="Lp9-Jh-q61">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="close:" destination="Y8i-zg-U4q" id="6aC-bo-jrY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqN-Ys-cNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,6 +102,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
     </resources>
 </document>

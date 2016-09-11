@@ -107,5 +107,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 var lastUsedBuild: Int {
-get { return NSUserDefaults.standardUserDefaults().integerForKey("lastUsedBuild") }
-set { NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: "lastUsedBuild") }
+    get { return NSUserDefaults.standardUserDefaults().integerForKey("lastUsedBuild") }
+    set { NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: "lastUsedBuild") }
+}

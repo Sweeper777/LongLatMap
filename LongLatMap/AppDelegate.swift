@@ -12,6 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window?.tintColor = UIColor(hexString: "5abb5a")
         GMSServices.provideAPIKey(gmsAPIKey)
+        
+        lastUsedBuild = Int(ez.appBuild ?? "0") ?? 0
         return true
     }
 
@@ -104,3 +106,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+var lastUsedBuild: Int {
+get { return NSUserDefaults.standardUserDefaults().integerForKey("lastUsedBuild") }
+set { NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: "lastUsedBuild") }

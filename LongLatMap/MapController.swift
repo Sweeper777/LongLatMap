@@ -3,6 +3,7 @@ import UIKit
 
 class MapController: UIViewController, GMSMapViewDelegate {
     var shouldPlaceMarker = true
+    var allMarkers: [Marker]!
     
     override func viewDidLoad() {
         let camera = GMSCameraPosition.cameraWithLatitude(0, longitude: 0, zoom: 3)
@@ -11,6 +12,17 @@ class MapController: UIViewController, GMSMapViewDelegate {
         view = mapView
         
         mapView.delegate = self
+        
+        self.allMarkers = CDUtils.allMarkers
+        for marker in self.allMarkers {
+            let location = CLLocationCoordinate2DMake(marker.longitude!.doubleValue, marker.latitude!.doubleValue)
+            let gmsMarker = GMSMarker(position: location)
+            if let color = marker.color {
+                gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: color))
+            }
+            gmsMarker.map = mapView
+//            marker.mapMarker = gmsMarker
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -43,6 +55,10 @@ class MapController: UIViewController, GMSMapViewDelegate {
             marker.draggable = true
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
+            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: nil)
+//            markerModel.mapMarker = marker
+            allMarkers.append(markerModel)
+            CDUtils.saveData()
         }
     }
     
@@ -52,6 +68,10 @@ class MapController: UIViewController, GMSMapViewDelegate {
     
     func mapView(mapView: GMSMapView, didEndDraggingMarker marker: GMSMarker) {
         shouldPlaceMarker = true
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        print(CDUtils.allMarkers.last!.longitude)
     }
 }
 

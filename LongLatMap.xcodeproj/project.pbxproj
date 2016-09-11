@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A0057E81D853F6400F1B18A /* MarkerInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */; };
+		5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E91D85473000F1B18A /* DataPasserController.swift */; };
 		5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFBF5801D83F64D00B95D2D /* Eureka.framework */; };
 		5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */; };
 		5AFBF5851D8404C600B95D2D /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBF5831D8404C600B95D2D /* Marker.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoController.swift; sourceTree = "<group>"; };
+		5A0057E91D85473000F1B18A /* DataPasserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Marker+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5AFBF5831D8404C600B95D2D /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				5AFF70331D7EB02200252E53 /* AppDelegate.swift */,
 				5AFF70351D7EB02200252E53 /* MapController.swift */,
 				5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */,
+				5A0057E91D85473000F1B18A /* DataPasserController.swift */,
 				5AFF70371D7EB02200252E53 /* Main.storyboard */,
 				5AFF703D1D7EB02200252E53 /* Assets.xcassets */,
 				5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF70361D7EB02200252E53 /* MapController.swift in Sources */,
+				5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */,
 				5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
 				5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */,

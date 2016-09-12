@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        window?.tintColor = UIColor(hexString: "5abb5a")
+        window?.tintColor = UIColor(hexString: "3b7b3b")
         GMSServices.provideAPIKey(gmsAPIKey)
         
         lastUsedBuild = Int(ez.appBuild ?? "0") ?? 0

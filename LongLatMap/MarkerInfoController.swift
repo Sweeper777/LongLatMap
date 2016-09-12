@@ -16,12 +16,12 @@ class MarkerInfoController: FormViewController {
         }
         
         form +++ Section(NSLocalizedString("location", comment: ""))
-            <<< DecimalRow("longitude") {
+            <<< DecimalRow(tagLongitude) {
                 row in
                 row.title = NSLocalizedString("Longitude", comment: "")
                 row.value = marker?.longitude?.doubleValue ?? 0
         }
-            <<< DecimalRow("latitude") {
+            <<< DecimalRow(tagLatitude) {
                 row in
                 row.title = NSLocalizedString("Latitude", comment: "")
                 row.value = marker?.latitude?.doubleValue ?? 0

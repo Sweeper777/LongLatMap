@@ -15,7 +15,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
         
         self.allMarkers = CDUtils.allMarkers
         for marker in self.allMarkers {
-            let location = CLLocationCoordinate2DMake(marker.longitude!.doubleValue, marker.latitude!.doubleValue)
+            let location = CLLocationCoordinate2DMake(marker.latitude!.doubleValue, marker.longitude!.doubleValue)
             let gmsMarker = GMSMarker(position: location)
             if let color = marker.color {
                 gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: color))

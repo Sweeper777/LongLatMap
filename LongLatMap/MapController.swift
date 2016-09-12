@@ -3,6 +3,7 @@ import UIKit
 
 class MapController: UIViewController, GMSMapViewDelegate {
     var shouldPlaceMarker = true
+    var allMarkersMap: [GMSMarker: Marker] = [:]
     var allMarkers: [Marker]!
     
     override func viewDidLoad() {
@@ -21,7 +22,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
                 gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: color))
             }
             gmsMarker.map = mapView
-//            marker.mapMarker = gmsMarker
+            allMarkersMap[gmsMarker] = marker
         }
     }
     
@@ -56,7 +57,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: nil)
-//            markerModel.mapMarker = marker
+            allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
             CDUtils.saveData()
         }

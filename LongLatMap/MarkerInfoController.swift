@@ -14,6 +14,18 @@ class MarkerInfoController: FormViewController {
         } else {
             title = marker!.title
         }
+        
+        form +++ Section(NSLocalizedString("location", comment: ""))
+            <<< DecimalRow("longitude") {
+                row in
+                row.title = NSLocalizedString("Longitude", comment: "")
+                row.value = marker?.longitude?.doubleValue ?? 0
+        }
+            <<< DecimalRow("latitude") {
+                row in
+                row.title = NSLocalizedString("Latitude", comment: "")
+                row.value = marker?.latitude?.doubleValue ?? 0
+        }
     }
     
     @IBAction func close(sender: AnyObject) {

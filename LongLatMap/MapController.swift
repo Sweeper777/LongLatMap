@@ -45,6 +45,8 @@ class MapController: UIViewController, GMSMapViewDelegate {
         vc.popoverPresentationController!.sourceRect = CGRectMake(point.x - 11, point.y - 39, 22, 39)
         vc.popoverPresentationController?.sourceView = self.view
         
+        (vc as! DataPasserController).marker = allMarkersMap[marker]
+        
         self.presentVC(vc)
         
         return true

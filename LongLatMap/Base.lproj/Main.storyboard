@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-498" y="307"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Data Passer Controller-->
         <scene sceneID="Dqi-2U-g2w">
             <objects>
-                <navigationController storyboardIdentifier="MarkerInfoController" id="HiX-Zx-y0s" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MarkerInfoController" id="HiX-Zx-y0s" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NkG-yB-VgX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

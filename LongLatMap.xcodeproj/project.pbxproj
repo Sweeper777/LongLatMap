@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A004AB71D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */; };
+		5A004AB91D885179009EBC86 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB81D885179009EBC86 /* Colors.swift */; };
 		5A0057E81D853F6400F1B18A /* MarkerInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */; };
 		5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E91D85473000F1B18A /* DataPasserController.swift */; };
 		5A0057EC1D856F8C00F1B18A /* CDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057EB1D856F8C00F1B18A /* CDUtils.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoControllerDelegate.swift; sourceTree = "<group>"; };
+		5A004AB81D885179009EBC86 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoController.swift; sourceTree = "<group>"; };
 		5A0057E91D85473000F1B18A /* DataPasserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
 		5A0057EB1D856F8C00F1B18A /* CDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDUtils.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				5AFBF5831D8404C600B95D2D /* Marker.swift */,
 				5A0057EB1D856F8C00F1B18A /* CDUtils.swift */,
 				5AFF62931D868473004217D3 /* FormTags.swift */,
+				5A004AB81D885179009EBC86 /* Colors.swift */,
 				5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */,
 				5AFF70331D7EB02200252E53 /* AppDelegate.swift */,
 				5AFF70351D7EB02200252E53 /* MapController.swift */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF70361D7EB02200252E53 /* MapController.swift in Sources */,
+				5A004AB91D885179009EBC86 /* Colors.swift in Sources */,
 				5A004AB71D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift in Sources */,
 				5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */,
 				5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */,

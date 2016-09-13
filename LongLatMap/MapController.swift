@@ -58,6 +58,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
             marker.draggable = true
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
+            marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[.Red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: nil)
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)

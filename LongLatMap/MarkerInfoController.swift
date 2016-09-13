@@ -1,11 +1,14 @@
 import UIKit
 import Eureka
 
-class MarkerInfoController: FormViewController {
+class MarkerInfoController: FormViewController, UIPopoverPresentationControllerDelegate {
     var marker: Marker?
+    weak var delegate: MarkerInfoControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.popoverPresentationController!.delegate = self
         
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
@@ -30,5 +33,10 @@ class MarkerInfoController: FormViewController {
     
     @IBAction func close(sender: AnyObject) {
         dismissVC(completion: nil)
+        delegate?.controllerDismissed(self)
+    }
+    
+    func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
+        delegate?.controllerDismissed(self)
     }
 }

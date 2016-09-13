@@ -12,7 +12,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
-        } else if marker!.title == nil {
+        } else if marker!.title == nil || marker!.title == "" {
             title = NSLocalizedString("Unnamed Marker", comment: "")
         } else {
             title = marker!.title

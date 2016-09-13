@@ -29,6 +29,17 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
                 row.title = NSLocalizedString("Latitude", comment: "")
                 row.value = marker?.latitude?.doubleValue ?? 0
         }
+            +++ TextRow(tagTitle) {
+                row in
+                row.title = NSLocalizedString("Title", comment: "")
+                row.value = marker?.title ?? ""
+        }
+            +++ Section(NSLocalizedString("description", comment: ""))
+            
+            <<< TextAreaRow(tagDescription) {
+                row in
+                row.value = marker?.desc ?? ""
+        }
     }
     
     @IBAction func close(sender: AnyObject) {

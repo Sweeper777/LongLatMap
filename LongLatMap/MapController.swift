@@ -1,7 +1,7 @@
 import GoogleMaps
 import UIKit
 
-class MapController: UIViewController, GMSMapViewDelegate {
+class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate {
     var shouldPlaceMarker = true
     var allMarkersMap: [GMSMarker: Marker] = [:]
     var allMarkers: [Marker]!
@@ -49,7 +49,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
         vc.popoverPresentationController?.sourceView = self.view
         
         (vc as! DataPasserController).marker = allMarkersMap[marker]
-        
+        (vc as! DataPasserController).markerInfoDelegate = self
         self.presentVC(vc)
         
         return true
@@ -79,6 +79,10 @@ class MapController: UIViewController, GMSMapViewDelegate {
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         print(CDUtils.allMarkers.last!.longitude)
+    }
+    
+    func controllerDismissed(markerInfoController: MarkerInfoController) {
+        
     }
 }
 

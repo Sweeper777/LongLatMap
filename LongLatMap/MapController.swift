@@ -19,7 +19,8 @@ class MapController: UIViewController, GMSMapViewDelegate {
             let location = CLLocationCoordinate2DMake(marker.latitude!.doubleValue, marker.longitude!.doubleValue)
             let gmsMarker = GMSMarker(position: location)
             if let color = marker.color {
-                gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: color))
+                let hexString = Color.colorHexStrings[Color(rawValue: color)!]!
+                gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: hexString))
             }
             gmsMarker.map = mapView
             allMarkersMap[gmsMarker] = marker
@@ -59,7 +60,7 @@ class MapController: UIViewController, GMSMapViewDelegate {
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
             marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[.Red]!))
-            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: nil)
+            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red")
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
             CDUtils.saveData()

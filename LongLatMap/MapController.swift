@@ -5,6 +5,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     var shouldPlaceMarker = true
     var allMarkersMap: [GMSMarker: Marker] = [:]
     var allMarkers: [Marker]!
+    var lastSelectedMarker: GMSMarker?
     
     override func viewDidLoad() {
         let camera = GMSCameraPosition.cameraWithLatitude(0, longitude: 0, zoom: 3)
@@ -52,6 +53,8 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         (vc as! DataPasserController).markerInfoDelegate = self
         self.presentVC(vc)
         
+        self.lastSelectedMarker = marker
+        
         return true
     }
     
@@ -82,7 +85,18 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     }
     
     func controllerDismissed(markerInfoController: MarkerInfoController) {
-        
+        if let marker = lastSelectedMarker {
+            let formValues = markerInfoController.form.values()
+            if let longitude = formValues[tagLongitude] as? Double,
+                let latitude = formValues[tagLatitude] as? Double {
+                marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+            }
+            
+            if let color = formValues[tagColor] as? Color {
+                marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[color]!))
+            }
+        }
+        lastSelectedMarker = nil
     }
 }
 

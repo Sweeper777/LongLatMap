@@ -44,7 +44,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
             +++ PickerInlineRow<Color>(tagColor) {
                 row in
                 row.title = NSLocalizedString("Color", comment: "")
-                let options: [Color] = [.Red, .Orange, .Yellow, .Blue, .Green, .Purple, .Cyan, .Black, .Gray, .White]
+                let options: [Color] = [.Red, .Orange, .Yellow, .Blue, .Green, .Purple, .Cyan, .Gray]
                 row.options = options
                 row.value = Color(rawValue: marker?.color ?? "Red")
         }

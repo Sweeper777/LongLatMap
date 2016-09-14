@@ -8,9 +8,7 @@ enum Color: String, CustomStringConvertible {
     case Blue = "Blue"
     case Purple = "Purple"
     case Cyan = "Cyan"
-    case Black = "Black"
     case Gray = "Gray"
-    case White = "White"
     
     var description: String {
         return NSLocalizedString(self.rawValue, comment: "")
@@ -18,8 +16,6 @@ enum Color: String, CustomStringConvertible {
     
     static var colorHexStrings: [Color: String] = [
         .Gray: "7f7f7f",
-        .White: "ffffff",
-        .Black: "000000",
         .Red: "ff0000",
         .Green: "00ff00",
         .Blue: "0000ff",

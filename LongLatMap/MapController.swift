@@ -21,6 +21,8 @@ class MapController: UIViewController, GMSMapViewDelegate {
             if let color = marker.color {
                 let hexString = Color.colorHexStrings[Color(rawValue: color)!]!
                 gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: hexString))
+            } else {
+                gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: "ff0000"))
             }
             gmsMarker.map = mapView
             allMarkersMap[gmsMarker] = marker

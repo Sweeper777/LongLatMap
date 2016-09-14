@@ -75,10 +75,10 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     
     func mapView(mapView: GMSMapView, didEndDraggingMarker marker: GMSMarker) {
         shouldPlaceMarker = true
-    }
-    
-    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
-        print(CDUtils.allMarkers.last!.longitude)
+        let markerModel = allMarkersMap[marker]!
+        markerModel.longitude = marker.position.longitude
+        markerModel.latitude = marker.position.latitude
+        CDUtils.saveData()
     }
     
     func controllerDismissed(markerInfoController: MarkerInfoController) {

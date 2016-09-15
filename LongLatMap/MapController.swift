@@ -90,11 +90,15 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             if let longitude = formValues[tagLongitude] as? Double,
                 let latitude = formValues[tagLatitude] as? Double {
                 marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+                allMarkersMap[marker]!.longitude = longitude
+                allMarkersMap[marker]!.latitude = latitude
             }
             
             if let color = formValues[tagColor] as? Color {
                 marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[color]!))
+                allMarkersMap[marker]!.color = color.rawValue
             }
+            CDUtils.saveData()
         }
         lastSelectedMarker = nil
     }

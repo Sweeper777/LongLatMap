@@ -98,5 +98,12 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         }
         lastSelectedMarker = nil
     }
+    
+    func markerDeleted(markerInfoController: MarkerInfoController) {
+        CDUtils.context.deleteObject(markerInfoController.marker!)
+        allMarkersMap.removeValueForKey(lastSelectedMarker!)
+        allMarkers.removeObject(markerInfoController.marker!)
+        lastSelectedMarker?.map = nil
+    }
 }
 

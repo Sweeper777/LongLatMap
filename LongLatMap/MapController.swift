@@ -108,6 +108,8 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         allMarkersMap.removeValueForKey(lastSelectedMarker!)
         allMarkers.removeObject(markerInfoController.marker!)
         lastSelectedMarker?.map = nil
+        lastSelectedMarker = nil
+        CDUtils.saveData()
     }
 }
 

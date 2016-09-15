@@ -60,12 +60,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IIw-HK-1hT">
-                        <barButtonItem key="rightBarButtonItem" image="close" id="Lp9-Jh-q61">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="close:" destination="Y8i-zg-U4q" id="6aC-bo-jrY"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="close" id="Lp9-Jh-q61">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="close:" destination="Y8i-zg-U4q" id="6aC-bo-jrY"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="qgD-IS-dC7">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="deleteMarker:" destination="Y8i-zg-U4q" id="sTG-gZ-byE"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqN-Ys-cNO" userLabel="First Responder" sceneMemberID="firstResponder"/>

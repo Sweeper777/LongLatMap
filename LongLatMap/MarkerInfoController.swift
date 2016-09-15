@@ -55,6 +55,11 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         delegate?.controllerDismissed(self)
     }
     
+    @IBAction func deleteMarker(sender: AnyObject) {
+        dismissVC(completion: nil)
+        delegate?.markerDeleted(self)
+    }
+    
     func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
         delegate?.controllerDismissed(self)
     }

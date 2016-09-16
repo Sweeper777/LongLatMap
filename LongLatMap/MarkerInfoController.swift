@@ -29,6 +29,13 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
                 row.title = NSLocalizedString("Latitude", comment: "")
                 row.value = marker?.latitude?.doubleValue ?? 0
         }
+            +++ PickerInlineRow<Color>(tagColor) {
+                row in
+                row.title = NSLocalizedString("Color", comment: "")
+                let options: [Color] = [.Red, .Orange, .Yellow, .Blue, .Green, .Purple, .Cyan, .Gray]
+                row.options = options
+                row.value = Color(rawValue: marker?.color ?? "Red")
+        }
             +++ TextRow(tagTitle) {
                 row in
                 row.title = NSLocalizedString("Title", comment: "")
@@ -39,14 +46,6 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
             <<< TextAreaRow(tagDescription) {
                 row in
                 row.value = marker?.desc ?? ""
-        }
-        
-            +++ PickerInlineRow<Color>(tagColor) {
-                row in
-                row.title = NSLocalizedString("Color", comment: "")
-                let options: [Color] = [.Red, .Orange, .Yellow, .Blue, .Green, .Purple, .Cyan, .Gray]
-                row.options = options
-                row.value = Color(rawValue: marker?.color ?? "Red")
         }
     }
     

@@ -41,7 +41,6 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("MarkerInfoController")
-        vc.modalInPopover = true
         vc.modalPresentationStyle = .Popover
         
         let point = mapView.projection.pointForCoordinate(marker.position)

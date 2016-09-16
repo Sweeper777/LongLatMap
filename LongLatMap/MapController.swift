@@ -87,16 +87,25 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     func controllerDismissed(markerInfoController: MarkerInfoController) {
         if let marker = lastSelectedMarker {
             let formValues = markerInfoController.form.values()
+            let markerModel = allMarkersMap[marker]!
             if let longitude = formValues[tagLongitude] as? Double,
                 let latitude = formValues[tagLatitude] as? Double {
                 marker.position = CLLocationCoordinate2DMake(latitude, longitude)
-                allMarkersMap[marker]!.longitude = longitude
-                allMarkersMap[marker]!.latitude = latitude
+                markerModel.longitude = longitude
+                markerModel.latitude = latitude
             }
             
             if let color = formValues[tagColor] as? Color {
                 marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[color]!))
-                allMarkersMap[marker]!.color = color.rawValue
+                markerModel.color = color.rawValue
+            }
+            
+            if let title = formValues[tagTitle] as? String {
+                markerModel.title = title
+            }
+            
+            if let desc = formValues[tagDescription] as? String {
+                markerModel.desc = desc
             }
             CDUtils.saveData()
         }

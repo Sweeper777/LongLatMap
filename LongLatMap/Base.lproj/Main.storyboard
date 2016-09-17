@@ -100,6 +100,9 @@
                             </barButtonItem>
                             <barButtonItem systemItem="add" id="HOQ-bp-enu">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="addMarker:" destination="BYZ-38-t0r" id="2h9-cp-IbI"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>

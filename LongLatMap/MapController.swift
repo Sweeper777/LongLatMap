@@ -119,5 +119,17 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         lastSelectedMarker = nil
         CDUtils.saveData()
     }
+    
+    @IBAction func addMarker(sender: UIBarButtonItem) {
+        lastSelectedMarker = nil
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("MarkerInfoController")
+        vc.modalPresentationStyle = .Popover
+        
+        vc.popoverPresentationController!.barButtonItem = sender
+        
+        (vc as! DataPasserController).markerInfoDelegate = self
+        self.presentVC(vc)
+    }
 }
 

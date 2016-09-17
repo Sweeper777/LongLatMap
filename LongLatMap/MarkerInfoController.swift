@@ -12,6 +12,12 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
+            let saveItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(close))
+            saveItem.tintColor = UIColor.whiteColor()
+            let cancelItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: #selector(cancel))
+            cancelItem.tintColor = UIColor.whiteColor()
+            self.navigationItem.rightBarButtonItems = [saveItem]
+            self.navigationItem.leftBarButtonItems = [cancelItem]
         } else if marker!.title == nil || marker!.title == "" {
             title = NSLocalizedString("Unnamed Marker", comment: "")
         } else {
@@ -59,7 +65,13 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         delegate?.markerDeleted(self)
     }
     
+    func cancel(sender: AnyObject) {
+        dismissVC(completion: nil)
+    }
+    
     func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
-        delegate?.controllerDismissed(self)
+        if marker != nil {
+            delegate?.controllerDismissed(self)
+        }
     }
 }

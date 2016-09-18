@@ -108,6 +108,25 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
                 markerModel.desc = desc
             }
             CDUtils.saveData()
+        } else {
+            let formValues = markerInfoController.form.values()
+            let longitude = formValues[tagLongitude] as! Double
+            let latitude = formValues[tagLatitude] as! Double
+            let desc = formValues[tagDescription] as? String ?? ""
+            let title = formValues[tagTitle] as? String ?? ""
+            let color = formValues[tagColor] as? Color ?? .Red
+            let colorString = color.rawValue
+            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: longitude, latitude: latitude, desc: desc, title: title, color: colorString)
+            let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+            marker.appearAnimation = kGMSMarkerAnimationPop
+            marker.isDraggable = true
+            marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[color]!))
+            marker.map = (self.view as! GMSMapView)
+            allMarkers.append(markerModel)
+            allMarkersMap[marker] = markerModel
+            CDUtils.saveData()
+            
+            (self.view as! GMSMapView).animate(to: GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: (self.view as! GMSMapView).camera.zoom))
         }
         lastSelectedMarker = nil
     }

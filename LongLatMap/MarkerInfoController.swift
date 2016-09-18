@@ -12,10 +12,10 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
-            let saveItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(close))
-            saveItem.tintColor = UIColor.whiteColor()
-            let cancelItem = UIBarButtonItem(barButtonSystemItem: .Cancel, target: self, action: #selector(cancel))
-            cancelItem.tintColor = UIColor.whiteColor()
+            let saveItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(close))
+            saveItem.tintColor = UIColor.white
+            let cancelItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
+            cancelItem.tintColor = UIColor.white
             self.navigationItem.rightBarButtonItems = [saveItem]
             self.navigationItem.leftBarButtonItems = [cancelItem]
         } else if marker!.title == nil || marker!.title == "" {
@@ -55,23 +55,23 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         }
     }
     
-    @IBAction func close(sender: AnyObject) {
-        dismissVC(completion: nil)
+    @IBAction func close(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
         delegate?.controllerDismissed(self)
         print("dismissed with delegate call")
     }
     
-    @IBAction func deleteMarker(sender: AnyObject) {
-        dismissVC(completion: nil)
+    @IBAction func deleteMarker(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
         delegate?.markerDeleted(self)
     }
     
-    func cancel(sender: AnyObject) {
-        dismissVC(completion: nil)
+    func cancel(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
         print("dismissed without delegate call")
     }
     
-    func popoverPresentationControllerDidDismissPopover(popoverPresentationController: UIPopoverPresentationController) {
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
         if marker != nil {
             delegate?.controllerDismissed(self)
             print("dismissed with delegate call")

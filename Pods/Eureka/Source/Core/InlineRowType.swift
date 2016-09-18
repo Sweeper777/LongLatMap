@@ -52,11 +52,11 @@ public protocol InlineRowType: TypedRowType, BaseInlineRowType {
     /**
      This function is responsible for setting up an inline row before it is first shown.
      */
-    func setupInlineRow(inlineRow: InlineRow)
+    func setupInlineRow(_ inlineRow: InlineRow)
 }
 
 
-extension InlineRowType where Self: BaseRow, Self.InlineRow : BaseRow, Self.Cell.Value == Self.Value, Self.InlineRow.Cell.Value == Self.InlineRow.Value, Self.InlineRow.Value == Self.Value {
+extension InlineRowType where Self: BaseRow, Self.InlineRow : BaseRow, Self.Cell.Value ==  Self.InlineRow.Cell.Value {
     
     /// The row that will be inserted below after the current one when it is selected.
     public var inlineRow : Self.InlineRow? { return _inlineRow as? Self.InlineRow }
@@ -85,7 +85,7 @@ extension InlineRowType where Self: BaseRow, Self.InlineRow : BaseRow, Self.Cell
                 onExpandInlineRowCallback(cell, self, inline)
             }
             if let indexPath = indexPath() {
-                section.insert(inline, atIndex: indexPath.row + 1)
+                section.insert(inline, at: (indexPath as NSIndexPath).row + 1)
                 _inlineRow = inline
                 cell.formViewController()?.makeRowVisible(inline)
             }
@@ -100,7 +100,7 @@ extension InlineRowType where Self: BaseRow, Self.InlineRow : BaseRow, Self.Cell
             if let onCollapseInlineRowCallback = onCollapseInlineRowCallback {
                 onCollapseInlineRowCallback(cell, self, inlineRow as! InlineRow)
             }
-            section?.removeAtIndex(selectedRowPath.row + 1)
+            section?.remove(at: (selectedRowPath as NSIndexPath).row + 1)
             _inlineRow = nil
         }
     }
@@ -120,7 +120,8 @@ extension InlineRowType where Self: BaseRow, Self.InlineRow : BaseRow, Self.Cell
     /**
      Sets a block to be executed when a row is expanded.
      */
-    public func onExpandInlineRow(callback: (Cell, Self, InlineRow)->()) -> Self {
+    @discardableResult
+    public func onExpandInlineRow(_ callback: @escaping (Cell, Self, InlineRow)->()) -> Self {
         callbackOnExpandInlineRow = callback
         return self
     }
@@ -128,7 +129,8 @@ extension InlineRowType where Self: BaseRow, Self.InlineRow : BaseRow, Self.Cell
     /**
      Sets a block to be executed when a row is collapsed.
      */
-    public func onCollapseInlineRow(callback: (Cell, Self, InlineRow)->()) -> Self {
+    @discardableResult
+    public func onCollapseInlineRow(_ callback: @escaping (Cell, Self, InlineRow)->()) -> Self {
         callbackOnCollapseInlineRow = callback
         return self
     }

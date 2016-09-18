@@ -1,5 +1,6 @@
 import GoogleMaps
 import UIKit
+import EZSwiftExtensions
 
 class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate {
     var shouldPlaceMarker = true
@@ -8,9 +9,9 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     var lastSelectedMarker: GMSMarker?
     
     override func viewDidLoad() {
-        let camera = GMSCameraPosition.cameraWithLatitude(0, longitude: 0, zoom: 3)
-        let mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
-        mapView.myLocationEnabled = true
+        let camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: 3)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.isMyLocationEnabled = true
         view = mapView
         
         mapView.delegate = self
@@ -21,31 +22,31 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             let gmsMarker = GMSMarker(position: location)
             if let color = marker.color {
                 let hexString = Color.colorHexStrings[Color(rawValue: color)!]!
-                gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: hexString))
+                gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hexString: hexString))
             } else {
-                gmsMarker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: "ff0000"))
+                gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hexString: "ff0000"))
             }
             gmsMarker.map = mapView
             allMarkersMap[gmsMarker] = marker
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
-    func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
 //        let alert = UIAlertController(title: NSLocalizedString("Location:", comment: ""), message: "\(NSLocalizedString("Longitude:", comment: "")) \(marker.position.longitude)\n\(NSLocalizedString("Latitude:", comment: "")) \(marker.position.latitude)", preferredStyle: .Alert)
 //        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .Default, handler: nil))
 //        presentVC(alert)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("MarkerInfoController")
-        vc.modalPresentationStyle = .Popover
+        let vc = storyboard.instantiateViewController(withIdentifier: "MarkerInfoController")
+        vc.modalPresentationStyle = .popover
         
-        let point = mapView.projection.pointForCoordinate(marker.position)
+        let point = mapView.projection.point(for: marker.position)
         
-        vc.popoverPresentationController!.sourceRect = CGRectMake(point.x - 11, point.y - 39, 22, 39)
+        vc.popoverPresentationController!.sourceRect = CGRect(x: point.x - 11, y: point.y - 39, width: 22, height: 39)
         vc.popoverPresentationController?.sourceView = self.view
         
         (vc as! DataPasserController).marker = allMarkersMap[marker]
@@ -57,13 +58,13 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         return true
     }
     
-    func mapView(mapView: GMSMapView, didLongPressAtCoordinate coordinate: CLLocationCoordinate2D) {
+    func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
         if shouldPlaceMarker {
             let marker = GMSMarker(position: coordinate)
-            marker.draggable = true
+            marker.isDraggable = true
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
-            marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[.Red]!))
+            marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red")
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
@@ -71,31 +72,31 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         }
     }
     
-    func mapView(mapView: GMSMapView, didBeginDraggingMarker marker: GMSMarker) {
+    func mapView(_ mapView: GMSMapView, didBeginDragging marker: GMSMarker) {
         shouldPlaceMarker = false
     }
     
-    func mapView(mapView: GMSMapView, didEndDraggingMarker marker: GMSMarker) {
+    func mapView(_ mapView: GMSMapView, didEndDragging marker: GMSMarker) {
         shouldPlaceMarker = true
         let markerModel = allMarkersMap[marker]!
-        markerModel.longitude = marker.position.longitude
-        markerModel.latitude = marker.position.latitude
+        markerModel.longitude = marker.position.longitude as NSNumber?
+        markerModel.latitude = marker.position.latitude as NSNumber?
         CDUtils.saveData()
     }
     
-    func controllerDismissed(markerInfoController: MarkerInfoController) {
+    func controllerDismissed(_ markerInfoController: MarkerInfoController) {
         if let marker = lastSelectedMarker {
             let formValues = markerInfoController.form.values()
             let markerModel = allMarkersMap[marker]!
             if let longitude = formValues[tagLongitude] as? Double,
                 let latitude = formValues[tagLatitude] as? Double {
                 marker.position = CLLocationCoordinate2DMake(latitude, longitude)
-                markerModel.longitude = longitude
-                markerModel.latitude = latitude
+                markerModel.longitude = longitude as NSNumber?
+                markerModel.latitude = latitude as NSNumber?
             }
             
             if let color = formValues[tagColor] as? Color {
-                marker.icon = GMSMarker.markerImageWithColor(UIColor(hexString: Color.colorHexStrings[color]!))
+                marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[color]!))
                 markerModel.color = color.rawValue
             }
             
@@ -111,20 +112,20 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         lastSelectedMarker = nil
     }
     
-    func markerDeleted(markerInfoController: MarkerInfoController) {
-        CDUtils.context.deleteObject(markerInfoController.marker!)
-        allMarkersMap.removeValueForKey(lastSelectedMarker!)
+    func markerDeleted(_ markerInfoController: MarkerInfoController) {
+        CDUtils.context.delete(markerInfoController.marker!)
+        allMarkersMap.removeValue(forKey: lastSelectedMarker!)
         allMarkers.removeObject(markerInfoController.marker!)
         lastSelectedMarker?.map = nil
         lastSelectedMarker = nil
         CDUtils.saveData()
     }
     
-    @IBAction func addMarker(sender: UIBarButtonItem) {
+    @IBAction func addMarker(_ sender: UIBarButtonItem) {
         lastSelectedMarker = nil
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("MarkerInfoController")
-        vc.modalPresentationStyle = .Popover
+        let vc = storyboard.instantiateViewController(withIdentifier: "MarkerInfoController")
+        vc.modalPresentationStyle = .popover
         
         vc.popoverPresentationController!.barButtonItem = sender
         

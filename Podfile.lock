@@ -10,9 +10,24 @@ PODS:
 
 DEPENDENCIES:
   - ASToast
-  - Eureka
-  - EZSwiftExtensions
+  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `Swift3`)
+  - EZSwiftExtensions (from `https://github.com/lfarah/EZSwiftExtensions.git`)
   - GoogleMaps
+
+EXTERNAL SOURCES:
+  Eureka:
+    :branch: Swift3
+    :git: https://github.com/xmartlabs/Eureka.git
+  EZSwiftExtensions:
+    :git: https://github.com/lfarah/EZSwiftExtensions.git
+
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: c2b0b03a1e33180af9c5ff30542b516aa495d24b
+    :git: https://github.com/xmartlabs/Eureka.git
+  EZSwiftExtensions:
+    :commit: 53a43266fc6926fcd22738ec1774e1aacd2fef0d
+    :git: https://github.com/lfarah/EZSwiftExtensions.git
 
 SPEC CHECKSUMS:
   ASToast: 3ca73a088e2c0b4c2cf0af3ef7b83a19cfd98733
@@ -20,6 +35,6 @@ SPEC CHECKSUMS:
   EZSwiftExtensions: 6c5e29ae473b3d2edbf5472eab0a3d7bdb20215c
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
 
-PODFILE CHECKSUM: 6189e4bbe325449c357d31291f4a9d02ce478fa1
+PODFILE CHECKSUM: 9612da1aa970d08641a399e9aeb835f3d82cea16
 
 COCOAPODS: 1.1.0.beta.1

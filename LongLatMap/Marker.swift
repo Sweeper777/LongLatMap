@@ -6,8 +6,8 @@ class Marker: NSManagedObject {
     
 //    var mapMarker: GMSMarker?
 
-    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertIntoManagedObjectContext: context)
+    override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertInto: context)
         longitude = longitude ?? 0
         latitude = latitude ?? 0
         desc = desc ?? ""
@@ -15,9 +15,9 @@ class Marker: NSManagedObject {
     }
 
     convenience init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?, longitude: Double, latitude: Double, desc: String, title: String, color: String?) {
-        self.init(entity: entity, insertIntoManagedObjectContext: context)
-        self.longitude = longitude
-        self.latitude = latitude
+        self.init(entity: entity, insertInto: context)
+        self.longitude = longitude as NSNumber?
+        self.latitude = latitude as NSNumber?
         self.desc = desc
         self.title = title
         self.color = color

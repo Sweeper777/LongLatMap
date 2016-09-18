@@ -2,21 +2,20 @@ import CoreData
 import UIKit
 
 class CDUtils {
-    static let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-    static let markerEntity = NSEntityDescription.entityForName("Marker", inManagedObjectContext: CDUtils.context)
+    static let context = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext
+    static let markerEntity = NSEntityDescription.entity(forEntityName: "Marker", in: CDUtils.context)
     
     static func saveData() {
         _ = try? context.save()
     }
     
     static var allMarkers: [Marker] {
-        let request = NSFetchRequest()
+        let request = NSFetchRequest<Marker>()
         request.entity = CDUtils.markerEntity
-        guard let anyObjs = try? context.executeFetchRequest(request) else {
+        guard let anyObjs = try? context.fetch(request) else {
             return []
         }
         
-        let mapped: [Marker?] = anyObjs.map { $0 as? Marker }
-        return mapped.filter { $0 != nil }.map { $0! }
+        return anyObjs
     }
 }

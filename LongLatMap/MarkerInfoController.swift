@@ -58,7 +58,6 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
     @IBAction func close(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
         delegate?.controllerDismissed(self)
-        print("dismissed with delegate call")
     }
     
     @IBAction func deleteMarker(_ sender: AnyObject) {
@@ -68,13 +67,11 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
     
     func cancel(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
-        print("dismissed without delegate call")
     }
     
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
         if marker != nil {
             delegate?.controllerDismissed(self)
-            print("dismissed with delegate call")
         }
     }
 }

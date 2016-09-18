@@ -151,5 +151,15 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         (vc as! DataPasserController).markerInfoDelegate = self
         self.presentVC(vc)
     }
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        UIView.animate(withDuration: 0.2) {
+            if self.navBar!.alpha == 1 {
+                self.navBar!.alpha = 0
+            } else {
+                self.navBar!.alpha = 1
+            }
+        }
+    }
 }
 

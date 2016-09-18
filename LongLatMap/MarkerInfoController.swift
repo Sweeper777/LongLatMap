@@ -29,11 +29,13 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
                 row in
                 row.title = NSLocalizedString("Longitude", comment: "")
                 row.value = marker?.longitude?.doubleValue ?? 0
+                row.addRule(rule: RuleRequired())
         }
             <<< DecimalRow(tagLatitude) {
                 row in
                 row.title = NSLocalizedString("Latitude", comment: "")
                 row.value = marker?.latitude?.doubleValue ?? 0
+                row.addRule(rule: RuleRequired())
         }
             +++ PickerInlineRow<Color>(tagColor) {
                 row in
@@ -56,8 +58,17 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
     }
     
     @IBAction func close(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
-        delegate?.controllerDismissed(self)
+        let errors = form.validate()
+        if errors.count == 0 {
+            dismiss(animated: true, completion: nil)
+            delegate?.controllerDismissed(self)
+        } else if marker == nil {
+            let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("You must fill in the latitude and longitude of the new marker!", comment: ""), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
+            self.presentVC(alert)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func deleteMarker(_ sender: AnyObject) {
@@ -70,7 +81,8 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
     }
     
     func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        if marker != nil {
+        let errors = form.validate()
+        if marker != nil && errors.count == 0  {
             delegate?.controllerDismissed(self)
         }
     }

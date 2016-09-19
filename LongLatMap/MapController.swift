@@ -29,10 +29,12 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             gmsMarker.map = mapView
             allMarkersMap[gmsMarker] = marker
         }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        let longitude = UserDefaults.standard.double(forKey: "lastLongitude")
+        let latitude = UserDefaults.standard.double(forKey: "lastLatitude")
+        let zoom = UserDefaults.standard.float(forKey: "lastZoom")
+        let bearing = UserDefaults.standard.double(forKey: "lastBearing")
+        let viewingAngle = UserDefaults.standard.double(forKey: "lastViewingAngle")
+        mapView.animate(to: GMSCameraPosition(target: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), zoom: zoom, bearing: bearing, viewingAngle: viewingAngle))
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
@@ -126,7 +128,8 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             allMarkersMap[marker] = markerModel
             CDUtils.saveData()
             
-            (self.view as! GMSMapView).animate(to: GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: (self.view as! GMSMapView).camera.zoom))
+            let mapView = (self.view as! GMSMapView)
+            mapView.animate(to: GMSCameraPosition(target: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), zoom: mapView.camera.zoom, bearing: mapView.camera.bearing, viewingAngle: mapView.camera.viewingAngle))
         }
         lastSelectedMarker = nil
     }
@@ -160,6 +163,15 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
                 self.navBar!.alpha = 1
             }
         }
+    }
+    
+    deinit {
+        let mapView = self.view as! GMSMapView
+        UserDefaults.standard.set(mapView.camera.target.longitude, forKey: "lastLongitude")
+        UserDefaults.standard.set(mapView.camera.target.latitude, forKey: "lastLatitude")
+        UserDefaults.standard.set(mapView.camera.zoom, forKey: "lastZoom")
+        UserDefaults.standard.set(mapView.camera.bearing, forKey: "lastBearing")
+        UserDefaults.standard.set(mapView.camera.viewingAngle, forKey: "lastViewingAngle")
     }
 }
 

@@ -36,6 +36,8 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
                 row.title = NSLocalizedString("Latitude", comment: "")
                 row.value = marker?.latitude?.doubleValue ?? 0
                 row.addRule(rule: RuleRequired())
+                row.addRule(rule: RuleGreaterThan(min: -85))
+                row.addRule(rule: RuleSmallerThan(max: 85))
         }
             +++ PickerInlineRow<Color>(tagColor) {
                 row in
@@ -64,7 +66,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
             delegate?.controllerDismissed(self)
         } else if marker == nil {
             let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("You must fill in the latitude and longitude of the new marker!", comment: ""), preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: {_ in self.dismiss(animated: true, completion: nil)}))
             self.presentVC(alert)
         } else {
             dismiss(animated: true, completion: nil)

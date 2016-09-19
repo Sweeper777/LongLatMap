@@ -65,7 +65,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
             dismiss(animated: true, completion: nil)
             delegate?.controllerDismissed(self)
         } else if marker == nil {
-            let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("You must fill in the latitude and longitude of the new marker!", comment: ""), preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Invalid longitude or latitude!", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: {_ in self.dismiss(animated: true, completion: nil)}))
             self.presentVC(alert)
         } else {

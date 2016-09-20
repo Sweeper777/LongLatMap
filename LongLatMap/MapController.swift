@@ -37,10 +37,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         mapView.animate(to: GMSCameraPosition(target: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), zoom: zoom, bearing: bearing, viewingAngle: viewingAngle))
     }
     
-    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-//        let alert = UIAlertController(title: NSLocalizedString("Location:", comment: ""), message: "\(NSLocalizedString("Longitude:", comment: "")) \(marker.position.longitude)\n\(NSLocalizedString("Latitude:", comment: "")) \(marker.position.latitude)", preferredStyle: .Alert)
-//        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .Default, handler: nil))
-//        presentVC(alert)
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MarkerInfoController")
@@ -57,7 +54,6 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         
         self.lastSelectedMarker = marker
         
-        return true
     }
     
     func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
@@ -68,7 +64,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.map = mapView
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red")
-            marker.title = markerModel.title
+            marker.title = markerModel.title == "" || markerModel.title == nil ? NSLocalizedString("Unnamed", comment: "") : markerModel.title
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
             CDUtils.saveData()
@@ -105,7 +101,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             
             if let title = formValues[tagTitle] as? String {
                 markerModel.title = title
-                marker.title = title
+                marker.title = title == "" ? NSLocalizedString("Unnamed", comment: "") : title
             }
             
             if let desc = formValues[tagDescription] as? String {
@@ -117,7 +113,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             let longitude = formValues[tagLongitude] as! Double
             let latitude = formValues[tagLatitude] as! Double
             let desc = formValues[tagDescription] as? String ?? ""
-            let title = formValues[tagTitle] as? String ?? ""
+            let title = formValues[tagTitle] as? String ?? NSLocalizedString("Unnamed", comment: "")
             let color = formValues[tagColor] as? Color ?? .Red
             let colorString = color.rawValue
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: longitude, latitude: latitude, desc: desc, title: title, color: colorString)
@@ -126,7 +122,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.isDraggable = true
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[color]!))
             marker.map = (self.view as! GMSMapView)
-            marker.title = title
+            marker.title = title == "" ? NSLocalizedString("Unnamed", comment: "") : title
             allMarkers.append(markerModel)
             allMarkersMap[marker] = markerModel
             CDUtils.saveData()

@@ -53,7 +53,6 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         self.presentVC(vc)
         
         self.lastSelectedMarker = marker
-        
     }
     
     func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
@@ -81,6 +80,14 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         markerModel.longitude = marker.position.longitude as NSNumber?
         markerModel.latitude = marker.position.latitude as NSNumber?
         CDUtils.saveData()
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        Timer.runThisAfterDelay(seconds: 3) {
+            [weak self] in
+            (self?.view as! GMSMapView).selectedMarker = nil
+        }
+        return false
     }
     
     func controllerDismissed(_ markerInfoController: MarkerInfoController) {

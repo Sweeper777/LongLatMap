@@ -26,6 +26,7 @@
 		5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */; };
 		5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70481D7EB1B100252E53 /* ASToast.framework */; };
 		5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */; };
+		5AFFF3E91D91AF0C007E8913 /* MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFFF3E81D91AF0C007E8913 /* MapType.swift */; };
 		C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EZSwiftExtensions.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/EZSwiftExtensions/EZSwiftExtensions.framework"; sourceTree = "<group>"; };
 		5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISHHoverBar.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/ISHHoverBar/ISHHoverBar.framework"; sourceTree = "<group>"; };
 		5AFF704E1D7EB1B800252E53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5AFFF3E81D91AF0C007E8913 /* MapType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapType.swift; sourceTree = "<group>"; };
 		D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap.debug.xcconfig"; sourceTree = "<group>"; };
 		E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				5A0057EB1D856F8C00F1B18A /* CDUtils.swift */,
 				5AFF62931D868473004217D3 /* FormTags.swift */,
 				5A004AB81D885179009EBC86 /* Colors.swift */,
+				5AFFF3E81D91AF0C007E8913 /* MapType.swift */,
 				5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */,
 				5AFF70331D7EB02200252E53 /* AppDelegate.swift */,
 				5AFF70351D7EB02200252E53 /* MapController.swift */,
@@ -263,6 +266,7 @@
 			files = (
 				5AFF70361D7EB02200252E53 /* MapController.swift in Sources */,
 				5AF9095A1D905EA70018D1DC /* SettingsController.swift in Sources */,
+				5AFFF3E91D91AF0C007E8913 /* MapType.swift in Sources */,
 				5A004AB91D885179009EBC86 /* Colors.swift in Sources */,
 				5A004AB71D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift in Sources */,
 				5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */,

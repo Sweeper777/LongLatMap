@@ -68,6 +68,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.map = mapView
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red")
+            marker.title = markerModel.title
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
             CDUtils.saveData()
@@ -104,6 +105,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             
             if let title = formValues[tagTitle] as? String {
                 markerModel.title = title
+                marker.title = title
             }
             
             if let desc = formValues[tagDescription] as? String {
@@ -124,6 +126,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.isDraggable = true
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[color]!))
             marker.map = (self.view as! GMSMapView)
+            marker.title = title
             allMarkers.append(markerModel)
             allMarkersMap[marker] = markerModel
             CDUtils.saveData()

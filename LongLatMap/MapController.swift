@@ -27,6 +27,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
                 gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hexString: "ff0000"))
             }
             gmsMarker.map = mapView
+            gmsMarker.title = marker.title == "" || marker.title == nil ? NSLocalizedString("Unnamed", comment: "") : marker.title
             allMarkersMap[gmsMarker] = marker
         }
         let longitude = UserDefaults.standard.double(forKey: "lastLongitude")

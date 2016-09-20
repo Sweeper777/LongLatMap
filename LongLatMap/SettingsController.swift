@@ -16,4 +16,7 @@ class SettingsController: FormViewController {
         }
     }
 
+    @IBAction func close(_ sender: AnyObject) {
+        dismissVC(completion: nil)
+    }
 }

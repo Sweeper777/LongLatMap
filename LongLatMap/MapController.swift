@@ -2,7 +2,7 @@ import GoogleMaps
 import UIKit
 import EZSwiftExtensions
 
-class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate {
+class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate, SettingsControllerDelegate {
     var shouldPlaceMarker = true
     var allMarkersMap: [GMSMarker: Marker] = [:]
     var allMarkers: [Marker]!
@@ -150,6 +150,10 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         lastSelectedMarker?.map = nil
         lastSelectedMarker = nil
         CDUtils.saveData()
+    }
+    
+    func settingsController(_ settingsController: SettingsController, mapTypeChangedTo value: String) {
+        (self.view as! GMSMapView).mapType = MapType.mapTypeDict[MapType(rawValue: value)!]!
     }
     
     @IBAction func addMarker(_ sender: UIBarButtonItem) {

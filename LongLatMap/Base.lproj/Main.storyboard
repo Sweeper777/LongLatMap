@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="199" y="307"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Data Passer Controller-->
         <scene sceneID="0nU-ZM-ppX">
             <objects>
-                <navigationController id="we2-6Z-mz6" sceneMemberID="viewController">
+                <navigationController id="we2-6Z-mz6" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="V1r-hw-YYC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

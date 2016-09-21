@@ -178,6 +178,12 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DataPasserController {
+            vc.settingsDelegate = self
+        }
+    }
+    
     deinit {
         let mapView = self.view as! GMSMapView
         UserDefaults.standard.set(mapView.camera.target.longitude, forKey: "lastLongitude")

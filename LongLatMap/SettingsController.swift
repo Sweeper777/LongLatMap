@@ -16,6 +16,15 @@ class SettingsController: FormViewController {
             UserDefaults.standard.set(row.value!.rawValue, forKey: tagMapType)
             self?.delegate?.settingsController(self!, mapTypeChangedTo: row.value!.rawValue)
         }
+        
+        form +++ SwitchRow(tagFlatMarkers) {
+                row in
+                row.title = NSLocalizedString("Flat Markers", comment: "")
+                row.value = UserDefaults.standard.bool(forKey: tagFlatMarkers)
+        }.onChange {
+            row in
+            UserDefaults.standard.set(row.value!, forKey: tagFlatMarkers)
+        }
     }
 
     @IBAction func close(_ sender: AnyObject) {

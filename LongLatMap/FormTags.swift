@@ -5,3 +5,4 @@ let tagDescription = "description"
 let tagColor = "color"
 
 let tagMapType = "mapType"
+let tagFlatMarkers = "flatMarkers"

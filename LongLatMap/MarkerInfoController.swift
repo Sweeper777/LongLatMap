@@ -10,6 +10,8 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         
         self.navigationController!.popoverPresentationController!.delegate = self
         
+        self.preferredContentSize = CGSize(width: 300, height: 400)
+        
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
             let saveItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(close))

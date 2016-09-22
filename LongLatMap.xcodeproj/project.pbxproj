@@ -38,6 +38,7 @@
 		5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoController.swift; sourceTree = "<group>"; };
 		5A0057E91D85473000F1B18A /* DataPasserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
 		5A0057EB1D856F8C00F1B18A /* CDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDUtils.swift; sourceTree = "<group>"; };
+		5A6325E41D9405D8001A3634 /* LongLatMap 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LongLatMap 2.xcdatamodel"; sourceTree = "<group>"; };
 		5AF909591D905EA70018D1DC /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Marker+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -462,9 +463,10 @@
 		5AFF703A1D7EB02200252E53 /* LongLatMap.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				5A6325E41D9405D8001A3634 /* LongLatMap 2.xcdatamodel */,
 				5AFF703B1D7EB02200252E53 /* LongLatMap.xcdatamodel */,
 			);
-			currentVersion = 5AFF703B1D7EB02200252E53 /* LongLatMap.xcdatamodel */;
+			currentVersion = 5A6325E41D9405D8001A3634 /* LongLatMap 2.xcdatamodel */;
 			path = LongLatMap.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -156,6 +156,12 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         (self.view as! GMSMapView).mapType = MapType.mapTypeDict[MapType(rawValue: value)!]!
     }
     
+    func settingsController(_ settingsController: SettingsController, flatMarkerChangedTo value: Bool) {
+        for marker in allMarkersMap.keys {
+            marker.isFlat = value
+        }
+    }
+    
     @IBAction func addMarker(_ sender: UIBarButtonItem) {
         lastSelectedMarker = nil
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -24,6 +24,7 @@ class SettingsController: FormViewController {
         }.onChange {
             row in
             UserDefaults.standard.set(row.value!, forKey: tagFlatMarkers)
+            self.delegate?.settingsController(self, flatMarkerChangedTo: row.value!)
         }
     }
 

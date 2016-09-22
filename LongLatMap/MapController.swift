@@ -28,6 +28,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             }
             gmsMarker.map = mapView
             gmsMarker.title = marker.title == "" || marker.title == nil ? NSLocalizedString("Unnamed", comment: "") : marker.title
+            gmsMarker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             allMarkersMap[gmsMarker] = marker
         }
         let longitude = UserDefaults.standard.double(forKey: "lastLongitude")
@@ -36,7 +37,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         let bearing = UserDefaults.standard.double(forKey: "lastBearing")
         let viewingAngle = UserDefaults.standard.double(forKey: "lastViewingAngle")
         mapView.animate(to: GMSCameraPosition(target: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), zoom: zoom, bearing: bearing, viewingAngle: viewingAngle))
-        let mapType = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType)!)!
+        let mapType = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal")!
         mapView.mapType = MapType.mapTypeDict[mapType]!
     }
     
@@ -67,6 +68,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red")
             marker.title = markerModel.title == "" || markerModel.title == nil ? NSLocalizedString("Unnamed", comment: "") : markerModel.title
+            marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
             CDUtils.saveData()
@@ -112,6 +114,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             if let title = formValues[tagTitle] as? String {
                 markerModel.title = title
                 marker.title = title == "" ? NSLocalizedString("Unnamed", comment: "") : title
+                marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             }
             
             if let desc = formValues[tagDescription] as? String {
@@ -133,6 +136,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[color]!))
             marker.map = (self.view as! GMSMapView)
             marker.title = title == "" ? NSLocalizedString("Unnamed", comment: "") : title
+            marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             allMarkers.append(markerModel)
             allMarkersMap[marker] = markerModel
             CDUtils.saveData()

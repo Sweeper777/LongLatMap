@@ -6,6 +6,7 @@ class SettingsController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = NSLocalizedString("Settings", comment: "")
         form +++ Section(NSLocalizedString("Map Type", comment: ""))
             <<< SegmentedRow<MapType>(tagMapType) {
                 row in

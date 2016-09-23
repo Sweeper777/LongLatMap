@@ -12,6 +12,7 @@ class Marker: NSManagedObject {
         latitude = latitude ?? 0
         desc = desc ?? ""
         title = title ?? ""
+        rotation = rotation ?? 0
     }
 
     convenience init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?, longitude: Double, latitude: Double, desc: String, title: String, color: String?) {

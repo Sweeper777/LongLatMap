@@ -48,6 +48,13 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
                 row.options = options
                 row.value = Color(rawValue: marker?.color ?? "Red")
         }
+            <<< SliderRow(tagRotation) {
+                row in
+                row.title = NSLocalizedString("Rotation (°)", comment: "")
+                row.minimumValue = -180
+                row.maximumValue = 180
+                row.value = marker?.rotation?.floatValue ?? 0.0
+            }
             +++ TextRow(tagTitle) {
                 row in
                 row.title = NSLocalizedString("Title", comment: "")

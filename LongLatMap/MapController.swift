@@ -29,6 +29,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             gmsMarker.map = mapView
             gmsMarker.title = marker.title == "" || marker.title == nil ? NSLocalizedString("Unnamed", comment: "") : marker.title
             gmsMarker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
+            gmsMarker.rotation = marker.rotation?.doubleValue ?? 0
             allMarkersMap[gmsMarker] = marker
         }
         let longitude = UserDefaults.standard.double(forKey: "lastLongitude")
@@ -66,7 +67,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
-            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red")
+            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red", rotation: 0)
             marker.title = markerModel.title == "" || markerModel.title == nil ? NSLocalizedString("Unnamed", comment: "") : markerModel.title
             marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             allMarkersMap[marker] = markerModel
@@ -120,6 +121,11 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             if let desc = formValues[tagDescription] as? String {
                 markerModel.desc = desc
             }
+            
+            if let rotation = formValues[tagRotation] as? Float {
+                markerModel.rotation = rotation as NSNumber
+                marker.rotation = CLLocationDegrees(rotation)
+            }
             CDUtils.saveData()
         } else {
             let formValues = markerInfoController.form.values()
@@ -127,9 +133,10 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             let latitude = formValues[tagLatitude] as! Double
             let desc = formValues[tagDescription] as? String ?? ""
             let title = formValues[tagTitle] as? String ?? NSLocalizedString("Unnamed", comment: "")
+            let rotation = formValues[tagRotation] as? Float ?? 0
             let color = formValues[tagColor] as? Color ?? .Red
             let colorString = color.rawValue
-            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: longitude, latitude: latitude, desc: desc, title: title, color: colorString)
+            let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: longitude, latitude: latitude, desc: desc, title: title, color: colorString, rotation: rotation)
             let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.isDraggable = true
@@ -137,6 +144,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.map = (self.view as! GMSMapView)
             marker.title = title == "" ? NSLocalizedString("Unnamed", comment: "") : title
             marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
+            marker.rotation = CLLocationDegrees(rotation)
             allMarkers.append(markerModel)
             allMarkersMap[marker] = markerModel
             CDUtils.saveData()

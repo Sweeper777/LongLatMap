@@ -15,12 +15,13 @@ class Marker: NSManagedObject {
         rotation = rotation ?? 0
     }
 
-    convenience init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?, longitude: Double, latitude: Double, desc: String, title: String, color: String?) {
+    convenience init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?, longitude: Double, latitude: Double, desc: String, title: String, color: String?, rotation: Float) {
         self.init(entity: entity, insertInto: context)
         self.longitude = longitude as NSNumber?
         self.latitude = latitude as NSNumber?
         self.desc = desc
         self.title = title
         self.color = color
+        self.rotation = rotation as NSNumber
     }
 }

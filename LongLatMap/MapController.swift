@@ -40,6 +40,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         mapView.animate(to: GMSCameraPosition(target: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), zoom: zoom, bearing: bearing, viewingAngle: viewingAngle))
         let mapType = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal")!
         mapView.mapType = MapType.mapTypeDict[mapType]!
+        mapView.settings.compassButton = true
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {

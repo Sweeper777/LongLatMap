@@ -4,6 +4,7 @@ import Eureka
 class MarkerInfoController: FormViewController, UIPopoverPresentationControllerDelegate {
     var marker: Marker?
     weak var delegate: MarkerInfoControllerDelegate?
+    @IBOutlet var deleteBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,12 +15,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
-            let saveItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(close))
-            saveItem.tintColor = UIColor.white
-            let cancelItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
-            cancelItem.tintColor = UIColor.white
-            self.navigationItem.rightBarButtonItems = [saveItem]
-            self.navigationItem.leftBarButtonItems = [cancelItem]
+            self.navigationItem.leftBarButtonItems?.removeObject(deleteBtn)
         } else if marker!.title == nil || marker!.title == "" {
             title = NSLocalizedString("Unnamed Marker", comment: "")
         } else {
@@ -88,7 +84,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
         delegate?.markerDeleted(self)
     }
     
-    func cancel(_ sender: AnyObject) {
+    @IBAction func cancel(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
     

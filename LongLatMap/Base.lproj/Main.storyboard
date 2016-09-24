@@ -61,11 +61,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="IIw-HK-1hT">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kyb-Qf-U6O">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancel:" destination="Y8i-zg-U4q" id="iTC-f8-LYm"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem image="close" id="Lp9-Jh-q61">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <barButtonItem systemItem="save" id="7da-4o-ISM">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="close:" destination="Y8i-zg-U4q" id="6aC-bo-jrY"/>
+                                    <action selector="close:" destination="Y8i-zg-U4q" id="PDl-8k-XhR"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="trash" id="qgD-IS-dC7">
@@ -76,6 +82,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="deleteBtn" destination="qgD-IS-dC7" id="I4g-ch-ZaM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqN-Ys-cNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

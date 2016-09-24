@@ -54,6 +54,7 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
                 row.minimumValue = -180
                 row.maximumValue = 180
                 row.value = marker?.rotation?.floatValue ?? 0.0
+                row.steps = 360
             }
             +++ TextRow(tagTitle) {
                 row in

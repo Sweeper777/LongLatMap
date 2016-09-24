@@ -1,15 +1,13 @@
 import UIKit
 import Eureka
 
-class MarkerInfoController: FormViewController, UIPopoverPresentationControllerDelegate {
+class MarkerInfoController: FormViewController {
     var marker: Marker?
     weak var delegate: MarkerInfoControllerDelegate?
     @IBOutlet var deleteBtn: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController!.popoverPresentationController!.delegate = self
         
         self.preferredContentSize = CGSize(width: 300, height: 400)
         
@@ -86,12 +84,5 @@ class MarkerInfoController: FormViewController, UIPopoverPresentationControllerD
     
     @IBAction func cancel(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
-    }
-    
-    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
-        let errors = form.validate()
-        if marker != nil && errors.count == 0  {
-            delegate?.controllerDismissed(self)
-        }
     }
 }

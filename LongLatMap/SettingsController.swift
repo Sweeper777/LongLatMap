@@ -12,6 +12,7 @@ class SettingsController: FormViewController {
                 row in
                 row.options = [.Normal, .Satellite, .Hybrid, .Terrain]
                 row.value = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal")!
+                row.cell.segmentedControl.apportionsSegmentWidthsByContent = true
         }.onChange {
             [weak self] row in
             UserDefaults.standard.set(row.value!.rawValue, forKey: tagMapType)

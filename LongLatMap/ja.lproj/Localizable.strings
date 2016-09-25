@@ -1,0 +1,32 @@
+"Red" = "赤";
+"Yellow" = "黄";
+"Orange" = "オレンジ";
+"Green" = "緑";
+"Blue" = "青";
+"Purple" = "紫";
+"Cyan" = "シアン";
+"Gray" = "グレー";
+
+"Normal" = "マップ";
+"Satellite" = "衛星";
+"Hybrid" = "ハイブリッド";
+"Terrain" = "地形";
+
+"Unnamed" = "名前のありません";
+
+"New Marker" = "新しいマーカー";
+"Unnamed Marker" = "無名のマーカー";
+"location" = "位置";
+"Longitude" = "経度";
+"Latitude" = "緯度";
+"Color" = "色";
+"Rotation (°)" = "回転 (°)";
+"Title" = "タイトル";
+"description" = "説明";
+"Error" = "エラー";
+"Invalid longitude or latitude!" = "無効な経度または緯度";
+"OK" = "OK";
+
+"Settings" = "設定";
+"Map Type" = "マップタイプ";
+"Flat Markers" = "フラットマーカー";

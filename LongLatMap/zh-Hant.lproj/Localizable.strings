@@ -1,0 +1,32 @@
+"Red" = "紅色";
+"Yellow" = "黃色";
+"Orange" = "橙色";
+"Green" = "綠色";
+"Blue" = "藍色";
+"Purple" = "紫色";
+"Cyan" = "青色";
+"Gray" = "灰色";
+
+"Normal" = "地圖";
+"Satellite" = "衛星";
+"Hybrid" = "混合";
+"Terrain" = "地形";
+
+"Unnamed" = "未命名";
+
+"New Marker" = "新標記";
+"Unnamed Marker" = "未命名標記";
+"location" = "位置";
+"Longitude" = "經度";
+"Latitude" = "緯度";
+"Color" = "顏色";
+"Rotation (°)" = "旋轉 (°)";
+"Title" = "標題";
+"description" = "說明";
+"Error" = "錯誤";
+"Invalid longitude or latitude!" = "無效的經度或緯度";
+"OK" = "確定";
+
+"Settings" = "設定";
+"Map Type" = "地圖類型";
+"Flat Markers" = "標記與地面平行";

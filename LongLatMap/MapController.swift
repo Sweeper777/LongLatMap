@@ -28,6 +28,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             }
             gmsMarker.map = mapView
             gmsMarker.title = marker.title == "" || marker.title == nil ? NSLocalizedString("Unnamed", comment: "") : marker.title
+            gmsMarker.snippet = marker.description
             gmsMarker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             gmsMarker.rotation = marker.rotation?.doubleValue ?? 0
             allMarkersMap[gmsMarker] = marker
@@ -70,6 +71,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red", rotation: 0)
             marker.title = markerModel.title == "" || markerModel.title == nil ? NSLocalizedString("Unnamed", comment: "") : markerModel.title
+            marker.snippet = markerModel.description
             marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
@@ -86,6 +88,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         let markerModel = allMarkersMap[marker]!
         markerModel.longitude = marker.position.longitude as NSNumber?
         markerModel.latitude = marker.position.latitude as NSNumber?
+        marker.snippet = markerModel.description
         CDUtils.saveData()
     }
     
@@ -106,6 +109,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
                 marker.position = CLLocationCoordinate2DMake(latitude, longitude)
                 markerModel.longitude = longitude as NSNumber?
                 markerModel.latitude = latitude as NSNumber?
+                marker.snippet = markerModel.description
             }
             
             if let color = formValues[tagColor] as? Color {
@@ -146,6 +150,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.title = title == "" ? NSLocalizedString("Unnamed", comment: "") : title
             marker.isFlat = UserDefaults.standard.bool(forKey: tagFlatMarkers)
             marker.rotation = CLLocationDegrees(rotation)
+            marker.snippet = markerModel.description
             allMarkers.append(markerModel)
             allMarkersMap[marker] = markerModel
             CDUtils.saveData()

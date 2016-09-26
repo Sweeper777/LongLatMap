@@ -24,4 +24,13 @@ class Marker: NSManagedObject {
         self.color = color
         self.rotation = rotation as NSNumber
     }
+    
+    override var description: String {
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 5
+        let longitudeStr = formatter.string(from: self.longitude!)!
+        let latitudeStr = formatter.string(from: self.latitude!)!
+        
+        return "\(NSLocalizedString("Longitude:", comment: "")) \(longitudeStr)\n\(NSLocalizedString("Latitude:", comment: "")) \(latitudeStr)"
+    }
 }

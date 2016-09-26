@@ -30,3 +30,6 @@
 "Settings" = "設定";
 "Map Type" = "地圖類型";
 "Flat Markers" = "標記與地面平行";
+
+"Longitude:" = "經度：";
+"Latitude:" = "緯度：";

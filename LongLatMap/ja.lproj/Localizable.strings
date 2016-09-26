@@ -30,3 +30,6 @@
 "Settings" = "設定";
 "Map Type" = "マップタイプ";
 "Flat Markers" = "フラットマーカー";
+
+"Longitude:" = "経度：";
+"Latitude:" = "緯度：";

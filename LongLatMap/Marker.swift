@@ -46,6 +46,6 @@ class Marker: NSManagedObject {
             latitudeStr = formatter.string(from: self.latitude!)!
         }
         
-        return "\(NSLocalizedString("Longitude:", comment: "")) \(longitudeStr)\n\(NSLocalizedString("Latitude:", comment: "")) \(latitudeStr)"
+        return "\(NSLocalizedString("Longitude:", comment: "")) \(longitudeStr)\n\(NSLocalizedString("Latitude:", comment: "")) \(latitudeStr)\n\(self.desc ?? "")"
     }
 }

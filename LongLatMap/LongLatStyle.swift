@@ -9,7 +9,7 @@ enum LongLatStyle: Int, CustomStringConvertible {
         case .integer:
             return NSLocalizedString("Integer", comment: "")
         default:
-            return "\(self.rawValue) \(NSLocalizedString("Significant Figures", comment: ""))"
+            return "\(self.rawValue) \(NSLocalizedString("Decimal Place(s)", comment: ""))"
         }
     }
 }

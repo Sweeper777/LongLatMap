@@ -34,6 +34,10 @@ class SettingsController: FormViewController {
                 row.title = NSLocalizedString("Long. and Lat. Style", comment: "")
                 row.options = [.integer, .sigFig1, .sigFig2, .sigFig3, .sigFig4, .sigFig5, .sigFig6, .sigFig7, .sigFig8, .sigFig9]
                 row.value = LongLatStyle(rawValue: UserDefaults.standard.integer(forKey: tagLonglatStyle) - 1) ?? .sigFig5
+        }.onChange {
+            row in
+            UserDefaults.standard.set(row.value!.rawValue + 1, forKey: tagLonglatStyle)
+            self.delegate?.settingsController(self, longLatStyleChangedTo: row.value!.rawValue)
         }
     }
 

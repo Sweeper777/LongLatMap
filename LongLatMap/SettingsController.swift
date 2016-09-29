@@ -10,7 +10,7 @@ class SettingsController: FormViewController {
         form +++ Section(NSLocalizedString("Map Type", comment: ""))
             <<< SegmentedRow<MapType>(tagMapType) {
                 row in
-                row.options = [.Normal, .Satellite, .Hybrid, .Terrain]
+                row.options = [.normal, .satellite, .hybrid, .terrain]
                 row.value = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal")!
                 row.cell.segmentedControl.apportionsSegmentWidthsByContent = true
         }.onChange {

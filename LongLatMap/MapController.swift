@@ -68,7 +68,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             marker.isDraggable = true
             marker.appearAnimation = kGMSMarkerAnimationPop
             marker.map = mapView
-            marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.Red]!))
+            marker.icon = GMSMarker.markerImage(with: UIColor(hexString: Color.colorHexStrings[.red]!))
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: coordinate.longitude, latitude: coordinate.latitude, desc: "", title: "", color: "Red", rotation: 0)
             marker.title = markerModel.title == "" || markerModel.title == nil ? NSLocalizedString("Unnamed", comment: "") : markerModel.title
             marker.snippet = markerModel.description
@@ -139,7 +139,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             let desc = formValues[tagDescription] as? String ?? ""
             let title = formValues[tagTitle] as? String ?? NSLocalizedString("Unnamed", comment: "")
             let rotation = formValues[tagRotation] as? Float ?? 0
-            let color = formValues[tagColor] as? Color ?? .Red
+            let color = formValues[tagColor] as? Color ?? .red
             let colorString = color.rawValue
             let markerModel = Marker(entity: CDUtils.markerEntity!, insertIntoManagedObjectContext: CDUtils.context, longitude: longitude, latitude: latitude, desc: desc, title: title, color: colorString, rotation: rotation)
             let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))

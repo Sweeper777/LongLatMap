@@ -38,7 +38,7 @@ class MarkerInfoController: FormViewController {
             +++ PickerInlineRow<Color>(tagColor) {
                 row in
                 row.title = NSLocalizedString("Color", comment: "")
-                let options: [Color] = [.Red, .Orange, .Yellow, .Blue, .Green, .Purple, .Cyan, .Gray]
+                let options: [Color] = [.red, .orange, .yellow, .blue, .green, .purple, .cyan, .gray]
                 row.options = options
                 row.value = Color(rawValue: marker?.color ?? "Red")
         }

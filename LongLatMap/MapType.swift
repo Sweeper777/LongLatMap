@@ -1,19 +1,19 @@
 import GoogleMaps
 
 enum MapType: String, CustomStringConvertible {
-    case Normal = "Normal"
-    case Satellite = "Satellite"
-    case Hybrid = "Hybrid"
-    case Terrain = "Terrain"
+    case normal = "Normal"
+    case satellite = "Satellite"
+    case hybrid = "Hybrid"
+    case terrain = "Terrain"
     
     var description: String {
         return NSLocalizedString(self.rawValue, comment: "")
     }
     
     static let mapTypeDict: [MapType: GMSMapViewType] = [
-        .Normal: kGMSTypeNormal,
-        .Satellite: kGMSTypeSatellite,
-        .Hybrid: kGMSTypeHybrid,
-        .Terrain: kGMSTypeTerrain
+        .normal: kGMSTypeNormal,
+        .satellite: kGMSTypeSatellite,
+        .hybrid: kGMSTypeHybrid,
+        .terrain: kGMSTypeTerrain
     ]
 }

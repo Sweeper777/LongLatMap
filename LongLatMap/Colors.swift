@@ -1,27 +1,27 @@
 import Foundation
 
 enum Color: String, CustomStringConvertible {
-    case Red = "Red"
-    case Orange = "Orange"
-    case Yellow = "Yellow"
-    case Green = "Green"
-    case Blue = "Blue"
-    case Purple = "Purple"
-    case Cyan = "Cyan"
-    case Gray = "Gray"
+    case red = "Red"
+    case orange = "Orange"
+    case yellow = "Yellow"
+    case green = "Green"
+    case blue = "Blue"
+    case purple = "Purple"
+    case cyan = "Cyan"
+    case gray = "Gray"
     
     var description: String {
         return NSLocalizedString(self.rawValue, comment: "")
     }
     
     static var colorHexStrings: [Color: String] = [
-        .Gray: "7f7f7f",
-        .Red: "ff0000",
-        .Green: "00ff00",
-        .Blue: "0000ff",
-        .Yellow: "ffff00",
-        .Purple: "9700ff",
-        .Orange: "ff9300",
-        .Cyan: "00ffff"
+        .gray: "7f7f7f",
+        .red: "ff0000",
+        .green: "00ff00",
+        .blue: "0000ff",
+        .yellow: "ffff00",
+        .purple: "9700ff",
+        .orange: "ff9300",
+        .cyan: "00ffff"
     ]
 }

@@ -28,6 +28,13 @@ class SettingsController: FormViewController {
             UserDefaults.standard.set(row.value!, forKey: tagFlatMarkers)
             self.delegate?.settingsController(self, flatMarkerChangedTo: row.value!)
         }
+        
+            <<< PickerInlineRow<LongLatStyle>(tagLonglatStyle) {
+                row in
+                row.title = NSLocalizedString("Long. and Lat. Style", comment: "")
+                row.options = [.integer, .sigFig1, .sigFig2, .sigFig3, .sigFig4, .sigFig5, .sigFig6, .sigFig7, .sigFig8, .sigFig9]
+                row.value = LongLatStyle(rawValue: UserDefaults.standard.integer(forKey: tagLonglatStyle) - 1) ?? .sigFig5
+        }
     }
 
     @IBAction func close(_ sender: AnyObject) {

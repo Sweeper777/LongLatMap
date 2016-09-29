@@ -180,7 +180,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         }
     }
     
-    func settingsController(_ settingsController: SettingsController, longLatStyleChangedTo value: LongLatStyle) {
+    func settingsController(_ settingsController: SettingsController, longLatStyleChangedTo value: Int) {
         
     }
     

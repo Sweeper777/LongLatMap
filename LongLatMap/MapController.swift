@@ -180,6 +180,10 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         }
     }
     
+    func settingsController(_ settingsController: SettingsController, longLatStyleChangedTo value: LongLatStyle) {
+        
+    }
+    
     @IBAction func addMarker(_ sender: UIBarButtonItem) {
         lastSelectedMarker = nil
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

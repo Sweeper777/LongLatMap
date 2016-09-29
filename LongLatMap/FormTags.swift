@@ -7,3 +7,4 @@ let tagRotation = "rotation"
 
 let tagMapType = "mapType"
 let tagFlatMarkers = "flatMarkers"
+let tagLonglatStyle = "longLatStyle"

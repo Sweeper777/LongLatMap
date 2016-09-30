@@ -27,7 +27,8 @@ class Marker: NSManagedObject {
     
     override var description: String {
         let formatter = NumberFormatter()
-        formatter.maximumFractionDigits = 5
+        let decimalPlaces = UserDefaults.standard.integer(forKey: tagLonglatStyle) - 1
+        formatter.maximumFractionDigits = decimalPlaces == -1 ? 5 : decimalPlaces
         let longitudeStr: String
         let latitudeStr: String
         if self.longitude!.doubleValue < 0 {

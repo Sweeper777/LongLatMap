@@ -181,7 +181,9 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     }
     
     func settingsController(_ settingsController: SettingsController, longLatStyleChangedTo value: Int) {
-        
+        for (_, element) in allMarkersMap.enumerated() {
+            element.key.snippet = element.value.description
+        }
     }
     
     @IBAction func addMarker(_ sender: UIBarButtonItem) {

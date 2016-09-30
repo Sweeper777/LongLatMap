@@ -8,8 +8,10 @@ enum LongLatStyle: Int, CustomStringConvertible {
         switch self {
         case .integer:
             return NSLocalizedString("Integer", comment: "")
+        case .sigFig1:
+            return "\(self.rawValue) \(NSLocalizedString("Decimal Place", comment: ""))"
         default:
-            return "\(self.rawValue) \(NSLocalizedString("Decimal Place(s)", comment: ""))"
+            return "\(self.rawValue) \(NSLocalizedString("Decimal Places", comment: ""))"
         }
     }
 }

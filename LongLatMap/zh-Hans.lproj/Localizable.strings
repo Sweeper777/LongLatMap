@@ -33,3 +33,8 @@
 
 "Longitude:" = "经度：";
 "Latitude:" = "纬度：";
+
+"Long. and Lat. Format" = "经纬格式";
+"Integer" = "整数";
+"Decimal Place" = "小数位";
+"Decimal Places" = "小数位";

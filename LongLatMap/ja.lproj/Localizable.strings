@@ -33,3 +33,8 @@
 
 "Longitude:" = "経度：";
 "Latitude:" = "緯度：";
+
+"Long. and Lat. Format" = "緯度と経度の形式";
+"Integer" = "整数";
+"Decimal Place" = "小数点以下の桁数";
+"Decimal Places" = "小数点以下の桁数";

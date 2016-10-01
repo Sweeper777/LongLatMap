@@ -13,7 +13,7 @@ class MarkerInfoController: FormViewController {
         
         if marker == nil {
             title = NSLocalizedString("New Marker", comment: "")
-            self.navigationItem.leftBarButtonItems?.removeObject(deleteBtn)
+            self.navigationItem.rightBarButtonItems?.removeObject(deleteBtn)
         } else if marker!.title == nil || marker!.title == "" {
             title = NSLocalizedString("Unnamed Marker", comment: "")
         } else {

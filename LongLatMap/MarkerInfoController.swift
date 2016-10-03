@@ -19,6 +19,9 @@ class MarkerInfoController: FormViewController {
         } else {
             title = marker!.title
         }
+        let formatter = NumberFormatter()
+        let decimalPlaces =  UserDefaults.standard.integer(forKey: tagLonglatStyle) - 1
+        formatter.maximumFractionDigits = decimalPlaces == -1 ? 5 : decimalPlaces
         
         form +++ Section(NSLocalizedString("location", comment: ""))
             <<< DecimalRow(tagLongitude) {
@@ -26,6 +29,7 @@ class MarkerInfoController: FormViewController {
                 row.title = NSLocalizedString("Longitude", comment: "")
                 row.value = marker?.longitude?.doubleValue ?? 0
                 row.addRule(rule: RuleRequired())
+                row.formatter = formatter
         }
             <<< DecimalRow(tagLatitude) {
                 row in
@@ -34,6 +38,7 @@ class MarkerInfoController: FormViewController {
                 row.addRule(rule: RuleRequired())
                 row.addRule(rule: RuleGreaterThan(min: -85))
                 row.addRule(rule: RuleSmallerThan(max: 85))
+                row.formatter = formatter
         }
             +++ PickerInlineRow<Color>(tagColor) {
                 row in

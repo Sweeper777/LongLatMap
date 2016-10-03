@@ -19,9 +19,6 @@ class MarkerInfoController: FormViewController {
         } else {
             title = marker!.title
         }
-        let formatter = NumberFormatter()
-        let decimalPlaces =  UserDefaults.standard.integer(forKey: tagLonglatStyle) - 1
-        formatter.maximumFractionDigits = decimalPlaces == -1 ? 5 : decimalPlaces
         
         form +++ Section(NSLocalizedString("location", comment: ""))
             <<< DecimalRow(tagLongitude) {

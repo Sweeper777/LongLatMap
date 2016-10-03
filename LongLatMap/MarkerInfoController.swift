@@ -29,7 +29,7 @@ class MarkerInfoController: FormViewController {
                 row.title = NSLocalizedString("Longitude", comment: "")
                 row.value = marker?.longitude?.doubleValue ?? 0
                 row.addRule(rule: RuleRequired())
-                row.formatter = formatter
+                row.formatter = nil
         }
             <<< DecimalRow(tagLatitude) {
                 row in
@@ -38,7 +38,7 @@ class MarkerInfoController: FormViewController {
                 row.addRule(rule: RuleRequired())
                 row.addRule(rule: RuleGreaterThan(min: -85))
                 row.addRule(rule: RuleSmallerThan(max: 85))
-                row.formatter = formatter
+                row.formatter = nil
         }
             +++ PickerInlineRow<Color>(tagColor) {
                 row in

@@ -11,7 +11,7 @@
         <scene sceneID="Iw0-vP-SCS">
             <objects>
                 <navigationController id="BpO-Ss-Mvc" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zU2-gJ-FiA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zU2-gJ-FiA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,7 +31,7 @@
         <scene sceneID="Dqi-2U-g2w">
             <objects>
                 <navigationController storyboardIdentifier="MarkerInfoController" id="HiX-Zx-y0s" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NkG-yB-VgX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NkG-yB-VgX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,7 +117,7 @@
                                     <action selector="addMarker:" destination="BYZ-38-t0r" id="2h9-cp-IbI"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="measure" id="gjf-Md-8fV">
+                            <barButtonItem image="pencil" id="gjf-Md-8fV">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -131,7 +131,7 @@
         <scene sceneID="0nU-ZM-ppX">
             <objects>
                 <navigationController id="we2-6Z-mz6" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V1r-hw-YYC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="V1r-hw-YYC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -176,7 +176,7 @@
     </scenes>
     <resources>
         <image name="close" width="25" height="25"/>
-        <image name="measure" width="100" height="100"/>
+        <image name="pencil" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
     </resources>
 </document>

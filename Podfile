@@ -9,4 +9,6 @@ target 'LongLatMap' do
   pod 'ASToast'
   pod 'GoogleMaps'
   pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'Swift3'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/AdMob'
 end

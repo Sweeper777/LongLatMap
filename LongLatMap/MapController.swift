@@ -1,12 +1,15 @@
 import GoogleMaps
 import UIKit
 import EZSwiftExtensions
+import GoogleMobileAds
 
-class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate, SettingsControllerDelegate {
+class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate, SettingsControllerDelegate, GADInterstitialDelegate {
     var shouldPlaceMarker = true
     var allMarkersMap: [GMSMarker: Marker] = [:]
     var allMarkers: [Marker]!
     var lastSelectedMarker: GMSMarker?
+    
+    var interstitialAd: GADInterstitial!
     
     override func viewDidLoad() {
         let camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: 3)
@@ -42,6 +45,12 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         let mapType = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal")!
         mapView.mapType = MapType.mapTypeDict[mapType]!
         mapView.settings.compassButton = true
+        
+        interstitialAd = GADInterstitial(adUnitID: adUnitID)
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        interstitialAd.load(request)
+        interstitialAd.delegate = self
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
@@ -76,6 +85,9 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             allMarkersMap[marker] = markerModel
             allMarkers.append(markerModel)
             CDUtils.saveData()
+            if arc4random_uniform(100) < 10 && interstitialAd?.isReady ?? false {
+                interstitialAd.present(fromRootViewController: self)
+            }
         }
     }
     
@@ -206,6 +218,20 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
                 self.navBar!.alpha = 1
             }
         }
+    }
+    
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        if arc4random_uniform(100) < 10 && interstitialAd?.isReady ?? false {
+            interstitialAd.present(fromRootViewController: self)
+        }
+    }
+    
+    func interstitialWillDismissScreen(_ ad: GADInterstitial!) {
+        interstitialAd = GADInterstitial(adUnitID: adUnitID)
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        interstitialAd.load(request)
+        interstitialAd.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

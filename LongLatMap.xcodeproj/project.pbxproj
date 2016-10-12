@@ -12,6 +12,7 @@
 		5A0057E81D853F6400F1B18A /* MarkerInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */; };
 		5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E91D85473000F1B18A /* DataPasserController.swift */; };
 		5A0057EC1D856F8C00F1B18A /* CDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057EB1D856F8C00F1B18A /* CDUtils.swift */; };
+		5A1B96351DAD0EF900319A23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */; };
 		5AF9095A1D905EA70018D1DC /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF909591D905EA70018D1DC /* SettingsController.swift */; };
 		5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFBF5801D83F64D00B95D2D /* Eureka.framework */; };
 		5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */; };
@@ -40,6 +41,7 @@
 		5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoController.swift; sourceTree = "<group>"; };
 		5A0057E91D85473000F1B18A /* DataPasserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
 		5A0057EB1D856F8C00F1B18A /* CDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDUtils.swift; sourceTree = "<group>"; };
+		5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A6325E41D9405D8001A3634 /* LongLatMap 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LongLatMap 2.xcdatamodel"; sourceTree = "<group>"; };
 		5AF909591D905EA70018D1DC /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		5AFF70321D7EB02200252E53 /* LongLatMap */ = {
 			isa = PBXGroup;
 			children = (
+				5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */,
 				5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */,
 				5AFBF5831D8404C600B95D2D /* Marker.swift */,
 				5A0057EB1D856F8C00F1B18A /* CDUtils.swift */,
@@ -227,6 +230,7 @@
 			files = (
 				5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */,
 				5AFFAD491D96BD3E0012A94D /* Localizable.strings in Resources */,
+				5A1B96351DAD0EF900319A23 /* GoogleService-Info.plist in Resources */,
 				5AFF703E1D7EB02200252E53 /* Assets.xcassets in Resources */,
 				5AFF70391D7EB02200252E53 /* Main.storyboard in Resources */,
 			);

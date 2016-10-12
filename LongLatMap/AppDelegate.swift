@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 import GoogleMaps
+import Firebase
 import EZSwiftExtensions
 
 @UIApplicationMain
@@ -11,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window?.tintColor = UIColor(hexString: "3b7b3b")
+        FIRApp.configure()
         GMSServices.provideAPIKey(gmsAPIKey)
         
         lastUsedBuild = Int(ez.appBuild ?? "0") ?? 0

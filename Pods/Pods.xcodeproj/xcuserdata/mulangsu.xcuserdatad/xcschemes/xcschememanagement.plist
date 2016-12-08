@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MLScreenshot.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LongLatMap.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3F7B15E0D0A3E1272C8366A2DF2DF328</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>6819754D454CCFB5578F7BB3E4DD1A9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>6D46ACCA4C3F2BE3B8F9A9E35B37F4A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3BE1481AC01E986980D7C24CAEA636F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B7E25D51BC43FFD2E07020077E3F9E73</key>
 		<dict>
 			<key>primary</key>
 			<true/>

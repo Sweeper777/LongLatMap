@@ -2,6 +2,7 @@ import GoogleMaps
 import UIKit
 import EZSwiftExtensions
 import GoogleMobileAds
+import MLScreenshot
 
 class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate, SettingsControllerDelegate, GADInterstitialDelegate {
     var shouldPlaceMarker = true
@@ -237,6 +238,20 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? DataPasserController {
             vc.settingsDelegate = self
+        }
+    }
+    
+    @IBAction func screenshot(_ sender: Any) {
+        if let image = view.screenshot() {
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            
+            let alert = UIAlertController(title: NSLocalizedString("Screenshot Saved", comment: ""), message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
+            self.presentVC(alert)
+        } else {
+            let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Unable to save screenshot", comment: ""), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil))
+            self.presentVC(alert)
         }
     }
     

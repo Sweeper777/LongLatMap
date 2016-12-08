@@ -38,3 +38,6 @@
 "Integer" = "整數";
 "Decimal Place" = "小數位";
 "Decimal Places" = "小數位";
+
+"Screenshot Saved" = "已保存截圖";
+"Unable to save screenshot" = "保存截圖失敗";

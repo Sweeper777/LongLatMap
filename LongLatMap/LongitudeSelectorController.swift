@@ -78,3 +78,13 @@ class LongitudeSelectorController: UIViewController, UIPickerViewDelegate, UIPic
     }
 
 }
+
+
+func decimalToDMS(_ decimal: CLLocationDegrees) -> (degrees: Int, minutes: Int, seconds: Int) {
+    var seconds = Int(round(decimal * 3600))
+    let degrees: Int = seconds / 3600
+    seconds = abs(seconds % 3600)
+    let minutes: Int = seconds / 60
+    seconds %= 60
+    return (degrees, minutes, seconds)
+}

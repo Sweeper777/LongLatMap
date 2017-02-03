@@ -14,6 +14,10 @@
 		5A0057EC1D856F8C00F1B18A /* CDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057EB1D856F8C00F1B18A /* CDUtils.swift */; };
 		5A171C871DF737F800567EEE /* MLScreenshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A171C861DF737F800567EEE /* MLScreenshot.framework */; };
 		5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */; };
+		5A1A78211E407DEC00F6A187 /* LongitudeSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78201E407DEC00F6A187 /* LongitudeSelectorController.swift */; };
+		5A1A78231E4107B200F6A187 /* LongitudeSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78221E4107B200F6A187 /* LongitudeSelectorRow.swift */; };
+		5A1A78251E410DF600F6A187 /* LatitudeSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78241E410DF600F6A187 /* LatitudeSelectorController.swift */; };
+		5A1A78271E410E7B00F6A187 /* LatitudeSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78261E410E7B00F6A187 /* LatitudeSelectorRow.swift */; };
 		5A1B96351DAD0EF900319A23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */; };
 		5AF9095A1D905EA70018D1DC /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF909591D905EA70018D1DC /* SettingsController.swift */; };
 		5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFBF5801D83F64D00B95D2D /* Eureka.framework */; };
@@ -48,6 +52,10 @@
 		5A171C8D1DF7400200567EEE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5A171C8E1DF7400600567EEE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5A171C8F1DF7400600567EEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5A1A78201E407DEC00F6A187 /* LongitudeSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongitudeSelectorController.swift; sourceTree = "<group>"; };
+		5A1A78221E4107B200F6A187 /* LongitudeSelectorRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongitudeSelectorRow.swift; sourceTree = "<group>"; };
+		5A1A78241E410DF600F6A187 /* LatitudeSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatitudeSelectorController.swift; sourceTree = "<group>"; };
+		5A1A78261E410E7B00F6A187 /* LatitudeSelectorRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatitudeSelectorRow.swift; sourceTree = "<group>"; };
 		5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A6325E41D9405D8001A3634 /* LongLatMap 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LongLatMap 2.xcdatamodel"; sourceTree = "<group>"; };
 		5AF909591D905EA70018D1DC /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -130,12 +138,16 @@
 				5A004AB81D885179009EBC86 /* Colors.swift */,
 				5AFFF3E81D91AF0C007E8913 /* MapType.swift */,
 				5AFDC4931D9CF2CC0026FD37 /* LongLatStyle.swift */,
+				5A1A78221E4107B200F6A187 /* LongitudeSelectorRow.swift */,
+				5A1A78261E410E7B00F6A187 /* LatitudeSelectorRow.swift */,
 				5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */,
 				5AFCCD891D925B92001083A4 /* SettingsControllerDelegate.swift */,
 				5AFF70331D7EB02200252E53 /* AppDelegate.swift */,
 				5AFF70351D7EB02200252E53 /* MapController.swift */,
 				5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */,
 				5AF909591D905EA70018D1DC /* SettingsController.swift */,
+				5A1A78201E407DEC00F6A187 /* LongitudeSelectorController.swift */,
+				5A1A78241E410DF600F6A187 /* LatitudeSelectorController.swift */,
 				5A0057E91D85473000F1B18A /* DataPasserController.swift */,
 				5AFF70371D7EB02200252E53 /* Main.storyboard */,
 				5AFF703D1D7EB02200252E53 /* Assets.xcassets */,
@@ -303,16 +315,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF70361D7EB02200252E53 /* MapController.swift in Sources */,
+				5A1A78271E410E7B00F6A187 /* LatitudeSelectorRow.swift in Sources */,
 				5AF9095A1D905EA70018D1DC /* SettingsController.swift in Sources */,
 				5AFFF3E91D91AF0C007E8913 /* MapType.swift in Sources */,
 				5A004AB91D885179009EBC86 /* Colors.swift in Sources */,
 				5A004AB71D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift in Sources */,
 				5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */,
+				5A1A78251E410DF600F6A187 /* LatitudeSelectorController.swift in Sources */,
 				5AFCCD8A1D925B92001083A4 /* SettingsControllerDelegate.swift in Sources */,
 				5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
+				5A1A78231E4107B200F6A187 /* LongitudeSelectorRow.swift in Sources */,
 				5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */,
 				5AFF703C1D7EB02200252E53 /* LongLatMap.xcdatamodeld in Sources */,
+				5A1A78211E407DEC00F6A187 /* LongitudeSelectorController.swift in Sources */,
 				5A0057E81D853F6400F1B18A /* MarkerInfoController.swift in Sources */,
 				5AFBF5851D8404C600B95D2D /* Marker.swift in Sources */,
 				5AFF62941D868473004217D3 /* FormTags.swift in Sources */,

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BpO-Ss-Mvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BpO-Ss-Mvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +14,7 @@
         <scene sceneID="Iw0-vP-SCS">
             <objects>
                 <navigationController id="BpO-Ss-Mvc" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zU2-gJ-FiA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zU2-gJ-FiA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,11 +30,47 @@
             </objects>
             <point key="canvasLocation" x="-498" y="307"/>
         </scene>
+        <!--Longitude Selector Controller-->
+        <scene sceneID="zsf-YB-XAn">
+            <objects>
+                <viewController storyboardIdentifier="LongitudeSelector" id="RNd-h4-dYQ" customClass="LongitudeSelectorController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2qT-2O-eAJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TZH-1s-Dal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kdc-8A-Iyi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD2-Cy-Eer">
+                                <rect key="frame" x="0.0" y="28" width="375" height="631"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RNd-h4-dYQ" id="lNJ-Nx-Yvu"/>
+                                    <outlet property="delegate" destination="RNd-h4-dYQ" id="Mcf-PN-AnX"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wD2-Cy-Eer" firstAttribute="top" secondItem="2qT-2O-eAJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5EL-hD-pwA"/>
+                            <constraint firstItem="wD2-Cy-Eer" firstAttribute="leading" secondItem="kdc-8A-Iyi" secondAttribute="leading" id="Qwc-Pi-stQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wD2-Cy-Eer" secondAttribute="trailing" id="XMI-s8-1tX"/>
+                            <constraint firstItem="TZH-1s-Dal" firstAttribute="top" secondItem="wD2-Cy-Eer" secondAttribute="bottom" constant="8" symbolic="YES" id="mkc-7S-7jH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="longitudePicker" destination="wD2-Cy-Eer" id="Ccc-TD-Vy0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5w-d9-Oom" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-560.79999999999995" y="-441.22938530734638"/>
+        </scene>
         <!--Data Passer Controller-->
         <scene sceneID="Dqi-2U-g2w">
             <objects>
                 <navigationController storyboardIdentifier="MarkerInfoController" id="HiX-Zx-y0s" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NkG-yB-VgX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NkG-yB-VgX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -137,7 +173,7 @@
         <scene sceneID="0nU-ZM-ppX">
             <objects>
                 <navigationController id="we2-6Z-mz6" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="V1r-hw-YYC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V1r-hw-YYC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,6 +214,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gh3-Jv-VRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1673" y="305"/>
+        </scene>
+        <!--Latitude Selector Controller-->
+        <scene sceneID="uBM-La-eHj">
+            <objects>
+                <viewController storyboardIdentifier="LatitudeSelector" id="gOw-4k-gT6" customClass="LatitudeSelectorController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fqb-fz-IMZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8PH-7x-GBG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jtj-hu-bbA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oC-wr-zQf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="631"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gOw-4k-gT6" id="pIR-J7-zpS"/>
+                                    <outlet property="delegate" destination="gOw-4k-gT6" id="hb7-Gh-Okh"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8PH-7x-GBG" firstAttribute="top" secondItem="8oC-wr-zQf" secondAttribute="bottom" constant="8" symbolic="YES" id="05H-Cz-EJC"/>
+                            <constraint firstItem="8oC-wr-zQf" firstAttribute="leading" secondItem="jtj-hu-bbA" secondAttribute="leading" id="10v-Mk-Wuo"/>
+                            <constraint firstAttribute="trailing" secondItem="8oC-wr-zQf" secondAttribute="trailing" id="8SD-Wy-Uki"/>
+                            <constraint firstItem="8oC-wr-zQf" firstAttribute="top" secondItem="Fqb-fz-IMZ" secondAttribute="bottom" constant="8" symbolic="YES" id="haU-dB-fVZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latitudePicker" destination="8oC-wr-zQf" id="Rhx-Dz-1Wv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQV-7X-5mW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="-441"/>
         </scene>
     </scenes>
     <resources>

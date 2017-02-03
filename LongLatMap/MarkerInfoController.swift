@@ -21,21 +21,15 @@ class MarkerInfoController: FormViewController {
         }
         
         form +++ Section(NSLocalizedString("location", comment: ""))
-            <<< DecimalRow(tagLongitude) {
+            <<< LongitudeSelectorRow(tag: tagLongitude) {
                 row in
                 row.title = NSLocalizedString("Longitude", comment: "")
                 row.value = marker?.longitude?.doubleValue ?? 0
-                row.addRule(rule: RuleRequired())
-                row.formatter = nil
         }
-            <<< DecimalRow(tagLatitude) {
+            <<< LatitudeSelectorRow(tag: tagLatitude) {
                 row in
                 row.title = NSLocalizedString("Latitude", comment: "")
                 row.value = marker?.latitude?.doubleValue ?? 0
-                row.addRule(rule: RuleRequired())
-                row.addRule(rule: RuleGreaterThan(min: -85))
-                row.addRule(rule: RuleSmallerThan(max: 85))
-                row.formatter = nil
         }
             +++ PickerInlineRow<Color>(tagColor) {
                 row in
@@ -66,17 +60,8 @@ class MarkerInfoController: FormViewController {
     }
     
     @IBAction func close(_ sender: AnyObject) {
-        let errors = form.validate()
-        if errors.count == 0 {
-            dismiss(animated: true, completion: nil)
-            delegate?.controllerDismissed(self)
-        } else if marker == nil {
-            let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Invalid longitude or latitude!", comment: ""), preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: {_ in self.dismiss(animated: true, completion: nil)}))
-            self.presentVC(alert)
-        } else {
-            dismiss(animated: true, completion: nil)
-        }
+        dismiss(animated: true, completion: nil)
+        delegate?.controllerDismissed(self)
     }
     
     @IBAction func deleteMarker(_ sender: AnyObject) {

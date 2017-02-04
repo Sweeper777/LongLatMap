@@ -26,26 +26,13 @@ class Marker: NSManagedObject {
     }
     
     override var description: String {
-        let formatter = NumberFormatter()
-        let decimalPlaces = UserDefaults.standard.integer(forKey: tagLonglatStyle) - 1
-        formatter.maximumFractionDigits = decimalPlaces == -1 ? 5 : decimalPlaces
-        let longitudeStr: String
-        let latitudeStr: String
-        if self.longitude!.doubleValue < 0 {
-            longitudeStr = "\(formatter.string(from: abs(self.longitude!.doubleValue) as NSNumber)!) W"
-        } else if self.longitude!.doubleValue > 0 {
-            longitudeStr = "\(formatter.string(from: self.longitude!)!) E"
-        } else {
-            longitudeStr = formatter.string(from: self.longitude!)!
-        }
+        let (longDegrees, longMinutes, longSeconds) = decimalToDMS(longitude!.doubleValue)
+        let longSuffix = longDegrees < 0 ? "W" : "E"
+        let longitudeStr = "\(abs(longDegrees))° \(longMinutes)' \(longSeconds)\" \(longSuffix)"
         
-        if self.latitude!.doubleValue < 0 {
-            latitudeStr = "\(formatter.string(from: abs(self.latitude!.doubleValue) as NSNumber)!) S"
-        } else if self.latitude!.doubleValue > 0 {
-            latitudeStr = "\(formatter.string(from: self.latitude!)!) N"
-        } else {
-            latitudeStr = formatter.string(from: self.latitude!)!
-        }
+        let (latDegrees, latMinutes, latSeconds) = decimalToDMS(latitude!.doubleValue)
+        let latSuffix = latDegrees < 0 ? "S" : "N"
+        let latitudeStr = "\(abs(latDegrees))° \(latMinutes)' \(latSeconds)\" \(latSuffix)"
         
         return "\(NSLocalizedString("Longitude:", comment: "")) \(longitudeStr)\n\(NSLocalizedString("Latitude:", comment: "")) \(latitudeStr)\n\(self.desc ?? "")"
     }

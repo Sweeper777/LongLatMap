@@ -8,7 +8,7 @@ class MarkerInfoController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.preferredContentSize = CGSize(width: 300, height: 400)
         
         if marker == nil {

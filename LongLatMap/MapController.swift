@@ -119,10 +119,16 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             let markerModel = allMarkersMap[marker]!
             if let longitude = formValues[tagLongitude] as? Double,
                 let latitude = formValues[tagLatitude] as? Double {
-                marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+               
+                Timer.runThisAfterDelay(seconds: 0.5) {
+                     marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+                }
+                
                 markerModel.longitude = longitude as NSNumber?
                 markerModel.latitude = latitude as NSNumber?
-                marker.snippet = markerModel.description
+                Timer.runThisAfterDelay(seconds: 0.5) {
+                    marker.snippet = markerModel.description
+                }
             }
             
             if let color = formValues[tagColor] as? Color {
@@ -142,7 +148,9 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
             
             if let rotation = formValues[tagRotation] as? Float {
                 markerModel.rotation = rotation as NSNumber
-                marker.rotation = CLLocationDegrees(rotation)
+                Timer.runThisAfterDelay(seconds: 0.5) {
+                    marker.rotation = CLLocationDegrees(rotation)
+                }
             }
             CDUtils.saveData()
         } else {

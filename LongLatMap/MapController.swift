@@ -5,6 +5,7 @@ import GoogleMobileAds
 import MLScreenshot
 
 class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerDelegate, SettingsControllerDelegate, GADInterstitialDelegate {
+    static var shared: MapController!
     var shouldPlaceMarker = true
     var allMarkersMap: [GMSMarker: Marker] = [:]
     var allMarkers: [Marker]!
@@ -17,6 +18,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
         view = mapView
+        MapController.shared = self
         
         mapView.delegate = self
         
@@ -263,13 +265,15 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         }
     }
     
-    deinit {
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         let mapView = self.view as! GMSMapView
         UserDefaults.standard.set(mapView.camera.target.longitude, forKey: "lastLongitude")
         UserDefaults.standard.set(mapView.camera.target.latitude, forKey: "lastLatitude")
         UserDefaults.standard.set(mapView.camera.zoom, forKey: "lastZoom")
         UserDefaults.standard.set(mapView.camera.bearing, forKey: "lastBearing")
         UserDefaults.standard.set(mapView.camera.viewingAngle, forKey: "lastViewingAngle")
+        UserDefaults.standard.synchronize()
     }
 }
 

@@ -38,8 +38,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
+        if let mapView = MapController.shared?.view as? GMSMapView {
+            let tempUser: UserDefaults = UserDefaults.standard
+            tempUser.set(mapView.camera.target.longitude, forKey: "lastLongitude")
+            tempUser.set(mapView.camera.target.latitude, forKey: "lastLatitude")
+            tempUser.set(mapView.camera.zoom, forKey: "lastZoom")
+            tempUser.set(mapView.camera.bearing, forKey: "lastBearing")
+            tempUser.set(mapView.camera.viewingAngle, forKey: "lastViewingAngle")
+            tempUser.synchronize()
+        }
         self.saveContext()
     }
 

@@ -232,7 +232,7 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     }
     
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
-        if arc4random_uniform(100) < 10 && interstitialAd?.isReady ?? false {
+        if arc4random_uniform(100) < 4 && interstitialAd?.isReady ?? false {
             interstitialAd.present(fromRootViewController: self)
         }
     }

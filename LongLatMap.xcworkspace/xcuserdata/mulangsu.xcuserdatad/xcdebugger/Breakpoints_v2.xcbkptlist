@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LongLatMap/MapController.swift"
@@ -49,6 +49,38 @@
             endingLineNumber = "41"
             landmarkName = "applicationWillTerminate(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LongLatMap.AppDelegate.applicationWillTerminate (__ObjC.UIApplication) -&gt; ()"
+                  moduleName = "LongLatMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mulangsu/Documents/LongLatMap/LongLatMap/AppDelegate.swift"
+                  timestampString = "522591087.763725"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LongLatMap.AppDelegate.applicationWillTerminate (__ObjC.UIApplication) -&gt; ()"
+                  moduleName = "LongLatMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mulangsu/Documents/LongLatMap/LongLatMap/AppDelegate.swift"
+                  timestampString = "522591087.766173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "262">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

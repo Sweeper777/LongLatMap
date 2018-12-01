@@ -8,7 +8,7 @@ target 'LongLatMap' do
     pod 'EZSwiftExtensions', :git => 'https://github.com/lfarah/EZSwiftExtensions.git'
   pod 'ASToast'
   pod 'GoogleMaps'
-  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'Swift3'
+  pod 'Eureka'
   pod 'Firebase/Analytics'
   pod 'Firebase/AdMob'
   pod 'MLScreenshot'

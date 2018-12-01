@@ -1,6 +1,6 @@
 PODS:
   - ASToast (1.0.3)
-  - Eureka (1.7.0)
+  - Eureka (4.3.0)
   - EZSwiftExtensions (1.6)
   - Firebase/AdMob (3.6.0):
     - Firebase/Analytics
@@ -28,31 +28,39 @@ PODS:
 
 DEPENDENCIES:
   - ASToast
-  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `Swift3`)
+  - Eureka
   - EZSwiftExtensions (from `https://github.com/lfarah/EZSwiftExtensions.git`)
   - Firebase/AdMob
   - Firebase/Analytics
   - GoogleMaps
   - MLScreenshot
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ASToast
+    - Eureka
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseInstanceID
+    - Google-Mobile-Ads-SDK
+    - GoogleInterchangeUtilities
+    - GoogleMaps
+    - GoogleSymbolUtilities
+    - GoogleUtilities
+    - MLScreenshot
+
 EXTERNAL SOURCES:
-  Eureka:
-    :branch: Swift3
-    :git: https://github.com/xmartlabs/Eureka.git
   EZSwiftExtensions:
     :git: https://github.com/lfarah/EZSwiftExtensions.git
 
 CHECKOUT OPTIONS:
-  Eureka:
-    :commit: c2b0b03a1e33180af9c5ff30542b516aa495d24b
-    :git: https://github.com/xmartlabs/Eureka.git
   EZSwiftExtensions:
     :commit: 53a43266fc6926fcd22738ec1774e1aacd2fef0d
     :git: https://github.com/lfarah/EZSwiftExtensions.git
 
 SPEC CHECKSUMS:
   ASToast: 3ca73a088e2c0b4c2cf0af3ef7b83a19cfd98733
-  Eureka: 2020d9faeef7b7e9adeb9e3d8af779e5931c1897
+  Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
   EZSwiftExtensions: 6c5e29ae473b3d2edbf5472eab0a3d7bdb20215c
   Firebase: 34187200ef4979dbd485c7aa685ef078bf587c86
   FirebaseAnalytics: 3f5358d9104adf159cc8d99b7b501e50099a39ad
@@ -64,6 +72,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   MLScreenshot: 09b476048a115b1f34a2e7347bb8d473b62682bd
 
-PODFILE CHECKSUM: f0f45ceaa7ed80848a7b4c9a409788a1bd070db5
+PODFILE CHECKSUM: 051a61fd9880e027e20a9712fa369337cc8f17a1
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.5.3

@@ -66,6 +66,19 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         polyline.strokeColor = .red
         polyline.strokeWidth = 3
         polyline.map = mapView
+        
+        let rect = GMSMutablePath()
+        rect.add(CLLocationCoordinate2D(latitude: 37.36, longitude: -122.0))
+        rect.add(CLLocationCoordinate2D(latitude: 37.45, longitude: -122.0))
+        rect.add(CLLocationCoordinate2D(latitude: 37.45, longitude: -122.2))
+        rect.add(CLLocationCoordinate2D(latitude: 37.36, longitude: -122.2))
+        
+        // Create the polygon, and assign it to the map.
+        let polygon = GMSPolygon(path: rect)
+        polygon.fillColor = UIColor(red: 0.25, green: 0, blue: 0, alpha: 0.2);
+        polygon.strokeColor = .black
+        polygon.strokeWidth = 2
+        polygon.map = mapView
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {

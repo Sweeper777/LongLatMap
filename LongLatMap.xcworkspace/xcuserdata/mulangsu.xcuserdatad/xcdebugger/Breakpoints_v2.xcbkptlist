@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LongLatMap/MapController.swift"
-            timestampString = "513684547.002161"
+            timestampString = "565362804.660031"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
             landmarkName = "viewDidDisappear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LongLatMap/MapController.swift"
-            timestampString = "513684547.002161"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LongLatMap/AppDelegate.swift"
-            timestampString = "513684734.261499"
+            timestampString = "565362804.6607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "applicationWillTerminate(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LongLatMap.AppDelegate.applicationWillTerminate (__ObjC.UIApplication) -&gt; ()"
-                  moduleName = "LongLatMap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mulangsu/Documents/LongLatMap/LongLatMap/AppDelegate.swift"
-                  timestampString = "522591087.763725"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "19">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LongLatMap.AppDelegate.applicationWillTerminate (__ObjC.UIApplication) -&gt; ()"
-                  moduleName = "LongLatMap"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mulangsu/Documents/LongLatMap/LongLatMap/AppDelegate.swift"
-                  timestampString = "522591087.766173"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "262">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

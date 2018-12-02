@@ -17,6 +17,6 @@ final class LongitudeSelectorRow: SelectorRow<PushSelectorCell<CLLocationDegrees
     }
     
     required convenience init(tag: String?) {
-        self.init(tag: tag)
+        self.init(tag: tag, {_ in})
     }
 }

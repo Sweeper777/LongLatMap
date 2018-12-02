@@ -13,6 +13,8 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
     
     var interstitialAd: GADInterstitial!
     
+    var polyline: GMSPolyline!
+    
     override func viewDidLoad() {
         let camera = GMSCameraPosition.camera(withLatitude: 0, longitude: 0, zoom: 3)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
@@ -54,6 +56,16 @@ class MapController: UIViewController, GMSMapViewDelegate, MarkerInfoControllerD
         request.testDevices = [kGADSimulatorID]
         interstitialAd.load(request)
         interstitialAd.delegate = self
+        
+        let path = GMSMutablePath()
+        path.add(CLLocationCoordinate2D(latitude: -89, longitude: -122))
+        path.add(CLLocationCoordinate2D(latitude: 0, longitude: -122))
+        path.add(CLLocationCoordinate2D(latitude: 89, longitude: -122))
+        polyline = GMSPolyline(path: path)
+        polyline.geodesic = true
+        polyline.strokeColor = .red
+        polyline.strokeWidth = 3
+        polyline.map = mapView
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {

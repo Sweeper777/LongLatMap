@@ -41,8 +41,8 @@ class MarkerInfoController: FormViewController {
             <<< SliderRow(tagRotation) {
                 row in
                 row.title = NSLocalizedString("Rotation (°)", comment: "")
-                row.minimumValue = -180
-                row.maximumValue = 180
+                row.cell.slider.minimumValue = -180
+                row.cell.slider.maximumValue = 180
                 row.value = marker?.rotation?.floatValue ?? 0.0
                 row.steps = 360
             }

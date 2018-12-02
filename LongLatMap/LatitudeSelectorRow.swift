@@ -1,11 +1,11 @@
 import Eureka
 import CoreLocation
 
-final class LatitudeSelectorRow: SelectorRow<PushSelectorCell<CLLocationDegrees>, LatitudeSelectorController> {
+final class LatitudeSelectorRow: SelectorRow<PushSelectorCell<CLLocationDegrees>> {
     required init(tag: String?, _ initializer: ((LatitudeSelectorRow) -> ())) {
         super.init(tag: tag)
         initializer(self)
-        presentationMode = PresentationMode.show(controllerProvider: ControllerProvider.storyBoard(storyboardId: "LatitudeSelector", storyboardName: "Main", bundle: nil), completionCallback: {
+        presentationMode = PresentationMode.show(controllerProvider: ControllerProvider.storyBoard(storyboardId: "LatitudeSelector", storyboardName: "Main", bundle: Bundle.main), onDismiss: {
             _ in
         })
         displayValueFor = {
@@ -17,6 +17,6 @@ final class LatitudeSelectorRow: SelectorRow<PushSelectorCell<CLLocationDegrees>
     }
     
     required convenience init(tag: String?) {
-        self.init(tag: tag)
+        self.init(tag: tag, {_ in})
     }
 }

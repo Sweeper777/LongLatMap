@@ -11,7 +11,6 @@ class LongitudeSelectorController: UIViewController, UIPickerViewDelegate, UIPic
     
     @IBOutlet var longitudePicker: UIPickerView!
     var row: RowOf<CLLocationDegrees>!
-    var completionCallback: ((UIViewController) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,7 +11,6 @@ class LatitudeSelectorController: UIViewController, UIPickerViewDelegate, UIPick
     
     @IBOutlet var latitudePicker: UIPickerView!
     var row: RowOf<CLLocationDegrees>!
-    var completionCallback: ((UIViewController) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()

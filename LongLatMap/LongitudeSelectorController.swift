@@ -4,6 +4,8 @@ import CoreLocation
 
 class LongitudeSelectorController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, TypedRowControllerType {
 
+    typealias RowValue = CLLocationDegrees
+    
     /// A closure to be called when the controller disappears.
     public var onDismissCallback: ((UIViewController) -> ())?
     

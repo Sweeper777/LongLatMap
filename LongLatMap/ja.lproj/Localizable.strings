@@ -12,10 +12,10 @@
 "Hybrid" = "ハイブリッド";
 "Terrain" = "地形";
 
-"Unnamed" = "名前のありません";
+"Unnamed" = "名無し";
 
-"New Marker" = "新しいマーカー";
-"Unnamed Marker" = "無名のマーカー";
+"New Marker" = "新規マーカー";
+"Unnamed Marker" = "名無しのマーカー";
 "location" = "位置";
 "Longitude" = "経度";
 "Latitude" = "緯度";
@@ -34,7 +34,7 @@
 "Longitude:" = "経度：";
 "Latitude:" = "緯度：";
 
-"Long. and Lat. Format" = "緯度と経度の形式";
+"Long. and Lat. Format" = "緯度と経度のフォーマット";
 "Integer" = "整数";
 "Decimal Place" = "小数点以下の桁数";
 "Decimal Places" = "小数点以下の桁数";

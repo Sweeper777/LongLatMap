@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BpO-Ss-Mvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BpO-Ss-Mvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="Iw0-vP-SCS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7et-28-A2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="BpO-Ss-Mvc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zU2-gJ-FiA">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -25,115 +23,14 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AeN-e5-L4d"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7et-28-A2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-498" y="307"/>
         </scene>
-        <!--Longitude Selector Controller-->
-        <scene sceneID="zsf-YB-XAn">
-            <objects>
-                <viewController storyboardIdentifier="LongitudeSelector" id="RNd-h4-dYQ" customClass="LongitudeSelectorController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2qT-2O-eAJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="TZH-1s-Dal"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kdc-8A-Iyi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD2-Cy-Eer">
-                                <rect key="frame" x="0.0" y="72" width="375" height="587"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="RNd-h4-dYQ" id="lNJ-Nx-Yvu"/>
-                                    <outlet property="delegate" destination="RNd-h4-dYQ" id="Mcf-PN-AnX"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="wD2-Cy-Eer" firstAttribute="top" secondItem="2qT-2O-eAJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5EL-hD-pwA"/>
-                            <constraint firstItem="wD2-Cy-Eer" firstAttribute="leading" secondItem="kdc-8A-Iyi" secondAttribute="leading" id="Qwc-Pi-stQ"/>
-                            <constraint firstAttribute="trailing" secondItem="wD2-Cy-Eer" secondAttribute="trailing" id="XMI-s8-1tX"/>
-                            <constraint firstItem="TZH-1s-Dal" firstAttribute="top" secondItem="wD2-Cy-Eer" secondAttribute="bottom" constant="8" symbolic="YES" id="mkc-7S-7jH"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="longitudePicker" destination="wD2-Cy-Eer" id="Ccc-TD-Vy0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C5w-d9-Oom" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1774" y="-998"/>
-        </scene>
-        <!--Data Passer Controller-->
-        <scene sceneID="Dqi-2U-g2w">
-            <objects>
-                <navigationController storyboardIdentifier="MarkerInfoController" id="HiX-Zx-y0s" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NkG-yB-VgX">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Y8i-zg-U4q" kind="relationship" relationship="rootViewController" id="wkD-AR-rNn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fkr-1s-jrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="189" y="-439"/>
-        </scene>
-        <!--Marker Info Controller-->
-        <scene sceneID="eWB-MZ-wdX">
-            <objects>
-                <viewController id="Y8i-zg-U4q" customClass="MarkerInfoController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bfi-Hw-nGU"/>
-                        <viewControllerLayoutGuide type="bottom" id="d5k-Im-o4t"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ssn-M7-sSJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="IIw-HK-1hT">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kyb-Qf-U6O">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="cancel:" destination="Y8i-zg-U4q" id="iTC-f8-LYm"/>
-                            </connections>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="save" id="7da-4o-ISM">
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="close:" destination="Y8i-zg-U4q" id="PDl-8k-XhR"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="trash" id="qgD-IS-dC7">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="deleteMarker:" destination="Y8i-zg-U4q" id="sTG-gZ-byE"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="deleteBtn" destination="qgD-IS-dC7" id="I4g-ch-ZaM"/>
-                        <segue destination="RNd-h4-dYQ" kind="show" identifier="selectLongitude" id="S4V-tZ-DgF"/>
-                        <segue destination="gOw-4k-gT6" kind="show" identifier="selectLatitude" id="XSs-o4-bo0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xqN-Ys-cNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="877" y="-439"/>
-        </scene>
-        <!--Map Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -143,118 +40,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CDI-Fh-QZD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="2KF-Lv-dJ9">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="screenshot:" destination="BYZ-38-t0r" id="ogF-Hs-ieZ"/>
-                            </connections>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem image="settings" id="SSv-Jp-hwz">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="we2-6Z-mz6" kind="presentation" modalPresentationStyle="formSheet" id="ug9-ue-29P"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="add" id="HOQ-bp-enu">
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="addMarker:" destination="BYZ-38-t0r" id="2h9-cp-IbI"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="CDI-Fh-QZD"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="199" y="307"/>
         </scene>
-        <!--Data Passer Controller-->
-        <scene sceneID="0nU-ZM-ppX">
-            <objects>
-                <navigationController id="we2-6Z-mz6" customClass="DataPasserController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V1r-hw-YYC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="oKM-nq-v6v" kind="relationship" relationship="rootViewController" id="DYN-Cr-aN3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jed-4X-06P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="938" y="306"/>
-        </scene>
-        <!--Settings Controller-->
-        <scene sceneID="fZO-ih-kns">
-            <objects>
-                <viewController id="oKM-nq-v6v" customClass="SettingsController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VJW-El-OyS"/>
-                        <viewControllerLayoutGuide type="bottom" id="aca-tr-3rV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yIA-Of-c8v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="CqW-Ta-BKP">
-                        <barButtonItem key="rightBarButtonItem" image="close" id="Ia6-Wc-Wqd">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="close:" destination="oKM-nq-v6v" id="9dc-Jz-f7H"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gh3-Jv-VRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1673" y="305"/>
-        </scene>
-        <!--Latitude Selector Controller-->
-        <scene sceneID="uBM-La-eHj">
-            <objects>
-                <viewController storyboardIdentifier="LatitudeSelector" id="gOw-4k-gT6" customClass="LatitudeSelectorController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fqb-fz-IMZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="8PH-7x-GBG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jtj-hu-bbA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oC-wr-zQf">
-                                <rect key="frame" x="0.0" y="72" width="375" height="587"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="gOw-4k-gT6" id="pIR-J7-zpS"/>
-                                    <outlet property="delegate" destination="gOw-4k-gT6" id="hb7-Gh-Okh"/>
-                                </connections>
-                            </pickerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="8PH-7x-GBG" firstAttribute="top" secondItem="8oC-wr-zQf" secondAttribute="bottom" constant="8" symbolic="YES" id="05H-Cz-EJC"/>
-                            <constraint firstItem="8oC-wr-zQf" firstAttribute="leading" secondItem="jtj-hu-bbA" secondAttribute="leading" id="10v-Mk-Wuo"/>
-                            <constraint firstAttribute="trailing" secondItem="8oC-wr-zQf" secondAttribute="trailing" id="8SD-Wy-Uki"/>
-                            <constraint firstItem="8oC-wr-zQf" firstAttribute="top" secondItem="Fqb-fz-IMZ" secondAttribute="bottom" constant="8" symbolic="YES" id="haU-dB-fVZ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="latitudePicker" destination="8oC-wr-zQf" id="Rhx-Dz-1Wv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQV-7X-5mW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1775" y="-343"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="close" width="25" height="25"/>
-        <image name="settings" width="25" height="25"/>
-    </resources>
 </document>

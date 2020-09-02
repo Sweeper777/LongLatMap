@@ -11,9 +11,9 @@ enum MapType: String, CustomStringConvertible {
     }
     
     static let mapTypeDict: [MapType: GMSMapViewType] = [
-        .normal: kGMSTypeNormal,
-        .satellite: kGMSTypeSatellite,
-        .hybrid: kGMSTypeHybrid,
-        .terrain: kGMSTypeTerrain
+        .normal: .normal,
+        .satellite: .satellite,
+        .hybrid: .hybrid,
+        .terrain: .terrain
     ]
 }

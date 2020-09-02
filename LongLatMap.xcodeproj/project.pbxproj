@@ -7,28 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A004AB71D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */; };
 		5A004AB91D885179009EBC86 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB81D885179009EBC86 /* Colors.swift */; };
-		5A0057E81D853F6400F1B18A /* MarkerInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */; };
-		5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057E91D85473000F1B18A /* DataPasserController.swift */; };
-		5A0057EC1D856F8C00F1B18A /* CDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0057EB1D856F8C00F1B18A /* CDUtils.swift */; };
 		5A171C871DF737F800567EEE /* MLScreenshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A171C861DF737F800567EEE /* MLScreenshot.framework */; };
 		5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */; };
-		5A1A78211E407DEC00F6A187 /* LongitudeSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78201E407DEC00F6A187 /* LongitudeSelectorController.swift */; };
-		5A1A78231E4107B200F6A187 /* LongitudeSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78221E4107B200F6A187 /* LongitudeSelectorRow.swift */; };
-		5A1A78251E410DF600F6A187 /* LatitudeSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78241E410DF600F6A187 /* LatitudeSelectorController.swift */; };
-		5A1A78271E410E7B00F6A187 /* LatitudeSelectorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A78261E410E7B00F6A187 /* LatitudeSelectorRow.swift */; };
 		5A1B96351DAD0EF900319A23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */; };
-		5AF9095A1D905EA70018D1DC /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF909591D905EA70018D1DC /* SettingsController.swift */; };
 		5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFBF5801D83F64D00B95D2D /* Eureka.framework */; };
-		5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */; };
-		5AFBF5851D8404C600B95D2D /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBF5831D8404C600B95D2D /* Marker.swift */; };
-		5AFCCD8A1D925B92001083A4 /* SettingsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCCD891D925B92001083A4 /* SettingsControllerDelegate.swift */; };
 		5AFDC4941D9CF2CC0026FD37 /* LongLatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFDC4931D9CF2CC0026FD37 /* LongLatStyle.swift */; };
 		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF62941D868473004217D3 /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF62931D868473004217D3 /* FormTags.swift */; };
 		5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70331D7EB02200252E53 /* AppDelegate.swift */; };
-		5AFF70361D7EB02200252E53 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70351D7EB02200252E53 /* MapController.swift */; };
 		5AFF70391D7EB02200252E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF70371D7EB02200252E53 /* Main.storyboard */; };
 		5AFF703C1D7EB02200252E53 /* LongLatMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF703A1D7EB02200252E53 /* LongLatMap.xcdatamodeld */; };
 		5AFF703E1D7EB02200252E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703D1D7EB02200252E53 /* Assets.xcassets */; };
@@ -42,33 +29,20 @@
 
 /* Begin PBXFileReference section */
 		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoControllerDelegate.swift; sourceTree = "<group>"; };
 		5A004AB81D885179009EBC86 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoController.swift; sourceTree = "<group>"; };
-		5A0057E91D85473000F1B18A /* DataPasserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPasserController.swift; sourceTree = "<group>"; };
-		5A0057EB1D856F8C00F1B18A /* CDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDUtils.swift; sourceTree = "<group>"; };
 		5A171C861DF737F800567EEE /* MLScreenshot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLScreenshot.framework; path = "Pods/../build/Debug-iphoneos/MLScreenshot/MLScreenshot.framework"; sourceTree = "<group>"; };
 		5A171C8B1DF73FFE00567EEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A171C8D1DF7400200567EEE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5A171C8E1DF7400600567EEE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5A171C8F1DF7400600567EEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5A1A78201E407DEC00F6A187 /* LongitudeSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongitudeSelectorController.swift; sourceTree = "<group>"; };
-		5A1A78221E4107B200F6A187 /* LongitudeSelectorRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongitudeSelectorRow.swift; sourceTree = "<group>"; };
-		5A1A78241E410DF600F6A187 /* LatitudeSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatitudeSelectorController.swift; sourceTree = "<group>"; };
-		5A1A78261E410E7B00F6A187 /* LatitudeSelectorRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatitudeSelectorRow.swift; sourceTree = "<group>"; };
 		5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A6325E41D9405D8001A3634 /* LongLatMap 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LongLatMap 2.xcdatamodel"; sourceTree = "<group>"; };
-		5AF909591D905EA70018D1DC /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
-		5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Marker+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		5AFBF5831D8404C600B95D2D /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
-		5AFCCD891D925B92001083A4 /* SettingsControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsControllerDelegate.swift; sourceTree = "<group>"; };
 		5AFDC4931D9CF2CC0026FD37 /* LongLatStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongLatStyle.swift; sourceTree = "<group>"; };
 		5AFE2B991D81C73800F483DD /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		5AFF62931D868473004217D3 /* FormTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTags.swift; sourceTree = "<group>"; };
 		5AFF70301D7EB02200252E53 /* LongLatMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongLatMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFF70331D7EB02200252E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AFF70351D7EB02200252E53 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		5AFF70381D7EB02200252E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AFF703B1D7EB02200252E53 /* LongLatMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LongLatMap.xcdatamodel; sourceTree = "<group>"; };
 		5AFF703D1D7EB02200252E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,24 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */,
-				5AFBF5821D8404C600B95D2D /* Marker+CoreDataProperties.swift */,
-				5AFBF5831D8404C600B95D2D /* Marker.swift */,
-				5A0057EB1D856F8C00F1B18A /* CDUtils.swift */,
 				5AFF62931D868473004217D3 /* FormTags.swift */,
 				5A004AB81D885179009EBC86 /* Colors.swift */,
 				5AFFF3E81D91AF0C007E8913 /* MapType.swift */,
 				5AFDC4931D9CF2CC0026FD37 /* LongLatStyle.swift */,
-				5A1A78221E4107B200F6A187 /* LongitudeSelectorRow.swift */,
-				5A1A78261E410E7B00F6A187 /* LatitudeSelectorRow.swift */,
-				5A004AB61D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift */,
-				5AFCCD891D925B92001083A4 /* SettingsControllerDelegate.swift */,
 				5AFF70331D7EB02200252E53 /* AppDelegate.swift */,
-				5AFF70351D7EB02200252E53 /* MapController.swift */,
-				5A0057E71D853F6400F1B18A /* MarkerInfoController.swift */,
-				5AF909591D905EA70018D1DC /* SettingsController.swift */,
-				5A1A78201E407DEC00F6A187 /* LongitudeSelectorController.swift */,
-				5A1A78241E410DF600F6A187 /* LatitudeSelectorController.swift */,
-				5A0057E91D85473000F1B18A /* DataPasserController.swift */,
 				5AFF70371D7EB02200252E53 /* Main.storyboard */,
 				5AFF703D1D7EB02200252E53 /* Assets.xcassets */,
 				5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */,
@@ -229,6 +190,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -329,25 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AFF70361D7EB02200252E53 /* MapController.swift in Sources */,
-				5A1A78271E410E7B00F6A187 /* LatitudeSelectorRow.swift in Sources */,
-				5AF9095A1D905EA70018D1DC /* SettingsController.swift in Sources */,
 				5AFFF3E91D91AF0C007E8913 /* MapType.swift in Sources */,
 				5A004AB91D885179009EBC86 /* Colors.swift in Sources */,
-				5A004AB71D87D92F009EBC86 /* MarkerInfoControllerDelegate.swift in Sources */,
-				5A0057EA1D85473000F1B18A /* DataPasserController.swift in Sources */,
-				5A1A78251E410DF600F6A187 /* LatitudeSelectorController.swift in Sources */,
-				5AFCCD8A1D925B92001083A4 /* SettingsControllerDelegate.swift in Sources */,
-				5AFBF5841D8404C600B95D2D /* Marker+CoreDataProperties.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
-				5A1A78231E4107B200F6A187 /* LongitudeSelectorRow.swift in Sources */,
 				5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */,
 				5AFF703C1D7EB02200252E53 /* LongLatMap.xcdatamodeld in Sources */,
-				5A1A78211E407DEC00F6A187 /* LongitudeSelectorController.swift in Sources */,
-				5A0057E81D853F6400F1B18A /* MarkerInfoController.swift in Sources */,
-				5AFBF5851D8404C600B95D2D /* Marker.swift in Sources */,
 				5AFF62941D868473004217D3 /* FormTags.swift in Sources */,
-				5A0057EC1D856F8C00F1B18A /* CDUtils.swift in Sources */,
 				5AFDC4941D9CF2CC0026FD37 /* LongLatStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -509,12 +458,12 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MLScreenshot",
 				);
 				INFOPLIST_FILE = LongLatMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LongLatMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -531,12 +480,12 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MLScreenshot",
 				);
 				INFOPLIST_FILE = LongLatMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LongLatMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

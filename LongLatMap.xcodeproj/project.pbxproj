@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A004AB91D885179009EBC86 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB81D885179009EBC86 /* Colors.swift */; };
-		5A171C871DF737F800567EEE /* MLScreenshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A171C861DF737F800567EEE /* MLScreenshot.framework */; };
 		5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */; };
 		5A1B96351DAD0EF900319A23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */; };
-		5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFBF5801D83F64D00B95D2D /* Eureka.framework */; };
 		5AFDC4941D9CF2CC0026FD37 /* LongLatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFDC4931D9CF2CC0026FD37 /* LongLatStyle.swift */; };
 		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF62941D868473004217D3 /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF62931D868473004217D3 /* FormTags.swift */; };
@@ -19,8 +17,6 @@
 		5AFF70391D7EB02200252E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF70371D7EB02200252E53 /* Main.storyboard */; };
 		5AFF703E1D7EB02200252E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703D1D7EB02200252E53 /* Assets.xcassets */; };
 		5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AFF703F1D7EB02200252E53 /* LaunchScreen.storyboard */; };
-		5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70481D7EB1B100252E53 /* ASToast.framework */; };
-		5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */; };
 		5AFFAD491D96BD3E0012A94D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AFFAD4B1D96BD3E0012A94D /* Localizable.strings */; };
 		5AFFF3E91D91AF0C007E8913 /* MapType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFFF3E81D91AF0C007E8913 /* MapType.swift */; };
 		C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */; };
@@ -69,10 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A171C871DF737F800567EEE /* MLScreenshot.framework in Frameworks */,
-				5AFBF5811D83F64D00B95D2D /* Eureka.framework in Frameworks */,
-				5AFF704B1D7EB1B100252E53 /* ASToast.framework in Frameworks */,
-				5AFF704C1D7EB1B100252E53 /* EZSwiftExtensions.framework in Frameworks */,
 				C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +444,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -474,7 +465,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

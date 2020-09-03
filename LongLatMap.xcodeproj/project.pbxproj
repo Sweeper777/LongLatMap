@@ -10,6 +10,7 @@
 		5A004AB91D885179009EBC86 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB81D885179009EBC86 /* Colors.swift */; };
 		5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */; };
 		5A1B96351DAD0EF900319A23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */; };
+		5A37B92425007B11001117C1 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37B92325007B11001117C1 /* Marker.swift */; };
 		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF62941D868473004217D3 /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF62931D868473004217D3 /* FormTags.swift */; };
 		5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70331D7EB02200252E53 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		5A171C8E1DF7400600567EEE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5A171C8F1DF7400600567EEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A1B96341DAD0EF900319A23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A37B92325007B11001117C1 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		5AFE2B991D81C73800F483DD /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		5AFF62931D868473004217D3 /* FormTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTags.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				5AFF62931D868473004217D3 /* FormTags.swift */,
 				5A004AB81D885179009EBC86 /* Colors.swift */,
 				5AFFF3E81D91AF0C007E8913 /* MapType.swift */,
+				5A37B92325007B11001117C1 /* Marker.swift */,
 				5AFF70331D7EB02200252E53 /* AppDelegate.swift */,
 				5AFF70371D7EB02200252E53 /* Main.storyboard */,
 				5AFF703D1D7EB02200252E53 /* Assets.xcassets */,
@@ -289,6 +292,7 @@
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
 				5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */,
 				5AFF62941D868473004217D3 /* FormTags.swift in Sources */,
+				5A37B92425007B11001117C1 /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

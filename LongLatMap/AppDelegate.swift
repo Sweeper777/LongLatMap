@@ -11,6 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        window?.tintColor = UIColor(hexString: "3b7b3b")
         FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        GMSServices.provideAPIKey(gmsAPIKey)
 //        lastUsedBuild = Int(ez.appBuild ?? "0") ?? 0
         return true
     }

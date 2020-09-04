@@ -9,6 +9,8 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         mapView = GMSMapView()
         view = mapView
+        mapView.delegate = self
+        reloadMarkers()
     }
     
     func reloadMarkers() {
@@ -22,5 +24,15 @@ class MapViewController: UIViewController {
             gmsMarker.map = mapView
             return gmsMarker
         }
+    }
+}
+
+extension MapViewController : GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
+        let newMarker = Marker()
+        newMarker.latitude = coordinate.latitude
+        newMarker.longitude = coordinate.longitude
+        try? DataManager.shared.addMarker(newMarker)
+        reloadMarkers()
     }
 }

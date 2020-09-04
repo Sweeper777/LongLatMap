@@ -20,4 +20,10 @@ class DataManager {
         _shared = _shared ?? DataManager()
         return _shared!
     }
+    
+    func addMarker(_ marker: Marker) throws {
+        try realm.write {
+            realm.add(marker)
+        }
+    }
 }

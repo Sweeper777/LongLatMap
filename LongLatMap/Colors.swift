@@ -14,7 +14,7 @@ enum Color: String, CustomStringConvertible {
         return NSLocalizedString(self.rawValue, comment: "")
     }
     
-    static var colorHexStrings: [Color: String] = [
+    private static var colorHexStrings: [Color: String] = [
         .gray: "7f7f7f",
         .red: "ff0000",
         .green: "00ff00",
@@ -24,4 +24,8 @@ enum Color: String, CustomStringConvertible {
         .orange: "ff9300",
         .cyan: "00ffff"
     ]
+    
+    var hexString: String {
+        Color.colorHexStrings[self]!
+    }
 }

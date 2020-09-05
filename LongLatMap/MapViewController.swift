@@ -18,10 +18,13 @@ class MapViewController: UIViewController {
             $0.map = nil
         }
         gmsMarkers = DataManager.shared.markers.map { marker in
-            let gmsMarker = GMSMarker(position: CLLocationCoordinate2D(latitude: marker.latitude, longitude: marker.longitude))
+            let gmsMarker = GMSMarker(position: marker.location)
             gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hex: marker.color))
             gmsMarker.rotation = marker.rotation
             gmsMarker.map = mapView
+            gmsMarker.title = marker.title
+            gmsMarker.snippet = marker.desc
+            gmsMarker.userData = marker.id
             return gmsMarker
         }
     }
@@ -30,8 +33,7 @@ class MapViewController: UIViewController {
 extension MapViewController : GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
         let newMarker = Marker()
-        newMarker.latitude = coordinate.latitude
-        newMarker.longitude = coordinate.longitude
+        newMarker.location = coordinate
         try? DataManager.shared.addMarker(newMarker)
         reloadMarkers()
     }

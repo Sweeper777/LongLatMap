@@ -37,4 +37,11 @@ extension MapViewController : GMSMapViewDelegate {
         try? DataManager.shared.addMarker(newMarker)
         reloadMarkers()
     }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        guard let index = gmsMarkers.indexes(of: marker).first else {
+            return
+        }
+        performSegue(withIdentifier: "showMarkerEditor", sender: DataManager.shared.markers[index])
+    }
 }

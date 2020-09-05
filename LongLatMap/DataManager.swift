@@ -23,6 +23,8 @@ class DataManager {
     
     func addMarker(_ marker: Marker) throws {
         try realm.write {
+            let maxId: Int = realm.objects(Marker.self).max(ofProperty: "id") ?? 0
+            marker.id = maxId + 1
             realm.add(marker)
         }
     }

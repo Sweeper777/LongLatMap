@@ -65,9 +65,15 @@
                     <navigationItem key="navigationItem" title="New Marker" id="UwC-Si-R0F">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ik6-9G-7LI">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelTapped" destination="rmr-7R-yXk" id="oNr-eg-bD8"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="PWq-W7-g9s">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneTapped" destination="rmr-7R-yXk" id="vOO-S2-k0I"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>

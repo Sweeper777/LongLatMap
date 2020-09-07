@@ -4,6 +4,8 @@ class DMSLongLatInputView : UIView {
     var degreeTextField: LongLatTextField!
     var minuteTextField: LongLatTextField!
     var secondTextField: LongLatTextField!
+    var signSelector: UISegmentedControl!
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,6 +21,8 @@ class DMSLongLatInputView : UIView {
         degreeTextField = LongLatTextField()
         minuteTextField = LongLatTextField()
         secondTextField = LongLatTextField()
+        signSelector = UISegmentedControl(items: ["N", "S"])
+        signSelector.selectedSegmentIndex = 0
         [degreeTextField, minuteTextField, secondTextField].forEach { (tf) in
             tf?.backgroundColor = .tertiarySystemFill
             tf?.placeholder = "00"
@@ -38,7 +42,15 @@ class DMSLongLatInputView : UIView {
         [degreeLabel, minuteLabel, secondLabel].forEach {
             l in l.font = UIFont.systemFont(ofSize: 22)
         }
-        let stackView = UIStackView(arrangedSubviews: [degreeTextField, degreeLabel, minuteTextField, minuteLabel, secondTextField, secondLabel])
+        let stackView = UIStackView(arrangedSubviews:
+            [degreeTextField,
+             degreeLabel,
+             minuteTextField,
+             minuteLabel,
+             secondTextField,
+             secondLabel,
+             signSelector
+        ])
         stackView.axis = .horizontal
         stackView.alignment = .center
         stackView.distribution = .fill

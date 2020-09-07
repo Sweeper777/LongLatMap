@@ -8,6 +8,25 @@ class DMSLongLatInputView : UIView {
     
     let fontSize = 22.f
     
+    enum Mode {
+        case longitude
+        case latitude
+    }
+    
+    var mode = Mode.latitude {
+        didSet {
+            switch mode {
+            case .longitude:
+                signSelector.setTitle("E", forSegmentAt: 0)
+                signSelector.setTitle("W", forSegmentAt: 1)
+                degreeTextField.placeholder = "000"
+            case .latitude:
+                signSelector.setTitle("N", forSegmentAt: 0)
+                signSelector.setTitle("S", forSegmentAt: 1)
+                degreeTextField.placeholder = "00"
+            }
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

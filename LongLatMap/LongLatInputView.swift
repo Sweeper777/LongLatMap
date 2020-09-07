@@ -5,6 +5,11 @@ class LongLatInputView : UIView {
     var okButton: UIButton!
     var dmsInput: DMSLongLatInputView!
     
+    var dmsInputMode: DMSLongLatInputView.Mode {
+        get { dmsInput.mode }
+        set { dmsInput.mode = newValue }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

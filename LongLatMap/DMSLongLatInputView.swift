@@ -1,9 +1,9 @@
 import UIKit
 
 class DMSLongLatInputView : UIView {
-    var degreeTextField: UITextField!
-    var minuteTextField: UITextField!
-    var secondTextField: UITextField!
+    var degreeTextField: LongLatTextField!
+    var minuteTextField: LongLatTextField!
+    var secondTextField: LongLatTextField!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -16,17 +16,18 @@ class DMSLongLatInputView : UIView {
     }
     
     private func commonInit() {
-        degreeTextField = UITextField()
-        minuteTextField = UITextField()
-        secondTextField = UITextField()
+        degreeTextField = LongLatTextField()
+        minuteTextField = LongLatTextField()
+        secondTextField = LongLatTextField()
         [degreeTextField, minuteTextField, secondTextField].forEach { (tf) in
-            tf?.backgroundColor = .tertiarySystemBackground
+            tf?.backgroundColor = .tertiarySystemFill
             tf?.placeholder = "00"
             tf?.borderStyle = .none
             tf?.autocorrectionType = .no
             tf?.keyboardType = .numberPad
-            tf?.layer.cornerRadius = 3
+            tf?.layer.cornerRadius = 10
             tf?.font = UIFont.monospacedDigitSystemFont(ofSize: 22, weight: .regular)
+            tf?.textAlignment = .right
         }
         let degreeLabel = UILabel()
         degreeLabel.text = "°"
@@ -52,3 +53,14 @@ class DMSLongLatInputView : UIView {
     }
 }
 
+class LongLatTextField: UITextField {
+    let padding = 10.f
+
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: padding, dy: padding)
+    }
+
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return self.textRect(forBounds: bounds)
+    }
+}

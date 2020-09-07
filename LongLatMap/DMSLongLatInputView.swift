@@ -6,6 +6,8 @@ class DMSLongLatInputView : UIView {
     var secondTextField: LongLatTextField!
     var signSelector: UISegmentedControl!
     
+    let fontSize = 22.f
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,6 +25,7 @@ class DMSLongLatInputView : UIView {
         secondTextField = LongLatTextField()
         signSelector = UISegmentedControl(items: ["N", "S"])
         signSelector.selectedSegmentIndex = 0
+        signSelector.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: fontSize)], for: .normal)
         [degreeTextField, minuteTextField, secondTextField].forEach { (tf) in
             tf?.backgroundColor = .tertiarySystemFill
             tf?.placeholder = "00"
@@ -30,7 +33,7 @@ class DMSLongLatInputView : UIView {
             tf?.autocorrectionType = .no
             tf?.keyboardType = .numberPad
             tf?.layer.cornerRadius = 10
-            tf?.font = UIFont.monospacedDigitSystemFont(ofSize: 22, weight: .regular)
+            tf?.font = UIFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .regular)
             tf?.textAlignment = .right
         }
         let degreeLabel = UILabel()
@@ -40,7 +43,7 @@ class DMSLongLatInputView : UIView {
         let secondLabel = UILabel()
         secondLabel.text = "'"
         [degreeLabel, minuteLabel, secondLabel].forEach {
-            l in l.font = UIFont.systemFont(ofSize: 22)
+            l in l.font = UIFont.systemFont(ofSize: fontSize)
         }
         let stackView = UIStackView(arrangedSubviews:
             [degreeTextField,

@@ -1,4 +1,5 @@
 import UIKit
+import CoreLocation
 
 class DMSLongLatInputView : UIView {
     var degreeTextField: DMSLongLatTextField!
@@ -28,6 +29,15 @@ class DMSLongLatInputView : UIView {
                 degreeTextField.validRange = 0..<90
             }
         }
+    }
+    
+    var degrees: CLLocationDegrees? {
+        if let degree = degreeTextField.number,
+            let minute = minuteTextField.number,
+            let second = secondTextField.number {
+            return dmsToDecimal(degrees: degree, minutes: minute, seconds: second, positive: signSelector.selectedSegmentIndex == 0)
+        }
+        return nil
     }
     
     override init(frame: CGRect) {
@@ -85,6 +95,9 @@ class DMSLongLatInputView : UIView {
 class DMSLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
     var validRange = 0..<90
+    var number: Int? {
+        text.flatMap(Int.init)
+    }
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: padding, dy: padding)

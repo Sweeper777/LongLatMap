@@ -82,7 +82,7 @@ class DMSLongLatInputView : UIView {
     }
 }
 
-class DMSLongLatTextField: UITextField {
+class DMSLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
     var maximumDigits = 2
 
@@ -112,5 +112,13 @@ class DMSLongLatTextField: UITextField {
         keyboardType = .numberPad
         layer.cornerRadius = 10
         textAlignment = .right
+        delegate = self
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = textField.text ?? ""
+        guard let stringRange = Range(range, in: currentText) else { return false }
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+        return updatedText.count <= maximumDigits
     }
 }

@@ -11,13 +11,13 @@
 		5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */; };
 		5A37B92425007B11001117C1 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37B92325007B11001117C1 /* Marker.swift */; };
 		5A37B92625007D22001117C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37B92525007D22001117C1 /* MapViewController.swift */; };
-		5A37B92A25007F2C001117C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A37B92925007F2C001117C1 /* GoogleService-Info.plist */; };
 		5A37F1CC250475A000DE958A /* LongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37F1CB250475A000DE958A /* LongLatInputView.swift */; };
 		5A37F1CE250476C200DE958A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37F1CD250476C200DE958A /* Utils.swift */; };
 		5A3AC0512501D2C800411D7F /* darkMapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A3AC0502501D2C800411D7F /* darkMapStyle.json */; };
 		5A3AC0532501D62100411D7F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AC0522501D62100411D7F /* DataManager.swift */; };
 		5A4760B32503369F00582780 /* MarkerEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4760B22503369F00582780 /* MarkerEditorViewController.swift */; };
 		5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */; };
+		5AB51556250708C500BB993D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB51555250708C500BB993D /* GoogleService-Info.plist */; };
 		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF62941D868473004217D3 /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF62931D868473004217D3 /* FormTags.swift */; };
 		5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70331D7EB02200252E53 /* AppDelegate.swift */; };
@@ -39,13 +39,13 @@
 		5A171C8F1DF7400600567EEE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A37B92325007B11001117C1 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		5A37B92525007D22001117C1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		5A37B92925007F2C001117C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A37F1CB250475A000DE958A /* LongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatInputView.swift; sourceTree = "<group>"; };
 		5A37F1CD250476C200DE958A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5A3AC0502501D2C800411D7F /* darkMapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = darkMapStyle.json; sourceTree = "<group>"; };
 		5A3AC0522501D62100411D7F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5A4760B22503369F00582780 /* MarkerEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerEditorViewController.swift; sourceTree = "<group>"; };
 		5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSLongLatInputView.swift; sourceTree = "<group>"; };
+		5AB51555250708C500BB993D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		5AFE2B991D81C73800F483DD /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		5AFF62931D868473004217D3 /* FormTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTags.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		5AFF70321D7EB02200252E53 /* LongLatMap */ = {
 			isa = PBXGroup;
 			children = (
-				5A37B92925007F2C001117C1 /* GoogleService-Info.plist */,
+				5AB51555250708C500BB993D /* GoogleService-Info.plist */,
 				5AFF62931D868473004217D3 /* FormTags.swift */,
 				5A37F1CD250476C200DE958A /* Utils.swift */,
 				5A004AB81D885179009EBC86 /* Colors.swift */,
@@ -166,7 +166,7 @@
 				5AFF702D1D7EB02200252E53 /* Frameworks */,
 				5AFF702E1D7EB02200252E53 /* Resources */,
 				379EF42A6EEB473D1F20E859 /* [CP] Embed Pods Frameworks */,
-				10EBB7215F30C49E74520279 /* [CP] Copy Pods Resources */,
+				1EECCC81CC34A78B73B1DAC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,14 +227,14 @@
 				5A3AC0512501D2C800411D7F /* darkMapStyle.json in Resources */,
 				5AFF703E1D7EB02200252E53 /* Assets.xcassets in Resources */,
 				5AFF70391D7EB02200252E53 /* Main.storyboard in Resources */,
-				5A37B92A25007F2C001117C1 /* GoogleService-Info.plist in Resources */,
+				5AB51556250708C500BB993D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10EBB7215F30C49E74520279 /* [CP] Copy Pods Resources */ = {
+		1EECCC81CC34A78B73B1DAC7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

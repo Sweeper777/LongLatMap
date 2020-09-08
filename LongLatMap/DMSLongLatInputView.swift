@@ -1,9 +1,9 @@
 import UIKit
 
 class DMSLongLatInputView : UIView {
-    var degreeTextField: LongLatTextField!
-    var minuteTextField: LongLatTextField!
-    var secondTextField: LongLatTextField!
+    var degreeTextField: DMSLongLatTextField!
+    var minuteTextField: DMSLongLatTextField!
+    var secondTextField: DMSLongLatTextField!
     var signSelector: UISegmentedControl!
     
     let fontSize = 22.f
@@ -39,21 +39,14 @@ class DMSLongLatInputView : UIView {
     }
     
     private func commonInit() {
-        degreeTextField = LongLatTextField()
-        minuteTextField = LongLatTextField()
-        secondTextField = LongLatTextField()
+        degreeTextField = DMSLongLatTextField()
+        minuteTextField = DMSLongLatTextField()
+        secondTextField = DMSLongLatTextField()
         signSelector = UISegmentedControl(items: ["N", "S"])
         signSelector.selectedSegmentIndex = 0
         signSelector.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: fontSize)], for: .normal)
         [degreeTextField, minuteTextField, secondTextField].forEach { (tf) in
-            tf?.backgroundColor = .tertiarySystemFill
-            tf?.placeholder = "00"
-            tf?.borderStyle = .none
-            tf?.autocorrectionType = .no
-            tf?.keyboardType = .numberPad
-            tf?.layer.cornerRadius = 10
             tf?.font = UIFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .regular)
-            tf?.textAlignment = .right
         }
         let degreeLabel = UILabel()
         degreeLabel.text = "°"
@@ -87,7 +80,7 @@ class DMSLongLatInputView : UIView {
     }
 }
 
-class LongLatTextField: UITextField {
+class DMSLongLatTextField: UITextField {
     let padding = 10.f
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -96,5 +89,25 @@ class LongLatTextField: UITextField {
 
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         return self.textRect(forBounds: bounds)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        backgroundColor = .tertiarySystemFill
+        placeholder = "00"
+        borderStyle = .none
+        autocorrectionType = .no
+        keyboardType = .numberPad
+        layer.cornerRadius = 10
+        textAlignment = .right
     }
 }

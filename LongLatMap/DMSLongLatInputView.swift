@@ -20,12 +20,12 @@ class DMSLongLatInputView : UIView {
                 signSelector.setTitle("E", forSegmentAt: 0)
                 signSelector.setTitle("W", forSegmentAt: 1)
                 degreeTextField.placeholder = "000"
-                degreeTextField.maximumDigits = 3
+                degreeTextField.validRange = 0..<180
             case .latitude:
                 signSelector.setTitle("N", forSegmentAt: 0)
                 signSelector.setTitle("S", forSegmentAt: 1)
                 degreeTextField.placeholder = "00"
-                degreeTextField.maximumDigits = 2
+                degreeTextField.validRange = 0..<90
             }
         }
     }
@@ -84,7 +84,7 @@ class DMSLongLatInputView : UIView {
 
 class DMSLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
-    var maximumDigits = 2
+    var validRange = 0..<90
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: padding, dy: padding)
@@ -119,6 +119,13 @@ class DMSLongLatTextField: UITextField, UITextFieldDelegate {
         let currentText = textField.text ?? ""
         guard let stringRange = Range(range, in: currentText) else { return false }
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
-        return updatedText.count <= maximumDigits
+        if updatedText == "" {
+            return true
+        }
+        if let int = Int(updatedText) {
+            return validRange.contains(int)
+        } else {
+            return false
+        }
     }
 }

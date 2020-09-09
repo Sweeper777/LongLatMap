@@ -52,10 +52,13 @@ class DMSLongLatInputView : UIView {
     
     private func commonInit() {
         degreeTextField = DMSLongLatTextField()
+        degreeTextField.tag = 1
         minuteTextField = DMSLongLatTextField()
         minuteTextField.validRange = 0..<60
+        minuteTextField.tag = 2
         secondTextField = DMSLongLatTextField()
         secondTextField.validRange = 0..<60
+        secondTextField.tag = 3
         signSelector = UISegmentedControl(items: ["N", "S"])
         signSelector.selectedSegmentIndex = 0
         signSelector.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: fontSize)], for: .normal)
@@ -138,7 +141,20 @@ class DMSLongLatTextField: UITextField, UITextFieldDelegate {
             return true
         }
         if let int = Int(updatedText) {
-            return validRange.contains(int)
+            let should = validRange.contains(int)
+            
+            let maximumDigits = Int(log10(Double(validRange.upperBound - 1))) + 1
+            if should && string != "" && updatedText.count == maximumDigits {
+                text = updatedText
+                let nextResponderTag = self.tag + 1
+                if let nextResponder = self.superview?.viewWithTag(nextResponderTag) {
+                    nextResponder.becomeFirstResponder()
+                } else {
+                    self.resignFirstResponder()
+                }
+            }
+            
+            return should
         } else {
             return false
         }

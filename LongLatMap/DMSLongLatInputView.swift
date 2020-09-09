@@ -138,6 +138,12 @@ class DMSLongLatTextField: UITextField, UITextFieldDelegate {
         guard let stringRange = Range(range, in: currentText) else { return false }
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
         if updatedText == "" {
+            let previousResponderTag = self.tag - 1
+            if let previousResponder = self.superview?.viewWithTag(previousResponderTag) {
+                DispatchQueue.main.async {
+                    previousResponder.becomeFirstResponder()
+                }
+            }
             return true
         }
         if let int = Int(updatedText) {

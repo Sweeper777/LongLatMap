@@ -95,6 +95,12 @@ class DMSLongLatInputView : UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .clear
     }
+    
+    override func becomeFirstResponder() -> Bool {
+        ([degreeTextField, minuteTextField, secondTextField]
+            .first(where: { $0?.text?.isEmpty ?? false }) ?? secondTextField)?
+            .becomeFirstResponder() ?? false
+    }
 }
 
 class DMSLongLatTextField: UITextField, UITextFieldDelegate {

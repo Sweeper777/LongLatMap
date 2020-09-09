@@ -53,7 +53,9 @@ class DMSLongLatInputView : UIView {
     private func commonInit() {
         degreeTextField = DMSLongLatTextField()
         minuteTextField = DMSLongLatTextField()
+        minuteTextField.validRange = 0..<60
         secondTextField = DMSLongLatTextField()
+        secondTextField.validRange = 0..<60
         signSelector = UISegmentedControl(items: ["N", "S"])
         signSelector.selectedSegmentIndex = 0
         signSelector.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: fontSize)], for: .normal)

@@ -78,6 +78,12 @@ PODS:
   - Realm/Headers (5.3.6)
   - RealmSwift (5.3.6):
     - Realm (= 5.3.6)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
   - SCLAlertView (0.8.1)
   - SwiftyUtils (5.2.0)
 
@@ -88,6 +94,8 @@ DEPENDENCIES:
   - GoogleMaps
   - Realm
   - RealmSwift
+  - RxCocoa
+  - RxSwift
   - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
   - SwiftyUtils
 
@@ -109,6 +117,9 @@ SPEC REPOS:
     - PromisesObjC
     - Realm
     - RealmSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SwiftyUtils
 
 EXTERNAL SOURCES:
@@ -137,9 +148,12 @@ SPEC CHECKSUMS:
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Realm: cd400dd7e5b5bb5c8ae9842eecd73792369e6ec0
   RealmSwift: 99a16dbdee5d6dfb3d91d56088a9f8c15c0871d1
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SCLAlertView: 776813fb1f62248965f37cb7edf4088ee6394460
   SwiftyUtils: 4c99e810e769063dbd5d4e83b486961a5d470aeb
 
-PODFILE CHECKSUM: ade09af1cf6a46f95f1fbcd7bab477c2d57eb600
+PODFILE CHECKSUM: e042512bf449fa9067b0051280378c32798c7f69
 
 COCOAPODS: 1.9.3

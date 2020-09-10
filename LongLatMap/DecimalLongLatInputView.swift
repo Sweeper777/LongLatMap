@@ -38,7 +38,7 @@ class DecimalLongLatInputView: UIView {
 
 fileprivate class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
-    var validRange = -90..<90
+    var validRange: Range<Double> = -90..<90
     var number: Int? {
         text.flatMap(Int.init)
     }
@@ -78,6 +78,16 @@ fileprivate class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
         if updatedText == "" {
             return true
         }
-        return true
+        
+        if updatedText == "-" {
+            return true
+        }
+        
+        if let double = Double(updatedText),
+            validRange.contains(double) {
+            return true
+        } else {
+            return false
+        }
     }
 }

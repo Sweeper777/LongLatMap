@@ -4,6 +4,17 @@ class DecimalLongLatInputView: UIView {
     var degreesTextField: DecimalLongLatTextField!
     let fontSize = 22.f
     
+    var mode = LongLatInputView.Mode.latitude {
+        didSet {
+            switch mode {
+            case .longitude:
+                degreesTextField.validRange = -180..<180
+            case .latitude:
+                degreesTextField.validRange = -90..<90
+            }
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

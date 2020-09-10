@@ -9,12 +9,7 @@ class DMSLongLatInputView : UIView {
     
     let fontSize = 22.f
     
-    enum Mode {
-        case longitude
-        case latitude
-    }
-    
-    var mode = Mode.latitude {
+    var mode = LongLatInputView.Mode.latitude {
         didSet {
             switch mode {
             case .longitude:

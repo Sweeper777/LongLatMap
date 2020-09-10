@@ -6,9 +6,33 @@ class LongLatInputView : UIView {
     var dmsInput: DMSLongLatInputView!
     var decimalInput: DecimalLongLatInputView!
     
-    var dmsInputMode: DMSLongLatInputView.Mode {
+    enum Mode {
+        case longitude
+        case latitude
+    }
+    
+    private var dmsInputMode: Mode {
         get { dmsInput.mode }
         set { dmsInput.mode = newValue }
+    }
+    
+    private var decimalInputMode: Mode {
+        get { decimalInput.mode }
+        set { decimalInput.mode = newValue }
+    }
+    
+    var mode: Mode {
+        get {
+            if modeSelector.selectedSegmentIndex == 0 {
+                return dmsInputMode
+            } else {
+                return decimalInputMode
+            }
+        }
+        set {
+            dmsInputMode = newValue
+            decimalInputMode = newValue
+        }
     }
     
     override init(frame: CGRect) {

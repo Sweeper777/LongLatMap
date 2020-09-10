@@ -2,9 +2,9 @@ import UIKit
 import CoreLocation
 
 class DMSLongLatInputView : UIView {
-    var degreeTextField: DMSLongLatTextField!
-    var minuteTextField: DMSLongLatTextField!
-    var secondTextField: DMSLongLatTextField!
+    private var degreeTextField: DMSLongLatTextField!
+    private var minuteTextField: DMSLongLatTextField!
+    private var secondTextField: DMSLongLatTextField!
     var signSelector: UISegmentedControl!
     
     let fontSize = 22.f
@@ -98,7 +98,7 @@ class DMSLongLatInputView : UIView {
     }
 }
 
-class DMSLongLatTextField: UITextField, UITextFieldDelegate {
+fileprivate class DMSLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
     var validRange = 0..<90
     var number: Int? {

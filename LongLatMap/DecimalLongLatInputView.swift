@@ -1,7 +1,7 @@
 import UIKit
 
 class DecimalLongLatInputView: UIView {
-    var degreesTextField: DecimalLongLatTextField!
+    private var degreesTextField: DecimalLongLatTextField!
     let fontSize = 22.f
     
     var mode = LongLatInputView.Mode.latitude {
@@ -36,7 +36,7 @@ class DecimalLongLatInputView: UIView {
     }
 }
 
-class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
+fileprivate class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
     var validRange = -90..<90
     var number: Int? {

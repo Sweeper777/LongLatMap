@@ -24,10 +24,13 @@ class LongLatInputView : UIView {
     private func commonInit() {
         modeSelector = UISegmentedControl(items: ["DMS".localised, "Decimal".localised])
         modeSelector.selectedSegmentIndex = 0
+        modeSelector.addTarget(self, action: #selector(modeChanged), for: .valueChanged)
+        
         okButton = UIButton(type: .custom)
         okButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
         dmsInput = DMSLongLatInputView()
         decimalInput = DecimalLongLatInputView()
+        decimalInput.isHidden = true
         
         let stackView = UIStackView(arrangedSubviews: [modeSelector, dmsInput, decimalInput, okButton])
         stackView.axis = .vertical
@@ -44,5 +47,15 @@ class LongLatInputView : UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         backgroundColor = .secondarySystemBackground
+    }
+    
+    @objc func modeChanged() {
+        if modeSelector.selectedSegmentIndex == 0 {
+            dmsInput.isHidden = false
+            decimalInput.isHidden = true
+        } else {
+            dmsInput.isHidden = true
+            decimalInput.isHidden = false
+        }
     }
 }

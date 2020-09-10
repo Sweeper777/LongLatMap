@@ -1,7 +1,32 @@
 import UIKit
 
-class DecimalLongLatInputView: UITextField, UITextFieldDelegate {
-    let padding = 20.f
+class DecimalLongLatInputView: UIView {
+    var degreesTextField: DecimalLongLatTextField!
+    let fontSize = 22.f
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        commonInit()
+    }
+    
+    private func commonInit() {
+        degreesTextField = DecimalLongLatTextField()
+        degreesTextField.font = UIFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .regular)
+        degreesTextField.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(degreesTextField)
+        degreesTextField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        degreesTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        degreesTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+    }
+}
+
+class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
+    let padding = 10.f
     var validRange = -90..<90
     var number: Int? {
         text.flatMap(Int.init)

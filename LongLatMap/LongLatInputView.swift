@@ -35,7 +35,7 @@ class LongLatInputView : UIView {
         let stackView = UIStackView(arrangedSubviews: [modeSelector, dmsInput, decimalInput, okButton])
         stackView.axis = .vertical
         stackView.alignment = .center
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fill
         addSubview(stackView)
         stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true

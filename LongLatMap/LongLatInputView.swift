@@ -4,6 +4,7 @@ class LongLatInputView : UIView {
     var modeSelector: UISegmentedControl!
     var okButton: UIButton!
     var dmsInput: DMSLongLatInputView!
+    var decimalInput: DecimalLongLatInputView!
     
     var dmsInputMode: DMSLongLatInputView.Mode {
         get { dmsInput.mode }
@@ -26,16 +27,19 @@ class LongLatInputView : UIView {
         okButton = UIButton(type: .custom)
         okButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
         dmsInput = DMSLongLatInputView()
+        decimalInput = DecimalLongLatInputView()
         
-        let stackView = UIStackView(arrangedSubviews: [modeSelector, dmsInput, okButton])
+        let stackView = UIStackView(arrangedSubviews: [modeSelector, dmsInput, decimalInput, okButton])
         stackView.axis = .vertical
         stackView.alignment = .center
-        stackView.distribution = .fill
+        stackView.distribution = .fillProportionally
         addSubview(stackView)
         stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        
+        decimalInput.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: -16).isActive = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         

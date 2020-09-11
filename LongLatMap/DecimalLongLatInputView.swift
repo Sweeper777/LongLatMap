@@ -105,7 +105,11 @@ fileprivate class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
         placeholder = "0"
         borderStyle = .none
         autocorrectionType = .no
-        keyboardType = .decimalPad
+        if Locale.current.decimalSeparator == "." {
+            keyboardType = .decimalPad
+        } else {
+            keyboardType = .numbersAndPunctuation
+        }
         layer.cornerRadius = 10
         delegate = self
     }

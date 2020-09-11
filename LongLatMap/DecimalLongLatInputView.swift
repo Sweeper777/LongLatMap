@@ -52,7 +52,21 @@ class DecimalLongLatInputView: UIView {
     }
     
     @objc func toggleSign() {
-        
+        if degreesTextField.text.isNilOrEmpty {
+            degreesTextField.text = "-"
+            return
+        }
+        if degreesTextField.text == "-" {
+            degreesTextField.text = ""
+            return
+        }
+        if let double = Double(degreesTextField.text!) {
+            if double > 0 && !degreesTextField.text!.hasPrefix("-") {
+                degreesTextField.text = "-" + degreesTextField.text!
+            } else if double < 0 && degreesTextField.text!.hasPrefix("-") {
+                degreesTextField.text = String(degreesTextField.text!.dropFirst())
+            }
+        }
     }
 }
 

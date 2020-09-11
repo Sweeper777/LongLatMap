@@ -63,9 +63,9 @@ class DMSLongLatInputView : UIView {
         let degreeLabel = UILabel()
         degreeLabel.text = "°"
         let minuteLabel = UILabel()
-        minuteLabel.text = "\""
+        minuteLabel.text = "′"
         let secondLabel = UILabel()
-        secondLabel.text = "'"
+        secondLabel.text = "″"
         [degreeLabel, minuteLabel, secondLabel].forEach {
             l in l.font = UIFont.systemFont(ofSize: fontSize)
         }

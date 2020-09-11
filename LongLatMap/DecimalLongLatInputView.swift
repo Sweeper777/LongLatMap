@@ -2,6 +2,7 @@ import UIKit
 
 class DecimalLongLatInputView: UIView {
     private var degreesTextField: DecimalLongLatTextField!
+    private var signToggler: UIButton!
     let fontSize = 22.f
     
     var mode = LongLatInputView.Mode.latitude {
@@ -29,8 +30,13 @@ class DecimalLongLatInputView: UIView {
         degreesTextField = DecimalLongLatTextField()
         degreesTextField.font = UIFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .regular)
         
+        signToggler = UIButton(type: .system)
+        signToggler.setImage(UIImage(systemName: "plus.slash.minus"), for: .normal)
+        signToggler.addTarget(self, action: #selector(toggleSign), for: .touchUpInside)
+        
         let stackView = UIStackView(arrangedSubviews: [
             degreesTextField,
+            signToggler
         ])
         stackView.axis = .horizontal
         stackView.alignment = .center
@@ -43,6 +49,10 @@ class DecimalLongLatInputView: UIView {
         stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    @objc func toggleSign() {
+        
     }
 }
 

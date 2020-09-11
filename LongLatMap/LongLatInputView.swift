@@ -1,4 +1,5 @@
 import UIKit
+import CoreLocation
 
 class LongLatInputView : UIView {
     var modeSelector: UISegmentedControl!
@@ -32,6 +33,14 @@ class LongLatInputView : UIView {
         set {
             dmsInputMode = newValue
             decimalInputMode = newValue
+        }
+    }
+    
+    var degrees: CLLocationDegrees? {
+        if modeSelector.selectedSegmentIndex == 0 {
+            return dmsInput.degrees
+        } else {
+            return decimalInput.degrees
         }
     }
     

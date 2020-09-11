@@ -1,4 +1,5 @@
 import UIKit
+import CoreLocation
 
 class DecimalLongLatInputView: UIView {
     private var degreesTextField: DecimalLongLatTextField!
@@ -14,6 +15,10 @@ class DecimalLongLatInputView: UIView {
                 degreesTextField.validRange = -90..<90
             }
         }
+    }
+    
+    var degrees: CLLocationDegrees? {
+        degreesTextField.text.flatMap(Double.init)
     }
     
     override init(frame: CGRect) {

@@ -28,11 +28,21 @@ class DecimalLongLatInputView: UIView {
     private func commonInit() {
         degreesTextField = DecimalLongLatTextField()
         degreesTextField.font = UIFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .regular)
-        degreesTextField.translatesAutoresizingMaskIntoConstraints = false
-        self.addSubview(degreesTextField)
-        degreesTextField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        degreesTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        degreesTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        
+        let stackView = UIStackView(arrangedSubviews: [
+            degreesTextField,
+        ])
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        stackView.spacing = 10
+        addSubview(stackView)
+        stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
     }
 }
 

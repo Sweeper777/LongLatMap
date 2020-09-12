@@ -23,7 +23,7 @@ class DecimalLongLatInputView: UIView {
             if let value = newValue {
                 let formatter = NumberFormatter()
                 formatter.locale = Locale(identifier: "en-US")
-                formatter.maximumFractionDigits = 7
+                formatter.maximumFractionDigits = 12
                 degreesTextField.text = formatter.string(from: NSNumber(value: value))
             } else {
                 degreesTextField.text = ""
@@ -48,6 +48,8 @@ class DecimalLongLatInputView: UIView {
         signToggler = UIButton(type: .system)
         signToggler.setImage(UIImage(systemName: "plus.slash.minus"), for: .normal)
         signToggler.addTarget(self, action: #selector(toggleSign), for: .touchUpInside)
+        signToggler.setContentCompressionResistancePriority(.required, for: .horizontal)
+        signToggler.setContentHuggingPriority(.required, for: .horizontal)
         
         let stackView = UIStackView(arrangedSubviews: [
             degreesTextField,

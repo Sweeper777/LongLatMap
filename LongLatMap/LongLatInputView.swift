@@ -37,10 +37,16 @@ class LongLatInputView : UIView {
     }
     
     var degrees: CLLocationDegrees? {
-        if modeSelector.selectedSegmentIndex == 0 {
-            return dmsInput.degrees
-        } else {
-            return decimalInput.degrees
+        get {
+            if modeSelector.selectedSegmentIndex == 0 {
+                return dmsInput.degrees
+            } else {
+                return decimalInput.degrees
+            }
+        }
+        set {
+            dmsInput.degrees = newValue
+            decimalInput.degrees = newValue
         }
     }
     

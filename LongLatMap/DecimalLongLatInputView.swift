@@ -18,7 +18,17 @@ class DecimalLongLatInputView: UIView {
     }
     
     var degrees: CLLocationDegrees? {
-        degreesTextField.text.flatMap(Double.init)
+        get { degreesTextField.text.flatMap(Double.init) }
+        set {
+            if let value = newValue {
+                let formatter = NumberFormatter()
+                formatter.locale = Locale(identifier: "en-US")
+                formatter.maximumFractionDigits = 7
+                degreesTextField.text = formatter.string(from: NSNumber(value: value))
+            } else {
+                degreesTextField.text = ""
+            }
+        }
     }
     
     override init(frame: CGRect) {

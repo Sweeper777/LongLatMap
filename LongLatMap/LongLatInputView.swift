@@ -92,9 +92,17 @@ class LongLatInputView : UIView {
         if modeSelector.selectedSegmentIndex == 0 {
             dmsInput.isHidden = false
             decimalInput.isHidden = true
+            
+            if let decimalDegrees = decimalInput.degrees {
+                dmsInput.degrees = decimalDegrees
+            }
         } else {
             dmsInput.isHidden = true
             decimalInput.isHidden = false
+            
+            if let dmsDegrees = dmsInput.degrees {
+                decimalInput.degrees = dmsDegrees
+            }
         }
     }
 }

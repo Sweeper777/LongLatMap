@@ -27,12 +27,29 @@ class DMSLongLatInputView : UIView {
     }
     
     var degrees: CLLocationDegrees? {
-        if let degree = degreeTextField.number,
-            let minute = minuteTextField.number,
-            let second = secondTextField.number {
-            return dmsToDecimal(degrees: degree, minutes: minute, seconds: second, positive: signSelector.selectedSegmentIndex == 0)
+        get {
+            if let degree = degreeTextField.number,
+                let minute = minuteTextField.number,
+                let second = secondTextField.number {
+                return dmsToDecimal(degrees: degree, minutes: minute, seconds: second, positive: signSelector.selectedSegmentIndex == 0)
+            }
+            return nil
         }
-        return nil
+        
+        set {
+            if let value = newValue {
+                let dms = decimalToDMS(decimalDegrees: value)
+                degreeTextField.text = "\(dms.degrees)"
+                minuteTextField.text = "\(dms.minutes)"
+                secondTextField.text = "\(dms.seconds)"
+                signSelector.selectedSegmentIndex = dms.positive ? 0 : 1
+            } else {
+                degreeTextField.text = ""
+                minuteTextField.text = ""
+                secondTextField.text = ""
+                signSelector.selectedSegmentIndex = 0
+            }
+        }
     }
     
     override init(frame: CGRect) {

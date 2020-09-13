@@ -4,8 +4,11 @@ import Eureka
 class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
     
     @IBOutlet var longLatInputView: LongLatInputView!
+    @IBOutlet var container: UIView!
     
     override func viewDidLoad() {
+        container.layer.cornerRadius = 10
+        
         longLatInputView.degrees = row.value
     }
     

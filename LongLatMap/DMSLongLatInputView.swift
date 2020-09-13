@@ -113,6 +113,11 @@ class DMSLongLatInputView : UIView {
             .first(where: { $0?.text?.isEmpty ?? false }) ?? secondTextField)?
             .becomeFirstResponder() ?? false
     }
+    
+    override var isFirstResponder: Bool {
+        [degreeTextField, minuteTextField, secondTextField]
+            .first(where: { $0?.isFirstResponder ?? false }) != nil
+    }
 }
 
 fileprivate class DMSLongLatTextField: UITextField, UITextFieldDelegate {

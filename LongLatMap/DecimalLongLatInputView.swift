@@ -85,6 +85,14 @@ class DecimalLongLatInputView: UIView {
             }
         }
     }
+    
+    override func becomeFirstResponder() -> Bool {
+        degreesTextField.becomeFirstResponder()
+    }
+    
+    override var isFirstResponder: Bool {
+        degreesTextField.isFirstResponder
+    }
 }
 
 fileprivate class DecimalLongLatTextField: UITextField, UITextFieldDelegate {

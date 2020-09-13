@@ -96,6 +96,9 @@ class LongLatInputView : UIView {
             if let decimalDegrees = decimalInput.degrees {
                 dmsInput.degrees = decimalDegrees
             }
+            if decimalInput.isFirstResponder {
+                _ = dmsInput.becomeFirstResponder()
+            }
         } else {
             dmsInput.isHidden = true
             decimalInput.isHidden = false
@@ -103,6 +106,17 @@ class LongLatInputView : UIView {
             if let dmsDegrees = dmsInput.degrees {
                 decimalInput.degrees = dmsDegrees
             }
+            if dmsInput.isFirstResponder {
+                _ = decimalInput.becomeFirstResponder()
+            }
+        }
+    }
+    
+    override func becomeFirstResponder() -> Bool {
+        if modeSelector.selectedSegmentIndex == 0 {
+            return dmsInput.becomeFirstResponder()
+        } else {
+            return decimalInput.becomeFirstResponder()
         }
     }
 }

@@ -1,5 +1,6 @@
 import UIKit
 import Eureka
+import CoreLocation
 
 class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
     
@@ -9,6 +10,7 @@ class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
     override func viewDidLoad() {
         container.layer.cornerRadius = 10
         
+        longLatInputView.delegate = self
         longLatInputView.degrees = row.value
     }
     
@@ -27,5 +29,13 @@ class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
     
     override func viewWillDisappear(_ animated: Bool) {
         
+    }
+}
+
+extension LongLatInputController : LongLatInputViewDelegate {
+    func didSelectDegrees(_ degrees: CLLocationDegrees) {
+        row.value = degrees
+        row.updateCell()
+        onDismissCallback!(self)
     }
 }

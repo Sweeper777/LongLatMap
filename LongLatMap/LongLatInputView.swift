@@ -7,6 +7,8 @@ class LongLatInputView : UIView {
     var dmsInput: DMSLongLatInputView!
     var decimalInput: DecimalLongLatInputView!
     
+    weak var delegate: LongLatInputViewDelegate?
+    
     enum Mode {
         case longitude
         case latitude
@@ -67,6 +69,8 @@ class LongLatInputView : UIView {
         
         okButton = UIButton(type: .custom)
         okButton.setImage(UIImage(systemName: "checkmark.circle"), for: .normal)
+        okButton.addTarget(self, action: #selector(okTapped), for: .touchUpInside)
+        
         dmsInput = DMSLongLatInputView()
         decimalInput = DecimalLongLatInputView()
         decimalInput.isHidden = true
@@ -119,4 +123,12 @@ class LongLatInputView : UIView {
             return decimalInput.becomeFirstResponder()
         }
     }
+    
+    @objc func okTapped() {
+        degrees.map { delegate?.didSelectDegrees($0) }
+    }
+}
+
+protocol LongLatInputViewDelegate : class {
+    func didSelectDegrees(_ degrees: CLLocationDegrees)
 }

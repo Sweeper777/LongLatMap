@@ -13,7 +13,12 @@ class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        onDismissCallback!(self)
+        if let touch = touches.first {
+            let touchPoint = touch.location(in: self.view)
+            if !container.frame.contains(touchPoint) {
+                onDismissCallback!(self)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

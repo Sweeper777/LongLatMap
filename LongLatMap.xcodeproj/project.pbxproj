@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA52FCE1DDB2BE9D2791AF4 /* libPods-LongLatMapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEE0CE6BF89F4E57CCF8E8D /* libPods-LongLatMapTests.a */; };
 		5A004AB91D885179009EBC86 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A004AB81D885179009EBC86 /* Colors.swift */; };
 		5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */; };
 		5A37B92425007B11001117C1 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37B92325007B11001117C1 /* Marker.swift */; };
@@ -17,6 +18,8 @@
 		5A3AC0532501D62100411D7F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AC0522501D62100411D7F /* DataManager.swift */; };
 		5A4760B32503369F00582780 /* MarkerEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4760B22503369F00582780 /* MarkerEditorViewController.swift */; };
 		5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */; };
+		5AABB919250F084300A7EE5A /* LongLatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABB918250F084200A7EE5A /* LongLatMapTests.swift */; };
+		5AABB920250F0AC200A7EE5A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37F1CD250476C200DE958A /* Utils.swift */; };
 		5AB150C1250CE48A0015ABC9 /* LongLatIRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB150C0250CE48A0015ABC9 /* LongLatIRow.swift */; };
 		5AB150C3250CECAE0015ABC9 /* LongLatInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB150C2250CECAE0015ABC9 /* LongLatInputController.swift */; };
 		5AB3462D2508713800D6845A /* DecimalLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3462C2508713800D6845A /* DecimalLongLatInputView.swift */; };
@@ -32,8 +35,19 @@
 		C19307C897365C82CB31AC71 /* Pods_LongLatMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5AABB91B250F084300A7EE5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AFF70281D7EB02200252E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AFF702F1D7EB02200252E53;
+			remoteInfo = LongLatMap;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E479E06A549FC58A69A4033 /* Pods-LongLatMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMapTests/Pods-LongLatMapTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A004AB81D885179009EBC86 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5A171C861DF737F800567EEE /* MLScreenshot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MLScreenshot.framework; path = "Pods/../build/Debug-iphoneos/MLScreenshot/MLScreenshot.framework"; sourceTree = "<group>"; };
 		5A171C8B1DF73FFE00567EEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -48,6 +62,9 @@
 		5A3AC0522501D62100411D7F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5A4760B22503369F00582780 /* MarkerEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerEditorViewController.swift; sourceTree = "<group>"; };
 		5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSLongLatInputView.swift; sourceTree = "<group>"; };
+		5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongLatMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AABB918250F084200A7EE5A /* LongLatMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatMapTests.swift; sourceTree = "<group>"; };
+		5AABB91A250F084300A7EE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AB150C0250CE48A0015ABC9 /* LongLatIRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatIRow.swift; sourceTree = "<group>"; };
 		5AB150C2250CECAE0015ABC9 /* LongLatInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatInputController.swift; sourceTree = "<group>"; };
 		5AB3462C2508713800D6845A /* DecimalLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalLongLatInputView.swift; sourceTree = "<group>"; };
@@ -76,11 +93,21 @@
 		5AFFAD4D1D96BD410012A94D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5AFFAD4E1D96BD420012A94D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5AFFF3E81D91AF0C007E8913 /* MapType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapType.swift; sourceTree = "<group>"; };
+		C722F8798F7214BA25B5E665 /* Pods-LongLatMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMapTests/Pods-LongLatMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap.debug.xcconfig"; sourceTree = "<group>"; };
 		E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongLatMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-LongLatMap/Pods-LongLatMap.release.xcconfig"; sourceTree = "<group>"; };
+		ECEE0CE6BF89F4E57CCF8E8D /* libPods-LongLatMapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LongLatMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5AABB913250F084200A7EE5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA52FCE1DDB2BE9D2791AF4 /* libPods-LongLatMapTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AFF702D1D7EB02200252E53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,10 +119,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AABB917250F084200A7EE5A /* LongLatMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AABB918250F084200A7EE5A /* LongLatMapTests.swift */,
+				5AABB91A250F084300A7EE5A /* Info.plist */,
+			);
+			path = LongLatMapTests;
+			sourceTree = "<group>";
+		};
 		5AFF70271D7EB02200252E53 = {
 			isa = PBXGroup;
 			children = (
 				5AFF70321D7EB02200252E53 /* LongLatMap */,
+				5AABB917250F084200A7EE5A /* LongLatMapTests */,
 				5AFF70311D7EB02200252E53 /* Products */,
 				784E515126E8EAE3ACEC428A /* Pods */,
 				FA81AA67FC7E81878EAA822B /* Frameworks */,
@@ -106,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFF70301D7EB02200252E53 /* LongLatMap.app */,
+				5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +183,8 @@
 			children = (
 				D1B595A3B6F39532DF4B213D /* Pods-LongLatMap.debug.xcconfig */,
 				E80FF195E43A9CEFB30D5D40 /* Pods-LongLatMap.release.xcconfig */,
+				C722F8798F7214BA25B5E665 /* Pods-LongLatMapTests.debug.xcconfig */,
+				1E479E06A549FC58A69A4033 /* Pods-LongLatMapTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -159,6 +199,7 @@
 				5AFF70491D7EB1B100252E53 /* EZSwiftExtensions.framework */,
 				5AFF704A1D7EB1B100252E53 /* ISHHoverBar.framework */,
 				011B55DC0C7150689C34DEBD /* Pods_LongLatMap.framework */,
+				ECEE0CE6BF89F4E57CCF8E8D /* libPods-LongLatMapTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +207,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5AABB915250F084200A7EE5A /* LongLatMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AABB91F250F084300A7EE5A /* Build configuration list for PBXNativeTarget "LongLatMapTests" */;
+			buildPhases = (
+				8396814747462D1EC1BF1049 /* [CP] Check Pods Manifest.lock */,
+				5AABB912250F084200A7EE5A /* Sources */,
+				5AABB913250F084200A7EE5A /* Frameworks */,
+				5AABB914250F084200A7EE5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AABB91C250F084300A7EE5A /* PBXTargetDependency */,
+			);
+			name = LongLatMapTests;
+			productName = LongLatMapTests;
+			productReference = 5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5AFF702F1D7EB02200252E53 /* LongLatMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AFF70451D7EB02200252E53 /* Build configuration list for PBXNativeTarget "LongLatMap" */;
@@ -192,10 +252,16 @@
 		5AFF70281D7EB02200252E53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Mulang Su";
 				TargetAttributes = {
+					5AABB915250F084200A7EE5A = {
+						CreatedOnToolsVersion = 11.7;
+						DevelopmentTeam = E9MW74DJ4Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5AFF702F1D7EB02200252E53;
+					};
 					5AFF702F1D7EB02200252E53 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = E9MW74DJ4Y;
@@ -221,11 +287,19 @@
 			projectRoot = "";
 			targets = (
 				5AFF702F1D7EB02200252E53 /* LongLatMap */,
+				5AABB915250F084200A7EE5A /* LongLatMapTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5AABB914250F084200A7EE5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AFF702E1D7EB02200252E53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,8 +343,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LongLatMap/Pods-LongLatMap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities-framework/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC-framework/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -278,7 +352,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb-framework/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -297,6 +371,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LongLatMap/Pods-LongLatMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8396814747462D1EC1BF1049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LongLatMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6CDAEC0DB4E3D3A098E5D96 /* [CP] Check Pods Manifest.lock */ = {
@@ -320,6 +416,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5AABB912250F084200A7EE5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AABB919250F084300A7EE5A /* LongLatMapTests.swift in Sources */,
+				5AABB920250F0AC200A7EE5A /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AFF702C1D7EB02200252E53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +448,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AABB91C250F084300A7EE5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AFF702F1D7EB02200252E53 /* LongLatMap */;
+			targetProxy = 5AABB91B250F084300A7EE5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A171C8C1DF73FFE00567EEE /* InfoPlist.strings */ = {
@@ -392,6 +505,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5AABB91D250F084300A7EE5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C722F8798F7214BA25B5E665 /* Pods-LongLatMapTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9MW74DJ4Y;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LongLatMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sweeper777.LongLatMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongLatMap.app/LongLatMap";
+			};
+			name = Debug;
+		};
+		5AABB91E250F084300A7EE5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E479E06A549FC58A69A4033 /* Pods-LongLatMapTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E9MW74DJ4Y;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = LongLatMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.sweeper777.LongLatMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongLatMap.app/LongLatMap";
+			};
+			name = Release;
+		};
 		5AFF70431D7EB02200252E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -531,6 +714,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5AABB91F250F084300A7EE5A /* Build configuration list for PBXNativeTarget "LongLatMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AABB91D250F084300A7EE5A /* Debug */,
+				5AABB91E250F084300A7EE5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5AFF702B1D7EB02200252E53 /* Build configuration list for PBXProject "LongLatMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

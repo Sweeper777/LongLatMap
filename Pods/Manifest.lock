@@ -1,5 +1,7 @@
 PODS:
   - Eureka (5.2.1)
+  - Firebase (6.31.1):
+    - Firebase/Core (= 6.31.1)
   - Firebase/AdMob (6.31.1):
     - Firebase/CoreOnly
     - Google-Mobile-Ads-SDK (~> 7.50)
@@ -89,6 +91,7 @@ PODS:
 
 DEPENDENCIES:
   - Eureka
+  - Firebase
   - Firebase/AdMob
   - Firebase/Core
   - GoogleMaps
@@ -154,6 +157,6 @@ SPEC CHECKSUMS:
   SCLAlertView: 776813fb1f62248965f37cb7edf4088ee6394460
   SwiftyUtils: 4c99e810e769063dbd5d4e83b486961a5d470aeb
 
-PODFILE CHECKSUM: e042512bf449fa9067b0051280378c32798c7f69
+PODFILE CHECKSUM: 465561a0601e1a0454ac481b70c5ccba146640f9
 
 COCOAPODS: 1.9.3

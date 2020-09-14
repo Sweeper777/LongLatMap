@@ -37,6 +37,16 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5AABB915250F084200A7EE5A"
+               BuildableName = "LongLatMapTests.xctest"
+               BlueprintName = "LongLatMapTests"
+               ReferencedContainer = "container:LongLatMap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

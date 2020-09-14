@@ -16,3 +16,7 @@ target 'LongLatMap' do
   pod 'RxCocoa'
   pod 'RxSwift'
 end
+target 'LongLatMapTests' do
+    inherit! :search_paths
+    pod 'Firebase'
+end

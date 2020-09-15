@@ -38,4 +38,20 @@ class LongLatMapTests: XCTestCase {
         XCTAssertEqual(result.seconds, 39)
         XCTAssertEqual(result.positive, false)
     }
+    
+    func testDMStoDD() {
+        var result = dmsToDecimal(degrees: 25, minutes: 55, seconds: 55, positive: true)
+        XCTAssertEqual(result, 25.931944, accuracy: 1/7200.0)
+        result = dmsToDecimal(degrees: 38, minutes: 49, seconds: 40, positive: true)
+        XCTAssertEqual(result, 38.827866, accuracy: 1/7200.0)
+        result = dmsToDecimal(degrees: 98, minutes: 33, seconds: 9, positive: true)
+        XCTAssertEqual(result, 98.552419, accuracy: 1/7200.0)
+        
+        result = dmsToDecimal(degrees: 65, minutes: 39, seconds: 13, positive: false)
+        XCTAssertEqual(result, -65.653738, accuracy: 1/7200.0)
+        result = dmsToDecimal(degrees: 153, minutes: 36, seconds: 22, positive: false)
+        XCTAssertEqual(result, -153.606058, accuracy: 1/7200.0)
+        result = dmsToDecimal(degrees: 50, minutes: 54, seconds: 39, positive: false)
+        XCTAssertEqual(result, -50.910949, accuracy: 1/7200.0)
+    }
 }

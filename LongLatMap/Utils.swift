@@ -38,4 +38,18 @@ class LongLatFormatter {
         return f
     }()
     
+    func string(for degrees: CLLocationDegrees) -> String {
+        if longLatStyle == .dd {
+            return ddNumberFormatter.string(from: NSNumber(value: degrees)) ?? "\(degrees)"
+        } else {
+            let dms = decimalToDMS(decimalDegrees: degrees)
+            let direction: String
+            if mode == .latitude {
+                direction = dms.positive ? "N" : "S"
+            } else {
+                direction = dms.positive ? "E" : "W"
+            }
+            return "\(dms.degrees)° \(dms.minutes)′ \(dms.seconds)″ \(direction)"
+        }
+    }
 }

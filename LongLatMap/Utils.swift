@@ -21,3 +21,21 @@ func decimalToDMS(decimalDegrees: CLLocationDegrees) -> (degrees: Int, minutes: 
     let seconds = Int(round(remainder / (1.0 / 3600.0)))
     return (degrees, minutes, seconds, positive)
 }
+
+class LongLatFormatter {
+    enum LongLatStyle {
+        case dms
+        case dd
+    }
+    
+    var mode: LongLatInputView.Mode = .latitude
+    var longLatStyle: LongLatStyle = .dms
+    private var ddNumberFormatter: NumberFormatter = {
+        () -> NumberFormatter in
+        let f = NumberFormatter()
+        f.maximumFractionDigits = 7
+        f.numberStyle = .decimal
+        return f
+    }()
+    
+}

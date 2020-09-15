@@ -4,6 +4,7 @@ import CoreLocation
 
 final class LongLatRow: SelectorRow<LongLatCell>, RowType {
     var mode: LongLatInputView.Mode = .latitude
+    let longLatFormatter = LongLatFormatter()
     
     public required init(tag: String?) {
         super.init(tag: tag)
@@ -16,14 +17,8 @@ final class LongLatRow: SelectorRow<LongLatCell>, RowType {
             guard let degrees = x else {
                 return ""
             }
-            let dms = decimalToDMS(decimalDegrees: degrees)
-            let direction: String
-            if self.mode == .latitude {
-                direction = dms.positive ? "N" : "S"
-            } else {
-                direction = dms.positive ? "E" : "W"
-            }
-            return "\(dms.degrees)°\(dms.minutes)′\(dms.seconds)″\(direction)"
+            self.longLatFormatter.mode = self.mode
+            return self.longLatFormatter.string(for: degrees)
         }
     }
     

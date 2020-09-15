@@ -17,7 +17,7 @@ func decimalToDMS(decimalDegrees: CLLocationDegrees) -> (degrees: Int, minutes: 
     let degrees = Int(absVal)
     var remainder = absVal - Double(degrees)
     let minutes = Int(remainder / (1.0 / 60.0))
-    remainder.formRemainder(dividingBy: 1.0 / 60.0)
+    remainder -= Double(minutes) * (1.0 / 60.0)
     let seconds = Int(round(remainder / (1.0 / 3600.0)))
     return (degrees, minutes, seconds, positive)
 }

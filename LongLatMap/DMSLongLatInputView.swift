@@ -39,9 +39,9 @@ class DMSLongLatInputView : UIView {
         set {
             if let value = newValue {
                 let dms = decimalToDMS(decimalDegrees: value)
-                degreeTextField.text = "\(dms.degrees)"
-                minuteTextField.text = "\(dms.minutes)"
-                secondTextField.text = "\(dms.seconds)"
+                degreeTextField.number = dms.degrees
+                minuteTextField.number = dms.minutes
+                secondTextField.number = dms.seconds
                 signSelector.selectedSegmentIndex = dms.positive ? 0 : 1
             } else {
                 degreeTextField.text = ""
@@ -76,6 +76,7 @@ class DMSLongLatInputView : UIView {
         signSelector.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: fontSize)], for: .normal)
         [degreeTextField, minuteTextField, secondTextField].forEach { (tf) in
             tf?.font = UIFont.monospacedDigitSystemFont(ofSize: fontSize, weight: .regular)
+            
         }
         let degreeLabel = UILabel()
         degreeLabel.text = "°"
@@ -124,7 +125,14 @@ fileprivate class DMSLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
     var validRange = 0..<90
     var number: Int? {
-        text.flatMap(Int.init)
+        get { text == "" ? 0 : text.flatMap(Int.init) }
+        set {
+            if newValue == nil || newValue == 0 {
+                text = ""
+            } else {
+                text = "\(newValue!)"
+            }
+        }
     }
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {

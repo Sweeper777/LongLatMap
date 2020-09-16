@@ -18,11 +18,15 @@ class DecimalLongLatInputView: UIView {
     }
     
     var degrees: CLLocationDegrees? {
-        get { degreesTextField.text.flatMap(Double.init) }
+        get { degreesTextField.text == "" ? 0 : degreesTextField.text.flatMap(Double.init) }
         set {
+            if newValue == 0 {
+                degreesTextField.text = ""
+                return
+            }
             if let value = newValue {
                 let formatter = NumberFormatter()
-                formatter.locale = Locale(identifier: "en-US")
+                formatter.locale = Locale(identifier: "en_US_POSIX")
                 formatter.maximumFractionDigits = 12
                 degreesTextField.text = formatter.string(from: NSNumber(value: value))
             } else {
@@ -98,9 +102,6 @@ class DecimalLongLatInputView: UIView {
 fileprivate class DecimalLongLatTextField: UITextField, UITextFieldDelegate {
     let padding = 10.f
     var validRange: Range<Double> = -90..<90
-    var number: Int? {
-        text.flatMap(Int.init)
-    }
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: padding, dy: padding)

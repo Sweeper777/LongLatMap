@@ -96,6 +96,9 @@ class DMSLongLatInputView : UIView {
              secondLabel,
              signSelector
         ])
+        stackView.arrangedSubviews.forEach { (v) in
+            v.setContentCompressionResistancePriority(.required, for: .horizontal)
+        }
         stackView.axis = .horizontal
         stackView.alignment = .center
         stackView.distribution = .fill

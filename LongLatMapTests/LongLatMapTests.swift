@@ -54,4 +54,18 @@ class LongLatMapTests: XCTestCase {
         result = dmsToDecimal(degrees: 50, minutes: 54, seconds: 39, positive: false)
         XCTAssertEqual(result, -50.910949, accuracy: 1/7200.0)
     }
+    
+    func testToDMSRounding() {
+        var result = decimalToDMS(decimalDegrees: 123.5666666)
+        XCTAssertEqual(result.degrees, 123)
+        XCTAssertEqual(result.minutes, 34)
+        XCTAssertEqual(result.seconds, 0)
+        XCTAssertEqual(result.positive, true)
+        
+        result = decimalToDMS(decimalDegrees: 81.999972)
+        XCTAssertEqual(result.degrees, 82)
+        XCTAssertEqual(result.minutes, 0)
+        XCTAssertEqual(result.seconds, 0)
+        XCTAssertEqual(result.positive, true)
+    }
 }

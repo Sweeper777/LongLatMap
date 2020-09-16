@@ -6,9 +6,17 @@ class MarkerEditorViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form +++ LongLatRow(tagLatitude) {
+        form +++ Section("Location".localised)
+        <<< LongLatRow(tagLatitude) {
             row in
             row.title = "Latitude".localised
+            row.value = 0
+        }
+        <<< LongLatRow(tagLongitude) {
+            row in
+            row.title = "Longitude".localised
+            row.mode = .longitude
+            row.value = 0
         }
     }
     

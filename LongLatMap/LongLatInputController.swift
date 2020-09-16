@@ -6,12 +6,14 @@ class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
     
     @IBOutlet var longLatInputView: LongLatInputView!
     @IBOutlet var container: UIView!
+    var mode: LongLatInputView.Mode = .latitude
     
     override func viewDidLoad() {
         container.layer.cornerRadius = 10
         
         longLatInputView.delegate = self
         longLatInputView.degrees = row.value
+        longLatInputView.mode = mode
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

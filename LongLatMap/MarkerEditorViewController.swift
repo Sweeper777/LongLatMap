@@ -17,7 +17,11 @@ class MarkerEditorViewController: FormViewController {
             row.title = "Longitude".localised
             row.mode = .longitude
             row.value = 0
-        }
+        }.onPresent({ (form, presented) in
+            if let longLatInputVC = presented as? LongLatInputController {
+                longLatInputVC.mode = .longitude
+            }
+        })
     }
     
     @IBAction func doneTapped() {

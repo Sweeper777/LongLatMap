@@ -86,6 +86,7 @@ class LongLatInputView : UIView {
         stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         
         decimalInput.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: -16).isActive = true
+        dmsInput.widthAnchor.constraint(equalTo: stackView.widthAnchor, constant: -16).isActive = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         

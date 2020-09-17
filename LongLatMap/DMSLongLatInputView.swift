@@ -215,4 +215,11 @@ fileprivate class DMSLongLatTextField: UITextField, UITextFieldDelegate {
             return false
         }
     }
+    
+    override func deleteBackward() {
+        if text == "" {
+            goToPreviousField()?.deleteBackward()
+        }
+        super.deleteBackward()
+    }
 }

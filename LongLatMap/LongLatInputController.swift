@@ -36,6 +36,7 @@ class LongLatInputController: SelectorViewController<SelectorRow<LongLatCell>> {
 
 extension LongLatInputController : LongLatInputViewDelegate {
     func didSelectDegrees(_ degrees: CLLocationDegrees) {
+        print(degrees)
         row.value = degrees
         row.updateCell()
         onDismissCallback!(self)

@@ -98,6 +98,7 @@ class DMSLongLatInputView : UIView {
         ])
         stackView.arrangedSubviews.forEach { (v) in
             v.setContentCompressionResistancePriority(.required, for: .horizontal)
+            v.setContentHuggingPriority(.required, for: .horizontal)
         }
         stackView.axis = .horizontal
         stackView.alignment = .center
@@ -105,8 +106,9 @@ class DMSLongLatInputView : UIView {
         addSubview(stackView)
         stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+//        stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+//        stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .clear

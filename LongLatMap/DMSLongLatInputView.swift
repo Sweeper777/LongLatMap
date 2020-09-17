@@ -169,17 +169,36 @@ fileprivate class DMSLongLatTextField: UITextField, UITextFieldDelegate {
         delegate = self
     }
     
+    @discardableResult
+    fileprivate func goToPreviousField() -> UITextField? {
+        let previousResponderTag = self.tag - 1
+        if let previousResponder = self.superview?.viewWithTag(previousResponderTag) {
+            DispatchQueue.main.async {
+                previousResponder.becomeFirstResponder()
+            }
+            return previousResponder as? UITextField
+        }
+        return nil
+    }
+    
+    @discardableResult
+    fileprivate func goToNextField() -> UITextField? {
+        let nextResponderTag = self.tag + 1
+        if let nextResponder = self.superview?.viewWithTag(nextResponderTag) {
+            nextResponder.becomeFirstResponder()
+            return nextResponder as? UITextField
+        } else {
+            self.resignFirstResponder()
+            return nil
+        }
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = textField.text ?? ""
         guard let stringRange = Range(range, in: currentText) else { return false }
         let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
         if updatedText == "" {
-            let previousResponderTag = self.tag - 1
-            if let previousResponder = self.superview?.viewWithTag(previousResponderTag) {
-                DispatchQueue.main.async {
-                    previousResponder.becomeFirstResponder()
-                }
-            }
+            goToPreviousField()
             return true
         }
         if let int = Int(updatedText) {
@@ -188,12 +207,7 @@ fileprivate class DMSLongLatTextField: UITextField, UITextFieldDelegate {
             let maximumDigits = Int(log10(Double(validRange.upperBound - 1))) + 1
             if should && string != "" && updatedText.count == maximumDigits {
                 text = updatedText
-                let nextResponderTag = self.tag + 1
-                if let nextResponder = self.superview?.viewWithTag(nextResponderTag) {
-                    nextResponder.becomeFirstResponder()
-                } else {
-                    self.resignFirstResponder()
-                }
+                goToNextField()
             }
             
             return should

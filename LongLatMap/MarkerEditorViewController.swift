@@ -40,6 +40,27 @@ class MarkerEditorViewController: FormViewController {
                 )
             ]
         })
+        <<< SliderRow(tagRotation) {
+            row in
+            row.title = "Rotation (°)".localised
+            row.cell.slider.minimumValue = -180
+            row.cell.slider.maximumValue = 180
+            row.value = 0
+            row.steps = 360
+        }
+        
+        form +++ TextRow(tagTitle) {
+            row in
+            row.title = "Title".localised
+            row.value = ""
+        }
+        
+        form +++ Section("description".localised)
+            
+        <<< TextAreaRow(tagDescription) {
+            row in
+            row.value = ""
+        }
     }
     
     @IBAction func doneTapped() {

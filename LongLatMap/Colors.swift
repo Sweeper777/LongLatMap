@@ -1,6 +1,6 @@
 import Foundation
 
-enum Color: String, CustomStringConvertible {
+enum Color: String, CustomStringConvertible, CaseIterable {
     case red = "Red"
     case orange = "Orange"
     case yellow = "Yellow"

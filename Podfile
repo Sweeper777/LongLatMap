@@ -15,6 +15,7 @@ target 'LongLatMap' do
   pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
   pod 'RxCocoa'
   pod 'RxSwift'
+  pod 'ColorPickerRow'
 end
 target 'LongLatMapTests' do
     inherit! :search_paths

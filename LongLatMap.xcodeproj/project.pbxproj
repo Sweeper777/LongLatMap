@@ -17,6 +17,8 @@
 		5A3AC0512501D2C800411D7F /* darkMapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A3AC0502501D2C800411D7F /* darkMapStyle.json */; };
 		5A3AC0532501D62100411D7F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AC0522501D62100411D7F /* DataManager.swift */; };
 		5A4760B32503369F00582780 /* MarkerEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4760B22503369F00582780 /* MarkerEditorViewController.swift */; };
+		5A6AA98E25144DD400CBC400 /* MarkerRotationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */; };
+		5A6AA99025144E3000CBC400 /* MarkerRotationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */; };
 		5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */; };
 		5A9ECF562511A777006C3C6B /* LongLatFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */; };
 		5AABB919250F084300A7EE5A /* LongLatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABB918250F084200A7EE5A /* LongLatMapTests.swift */; };
@@ -62,6 +64,8 @@
 		5A3AC0502501D2C800411D7F /* darkMapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = darkMapStyle.json; sourceTree = "<group>"; };
 		5A3AC0522501D62100411D7F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5A4760B22503369F00582780 /* MarkerEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerEditorViewController.swift; sourceTree = "<group>"; };
+		5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerRotationRow.swift; sourceTree = "<group>"; };
+		5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerRotationCell.xib; sourceTree = "<group>"; };
 		5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSLongLatInputView.swift; sourceTree = "<group>"; };
 		5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatFormatter.swift; sourceTree = "<group>"; };
 		5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongLatMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +170,8 @@
 				5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */,
 				5AB3462C2508713800D6845A /* DecimalLongLatInputView.swift */,
 				5AB150C0250CE48A0015ABC9 /* LongLatIRow.swift */,
+				5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */,
+				5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */,
 				5AB150C2250CECAE0015ABC9 /* LongLatInputController.swift */,
 				5A37B92525007D22001117C1 /* MapViewController.swift */,
 				5A4760B22503369F00582780 /* MarkerEditorViewController.swift */,
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */,
+				5A6AA99025144E3000CBC400 /* MarkerRotationCell.xib in Resources */,
 				5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */,
 				5AFFAD491D96BD3E0012A94D /* Localizable.strings in Resources */,
 				5A3AC0512501D2C800411D7F /* darkMapStyle.json in Resources */,
@@ -445,6 +452,7 @@
 				5A9ECF562511A777006C3C6B /* LongLatFormatter.swift in Sources */,
 				5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
+				5A6AA98E25144DD400CBC400 /* MarkerRotationRow.swift in Sources */,
 				5A4760B32503369F00582780 /* MarkerEditorViewController.swift in Sources */,
 				5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */,
 				5AFF62941D868473004217D3 /* FormTags.swift in Sources */,

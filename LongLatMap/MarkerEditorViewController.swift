@@ -1,12 +1,13 @@
 import UIKit
 import Eureka
+import ColorPickerRow
 
 class MarkerEditorViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form +++ Section("Location".localised)
+        form +++ Section("location".localised)
         <<< LongLatRow(tagLatitude) {
             row in
             row.title = "Latitude".localised
@@ -21,6 +22,23 @@ class MarkerEditorViewController: FormViewController {
             if let longLatInputVC = presented as? LongLatInputController {
                 longLatInputVC.mode = .longitude
             }
+        })
+        
+        form +++ Section()
+        <<< ColorPickerRow(tagColor) {
+            row in
+            row.title = "Color".localised
+            row.value = .red
+            row.showsPaletteNames = false
+        }.cellSetup({ (cell, row) in
+            cell.palettes = [
+                ColorPalette(
+                    name: "All",
+                    palette: Color.allCases.map {
+                        ColorSpec(hex: "#" + $0.hexString, name: $0.description)
+                    }
+                )
+            ]
         })
     }
     

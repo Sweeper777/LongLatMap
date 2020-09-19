@@ -19,6 +19,14 @@ public class MarkerRotationCell: Cell<Int>, CellType {
     }
     
     @objc func markerPanned(_ panGR: UIPanGestureRecognizer) {
+        guard panGR.numberOfTouches > 0 else { return }
+        let panPoint = panGR.location(ofTouch: 0, in: containerView)
+        let centre = CGPoint(x: containerView.bounds.midX, y: containerView.bounds.midY)
+        let (x, y) = (x: panPoint.x - centre.x, y: centre.y - panPoint.y)
+        let angle = atan2(x, y)
+        let degrees = Int(round(angle / .pi * 180))
+        row.value = degrees
+        row.updateCell()
     }
     
     public override func update() {

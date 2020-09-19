@@ -21,6 +21,16 @@ public class MarkerRotationCell: Cell<Int>, CellType {
     @objc func markerPanned(_ panGR: UIPanGestureRecognizer) {
     }
     
+    public override func update() {
+        super.update()
+        valueLabel.text = "\(row.value ?? 0)°"
+        setMarkerRotation(to: row.value ?? 0)
+    }
+    
+    func setMarkerRotation(to degrees: Int) {
+        let radians = degrees.f / 180 * .pi
+        markerView.transform = CGAffineTransform(rotationAngle: radians)
+    }
 }
 
 public final class MarkerRotationRow: Row<MarkerRotationCell>, RowType {

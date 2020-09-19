@@ -20,7 +20,7 @@
 "Longitude" = "經度";
 "Latitude" = "緯度";
 "Color" = "顏色";
-"Rotation (°)" = "旋轉 (°)";
+"Rotation" = "旋轉";
 "Title" = "標題";
 "description" = "說明";
 "Error" = "錯誤";

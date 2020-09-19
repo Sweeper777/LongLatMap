@@ -20,7 +20,7 @@
 "Longitude" = "经度";
 "Latitude" = "纬度";
 "Color" = "颜色";
-"Rotation (°)" = "旋转 (°)";
+"Rotation" = "旋转";
 "Title" = "标题";
 "description" = "说明";
 "Error" = "错误";

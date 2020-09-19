@@ -20,7 +20,7 @@
 "Longitude" = "経度";
 "Latitude" = "緯度";
 "Color" = "色";
-"Rotation (°)" = "回転 (°)";
+"Rotation" = "回転";
 "Title" = "タイトル";
 "description" = "説明";
 "Error" = "エラー";

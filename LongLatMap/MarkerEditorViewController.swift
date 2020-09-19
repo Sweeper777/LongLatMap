@@ -40,13 +40,10 @@ class MarkerEditorViewController: FormViewController {
                 )
             ]
         })
-        <<< SliderRow(tagRotation) {
+        <<< MarkerRotationRow(tagRotation) {
             row in
-            row.title = "Rotation (°)".localised
-            row.cell.slider.minimumValue = -180
-            row.cell.slider.maximumValue = 180
-            row.value = 0
-            row.steps = 360
+            row.titleText = "Rotation".localised
+            row.value = 90
         }
         
         form +++ TextRow(tagTitle) {

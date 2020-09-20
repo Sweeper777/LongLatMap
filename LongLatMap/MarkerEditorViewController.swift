@@ -40,10 +40,20 @@ class MarkerEditorViewController: FormViewController {
                 )
             ]
         })
+            
+        <<< LabelRow(tagRotationLabel) {
+            row in
+            row.title = "Rotation".localised
+        }
         <<< MarkerRotationRow(tagRotation) {
             row in
-            row.titleText = "Rotation".localised
             row.value = 90
+            row.cell.height = { 112 }
+        }.onChange {
+            row in
+            let labelRow = self.form.rowBy(tag: tagRotationLabel) as? RowOf<String>
+            labelRow?.value = "\(row.value ?? 0)°"
+            labelRow?.updateCell()
         }
         
         form +++ TextRow(tagTitle) {

@@ -31,14 +31,11 @@ class MarkerEditorViewController: FormViewController {
             row.value = .red
             row.showsPaletteNames = false
         }.cellSetup({ (cell, row) in
-            cell.palettes = [
-                ColorPalette(
-                    name: "All",
-                    palette: Color.allCases.map {
-                        ColorSpec(hex: "#" + $0.hexString, name: $0.description)
-                    }
-                )
-            ]
+            cell.palettes = Color.allCases.map {
+                ColorPalette(name: $0.description, palette: [
+                    ColorSpec(hex: "#" + $0.hexString, name: $0.description)
+                ])
+            }
         })
             
         <<< LabelRow(tagRotationLabel) {

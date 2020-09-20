@@ -38,6 +38,16 @@ public class MarkerRotationCell: Cell<Int>, CellType {
     }
 }
 
+class MarkerRotationCellBackgroundView: UIView {
+    override func draw(_ rect: CGRect) {
+        let centre = CGRect(x: bounds.midX, y: bounds.midY, width: 0, height: 0)
+        let circleRect = centre.insetBy(dx: -50, dy: -50)
+        let path = UIBezierPath(ovalIn: circleRect)
+        UIColor.tertiarySystemGroupedBackground.setFill()
+        path.fill()
+    }
+}
+
 public final class MarkerRotationRow: Row<MarkerRotationCell>, RowType {
     required public init(tag: String?) {
         super.init(tag: tag)

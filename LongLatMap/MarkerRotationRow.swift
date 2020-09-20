@@ -7,14 +7,16 @@ public class MarkerRotationCell: Cell<Int>, CellType {
     
     public override func setup() {
         super.setup()
-        let gestureRecogniser = UIPanGestureRecognizer(target: self, action: #selector(markerPanned(_:)))
-        self.addGestureRecognizer(gestureRecogniser)
+        let panRecogniser = UIPanGestureRecognizer(target: self, action: #selector(markerRotated(_:)))
+        let touchRecogniser = UITapGestureRecognizer(target: self, action: #selector(markerRotated(_:)))
+        self.addGestureRecognizer(panRecogniser)
+        self.addGestureRecognizer(touchRecogniser)
         markerView.layer.anchorPoint = CGPoint(x: 0.5, y: 1.0)
         markerView.image = GMSMarker.markerImage(with: .red)
         selectionStyle = .none
     }
     
-    @objc func markerPanned(_ panGR: UIPanGestureRecognizer) {
+    @objc func markerRotated(_ panGR: UIGestureRecognizer) {
         guard panGR.numberOfTouches > 0 else { return }
         let panPoint = panGR.location(ofTouch: 0, in: self)
         let centre = CGPoint(x: self.bounds.midX, y: self.bounds.midY)

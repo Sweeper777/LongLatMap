@@ -20,13 +20,13 @@
 		5A6AA98E25144DD400CBC400 /* MarkerRotationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */; };
 		5A6AA99025144E3000CBC400 /* MarkerRotationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */; };
 		5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */; };
+		5A82C0DD251842E300774448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A82C0DC251842E300774448 /* GoogleService-Info.plist */; };
 		5A9ECF562511A777006C3C6B /* LongLatFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */; };
 		5AABB919250F084300A7EE5A /* LongLatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABB918250F084200A7EE5A /* LongLatMapTests.swift */; };
 		5AABB920250F0AC200A7EE5A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37F1CD250476C200DE958A /* Utils.swift */; };
 		5AB150C1250CE48A0015ABC9 /* LongLatIRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB150C0250CE48A0015ABC9 /* LongLatIRow.swift */; };
 		5AB150C3250CECAE0015ABC9 /* LongLatInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB150C2250CECAE0015ABC9 /* LongLatInputController.swift */; };
 		5AB3462D2508713800D6845A /* DecimalLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB3462C2508713800D6845A /* DecimalLongLatInputView.swift */; };
-		5AB51556250708C500BB993D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AB51555250708C500BB993D /* GoogleService-Info.plist */; };
 		5AFE2B9A1D81C73800F483DD /* SecretStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFE2B991D81C73800F483DD /* SecretStuff.swift */; };
 		5AFF62941D868473004217D3 /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF62931D868473004217D3 /* FormTags.swift */; };
 		5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFF70331D7EB02200252E53 /* AppDelegate.swift */; };
@@ -67,6 +67,7 @@
 		5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerRotationRow.swift; sourceTree = "<group>"; };
 		5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerRotationCell.xib; sourceTree = "<group>"; };
 		5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSLongLatInputView.swift; sourceTree = "<group>"; };
+		5A82C0DC251842E300774448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatFormatter.swift; sourceTree = "<group>"; };
 		5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongLatMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AABB918250F084200A7EE5A /* LongLatMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatMapTests.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		5AB150C0250CE48A0015ABC9 /* LongLatIRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatIRow.swift; sourceTree = "<group>"; };
 		5AB150C2250CECAE0015ABC9 /* LongLatInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatInputController.swift; sourceTree = "<group>"; };
 		5AB3462C2508713800D6845A /* DecimalLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalLongLatInputView.swift; sourceTree = "<group>"; };
-		5AB51555250708C500BB993D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5AFBF5801D83F64D00B95D2D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/LongLatMap-falxoztefmolsegzjnzlxcdaxaay/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework"; sourceTree = "<group>"; };
 		5AFE2B991D81C73800F483DD /* SecretStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretStuff.swift; sourceTree = "<group>"; };
 		5AFF62931D868473004217D3 /* FormTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTags.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		5AFF70321D7EB02200252E53 /* LongLatMap */ = {
 			isa = PBXGroup;
 			children = (
-				5AB51555250708C500BB993D /* GoogleService-Info.plist */,
+				5A82C0DC251842E300774448 /* GoogleService-Info.plist */,
 				5AFF62931D868473004217D3 /* FormTags.swift */,
 				5A37F1CD250476C200DE958A /* Utils.swift */,
 				5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */,
@@ -244,7 +244,7 @@
 				5AFF702D1D7EB02200252E53 /* Frameworks */,
 				5AFF702E1D7EB02200252E53 /* Resources */,
 				379EF42A6EEB473D1F20E859 /* [CP] Embed Pods Frameworks */,
-				1EECCC81CC34A78B73B1DAC7 /* [CP] Copy Pods Resources */,
+				0EE86AE54BA30E06F8578704 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,20 +314,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AFF70411D7EB02200252E53 /* LaunchScreen.storyboard in Resources */,
+				5A82C0DD251842E300774448 /* GoogleService-Info.plist in Resources */,
 				5A6AA99025144E3000CBC400 /* MarkerRotationCell.xib in Resources */,
 				5A171C8A1DF73FFE00567EEE /* InfoPlist.strings in Resources */,
 				5AFFAD491D96BD3E0012A94D /* Localizable.strings in Resources */,
 				5A3AC0512501D2C800411D7F /* darkMapStyle.json in Resources */,
 				5AFF703E1D7EB02200252E53 /* Assets.xcassets in Resources */,
 				5AFF70391D7EB02200252E53 /* Main.storyboard in Resources */,
-				5AB51556250708C500BB993D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EECCC81CC34A78B73B1DAC7 /* [CP] Copy Pods Resources */ = {
+		0EE86AE54BA30E06F8578704 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

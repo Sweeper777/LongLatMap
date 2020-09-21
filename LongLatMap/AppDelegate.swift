@@ -2,6 +2,7 @@ import UIKit
 import GoogleMaps
 import Firebase
 import SwiftyUtils
+import Eureka
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window?.tintColor = UIColor(hex: "3b7b3b")
+        NavigationAccessoryView.appearance().tintColor = UIColor(hex: "3b7b3b")
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         GMSServices.provideAPIKey(gmsAPIKey)

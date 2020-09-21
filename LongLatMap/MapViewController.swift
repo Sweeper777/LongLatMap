@@ -20,7 +20,7 @@ class MapViewController: UIViewController {
         gmsMarkers = DataManager.shared.markers.map { marker in
             let gmsMarker = GMSMarker(position: marker.location)
             gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hex: marker.color))
-            gmsMarker.rotation = marker.rotation
+            gmsMarker.rotation = Double(marker.rotation)
             gmsMarker.map = mapView
             gmsMarker.title = marker.title
             gmsMarker.snippet = marker.desc

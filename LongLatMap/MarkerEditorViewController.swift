@@ -4,20 +4,24 @@ import ColorPickerRow
 
 class MarkerEditorViewController: FormViewController {
     
+    var marker: Marker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = marker?.title ?? "New Marker".localised
         
         form +++ Section("location".localised)
         <<< LongLatRow(tagLatitude) {
             row in
             row.title = "Latitude".localised
-            row.value = 0
+            row.value = marker?.latitude ?? 0
         }
         <<< LongLatRow(tagLongitude) {
             row in
             row.title = "Longitude".localised
             row.mode = .longitude
-            row.value = 0
+            row.value = marker?.longitude ?? 0
         }.onPresent({ (form, presented) in
             if let longLatInputVC = presented as? LongLatInputController {
                 longLatInputVC.mode = .longitude
@@ -28,7 +32,7 @@ class MarkerEditorViewController: FormViewController {
         <<< ColorPickerRow(tagColor) {
             row in
             row.title = "Color".localised
-            row.value = .red
+            row.value = (marker?.color).map(UIColor.init(hex:)) ?? .red
             row.showsPaletteNames = false
         }.cellSetup({ (cell, row) in
             cell.palettes = Color.allCases.map {
@@ -41,10 +45,11 @@ class MarkerEditorViewController: FormViewController {
         <<< LabelRow(tagRotationLabel) {
             row in
             row.title = "Rotation".localised
+            row.value = "\(marker?.rotation ?? 0)°"
         }
         <<< MarkerRotationRow(tagRotation) {
             row in
-            row.value = 90
+            row.value = marker?.rotation ?? 0
             row.cell.height = { 112 }
         }.onChange {
             row in
@@ -56,14 +61,14 @@ class MarkerEditorViewController: FormViewController {
         form +++ TextRow(tagTitle) {
             row in
             row.title = "Title".localised
-            row.value = ""
+            row.value = marker?.title ?? "Unnamed".localised
         }
         
         form +++ Section("description".localised)
             
         <<< TextAreaRow(tagDescription) {
             row in
-            row.value = ""
+            row.value = marker?.description ?? ""
         }
     }
     

@@ -28,6 +28,13 @@ class MapViewController: UIViewController {
             return gmsMarker
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = (segue.destination as? UINavigationController)?.topViewController as? MarkerEditorViewController,
+            let marker = sender as? Marker {
+            vc.marker = marker
+        }
+    }
 }
 
 extension MapViewController : GMSMapViewDelegate {

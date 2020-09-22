@@ -1,6 +1,7 @@
 import UIKit
 import Eureka
 import ColorPickerRow
+import SCLAlertView
 
 class MarkerEditorViewController: FormViewController {
     
@@ -73,7 +74,30 @@ class MarkerEditorViewController: FormViewController {
     }
     
     @IBAction func doneTapped() {
+        let values = form.values()
+        let latitude = values[tagLatitude] as? Double
+        let longitude = values[tagLongitude] as? Double
+        let rotation = values[tagRotation] as? Int
+        let color = (values[tagColor] as? UIColor)?.hexString()
+        let title = values[tagTitle] as? String
+        let desc = values[tagDescription] as? String
         
+
+        do {
+            if let markerToEdit = marker {
+                try DataManager.shared.updateMarker(markerToEdit,
+                                                latitude: latitude,
+                                                longitude: longitude,
+                                                rotation: rotation,
+                                                color: color,
+                                                title: title,
+                                                desc: desc)
+            }
+            dismiss(animated: true, completion: nil)
+        } catch {
+            SCLAlertView().showError("Error".localised, subTitle: "An error occurred while saving marker!".localised, closeButtonTitle: "OK".localised)
+            print(error)
+        }
     }
     
     @IBAction func cancelTapped() {

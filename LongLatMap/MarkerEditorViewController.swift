@@ -69,7 +69,7 @@ class MarkerEditorViewController: FormViewController {
             
         <<< TextAreaRow(tagDescription) {
             row in
-            row.value = marker?.description ?? ""
+            row.value = marker?.desc ?? ""
         }
     }
     
@@ -78,7 +78,7 @@ class MarkerEditorViewController: FormViewController {
         let latitude = values[tagLatitude] as? Double
         let longitude = values[tagLongitude] as? Double
         let rotation = values[tagRotation] as? Int
-        let color = (values[tagColor] as? UIColor)?.hexString()
+        let color = ((values[tagColor] as? UIColor)?.hexString(false).dropFirst()).map(String.init)
         let title = values[tagTitle] as? String
         let desc = values[tagDescription] as? String
         

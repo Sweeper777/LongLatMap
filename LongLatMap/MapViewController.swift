@@ -23,7 +23,9 @@ class MapViewController: UIViewController {
             gmsMarker.rotation = Double(marker.rotation)
             gmsMarker.map = mapView
             gmsMarker.title = marker.title
-            gmsMarker.snippet = marker.desc
+            let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: marker.latitude)
+            let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
+            gmsMarker.snippet = "\(latitudeString) \(longtitudeString)\n\(marker.desc)"
             gmsMarker.userData = marker.id
             return gmsMarker
         }

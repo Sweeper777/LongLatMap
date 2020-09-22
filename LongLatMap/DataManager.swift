@@ -28,4 +28,21 @@ class DataManager {
             realm.add(marker)
         }
     }
+    
+    func updateMarker(_ marker: Marker,
+                      latitude: Double? = nil,
+                      longitude: Double? = nil,
+                      rotation: Int? = nil,
+                      color: String? = nil,
+                      title: String? = nil,
+                      desc: String? = nil) throws {
+        try realm.write {
+            latitude.map { marker.latitude = $0 }
+            longitude.map { marker.longitude = $0 }
+            rotation.map { marker.rotation = $0 }
+            color.map { marker.color = $0 }
+            title.map { marker.title = $0 }
+            desc.map { marker.desc = $0 }
+        }
+    }
 }

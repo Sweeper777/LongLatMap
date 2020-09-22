@@ -2,6 +2,19 @@ import Foundation
 import CoreLocation
 
 class LongLatFormatter {
+    
+    static let sharedLongitudeFormatter = { () -> LongLatFormatter in
+        let f = LongLatFormatter()
+        f.mode = .longitude
+        return f
+    }()
+    
+    static let sharedLatitudeFormatter = { () -> LongLatFormatter in
+        let f = LongLatFormatter()
+        f.mode = .latitude
+        return f
+    }()
+    
     enum LongLatStyle {
         case dms
         case dd

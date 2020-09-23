@@ -6,11 +6,38 @@ class MapViewController: UIViewController {
     var mapView: GMSMapView!
     var gmsMarkers = [GMSMarker]()
     
+    var latitudeLines = [GMSPolyline]()
+    var longitudeLines = [GMSPolyline]()
+    
     override func viewDidLoad() {
         mapView = GMSMapView()
         view = mapView
         mapView.delegate = self
         reloadMarkers()
+        
+        addGraticules()
+    }
+    
+    func addGraticules() {
+        longitudeLines = (-179...180).map { (l: Int) -> GMSPolyline in
+            let path = GMSMutablePath()
+            path.add(CLLocationCoordinate2D(latitude: 89, longitude: Double(l)))
+            path.add(CLLocationCoordinate2D(latitude: -89, longitude: Double(l)))
+            return GMSPolyline(path: path)
+        }
+        latitudeLines = (-89...89).map { (l: Int) -> GMSPolyline in
+            let path = GMSMutablePath()
+            path.add(CLLocationCoordinate2D(latitude: Double(l), longitude: -179.9))
+            path.add(CLLocationCoordinate2D(latitude: Double(l), longitude: 0))
+            path.add(CLLocationCoordinate2D(latitude: Double(l), longitude: 179.9))
+            return GMSPolyline(path: path)
+        }
+        (longitudeLines + latitudeLines).forEach {
+            $0.map = mapView
+            $0.geodesic = false
+            $0.strokeWidth = 0.5
+            $0.strokeColor = .black
+        }
     }
     
     func reloadMarkers() {

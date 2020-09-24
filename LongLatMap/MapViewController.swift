@@ -36,7 +36,13 @@ class MapViewController: UIViewController {
             $0.map = mapView
             $0.geodesic = false
             $0.strokeWidth = 0.5
-            $0.strokeColor = .black
+            $0.strokeColor = UIColor(white: 0, alpha: 0.5)
+        }
+        for i in latitudeLines.indices where i % 10 == 9 {
+            latitudeLines[i].strokeWidth = 1
+        }
+        for i in longitudeLines.indices where i % 10 == 9 {
+            longitudeLines[i].strokeWidth = 1
         }
     }
     

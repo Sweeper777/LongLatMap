@@ -75,6 +75,19 @@ class MapViewController: UIViewController {
             vc.marker = marker
         }
     }
+    
+    @IBAction func unwindFromMarkerEditor(_ segue: UIStoryboardSegue) {
+        if let editedMarker = (segue.source as? MarkerEditorViewController)?.marker {
+            if let gmsMarker = gmsMarkers.first(where: { ($0.userData as? Int) == editedMarker.id }) {
+                updateGMSMarker(gmsMarker, accordingTo: editedMarker)
+            } else {
+                let gmsMarker = GMSMarker()
+                updateGMSMarker(gmsMarker, accordingTo: editedMarker)
+                gmsMarkers.append(gmsMarker)
+            }
+            mapView.animate(toLocation: editedMarker.location)
+        }
+    }
 }
 
 extension MapViewController : GMSMapViewDelegate {

@@ -46,20 +46,25 @@ class MapViewController: UIViewController {
         }
     }
     
+    func updateGMSMarker(_ gmsMarker: GMSMarker, accordingTo marker: Marker) {
+        gmsMarker.position = marker.location
+        gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hex: marker.color))
+        gmsMarker.rotation = Double(marker.rotation)
+        gmsMarker.map = mapView
+        gmsMarker.title = marker.title
+        let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: marker.latitude)
+        let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
+        gmsMarker.snippet = "\(latitudeString) \(longtitudeString)\n\(marker.desc)"
+        gmsMarker.userData = marker.id
+    }
+    
     func reloadMarkers() {
         gmsMarkers.forEach {
             $0.map = nil
         }
         gmsMarkers = DataManager.shared.markers.map { marker in
-            let gmsMarker = GMSMarker(position: marker.location)
-            gmsMarker.icon = GMSMarker.markerImage(with: UIColor(hex: marker.color))
-            gmsMarker.rotation = Double(marker.rotation)
-            gmsMarker.map = mapView
-            gmsMarker.title = marker.title
-            let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: marker.latitude)
-            let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
-            gmsMarker.snippet = "\(latitudeString) \(longtitudeString)\n\(marker.desc)"
-            gmsMarker.userData = marker.id
+            let gmsMarker = GMSMarker()
+            updateGMSMarker(gmsMarker, accordingTo: marker)
             return gmsMarker
         }
     }

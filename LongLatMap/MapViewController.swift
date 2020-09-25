@@ -86,6 +86,8 @@ class MapViewController: UIViewController {
                 gmsMarkers.append(gmsMarker)
             }
             mapView.animate(toLocation: editedMarker.location)
+        } else {
+            reloadMarkers()
         }
     }
 }

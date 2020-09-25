@@ -93,7 +93,7 @@ class MarkerEditorViewController: FormViewController {
                                                 title: title,
                                                 desc: desc)
             }
-            dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "unwindToMap", sender: nil)
         } catch {
             SCLAlertView().showError("Error".localised, subTitle: "An error occurred while saving marker!".localised, closeButtonTitle: "OK".localised)
             print(error)

@@ -71,6 +71,28 @@ class MarkerEditorViewController: FormViewController {
             row in
             row.value = marker?.desc ?? ""
         }
+        
+        if let markerToEdit = marker {
+            form +++ ButtonRow {
+                row in
+                row.title = "Delete This Marker".localised
+                row.cell.tintColor = .red
+            }.onCellSelection({ [weak self] (cell, row) in
+                let alert = SCLAlertView()
+                alert.addButton("Yes".localised) { [weak self] in
+                    guard let `self` = self else { return }
+                    do {
+                        try DataManager.shared.deleteMarker(markerToEdit)
+                        self.marker = nil
+                        self.performSegue(withIdentifier: "unwindToMap", sender: nil)
+                    } catch {
+                        SCLAlertView().showError("Error".localised, subTitle: "An error occurred while deleting marker!".localised, closeButtonTitle: "OK".localised)
+                        print(error)
+                    }
+                }
+                alert.showWarning("Confirm".localised, subTitle: "Do you really want to delete this marker?".localised, closeButtonTitle: "No".localised)
+            })
+        }
     }
     
     @IBAction func doneTapped() {

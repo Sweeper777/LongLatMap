@@ -45,4 +45,10 @@ class DataManager {
             desc.map { marker.desc = $0 }
         }
     }
+    
+    func deleteMarker(_ marker: Marker) throws {
+        try realm.write {
+            realm.delete(marker)
+        }
+    }
 }

@@ -16,6 +16,7 @@ target 'LongLatMap' do
   pod 'RxCocoa'
   pod 'RxSwift'
   pod 'ColorPickerRow'
+  pod 'LiquidButton'
 end
 target 'LongLatMapTests' do
     inherit! :search_paths

@@ -43,3 +43,9 @@
 "Unable to save screenshot" = "Unable to save screenshot";
 
 "An error occurred while saving marker!" = "An error occurred while saving marker!";
+"Delete This Marker" = "Delete This Marker";
+"Yes" = "Yes";
+"No" = "No";
+"An error occurred while deleting marker!" = "An error occurred while deleting marker!";
+"Do you really want to delete this marker?" = "Do you really want to delete this marker?";
+"Confirm" = "Confirm";

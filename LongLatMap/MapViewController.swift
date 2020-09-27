@@ -107,3 +107,26 @@ extension MapViewController : GMSMapViewDelegate {
         performSegue(withIdentifier: "showMarkerEditor", sender: DataManager.shared.markers[index])
     }
 }
+
+extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloatingActionButtonDataSource {
+    func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+        4
+    }
+    
+    func cellForIndex(_ index: Int) -> LiquidFloatingCell {
+        switch index {
+        case 0: // add marker
+            return LiquidFloatingCell(icon: UIImage(systemName: "plus")!)
+        case 1: // all markers
+            return LiquidFloatingCell(icon: UIImage(systemName: "list.bullet")!)
+        case 2: // locate
+            return LiquidFloatingCell(icon: UIImage(systemName: "mappin.and.ellipse")!)
+        case 3: // settings
+            return LiquidFloatingCell(icon: UIImage(systemName: "gear")!)
+        default:
+            fatalError()
+        }
+    }
+    
+    
+}

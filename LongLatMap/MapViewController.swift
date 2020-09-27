@@ -2,6 +2,8 @@ import UIKit
 import GoogleMaps
 import SwiftyUtils
 
+import LiquidButton
+
 class MapViewController: UIViewController {
     var mapView: GMSMapView!
     var gmsMarkers = [GMSMarker]()
@@ -16,6 +18,16 @@ class MapViewController: UIViewController {
         reloadMarkers()
         
         addGraticules()
+        
+        let liquidButton = LiquidFloatingActionButton()
+        let window = (UIApplication.shared.delegate as! AppDelegate).window!
+        window.addSubview(liquidButton)
+        liquidButton.translatesAutoresizingMaskIntoConstraints = false
+        liquidButton.widthAnchor.constraint(equalToConstant: 44).isActive = true
+        liquidButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
+        liquidButton.trailingAnchor.constraint(equalTo: window.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
+        liquidButton.bottomAnchor.constraint(equalTo: window.safeAreaLayoutGuide.bottomAnchor, constant: -8).isActive = true
+        liquidButton.layer.zPosition = mapView.layer.sublayers!.map(\.zPosition).max()! + 1
     }
     
     func addGraticules() {

@@ -11,6 +11,13 @@ class MapViewController: UIViewController {
     var latitudeLines = [GMSPolyline]()
     var longitudeLines = [GMSPolyline]()
     
+    var floatingButtonCells = [
+        LiquidFloatingCell(icon: UIImage(systemName: "plus")!),
+        LiquidFloatingCell(icon: UIImage(systemName: "list.bullet")!),
+        LiquidFloatingCell(icon: UIImage(systemName: "mappin.and.ellipse")!),
+        LiquidFloatingCell(icon: UIImage(systemName: "gear")!),
+    ]
+    
     override func viewDidLoad() {
         mapView = GMSMapView()
         view = mapView
@@ -130,19 +137,10 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
     }
     
     func cellForIndex(_ index: Int) -> LiquidFloatingCell {
-        switch index {
-        case 0: // add marker
-            return LiquidFloatingCell(icon: UIImage(systemName: "plus")!)
-        case 1: // all markers
-            return LiquidFloatingCell(icon: UIImage(systemName: "list.bullet")!)
-        case 2: // locate
-            return LiquidFloatingCell(icon: UIImage(systemName: "mappin.and.ellipse")!)
-        case 3: // settings
-            return LiquidFloatingCell(icon: UIImage(systemName: "gear")!)
-        default:
-            fatalError()
-        }
+        floatingButtonCells[index]
     }
     
-    
+    func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+        print("Selected \(index)")
+    }
 }

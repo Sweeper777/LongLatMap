@@ -19,15 +19,19 @@ class MapViewController: UIViewController {
         
         addGraticules()
         
-        let liquidButton = LiquidFloatingActionButton()
-        let window = (UIApplication.shared.delegate as! AppDelegate).window!
-        window.addSubview(liquidButton)
+        let liquidButton = LiquidFloatingActionButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        view.addSubview(liquidButton)
         liquidButton.translatesAutoresizingMaskIntoConstraints = false
         liquidButton.widthAnchor.constraint(equalToConstant: 44).isActive = true
         liquidButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
-        liquidButton.trailingAnchor.constraint(equalTo: window.safeAreaLayoutGuide.trailingAnchor, constant: -8).isActive = true
-        liquidButton.bottomAnchor.constraint(equalTo: window.safeAreaLayoutGuide.bottomAnchor, constant: -8).isActive = true
-        liquidButton.layer.zPosition = mapView.layer.sublayers!.map(\.zPosition).max()! + 1
+        liquidButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+        liquidButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
+        liquidButton.delegate = self
+        liquidButton.dataSource = self
+        liquidButton.color = UIColor(hex: "3b7b3b")
+        liquidButton.image = UIImage(named: "chevron")
+        liquidButton.rotationDegrees = 180
+        mapView.bringSubviewToFront(liquidButton)
     }
     
     func addGraticules() {

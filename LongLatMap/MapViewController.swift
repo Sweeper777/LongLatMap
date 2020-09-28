@@ -93,9 +93,8 @@ class MapViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = (segue.destination as? UINavigationController)?.topViewController as? MarkerEditorViewController,
-            let marker = sender as? Marker {
-            vc.marker = marker
+        if let vc = (segue.destination as? UINavigationController)?.topViewController as? MarkerEditorViewController {
+            vc.marker = sender as? Marker
         }
     }
     
@@ -141,6 +140,11 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
     }
     
     func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
-        print("Selected \(index)")
+        switch index {
+        case 0:
+            performSegue(withIdentifier: "showMarkerEditor", sender: nil)
+        default:
+            break
+        }
     }
 }

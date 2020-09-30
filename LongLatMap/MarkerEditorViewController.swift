@@ -108,12 +108,23 @@ class MarkerEditorViewController: FormViewController {
         do {
             if let markerToEdit = marker {
                 try DataManager.shared.updateMarker(markerToEdit,
-                                                latitude: latitude,
-                                                longitude: longitude,
-                                                rotation: rotation,
-                                                color: color,
-                                                title: title,
-                                                desc: desc)
+                    latitude: latitude,
+                    longitude: longitude,
+                    rotation: rotation,
+                    color: color,
+                    title: title,
+                    desc: desc
+                )
+            } else {
+                let marker = Marker()
+                marker.latitude = latitude ?? 0
+                marker.longitude = longitude ?? 0
+                marker.rotation = rotation ?? 0
+                marker.color = color ?? Color.red.hexString
+                marker.title = title ?? "Unnamed".localised
+                marker.desc = desc ?? ""
+                try DataManager.shared.addMarker(marker)
+                self.marker = marker
             }
             performSegue(withIdentifier: "unwindToMap", sender: nil)
         } catch {

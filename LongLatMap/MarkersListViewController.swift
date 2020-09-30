@@ -4,6 +4,10 @@ import GoogleMaps
 class MarkersListViewController: UITableViewController {
     var allMarkers = DataManager.shared.markers
     
+    override func viewDidLoad() {
+        title = "My Markers".localised
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         1
     }

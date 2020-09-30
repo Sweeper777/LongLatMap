@@ -143,6 +143,8 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
         switch index {
         case 0:
             performSegue(withIdentifier: "showMarkerEditor", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "showMyMarkers", sender: nil)
         default:
             break
         }

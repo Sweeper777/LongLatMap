@@ -27,6 +27,22 @@ class MarkersListViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Take me there".localised, style: .default, handler: { (_) in
+            
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Edit".localised, style: .default, handler: { (_) in
+            
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel".localised, style: .cancel, handler: { (_) in
+            tableView.deselectRow(at: indexPath, animated: true)
+        }))
+        actionSheet.popoverPresentationController?.permittedArrowDirections = [.up, .down]
+        actionSheet.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)
+        present(actionSheet, animated: true, completion: nil)
+    }
+    
     @IBAction func doneTapped() {
         performSegue(withIdentifier: "unwindToMap", sender: nil)
     }

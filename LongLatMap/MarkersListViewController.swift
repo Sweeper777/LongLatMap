@@ -26,4 +26,8 @@ class MarkersListViewController: UITableViewController {
         cell.imageView?.image = GMSMarker.markerImage(with: UIColor(hex: marker.color))
         return cell
     }
+    
+    @IBAction func doneTapped() {
+        performSegue(withIdentifier: "unwindToMap", sender: nil)
+    }
 }

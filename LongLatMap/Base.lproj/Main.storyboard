@@ -81,7 +81,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="TmP-lB-lHo" kind="unwind" identifier="unwindToMap" unwindAction="unwindFromMarkerEditor:" id="sed-Pg-rbv"/>
+                        <segue destination="TmP-lB-lHo" kind="unwind" identifier="unwindToMap" unwindAction="unwindFromModal:" id="sed-Pg-rbv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgc-F9-GdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -127,7 +127,17 @@
                             <outlet property="delegate" destination="p4J-c1-VrS" id="sxB-6I-kly"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Markers" id="YXy-1L-6jW"/>
+                    <navigationItem key="navigationItem" title="My Markers" id="YXy-1L-6jW">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="OX5-8m-uGe">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneTapped" destination="p4J-c1-VrS" id="4vs-ka-wLM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="TmP-lB-lHo" kind="unwind" identifier="unwindToMap" unwindAction="unwindFromModal:" id="StN-UD-ggG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dea-cI-3c8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

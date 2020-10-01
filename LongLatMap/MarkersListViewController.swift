@@ -30,10 +30,11 @@ class MarkersListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Take me there".localised, style: .default, handler: { (_) in
-            
+            tableView.deselectRow(at: indexPath, animated: true)
         }))
         actionSheet.addAction(UIAlertAction(title: "Edit".localised, style: .default, handler: { (_) in
-            
+            self.performSegue(withIdentifier: "showMarkerEditor", sender: self.allMarkers[indexPath.row])
+            tableView.deselectRow(at: indexPath, animated: true)
         }))
         actionSheet.addAction(UIAlertAction(title: "Cancel".localised, style: .cancel, handler: { (_) in
             tableView.deselectRow(at: indexPath, animated: true)
@@ -41,6 +42,13 @@ class MarkersListViewController: UITableViewController {
         actionSheet.popoverPresentationController?.permittedArrowDirections = [.up, .down]
         actionSheet.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)
         present(actionSheet, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? MarkerEditorViewController,
+            let marker = sender as? Marker {
+            vc.marker = marker
+        }
     }
     
     @IBAction func doneTapped() {

@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgc-F9-GdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="257"/>
+            <point key="canvasLocation" x="2063" y="257"/>
         </scene>
         <!--My Markers-->
         <scene sceneID="X1U-Cu-FjK">
@@ -137,6 +137,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="TmP-lB-lHo" kind="unwind" identifier="unwindToMap" unwindAction="unwindFromModal:" id="StN-UD-ggG"/>
+                        <segue destination="rmr-7R-yXk" kind="show" identifier="showMarkerEditor" id="6Jw-6f-Hp2"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dea-cI-3c8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -210,9 +211,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4O-2R-Kwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569" y="1002"/>
+            <point key="canvasLocation" x="2059" y="1001"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Jw-6f-Hp2"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

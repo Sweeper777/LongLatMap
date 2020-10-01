@@ -95,10 +95,12 @@ class MapViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = (segue.destination as? UINavigationController)?.topViewController as? MarkerEditorViewController {
             vc.marker = sender as? Marker
+        } else if segue.identifier == "showMyMarkers" {
+            segue.destination.presentationController?.delegate = self
         }
     }
     
-    @IBAction func unwindFromMarkerEditor(_ segue: UIStoryboardSegue) {
+    @IBAction func unwindFromModal(_ segue: UIStoryboardSegue) {
         if let editedMarker = (segue.source as? MarkerEditorViewController)?.marker {
             if let gmsMarker = gmsMarkers.first(where: { ($0.userData as? Int) == editedMarker.id }) {
                 updateGMSMarker(gmsMarker, accordingTo: editedMarker)
@@ -148,5 +150,11 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
         default:
             break
         }
+    }
+}
+
+extension MapViewController : UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        reloadMarkers()
     }
 }

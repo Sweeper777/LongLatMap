@@ -126,10 +126,18 @@ class MarkerEditorViewController: FormViewController {
                 try DataManager.shared.addMarker(marker)
                 self.marker = marker
             }
-            performSegue(withIdentifier: "unwindToMap", sender: nil)
+            goBack()
         } catch {
             SCLAlertView().showError("Error".localised, subTitle: "An error occurred while saving marker!".localised, closeButtonTitle: "OK".localised)
             print(error)
+        }
+    }
+    
+    func goBack() {
+        if navigationController?.viewControllers.first == self {
+            performSegue(withIdentifier: "unwindToMap", sender: nil)
+        } else {
+            navigationController?.popViewController(animated: true)
         }
     }
     

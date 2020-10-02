@@ -92,6 +92,14 @@ class MapViewController: UIViewController {
         }
     }
     
+    func selectMarker(_ marker: Marker) {
+        guard let gmsMarker = gmsMarkers.first(where: { ($0.userData as? Int) == marker.id }) else {
+            return
+        }
+        mapView.selectedMarker = gmsMarker
+        mapView.animate(toLocation: marker.location)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = (segue.destination as? UINavigationController)?.topViewController as? MarkerEditorViewController {
             vc.marker = sender as? Marker

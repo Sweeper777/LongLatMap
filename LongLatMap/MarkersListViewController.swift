@@ -39,6 +39,7 @@ class MarkersListViewController: UITableViewController {
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Take me there".localised, style: .default, handler: { (_) in
             self.selectedMarker = self.allMarkers[indexPath.row]
+            self.performSegue(withIdentifier: "unwindToMap", sender: nil)
         }))
         actionSheet.addAction(UIAlertAction(title: "Edit".localised, style: .default, handler: { (_) in
             self.performSegue(withIdentifier: "showMarkerEditor", sender: self.allMarkers[indexPath.row])

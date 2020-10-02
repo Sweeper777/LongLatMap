@@ -120,6 +120,9 @@ class MapViewController: UIViewController {
             mapView.animate(toLocation: editedMarker.location)
         } else {
             reloadMarkers()
+            if let markerToGoTo = (segue.source as? MarkersListViewController)?.selectedMarker {
+                selectMarker(markerToGoTo)
+            }
         }
     }
 }

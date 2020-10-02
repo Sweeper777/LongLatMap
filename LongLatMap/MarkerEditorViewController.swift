@@ -11,6 +11,9 @@ class MarkerEditorViewController: FormViewController {
         super.viewDidLoad()
         
         title = marker?.title ?? "New Marker".localised
+        if !isRootInNavigationController {
+            navigationItem.leftBarButtonItems = []
+        }
         
         form +++ Section("location".localised)
         <<< LongLatRow(tagLatitude) {
@@ -133,8 +136,12 @@ class MarkerEditorViewController: FormViewController {
         }
     }
     
+    var isRootInNavigationController: Bool {
+        navigationController?.viewControllers.first == self
+    }
+    
     func goBack() {
-        if navigationController?.viewControllers.first == self {
+        if isRootInNavigationController {
             performSegue(withIdentifier: "unwindToMap", sender: nil)
         } else {
             navigationController?.popViewController(animated: true)

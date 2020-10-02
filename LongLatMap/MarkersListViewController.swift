@@ -6,6 +6,8 @@ class MarkersListViewController: UITableViewController {
     
     override func viewDidLoad() {
         title = "My Markers".localised
+        
+        navigationController?.navigationBar.tintColor = .white
     }
     
     override func viewDidAppear(_ animated: Bool) {

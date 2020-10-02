@@ -8,6 +8,11 @@ class MarkersListViewController: UITableViewController {
         title = "My Markers".localised
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         1
     }

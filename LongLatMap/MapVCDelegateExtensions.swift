@@ -34,6 +34,7 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
             performSegue(withIdentifier: "showMyMarkers", sender: nil)
         case 2:
             panGesture.isEnabled.toggle()
+            mapView.settings.setAllGesturesEnabled(!panGesture.isEnabled)
         default:
             break
         }
@@ -43,11 +44,5 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
 extension MapViewController : UIAdaptivePresentationControllerDelegate {
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         reloadMarkers()
-    }
-}
-
-extension MapViewController : UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return mapView.gestureRecognizers?.contains(otherGestureRecognizer) ?? false
     }
 }

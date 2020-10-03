@@ -32,6 +32,8 @@ class MarkersListViewController: UITableViewController {
         let longitudeText = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
         cell.detailTextLabel?.text = "\(latitudeText) \(longitudeText)"
         cell.imageView?.image = GMSMarker.markerImage(with: UIColor(hex: marker.color))
+        cell.imageView?.transform = CGAffineTransform(rotationAngle: marker.rotation.f / 180 * .pi)
+        cell.imageView?.contentMode = .scaleAspectFit
         return cell
     }
     

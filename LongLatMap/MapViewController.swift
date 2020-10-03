@@ -11,6 +11,8 @@ class MapViewController: UIViewController {
     var latitudeLines = [GMSPolyline]()
     var longitudeLines = [GMSPolyline]()
     
+    var panGesture: UIPanGestureRecognizer!
+    
     var floatingButtonCells = [
         LiquidFloatingCell(icon: UIImage(systemName: "plus")!),
         LiquidFloatingCell(icon: UIImage(systemName: "list.bullet")!),
@@ -39,6 +41,11 @@ class MapViewController: UIViewController {
         liquidButton.image = UIImage(named: "chevron")
         liquidButton.rotationDegrees = 180
         mapView.bringSubviewToFront(liquidButton)
+        
+        panGesture = UIPanGestureRecognizer(target: self, action: #selector(didBeginTouchingCoordinate(_:)))
+        panGesture.isEnabled = false
+        panGesture.delegate = self
+        mapView.addGestureRecognizer(panGesture)
     }
     
     func addGraticules() {
@@ -126,5 +133,7 @@ class MapViewController: UIViewController {
         }
     }
     
+    @objc func didBeginTouchingCoordinate(_ sender: UIGestureRecognizer) {
+        print("panned!")
     }
 }

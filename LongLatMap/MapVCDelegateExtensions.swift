@@ -43,3 +43,9 @@ extension MapViewController : UIAdaptivePresentationControllerDelegate {
         reloadMarkers()
     }
 }
+
+extension MapViewController : UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return mapView.gestureRecognizers?.contains(otherGestureRecognizer) ?? false
+    }
+}

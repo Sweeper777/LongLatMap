@@ -32,6 +32,8 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
             performSegue(withIdentifier: "showMarkerEditor", sender: nil)
         case 1:
             performSegue(withIdentifier: "showMyMarkers", sender: nil)
+        case 2:
+            panGesture.isEnabled.toggle()
         default:
             break
         }

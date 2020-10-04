@@ -28,6 +28,10 @@ class MapViewController: UIViewController {
         
         addGraticules()
         
+        setupSubviews()
+    }
+    
+    fileprivate func setupSubviews() {
         let liquidButton = LiquidFloatingActionButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         view.addSubview(liquidButton)
         liquidButton.translatesAutoresizingMaskIntoConstraints = false

@@ -160,7 +160,11 @@ class MapViewController: UIViewController {
             let location = mapView.projection.coordinate(for: point)
             let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: location.latitude)
             let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: location.longitude)
-            print("\(latitudeString) \(longtitudeString)")
+            longLatLabel.isHidden = false
+            longLatLabel.text = "    \(latitudeString) \(longtitudeString)    "
+        }
+        if sender.state == .ended {
+            longLatLabel.isHidden = true
         }
     }
 }

@@ -35,6 +35,8 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
         case 2:
             panGesture.isEnabled.toggle()
             mapView.settings.setAllGesturesEnabled(!panGesture.isEnabled)
+            longLatLabel.text = "    Pan on the map to see coordinates!    ".localised
+            longLatLabel.isHidden = !panGesture.isEnabled
         default:
             break
         }

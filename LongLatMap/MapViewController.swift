@@ -44,7 +44,6 @@ class MapViewController: UIViewController {
         
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(didBeginTouchingCoordinate(_:)))
         panGesture.isEnabled = false
-        panGesture.delegate = self
         mapView.addGestureRecognizer(panGesture)
     }
     
@@ -134,6 +133,12 @@ class MapViewController: UIViewController {
     }
     
     @objc func didBeginTouchingCoordinate(_ sender: UIGestureRecognizer) {
-        print("panned!")
+        if sender.numberOfTouches == 1 {
+            let point = sender.location(in: mapView)
+            let location = mapView.projection.coordinate(for: point)
+            let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: location.latitude)
+            let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: location.longitude)
+            print("\(latitudeString) \(longtitudeString)")
+        }
     }
 }

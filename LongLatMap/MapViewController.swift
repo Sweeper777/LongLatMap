@@ -49,6 +49,24 @@ class MapViewController: UIViewController {
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(didBeginTouchingCoordinate(_:)))
         panGesture.isEnabled = false
         mapView.addGestureRecognizer(panGesture)
+        
+        longLatLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
+        view.addSubview(longLatLabel)
+        longLatLabel.translatesAutoresizingMaskIntoConstraints = false
+        longLatLabel.backgroundColor = UIColor(hex: "3b7b3b")
+        longLatLabel.layer.masksToBounds = true
+        longLatLabel.layer.cornerRadius = 15
+        longLatLabel.textColor = .white
+        longLatLabel.layer.shadowOpacity = 1
+        longLatLabel.layer.shadowRadius = 10
+        longLatLabel.layer.shadowOffset = .zero
+        longLatLabel.layer.shadowColor = UIColor.black.cgColor
+        NSLayoutConstraint.activate([
+            longLatLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
+            longLatLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            longLatLabel.heightAnchor.constraint(equalToConstant: 30)
+        ])
+        longLatLabel.isHidden = true
     }
     
     func addGraticules() {

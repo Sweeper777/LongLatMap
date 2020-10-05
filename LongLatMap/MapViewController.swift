@@ -7,13 +7,11 @@ import LiquidButton
 class MapViewController: UIViewController {
     var mapView: GMSMapView!
     var gmsMarkers = [GMSMarker]()
-    var longLatLabel: UILabel!
     
     var latitudeLines = [GMSPolyline]()
     var longitudeLines = [GMSPolyline]()
     
     var panGesture: UIPanGestureRecognizer!
-    var touchGesture: UITapGestureRecognizer!
     
     var floatingButtonCells = [
         LiquidFloatingCell(icon: UIImage(systemName: "plus")!),
@@ -51,9 +49,6 @@ class MapViewController: UIViewController {
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(didBeginTouchingCoordinate(_:)))
         panGesture.isEnabled = false
         mapView.addGestureRecognizer(panGesture)
-        touchGesture = UITapGestureRecognizer(target: self, action: #selector(didBeginTouchingCoordinate(_:)))
-        touchGesture.isEnabled = false
-        mapView.addGestureRecognizer(touchGesture)
         
         longLatLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
         view.addSubview(longLatLabel)

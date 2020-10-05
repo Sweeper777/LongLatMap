@@ -25,6 +25,8 @@ class MapViewController: UIViewController {
         mapView = GMSMapView()
         view = mapView
         mapView.delegate = self
+        mapView.settings.consumesGesturesInView = false
+        
         reloadMarkers()
         
         addGraticules()

@@ -7,6 +7,7 @@ import LiquidButton
 class MapViewController: UIViewController {
     var mapView: GMSMapView!
     var gmsMarkers = [GMSMarker]()
+    var longLatLabel: UILabel!
     
     var latitudeLines = [GMSPolyline]()
     var longitudeLines = [GMSPolyline]()

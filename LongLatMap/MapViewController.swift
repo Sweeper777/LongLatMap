@@ -8,6 +8,7 @@ class MapViewController: UIViewController {
     var mapView: GMSMapView!
     var gmsMarkers = [GMSMarker]()
     var longLatLabel: UILabel!
+    var mapCrosshairView: MapCrosshairView!
     
     var latitudeLines = [GMSPolyline]()
     var longitudeLines = [GMSPolyline]()
@@ -68,6 +69,16 @@ class MapViewController: UIViewController {
             longLatLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
         longLatLabel.isHidden = true
+        
+        mapCrosshairView = MapCrosshairView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        view.addSubview(mapCrosshairView)
+        mapCrosshairView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            mapCrosshairView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            mapCrosshairView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            mapCrosshairView.widthAnchor.constraint(equalToConstant: 30),
+            mapCrosshairView.heightAnchor.constraint(equalToConstant: 30)
+        ])
     }
     
     func addGraticules() {

@@ -22,6 +22,7 @@
 		5A780A6F2524146600EB9432 /* MarkersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A780A6E2524146600EB9432 /* MarkersListViewController.swift */; };
 		5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */; };
 		5A82C0DD251842E300774448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A82C0DC251842E300774448 /* GoogleService-Info.plist */; };
+		5A82ECF1252D524D00FB6502 /* MapCrosshairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A82ECF0252D524D00FB6502 /* MapCrosshairView.swift */; };
 		5A8460EC252807DE00C08A96 /* MapVCDelegateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8460EB252807DE00C08A96 /* MapVCDelegateExtensions.swift */; };
 		5A9ECF562511A777006C3C6B /* LongLatFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */; };
 		5AABB919250F084300A7EE5A /* LongLatMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABB918250F084200A7EE5A /* LongLatMapTests.swift */; };
@@ -71,6 +72,7 @@
 		5A780A6E2524146600EB9432 /* MarkersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersListViewController.swift; sourceTree = "<group>"; };
 		5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSLongLatInputView.swift; sourceTree = "<group>"; };
 		5A82C0DC251842E300774448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A82ECF0252D524D00FB6502 /* MapCrosshairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCrosshairView.swift; sourceTree = "<group>"; };
 		5A8460EB252807DE00C08A96 /* MapVCDelegateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCDelegateExtensions.swift; sourceTree = "<group>"; };
 		5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatFormatter.swift; sourceTree = "<group>"; };
 		5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongLatMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 				5A37F1CB250475A000DE958A /* LongLatInputView.swift */,
 				5A7836DD2504833000CDF709 /* DMSLongLatInputView.swift */,
 				5AB3462C2508713800D6845A /* DecimalLongLatInputView.swift */,
+				5A82ECF0252D524D00FB6502 /* MapCrosshairView.swift */,
 				5AB150C0250CE48A0015ABC9 /* LongLatIRow.swift */,
 				5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */,
 				5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */,
@@ -459,6 +462,7 @@
 				5A37F1CC250475A000DE958A /* LongLatInputView.swift in Sources */,
 				5AB150C3250CECAE0015ABC9 /* LongLatInputController.swift in Sources */,
 				5A9ECF562511A777006C3C6B /* LongLatFormatter.swift in Sources */,
+				5A82ECF1252D524D00FB6502 /* MapCrosshairView.swift in Sources */,
 				5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,
 				5A6AA98E25144DD400CBC400 /* MarkerRotationRow.swift in Sources */,

@@ -62,7 +62,7 @@ class MapViewController: UIViewController {
             longLatLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             longLatLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
-        updateLongLatLabel(toCoordinate: mapView.camera.target)
+        updateLongLatLabel(toCoordinate: mapView.projection.coordinate(for: mapView.center))
         
         mapCrosshairView = MapCrosshairView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         view.addSubview(mapCrosshairView)

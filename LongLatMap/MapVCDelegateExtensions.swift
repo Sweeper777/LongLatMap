@@ -17,7 +17,7 @@ extension MapViewController : GMSMapViewDelegate {
     }
     
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-        updateLongLatLabel(toCoordinate: position.target)
+        updateLongLatLabel(toCoordinate: mapView.projection.coordinate(for: mapView.center))
     }
 }
 

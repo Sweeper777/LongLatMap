@@ -13,8 +13,6 @@ class MapViewController: UIViewController {
     var latitudeLines = [GMSPolyline]()
     var longitudeLines = [GMSPolyline]()
     
-    var panGesture: UIPanGestureRecognizer!
-    
     var floatingButtonCells = [
         LiquidFloatingCell(icon: UIImage(systemName: "plus")!),
         LiquidFloatingCell(icon: UIImage(systemName: "list.bullet")!),
@@ -48,10 +46,6 @@ class MapViewController: UIViewController {
         liquidButton.rotationDegrees = 180
         mapView.bringSubviewToFront(liquidButton)
         
-        panGesture = UIPanGestureRecognizer(target: self, action: #selector(didBeginTouchingCoordinate(_:)))
-        panGesture.isEnabled = false
-        mapView.addGestureRecognizer(panGesture)
-        
         longLatLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 20))
         view.addSubview(longLatLabel)
         longLatLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +62,6 @@ class MapViewController: UIViewController {
             longLatLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             longLatLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
-        longLatLabel.isHidden = true
         
         mapCrosshairView = MapCrosshairView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         view.addSubview(mapCrosshairView)

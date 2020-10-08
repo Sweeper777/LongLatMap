@@ -62,6 +62,7 @@ class MapViewController: UIViewController {
             longLatLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             longLatLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
+        updateLongLatLabel(toCoordinate: mapView.camera.target)
         
         mapCrosshairView = MapCrosshairView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         view.addSubview(mapCrosshairView)
@@ -131,6 +132,13 @@ class MapViewController: UIViewController {
         }
         mapView.selectedMarker = gmsMarker
         mapView.animate(toLocation: marker.location)
+    }
+    
+    func updateLongLatLabel(toCoordinate coord: CLLocationCoordinate2D) {
+        let location = coord
+        let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: location.latitude)
+        let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: location.longitude)
+        longLatLabel.text = "    \(latitudeString) \(longtitudeString)    "
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

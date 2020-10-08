@@ -15,6 +15,10 @@ extension MapViewController : GMSMapViewDelegate {
         }
         performSegue(withIdentifier: "showMarkerEditor", sender: DataManager.shared.markers[index])
     }
+    
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        updateLongLatLabel(toCoordinate: position.target)
+    }
 }
 
 extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloatingActionButtonDataSource {
@@ -33,6 +37,7 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
         case 1:
             performSegue(withIdentifier: "showMyMarkers", sender: nil)
         case 2:
+            break
         default:
             break
         }

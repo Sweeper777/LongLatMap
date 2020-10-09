@@ -35,6 +35,7 @@ public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
     public override func update() {
         super.update()
         setMarkerRotation(to: row.value?.rotationDegrees ?? 0)
+        markerView.image = GMSMarker.markerImage(with: row.value?.markerColor ?? .red)
     }
     
     func setMarkerRotation(to degrees: Int) {

@@ -44,6 +44,10 @@ class MarkerEditorViewController: FormViewController {
                     ColorSpec(hex: "#" + $0.hexString, name: $0.description)
                 ])
             }
+        }).onChange({ (row) in
+            let rotationRow = self.form.rowBy(tag: tagRotation) as! RowOf<MarkerRotationRowValue>
+            rotationRow.value = MarkerRotationRowValue(rotationDegrees: rotationRow.value?.rotationDegrees ?? 0, markerColor: row.value ?? .red)
+            rotationRow.updateCell()
         })
             
         <<< LabelRow(tagRotationLabel) {

@@ -1,7 +1,12 @@
 import Eureka
 import GoogleMaps
 
-public class MarkerRotationCell: Cell<Int>, CellType {
+public struct MarkerRotationRowValue: Equatable {
+    var rotationDegrees: Int
+    var markerColor: String
+}
+
+public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
 
     @IBOutlet var markerView: UIImageView!
     
@@ -23,13 +28,13 @@ public class MarkerRotationCell: Cell<Int>, CellType {
         let (x, y) = (x: panPoint.x - centre.x, y: centre.y - panPoint.y)
         let angle = atan2(x, y)
         let degrees = Int(round(angle / .pi * 180))
-        row.value = degrees
+        row.value?.rotationDegrees = degrees
         row.updateCell()
     }
     
     public override func update() {
         super.update()
-        setMarkerRotation(to: row.value ?? 0)
+        setMarkerRotation(to: row.value?.rotationDegrees ?? 0)
     }
     
     func setMarkerRotation(to degrees: Int) {

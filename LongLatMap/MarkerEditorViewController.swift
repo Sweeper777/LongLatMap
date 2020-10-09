@@ -53,12 +53,12 @@ class MarkerEditorViewController: FormViewController {
         }
         <<< MarkerRotationRow(tagRotation) {
             row in
-            row.value = marker?.rotation ?? 0
+            row.value?.rotationDegrees = marker?.rotation ?? 0
             row.cell.height = { 112 }
         }.onChange {
             row in
             let labelRow = self.form.rowBy(tag: tagRotationLabel) as? RowOf<String>
-            labelRow?.value = "\(row.value ?? 0)°"
+            labelRow?.value = "\(row.value?.rotationDegrees ?? 0)°"
             labelRow?.updateCell()
         }
         

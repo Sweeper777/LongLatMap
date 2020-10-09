@@ -1,5 +1,6 @@
 import UIKit
 import GoogleMaps
+import SCLAlertView
 
 class MarkersListViewController: UITableViewController {
     var allMarkers = DataManager.shared.markers
@@ -55,6 +56,21 @@ class MarkersListViewController: UITableViewController {
         actionSheet.popoverPresentationController?.permittedArrowDirections = [.up, .down]
         actionSheet.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)
         present(actionSheet, animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        do {
+            try DataManager.shared.deleteMarker(allMarkers[indexPath.row])
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        } catch {
+            SCLAlertView().showError("Error".localised, subTitle: "An error occurred while deleting marker!".localised, closeButtonTitle: "OK".localised)
+            print(error)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

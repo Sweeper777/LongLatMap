@@ -3,7 +3,7 @@ import GoogleMaps
 
 public struct MarkerRotationRowValue: Equatable {
     var rotationDegrees: Int
-    var markerColor: String
+    var markerColor: UIColor
 }
 
 public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
@@ -28,7 +28,7 @@ public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
         let (x, y) = (x: panPoint.x - centre.x, y: centre.y - panPoint.y)
         let angle = atan2(x, y)
         let degrees = Int(round(angle / .pi * 180))
-        row.value?.rotationDegrees = degrees
+        row.value = MarkerRotationRowValue(rotationDegrees: degrees, markerColor: row.value?.markerColor ?? .red)
         row.updateCell()
     }
     

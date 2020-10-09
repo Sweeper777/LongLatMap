@@ -53,7 +53,8 @@ class MarkerEditorViewController: FormViewController {
         }
         <<< MarkerRotationRow(tagRotation) {
             row in
-            row.value?.rotationDegrees = marker?.rotation ?? 0
+            row.value = MarkerRotationRowValue(rotationDegrees: marker?.rotation ?? 0,
+                                               markerColor: marker.map(\.color).map(UIColor.init(hex:)) ?? .red)
             row.cell.height = { 112 }
         }.onChange {
             row in

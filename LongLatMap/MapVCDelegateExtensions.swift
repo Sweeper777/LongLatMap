@@ -37,7 +37,11 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
         case 1:
             performSegue(withIdentifier: "showMyMarkers", sender: nil)
         case 2:
-            break
+            let coordinate = mapView.projection.coordinate(for: mapView.center)
+            let newMarker = Marker()
+            newMarker.location = coordinate
+            try? DataManager.shared.addMarker(newMarker)
+            reloadMarkers()
         default:
             break
         }

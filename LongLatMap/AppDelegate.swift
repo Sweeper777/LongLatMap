@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NavigationAccessoryView.appearance().tintColor = UIColor(hex: "3b7b3b")
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [
+            kGADSimulatorID as! String
+        ]
         GMSServices.provideAPIKey(gmsAPIKey)
 //        lastUsedBuild = Int(ez.appBuild ?? "0") ?? 0
         return true

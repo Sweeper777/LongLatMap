@@ -84,12 +84,6 @@ PODS:
   - Realm/Headers (5.4.2)
   - RealmSwift (5.4.2):
     - Realm (= 5.4.2)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
   - SCLAlertView (0.8.1)
   - SwiftyUtils (5.2.0)
   - UIColor_Hex_Swift (5.1.0)
@@ -104,8 +98,6 @@ DEPENDENCIES:
   - LiquidButton
   - Realm
   - RealmSwift
-  - RxCocoa
-  - RxSwift
   - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
   - SwiftyUtils
 
@@ -129,9 +121,6 @@ SPEC REPOS:
     - PromisesObjC
     - Realm
     - RealmSwift
-    - RxCocoa
-    - RxRelay
-    - RxSwift
     - SwiftyUtils
     - UIColor_Hex_Swift
 
@@ -163,13 +152,10 @@ SPEC CHECKSUMS:
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Realm: ced868eb0254f8d33a21c06981355e5aa33bc005
   RealmSwift: aedc4363150f3c61f91ae0537ed116d2d080a4dd
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SCLAlertView: 776813fb1f62248965f37cb7edf4088ee6394460
   SwiftyUtils: 4c99e810e769063dbd5d4e83b486961a5d470aeb
   UIColor_Hex_Swift: 8be7432edacb7fa91c78aa05ef3c30b66e4f9415
 
-PODFILE CHECKSUM: 6365e27a0015091bfa5251ec215a1b38840777c4
+PODFILE CHECKSUM: a2108c8b9ad7546ade5586fdf81ec0fabc732ac6
 
 COCOAPODS: 1.10.0.rc.1

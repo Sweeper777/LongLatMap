@@ -13,8 +13,6 @@ target 'LongLatMap' do
   pod 'Realm'
   pod 'RealmSwift'
   pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'
-  pod 'RxCocoa'
-  pod 'RxSwift'
   pod 'ColorPickerRow'
   pod 'LiquidButton'
 end

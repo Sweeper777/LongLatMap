@@ -19,6 +19,19 @@ extension MapViewController : GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
         updateLongLatLabel(toCoordinate: mapView.projection.coordinate(for: mapView.center))
     }
+    
+    func mapView(_ mapView: GMSMapView, didEndDragging marker: GMSMarker) {
+        guard let index = gmsMarkers.indexes(of: marker).first else {
+            return
+        }
+        let markerInRealm = DataManager.shared.markers[index]
+        do {
+            try DataManager.shared.updateMarker(markerInRealm, latitude: marker.position.latitude, longitude: marker.position.longitude)
+            updateGMSMarker(marker, accordingTo: markerInRealm)
+        } catch {
+            updateGMSMarker(marker, accordingTo: markerInRealm)
+        }
+    }
 }
 
 extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloatingActionButtonDataSource {

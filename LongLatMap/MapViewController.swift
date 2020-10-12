@@ -113,6 +113,7 @@ class MapViewController: UIViewController {
         let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
         gmsMarker.snippet = "\(latitudeString) \(longtitudeString)\n\(marker.desc)"
         gmsMarker.userData = marker.id
+        gmsMarker.isDraggable = true
     }
     
     func reloadMarkers() {

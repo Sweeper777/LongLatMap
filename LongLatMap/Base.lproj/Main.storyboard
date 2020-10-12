@@ -25,12 +25,33 @@
                     <connections>
                         <segue destination="vlc-xC-WfE" kind="show" identifier="showMarkerEditor" id="iTn-kM-Y2L"/>
                         <segue destination="pYd-97-a2R" kind="presentation" identifier="showMyMarkers" modalPresentationStyle="formSheet" id="Ytq-Pf-uP5"/>
+                        <segue destination="4t1-cX-jF6" kind="presentation" identifier="showSettings" modalPresentationStyle="formSheet" id="t4b-7c-SqD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="TmP-lB-lHo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="114" y="257"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rve-Le-xJh">
+            <objects>
+                <navigationController id="4t1-cX-jF6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CSh-gi-AOr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23137254900000001" green="0.4823529412" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mk4-wN-LEF" kind="relationship" relationship="rootViewController" id="bhc-xo-EdQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6D-m6-4P9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="-434"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wdk-sZ-0yd">
@@ -52,6 +73,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZQ-lT-fnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="257"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="u5H-Ov-KpR">
+            <objects>
+                <viewController id="mk4-wN-LEF" customClass="SettingsViewController" customModule="LongLatMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ACe-fz-MAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="65e-3J-qQZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N1n-bs-jgf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="VrV-OY-q5C">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aDW-Iq-10A">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelTapped" destination="mk4-wN-LEF" id="jvH-1o-TK3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="p7k-FD-Gu8">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneTapped" destination="mk4-wN-LEF" id="87L-fy-a7Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="TmP-lB-lHo" kind="unwind" identifier="unwindToMap" unwindAction="unwindFromModal:" id="LOV-fL-ipX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTD-pF-hnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="-434"/>
         </scene>
         <!--New Marker-->
         <scene sceneID="fsm-eR-5lR">

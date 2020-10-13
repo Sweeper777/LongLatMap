@@ -30,6 +30,19 @@ class SettingsViewController : FormViewController {
     }
     
     @IBAction func doneTapped() {
+        let values = form.values()
+        guard let mapType = values[tagMapType] as? MapType else {
+            return
+        }
+        guard let flatMarkers = values[tagFlatMarkers] as? Bool else {
+            return
+        }
+        guard let longLatStyle = values[tagLonglatStyle] as? String else {
+            return
+        }
+        UserDefaults.standard.set(mapType.rawValue, forKey: tagMapType)
+        UserDefaults.standard.set(flatMarkers, forKey: tagFlatMarkers)
+        UserDefaults.standard.set(longLatStyle, forKey: tagLonglatStyle)
         performSegue(withIdentifier: "unwindToMap", sender: nil)
     }
     

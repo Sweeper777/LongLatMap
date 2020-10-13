@@ -20,6 +20,13 @@ class SettingsViewController : FormViewController {
             row.value = UserDefaults.standard.bool(forKey: tagFlatMarkers)
         }
         
+        <<< SegmentedRow<String>(tagLonglatStyle) {
+            row in
+            row.title = "Long. and Lat. Format".localised
+            row.options = ["DMS", "DD"]
+            row.value = UserDefaults.standard.string(forKey: tagLonglatStyle) ?? "DMS"
+        }
+        
     }
     
     @IBAction func doneTapped() {

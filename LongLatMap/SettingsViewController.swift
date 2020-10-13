@@ -14,6 +14,12 @@ class SettingsViewController : FormViewController {
             row.cell.segmentedControl.apportionsSegmentWidthsByContent = true
         }
         
+        form +++ SwitchRow(tagFlatMarkers) {
+            row in
+            row.title = "Flat Markers".localised
+            row.value = UserDefaults.standard.bool(forKey: tagFlatMarkers)
+        }
+        
     }
     
     @IBAction func doneTapped() {

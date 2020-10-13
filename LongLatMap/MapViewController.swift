@@ -167,18 +167,4 @@ class MapViewController: UIViewController {
             }
         }
     }
-    
-    @objc func didBeginTouchingCoordinate(_ sender: UIGestureRecognizer) {
-        if sender.numberOfTouches == 1 {
-            let point = sender.location(in: mapView)
-            let location = mapView.projection.coordinate(for: point)
-            let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: location.latitude)
-            let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: location.longitude)
-            longLatLabel.isHidden = false
-            longLatLabel.text = "    \(latitudeString) \(longtitudeString)    "
-        }
-        if sender.state == .ended {
-            longLatLabel.isHidden = true
-        }
-    }
 }

@@ -10,3 +10,4 @@ let tagFlatMarkers = "flatMarkers"
 let tagLonglatStyle = "longLatStyle"
 
 let tagRotationLabel = "rotationLabel"
+let tagShowGraticules = "showGraticules"

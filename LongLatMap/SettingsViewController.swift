@@ -27,6 +27,11 @@ class SettingsViewController : FormViewController {
             row.value = UserDefaults.standard.string(forKey: tagLonglatStyle) ?? "DMS"
         }
         
+        <<< SwitchRow(tagShowGraticules) {
+            row in
+            row.title = "Show Graticules".localised
+            row.value = UserDefaults.standard.bool(forKey: tagShowGraticules)
+        }
     }
     
     @IBAction func doneTapped() {

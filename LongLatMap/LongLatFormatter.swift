@@ -6,12 +6,22 @@ class LongLatFormatter {
     static let sharedLongitudeFormatter = { () -> LongLatFormatter in
         let f = LongLatFormatter()
         f.mode = .longitude
+        if UserSettings.longLatStyle == "DD" {
+            f.longLatStyle = .dd
+        } else {
+            f.longLatStyle = .dms
+        }
         return f
     }()
     
     static let sharedLatitudeFormatter = { () -> LongLatFormatter in
         let f = LongLatFormatter()
         f.mode = .latitude
+        if UserSettings.longLatStyle == "DD" {
+            f.longLatStyle = .dd
+        } else {
+            f.longLatStyle = .dms
+        }
         return f
     }()
     

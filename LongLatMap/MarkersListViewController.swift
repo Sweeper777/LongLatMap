@@ -49,6 +49,16 @@ class MarkersListViewController: UITableViewController {
             self.selectedMarker = nil
             tableView.deselectRow(at: indexPath, animated: true)
         }))
+        actionSheet.addAction(UIAlertAction(title: "Delete".localised, style: .destructive, handler: { (_) in
+            do {
+                try DataManager.shared.deleteMarker(self.allMarkers[indexPath.row])
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            } catch {
+                SCLAlertView().showError("Error".localised, subTitle: "An error occurred while deleting marker!".localised, closeButtonTitle: "OK".localised)
+                print(error)
+                tableView.deselectRow(at: indexPath, animated: true)
+            }
+        }))
         actionSheet.addAction(UIAlertAction(title: "Cancel".localised, style: .cancel, handler: { (_) in
             self.selectedMarker = nil
             tableView.deselectRow(at: indexPath, animated: true)

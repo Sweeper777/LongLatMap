@@ -55,6 +55,8 @@ extension MapViewController : LiquidFloatingActionButtonDelegate, LiquidFloating
             newMarker.location = coordinate
             try? DataManager.shared.addMarker(newMarker)
             reloadMarkers()
+        case 3:
+            performSegue(withIdentifier: "showSettings", sender: nil)
         default:
             break
         }

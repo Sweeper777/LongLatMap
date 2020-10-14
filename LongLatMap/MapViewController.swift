@@ -24,6 +24,8 @@ class MapViewController: UIViewController {
         mapView = GMSMapView()
         view = mapView
         mapView.delegate = self
+        mapView.mapType = MapType.mapTypeDict[UserSettings.mapType]!
+        
         reloadMarkers()
         
         addGraticules()
@@ -114,6 +116,7 @@ class MapViewController: UIViewController {
         gmsMarker.snippet = "\(latitudeString) \(longtitudeString)\n\(marker.desc)"
         gmsMarker.userData = marker.id
         gmsMarker.isDraggable = true
+        gmsMarker.isFlat = UserSettings.flatMarkers
     }
     
     func reloadMarkers() {
@@ -162,6 +165,10 @@ class MapViewController: UIViewController {
             mapView.animate(toLocation: editedMarker.location)
         } else {
             reloadMarkers()
+            mapView.mapType = MapType.mapTypeDict[
+                MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal") ?? .normal
+            ]!
+            updateLongLatLabel(toCoordinate: mapView.projection.coordinate(for: mapView.center))
             if let markerToGoTo = (segue.source as? MarkersListViewController)?.selectedMarker {
                 selectMarker(markerToGoTo)
             }

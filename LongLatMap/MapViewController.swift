@@ -29,6 +29,7 @@ class MapViewController: UIViewController {
         reloadMarkers()
         
         addGraticules()
+        updateGraticules()
         
         setupSubviews()
     }
@@ -183,6 +184,7 @@ class MapViewController: UIViewController {
             mapView.animate(toLocation: editedMarker.location)
         } else {
             reloadMarkers()
+            updateGraticules()
             mapView.mapType = MapType.mapTypeDict[
                 MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal") ?? .normal
             ]!

@@ -45,9 +45,13 @@ class SettingsViewController : FormViewController {
         guard let longLatStyle = values[tagLonglatStyle] as? String else {
             return
         }
+        guard let showGraticules = values[tagShowGraticules] as? Bool else {
+            return
+        }
         UserDefaults.standard.set(mapType.rawValue, forKey: tagMapType)
         UserDefaults.standard.set(flatMarkers, forKey: tagFlatMarkers)
         UserDefaults.standard.set(longLatStyle, forKey: tagLonglatStyle)
+        UserDefaults.standard.set(showGraticules, forKey: tagShowGraticules)
         performSegue(withIdentifier: "unwindToMap", sender: nil)
     }
     

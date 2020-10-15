@@ -119,6 +119,24 @@ class MapViewController: UIViewController {
         gmsMarker.isFlat = UserSettings.flatMarkers
     }
     
+    func updateGraticules() {
+        if UserSettings.showGraticules {
+            latitudeLines.forEach { (line) in
+                line.strokeColor = .black
+            }
+            longitudeLines.forEach { (line) in
+                line.strokeColor = .black
+            }
+        } else {
+            latitudeLines.forEach { (line) in
+                line.strokeColor = .clear
+            }
+            longitudeLines.forEach { (line) in
+                line.strokeColor = .clear
+            }
+        }
+    }
+    
     func reloadMarkers() {
         gmsMarkers.forEach {
             $0.map = nil

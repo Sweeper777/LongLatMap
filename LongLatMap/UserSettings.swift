@@ -15,4 +15,9 @@ class UserSettings {
         get { UserDefaults.standard.string(forKey: tagLonglatStyle) ?? "DMS" }
         set { UserDefaults.standard.set(newValue, forKey: tagLonglatStyle) }
     }
+    
+    static var showGraticules : Bool {
+        get { UserDefaults.standard.bool(forKey: tagShowGraticules) }
+        set { UserDefaults.standard.set(newValue, forKey: tagShowGraticules) }
+    }
 }

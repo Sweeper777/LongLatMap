@@ -41,3 +41,17 @@
 
 "Screenshot Saved" = "スクリーンショットを保存しました";
 "Unable to save screenshot" = "スクリーンショットを保存できません";
+
+"An error occurred while saving marker!" = "マーカーを保存する際、エラーが発生しました。";
+"Delete This Marker" = "マーカーを削除";
+"Yes" = "はい";
+"No" = "いいえ";
+"An error occurred while deleting marker!" = "マーカーを削除する際、エラーが発生しました。";
+"Do you really want to delete this marker?" = "このマーカーを削除してもよろしいですか？";
+"Confirm" = "確認";
+"My Markers" = "すべてのマーカー";
+"Take me there" = "ここへ移動";
+"Edit" = "編集";
+"Cancel" = "キャンセル";
+"Delete" = "削除";
+"Show Graticules" = "経緯線網の表示";

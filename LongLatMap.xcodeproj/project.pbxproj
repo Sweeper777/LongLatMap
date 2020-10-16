@@ -17,6 +17,7 @@
 		5A3AC0512501D2C800411D7F /* darkMapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A3AC0502501D2C800411D7F /* darkMapStyle.json */; };
 		5A3AC0532501D62100411D7F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AC0522501D62100411D7F /* DataManager.swift */; };
 		5A4760B32503369F00582780 /* MarkerEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4760B22503369F00582780 /* MarkerEditorViewController.swift */; };
+		5A5A3943253935870022FB07 /* CoordinateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A3942253935870022FB07 /* CoordinateFormatter.swift */; };
 		5A6AA98E25144DD400CBC400 /* MarkerRotationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */; };
 		5A6AA99025144E3000CBC400 /* MarkerRotationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */; };
 		5A7534582531575A00DEF2E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7534572531575A00DEF2E4 /* SettingsViewController.swift */; };
@@ -69,6 +70,7 @@
 		5A3AC0502501D2C800411D7F /* darkMapStyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = darkMapStyle.json; sourceTree = "<group>"; };
 		5A3AC0522501D62100411D7F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5A4760B22503369F00582780 /* MarkerEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerEditorViewController.swift; sourceTree = "<group>"; };
+		5A5A3942253935870022FB07 /* CoordinateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateFormatter.swift; sourceTree = "<group>"; };
 		5A6AA98D25144DD400CBC400 /* MarkerRotationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerRotationRow.swift; sourceTree = "<group>"; };
 		5A6AA98F25144E3000CBC400 /* MarkerRotationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerRotationCell.xib; sourceTree = "<group>"; };
 		5A7534572531575A00DEF2E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				5AFF62931D868473004217D3 /* FormTags.swift */,
 				5A37F1CD250476C200DE958A /* Utils.swift */,
 				5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */,
+				5A5A3942253935870022FB07 /* CoordinateFormatter.swift */,
 				5A004AB81D885179009EBC86 /* Colors.swift */,
 				5AFFF3E81D91AF0C007E8913 /* MapType.swift */,
 				5A37B92325007B11001117C1 /* Marker.swift */,
@@ -463,6 +466,7 @@
 				5A37F1CC250475A000DE958A /* LongLatInputView.swift in Sources */,
 				5AB150C3250CECAE0015ABC9 /* LongLatInputController.swift in Sources */,
 				5A9ECF562511A777006C3C6B /* LongLatFormatter.swift in Sources */,
+				5A5A3943253935870022FB07 /* CoordinateFormatter.swift in Sources */,
 				5A82ECF1252D524D00FB6502 /* MapCrosshairView.swift in Sources */,
 				5A7836DE2504833000CDF709 /* DMSLongLatInputView.swift in Sources */,
 				5AFF70341D7EB02200252E53 /* AppDelegate.swift in Sources */,

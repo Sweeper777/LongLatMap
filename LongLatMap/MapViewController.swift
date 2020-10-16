@@ -20,11 +20,15 @@ class MapViewController: UIViewController {
         LiquidFloatingCell(icon: UIImage(systemName: "gear")!),
     ]
     
-    override func viewDidLoad() {
+    fileprivate func setupMap() {
         mapView = GMSMapView()
         view = mapView
         mapView.delegate = self
         mapView.mapType = MapType.mapTypeDict[UserSettings.mapType]!
+    }
+    
+    override func viewDidLoad() {
+        setupMap()
         
         reloadMarkers()
         

@@ -41,3 +41,17 @@
 
 "Screenshot Saved" = "已保存截圖";
 "Unable to save screenshot" = "保存截圖失敗";
+
+"An error occurred while saving marker!" = "保存標記時發生錯誤！";
+"Delete This Marker" = "刪除標記";
+"Yes" = "是";
+"No" = "否";
+"An error occurred while deleting marker!" = "刪除標記時發生錯誤！";
+"Do you really want to delete this marker?" = "真的要刪除這個標記嗎？";
+"Confirm" = "確認";
+"My Markers" = "所有標記";
+"Take me there" = "移動到該處";
+"Edit" = "編輯";
+"Cancel" = "取消";
+"Delete" = "刪除";
+"Show Graticules" = "顯示網格";

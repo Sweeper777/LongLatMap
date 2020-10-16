@@ -25,9 +25,18 @@ class LongLatFormatter {
         return f
     }()
     
-    enum LongLatStyle {
+    enum LongLatStyle : CustomStringConvertible {
         case dms
         case dd
+        
+        var description: String {
+            switch self {
+            case .dms:
+                return "DMS"
+            case .dd:
+                return "DD"
+            }
+        }
     }
     
     var mode: LongLatInputView.Mode = .latitude

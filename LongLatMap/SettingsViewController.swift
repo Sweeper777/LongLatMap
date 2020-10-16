@@ -10,27 +10,27 @@ class SettingsViewController : FormViewController {
         <<< SegmentedRow<MapType>(tagMapType) {
             row in
             row.options = [.normal, .satellite, .hybrid, .terrain]
-            row.value = MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal")!
+            row.value = UserSettings.mapType
             row.cell.segmentedControl.apportionsSegmentWidthsByContent = true
         }
         
         form +++ SwitchRow(tagFlatMarkers) {
             row in
             row.title = "Flat Markers".localised
-            row.value = UserDefaults.standard.bool(forKey: tagFlatMarkers)
+            row.value = UserSettings.flatMarkers
         }
         
         <<< SegmentedRow<String>(tagLonglatStyle) {
             row in
             row.title = "Long. and Lat. Format".localised
             row.options = ["DMS", "DD"]
-            row.value = UserDefaults.standard.string(forKey: tagLonglatStyle) ?? "DMS"
+            row.value = UserSettings.longLatStyle
         }
         
         <<< SwitchRow(tagShowGraticules) {
             row in
             row.title = "Show Graticules".localised
-            row.value = UserDefaults.standard.bool(forKey: tagShowGraticules)
+            row.value = UserSettings.showGraticules
         }
     }
     
@@ -48,10 +48,10 @@ class SettingsViewController : FormViewController {
         guard let showGraticules = values[tagShowGraticules] as? Bool else {
             return
         }
-        UserDefaults.standard.set(mapType.rawValue, forKey: tagMapType)
-        UserDefaults.standard.set(flatMarkers, forKey: tagFlatMarkers)
-        UserDefaults.standard.set(longLatStyle, forKey: tagLonglatStyle)
-        UserDefaults.standard.set(showGraticules, forKey: tagShowGraticules)
+        UserSettings.mapType = mapType
+        UserSettings.flatMarkers = flatMarkers
+        UserSettings.longLatStyle = longLatStyle
+        UserSettings.showGraticules = showGraticules
         performSegue(withIdentifier: "unwindToMap", sender: nil)
     }
     

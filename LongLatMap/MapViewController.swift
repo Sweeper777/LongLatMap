@@ -185,9 +185,7 @@ class MapViewController: UIViewController {
         } else {
             reloadMarkers()
             updateGraticules()
-            mapView.mapType = MapType.mapTypeDict[
-                MapType(rawValue: UserDefaults.standard.string(forKey: tagMapType) ?? "Normal") ?? .normal
-            ]!
+            mapView.mapType = MapType.mapTypeDict[UserSettings.mapType]!
             updateLongLatLabel(toCoordinate: mapView.projection.coordinate(for: mapView.center))
             if let markerToGoTo = (segue.source as? MarkersListViewController)?.selectedMarker {
                 selectMarker(markerToGoTo)

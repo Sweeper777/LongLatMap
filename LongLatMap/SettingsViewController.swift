@@ -20,10 +20,10 @@ class SettingsViewController : FormViewController {
             row.value = UserSettings.flatMarkers
         }
         
-        <<< SegmentedRow<String>(tagLonglatStyle) {
+        <<< SegmentedRow<LongLatFormatter.LongLatStyle>(tagLonglatStyle) {
             row in
             row.title = "Long. and Lat. Format".localised
-            row.options = ["DMS", "DD"]
+            row.options = [.dms, .dd]
             row.value = UserSettings.longLatStyle
         }
         
@@ -42,7 +42,7 @@ class SettingsViewController : FormViewController {
         guard let flatMarkers = values[tagFlatMarkers] as? Bool else {
             return
         }
-        guard let longLatStyle = values[tagLonglatStyle] as? String else {
+        guard let longLatStyle = values[tagLonglatStyle] as? LongLatFormatter.LongLatStyle else {
             return
         }
         guard let showGraticules = values[tagShowGraticules] as? Bool else {

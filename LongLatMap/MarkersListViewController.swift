@@ -5,6 +5,7 @@ import SCLAlertView
 class MarkersListViewController: UITableViewController {
     var allMarkers = DataManager.shared.markers
     var selectedMarker: Marker?
+    let coordinateFormatter = CoordinateFormatter(style: UserSettings.longLatStyle)
     
     override func viewDidLoad() {
         title = "My Markers".localised
@@ -29,9 +30,8 @@ class MarkersListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         let marker = allMarkers[indexPath.row]
         cell.textLabel?.text = marker.title
-        let latitudeText = LongLatFormatter.sharedLatitudeFormatter.string(for: marker.latitude)
-        let longitudeText = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
-        cell.detailTextLabel?.text = "\(latitudeText) \(longitudeText)"
+        
+        cell.detailTextLabel?.text = coordinateFormatter.string(from: marker.location)
         cell.imageView?.image = GMSMarker.markerImage(with: UIColor(hex: marker.color))
         cell.imageView?.transform = CGAffineTransform(rotationAngle: marker.rotation.f / 180 * .pi)
         cell.imageView?.contentMode = .scaleAspectFit

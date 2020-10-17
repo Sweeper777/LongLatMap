@@ -20,6 +20,8 @@ class MapViewController: UIViewController {
         LiquidFloatingCell(icon: UIImage(systemName: "gear")!),
     ]
     
+    let coordinateFormatter = CoordinateFormatter(style: UserSettings.longLatStyle)
+    
     fileprivate func setupMap() {
         mapView = GMSMapView()
         view = mapView
@@ -116,9 +118,8 @@ class MapViewController: UIViewController {
         gmsMarker.rotation = Double(marker.rotation)
         gmsMarker.map = mapView
         gmsMarker.title = marker.title
-        let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: marker.latitude)
-        let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: marker.longitude)
-        gmsMarker.snippet = "\(latitudeString) \(longtitudeString)\n\(marker.desc)"
+        let coordinateString = coordinateFormatter.string(from: marker.location)
+        gmsMarker.snippet = "\(coordinateString)\n\(marker.desc)"
         gmsMarker.userData = marker.id
         gmsMarker.isDraggable = true
         gmsMarker.isFlat = UserSettings.flatMarkers
@@ -162,10 +163,8 @@ class MapViewController: UIViewController {
     }
     
     func updateLongLatLabel(toCoordinate coord: CLLocationCoordinate2D) {
-        let location = coord
-        let latitudeString = LongLatFormatter.sharedLatitudeFormatter.string(for: location.latitude)
-        let longtitudeString = LongLatFormatter.sharedLongitudeFormatter.string(for: location.longitude)
-        longLatLabel.text = "    \(latitudeString) \(longtitudeString)    "
+        let coordinateString = coordinateFormatter.string(from: coord)
+        longLatLabel.text = "    \(coordinateString)    "
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

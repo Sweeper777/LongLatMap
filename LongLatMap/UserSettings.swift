@@ -11,9 +11,9 @@ class UserSettings {
         set { UserDefaults.standard.set(newValue, forKey: tagFlatMarkers) }
     }
     
-    static var longLatStyle : String {
-        get { UserDefaults.standard.string(forKey: tagLonglatStyle) ?? "DMS" }
-        set { UserDefaults.standard.set(newValue, forKey: tagLonglatStyle) }
+    static var longLatStyle : LongLatFormatter.LongLatStyle {
+        get { LongLatFormatter.LongLatStyle.init(rawValue: UserDefaults.standard.integer(forKey: tagLonglatStyle)) ?? .dms }
+        set { UserDefaults.standard.set(newValue.rawValue, forKey: tagLonglatStyle) }
     }
     
     static var showGraticules : Bool {

@@ -1,7 +1,7 @@
 import CoreLocation
 
 class CoordinateFormatter {
-    var style = LongLatFormatter.LongLatStyle.dms {
+    var style: LongLatFormatter.LongLatStyle {
         didSet {
             longitudeFormatter.longLatStyle = style
             latitudeFormatter.longLatStyle = style
@@ -10,7 +10,8 @@ class CoordinateFormatter {
     private var longitudeFormatter: LongLatFormatter
     private var latitudeFormatter: LongLatFormatter
     
-    init() {
+    init(style: LongLatFormatter.LongLatStyle = .dms) {
+        self.style = style
         longitudeFormatter = LongLatFormatter()
         longitudeFormatter.mode = .longitude
         latitudeFormatter = LongLatFormatter()

@@ -11,8 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window?.tintColor = UIColor(hex: "3b7b3b")
-        NavigationAccessoryView.appearance().tintColor = UIColor(hex: "3b7b3b")
+        window?.tintColor = UIColor(named: "accentColor")
+        NavigationAccessoryView.appearance().tintColor = UIColor(named: "accentColor")
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [

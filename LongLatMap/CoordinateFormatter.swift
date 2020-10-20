@@ -23,6 +23,10 @@ class CoordinateFormatter {
     func string(from coord: CLLocationCoordinate2D) -> String {
         let latitudeString = latitudeFormatter.string(for: coord.latitude)
         let longitudeString = longitudeFormatter.string(for: coord.longitude)
-        return "\(latitudeString) \(longitudeString)"
+        if style == .dd {
+            return String(format: "ddCoordinateFormat".localised, latitudeString, longitudeString)
+        } else {
+            return String(format: "dmsCoordinateFormat".localised, latitudeString, longitudeString)
+        }
     }
 }

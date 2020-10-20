@@ -13,13 +13,13 @@ class DMSLongLatInputView : UIView {
         didSet {
             switch mode {
             case .longitude:
-                signSelector.setTitle("E", forSegmentAt: 0)
-                signSelector.setTitle("W", forSegmentAt: 1)
+                signSelector.setTitle("E".localised, forSegmentAt: 0)
+                signSelector.setTitle("W".localised, forSegmentAt: 1)
                 degreeTextField.placeholder = "000"
                 degreeTextField.validRange = 0..<180
             case .latitude:
-                signSelector.setTitle("N", forSegmentAt: 0)
-                signSelector.setTitle("S", forSegmentAt: 1)
+                signSelector.setTitle("N".localised, forSegmentAt: 0)
+                signSelector.setTitle("S".localised, forSegmentAt: 1)
                 degreeTextField.placeholder = "00"
                 degreeTextField.validRange = 0..<90
             }
@@ -71,7 +71,7 @@ class DMSLongLatInputView : UIView {
         secondTextField = DMSLongLatTextField()
         secondTextField.validRange = 0..<60
         secondTextField.tag = 3
-        signSelector = UISegmentedControl(items: ["N", "S"])
+        signSelector = UISegmentedControl(items: ["N".localised, "S".localised])
         signSelector.selectedSegmentIndex = 0
         signSelector.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: fontSize)], for: .normal)
         [degreeTextField, minuteTextField, secondTextField].forEach { (tf) in

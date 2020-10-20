@@ -55,3 +55,13 @@
 "Cancel" = "取消";
 "Delete" = "刪除";
 "Show Graticules" = "顯示網格";
+
+"N" = "北緯";
+"E" = "東經";
+"W" = "西經";
+"S" = "南緯";
+"longLatFormat" = "%4$@ %1$d° %2$d′ %3$d″";
+"dmsCoordinateFormat" = "%@ %@";
+"ddCoordinateFormat" = "經度：%2$@ 緯度：%1$@";
+"DMS" = "度分秒";
+"Decimal" = "小數";

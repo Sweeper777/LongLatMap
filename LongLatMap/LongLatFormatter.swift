@@ -3,20 +3,6 @@ import CoreLocation
 
 class LongLatFormatter {
     
-    static let sharedLongitudeFormatter = { () -> LongLatFormatter in
-        let f = LongLatFormatter()
-        f.mode = .longitude
-        f.longLatStyle = UserSettings.longLatStyle
-        return f
-    }()
-    
-    static let sharedLatitudeFormatter = { () -> LongLatFormatter in
-        let f = LongLatFormatter()
-        f.mode = .latitude
-        f.longLatStyle = UserSettings.longLatStyle
-        return f
-    }()
-    
     enum LongLatStyle: Int, CustomStringConvertible {
         case dms
         case dd

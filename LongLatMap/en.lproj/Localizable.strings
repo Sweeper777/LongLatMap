@@ -56,3 +56,13 @@
 "    Pan on the map to see coordinates!    " = "    Pan on the map to see coordinates!    ";
 "Delete" = "Delete";
 "Show Graticules" = "Show Graticules";
+
+"N" = "N";
+"E" = "E";
+"W" = "W";
+"S" = "S";
+"longLatFormat" = "%d° %d′ %d″ %@";
+"dmsCoordinateFormat" = "%@ %@";
+"ddCoordinateFormat" = "Lat: %@ Lng: %@";
+"DMS" = "DMS";
+"Decimal" = "Decimal";

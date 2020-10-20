@@ -55,3 +55,13 @@
 "Cancel" = "キャンセル";
 "Delete" = "削除";
 "Show Graticules" = "経緯線網の表示";
+
+"N" = "北";
+"E" = "東";
+"W" = "西";
+"S" = "南";
+"longLatFormat" = "%d° %d′ %d″ %@";
+"dmsCoordinateFormat" = "%@ %@";
+"ddCoordinateFormat" = "軽度：%2$@ 緯度：%1$@";
+"DMS" = "度分秒";
+"Decimal" = "小数";

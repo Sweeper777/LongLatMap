@@ -40,11 +40,11 @@ class LongLatFormatter {
             let dms = decimalToDMS(decimalDegrees: degrees)
             let direction: String
             if mode == .latitude {
-                direction = dms.positive ? "N" : "S"
+                direction = dms.positive ? "N".localised : "S".localised
             } else {
-                direction = dms.positive ? "E" : "W"
+                direction = dms.positive ? "E".localised : "W".localised
             }
-            return "\(dms.degrees)° \(dms.minutes)′ \(dms.seconds)″ \(direction)"
+            return String(format: "longLatFormat".localised, dms.degrees, dms.minutes, dms.seconds, direction)
         }
     }
 }

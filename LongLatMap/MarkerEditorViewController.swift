@@ -71,6 +71,7 @@ class MarkerEditorViewController: FormViewController {
             row in
             row.title = "Title".localised
             row.value = marker?.title ?? "Unnamed".localised
+            row.cell.textField.keyboardAppearance = traitCollection.userInterfaceStyle == .dark ? .dark : .light
         }
         
         form +++ Section("description".localised)
@@ -78,6 +79,7 @@ class MarkerEditorViewController: FormViewController {
         <<< TextAreaRow(tagDescription) {
             row in
             row.value = marker?.desc ?? ""
+            row.cell.textView.keyboardAppearance = traitCollection.userInterfaceStyle == .dark ? .dark : .light
         }
         
         if let markerToEdit = marker {

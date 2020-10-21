@@ -18,6 +18,7 @@ final class LongLatRow: SelectorRow<LongLatCell>, RowType {
                 return ""
             }
             self.longLatFormatter.mode = self.mode
+            self.longLatFormatter.longLatStyle = UserSettings.longLatStyle
             return self.longLatFormatter.string(for: degrees)
         }
     }

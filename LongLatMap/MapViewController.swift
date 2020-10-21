@@ -30,6 +30,8 @@ class MapViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        overrideUserInterfaceStyle = .light
+        
         setupMap()
         
         reloadMarkers()

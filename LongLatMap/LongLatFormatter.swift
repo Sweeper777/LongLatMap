@@ -17,8 +17,14 @@ class LongLatFormatter {
         }
     }
     
-    var mode: LongLatInputView.Mode = .latitude
-    var longLatStyle: LongLatStyle = .dms
+    var mode: LongLatInputView.Mode
+    var longLatStyle: LongLatStyle
+    
+    init(mode: LongLatInputView.Mode = .latitude, style: LongLatStyle = .dms) {
+        self.mode = mode
+        self.longLatStyle = style
+    }
+    
     private var ddNumberFormatter: NumberFormatter = {
         () -> NumberFormatter in
         let f = NumberFormatter()

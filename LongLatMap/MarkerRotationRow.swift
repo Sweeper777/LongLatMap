@@ -7,13 +7,34 @@ public struct MarkerRotationRowValue: Equatable {
 }
 
 public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
+    
+    private class GRDelegate: NSObject, UIGestureRecognizerDelegate {
+        weak var markerRotationCell: MarkerRotationCell?
+        
+        init(_ markerRotationCell: MarkerRotationCell) {
+            self.markerRotationCell = markerRotationCell
+        }
+        
+        func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+            let location = touch.location(in: markerRotationCell)
+            guard let mrc = markerRotationCell else {
+                return false
+            }
+            let radius = mrc.markerView.width
+            return (-radius...radius).contains(location.x - mrc.bounds.midX)
+        }
+    }
 
     @IBOutlet var markerView: UIImageView!
+    private var grDelegate: GRDelegate!
     
     public override func setup() {
         super.setup()
+        grDelegate = GRDelegate(self)
         let panRecogniser = UIPanGestureRecognizer(target: self, action: #selector(markerRotated(_:)))
         let touchRecogniser = UITapGestureRecognizer(target: self, action: #selector(markerRotated(_:)))
+        panRecogniser.delegate = grDelegate
+        touchRecogniser.delegate = grDelegate
         self.addGestureRecognizer(panRecogniser)
         self.addGestureRecognizer(touchRecogniser)
         markerView.layer.anchorPoint = CGPoint(x: 0.5, y: 1.0)
@@ -41,6 +62,10 @@ public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
     func setMarkerRotation(to degrees: Int) {
         let radians = degrees.f / 180 * .pi
         markerView.transform = CGAffineTransform(rotationAngle: radians)
+    }
+
+    public override func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+
     }
 }
 

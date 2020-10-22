@@ -298,10 +298,9 @@
 			};
 			buildConfigurationList = 5AFF702B1D7EB02200252E53 /* Build configuration list for PBXProject "LongLatMap" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				"zh-Hans",

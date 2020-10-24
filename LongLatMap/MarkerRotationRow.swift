@@ -63,10 +63,6 @@ public class MarkerRotationCell: Cell<MarkerRotationRowValue>, CellType {
         let radians = degrees.f / 180 * .pi
         markerView.transform = CGAffineTransform(rotationAngle: radians)
     }
-
-    public override func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-
-    }
 }
 
 class MarkerRotationCellBackgroundView: UIView {

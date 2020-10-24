@@ -6,7 +6,7 @@ class Marker: Object {
     @objc dynamic var latitude = 0.0
     @objc dynamic var rotation = 0
     @objc dynamic var color = Color.red.hexString
-    @objc dynamic var title = "Unnamed"
+    @objc dynamic var title = "Unnamed".localised
     @objc dynamic var desc = ""
     @objc dynamic var id = 0
     

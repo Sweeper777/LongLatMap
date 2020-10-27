@@ -30,6 +30,13 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         mapView.mapType = MapType.mapTypeDict[UserSettings.mapType]!
     }
+
+    func reloadAds() {
+        interstitialAd = GADInterstitial(adUnitID: adUnitID)
+        let request = GADRequest()
+        interstitialAd.load(request)
+        interstitialAd.delegate = self
+    }
     
     override func viewDidLoad() {
         overrideUserInterfaceStyle = .light

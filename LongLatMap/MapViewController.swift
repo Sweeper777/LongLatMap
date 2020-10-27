@@ -1,7 +1,7 @@
 import UIKit
 import GoogleMaps
 import SwiftyUtils
-
+import GoogleMobileAds
 import LiquidButton
 
 class MapViewController: UIViewController {
@@ -21,6 +21,8 @@ class MapViewController: UIViewController {
     ]
     
     let coordinateFormatter = CoordinateFormatter(style: UserSettings.longLatStyle)
+
+    var interstitialAd: GADInterstitial!
     
     fileprivate func setupMap() {
         mapView = GMSMapView()

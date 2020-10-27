@@ -1,5 +1,6 @@
 import GoogleMaps
 import LiquidButton
+import GoogleMobileAds
 
 extension MapViewController : GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D) {
@@ -30,6 +31,12 @@ extension MapViewController : GMSMapViewDelegate {
             updateGMSMarker(marker, accordingTo: markerInRealm)
         } catch {
             updateGMSMarker(marker, accordingTo: markerInRealm)
+        }
+    }
+
+    public func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        if Int.random(in: 0..<100) < 5 && interstitialAd?.isReady ?? false {
+            interstitialAd.present(fromRootViewController: self)
         }
     }
 }

@@ -3,6 +3,7 @@ import GoogleMaps
 import SwiftyUtils
 import GoogleMobileAds
 import LiquidButton
+import AppTrackingTransparency
 
 class MapViewController: UIViewController {
     var mapView: GMSMapView!
@@ -49,6 +50,14 @@ class MapViewController: UIViewController {
         updateGraticules()
         
         setupSubviews()
+
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                self.reloadAds()
+            }
+        } else {
+            reloadAds()
+        }
     }
     
     fileprivate func setupSubviews() {

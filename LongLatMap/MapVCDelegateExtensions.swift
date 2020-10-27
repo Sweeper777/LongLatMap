@@ -79,3 +79,9 @@ extension MapViewController : UIAdaptivePresentationControllerDelegate {
         reloadMarkers()
     }
 }
+
+extension MapViewController : GADInterstitialDelegate {
+    public func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        reloadAds()
+    }
+}

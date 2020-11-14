@@ -10,9 +10,9 @@ class LongLatFormatter {
         var description: String {
             switch self {
             case .dms:
-                return "DMS"
+                return "DMS".localised
             case .dd:
-                return "DD"
+                return "DD".localised
             }
         }
     }

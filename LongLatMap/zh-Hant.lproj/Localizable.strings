@@ -65,3 +65,4 @@
 "ddCoordinateFormat" = "經度：%2$@ 緯度：%1$@";
 "DMS" = "度分秒";
 "Decimal" = "小數";
+"DD" = "小數";

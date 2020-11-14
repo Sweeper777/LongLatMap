@@ -66,3 +66,4 @@
 "ddCoordinateFormat" = "Lat: %@ Lng: %@";
 "DMS" = "DMS";
 "Decimal" = "Decimal";
+"DD" = "DD";

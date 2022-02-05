@@ -1,6 +1,7 @@
 import UIKit
 import GoogleMaps
 import Firebase
+import GoogleMobileAds
 import SwiftyUtils
 import Eureka
 
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [
-            kGADSimulatorID as! String
+            GADSimulatorID
         ]
         GMSServices.provideAPIKey(gmsAPIKey)
 //        lastUsedBuild = Int(ez.appBuild ?? "0") ?? 0

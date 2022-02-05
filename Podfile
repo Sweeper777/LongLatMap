@@ -9,7 +9,7 @@ target 'LongLatMap' do
   pod 'GoogleMaps'
   pod 'Eureka'
   pod 'Firebase/Core'
-  pod 'Firebase/AdMob'
+  pod 'Google-Mobile-Ads-SDK'
   pod 'Realm'
   pod 'RealmSwift'
   pod 'SCLAlertView', :git => 'https://github.com/vikmeup/SCLAlertView-Swift.git'

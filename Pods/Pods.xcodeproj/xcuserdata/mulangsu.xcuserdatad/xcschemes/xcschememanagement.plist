@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Firebase-AdMob-Core-CoreOnly.xcscheme</key>
+		<key>Firebase-Core-CoreOnly.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -69,12 +69,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleAppMeasurement-AdIdSupport.xcscheme</key>
+		<key>GoogleAppMeasurement-framework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleAppMeasurement.xcscheme</key>
+		<key>GoogleAppMeasurement-library.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

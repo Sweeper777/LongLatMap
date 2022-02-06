@@ -35,8 +35,8 @@ extension MapViewController : GMSMapViewDelegate {
     }
 
     public func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
-        if Int.random(in: 0..<100) < 5 && interstitialAd?.isReady ?? false {
-            interstitialAd.present(fromRootViewController: self)
+        if Int.random(in: 0..<100) < 5, let interstitial = interstitialAd {
+            interstitial.present(fromRootViewController: self)
         }
     }
 }
@@ -80,8 +80,9 @@ extension MapViewController : UIAdaptivePresentationControllerDelegate {
     }
 }
 
-extension MapViewController : GADInterstitialDelegate {
-    public func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+extension MapViewController : GADFullScreenContentDelegate {
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        interstitialAd = nil
         reloadAds()
     }
 }

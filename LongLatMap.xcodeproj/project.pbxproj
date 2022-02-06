@@ -80,6 +80,7 @@
 		5A82C0DC251842E300774448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A82ECF0252D524D00FB6502 /* MapCrosshairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCrosshairView.swift; sourceTree = "<group>"; };
 		5A8460EB252807DE00C08A96 /* MapVCDelegateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCDelegateExtensions.swift; sourceTree = "<group>"; };
+		5A97CECF27AE78F8008F8D72 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
 		5A9ECF552511A777006C3C6B /* LongLatFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatFormatter.swift; sourceTree = "<group>"; };
 		5AABB916250F084200A7EE5A /* LongLatMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongLatMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AABB918250F084200A7EE5A /* LongLatMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongLatMapTests.swift; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 		FA81AA67FC7E81878EAA822B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A97CECF27AE78F8008F8D72 /* GoogleMobileAds.xcframework */,
 				5A171C861DF737F800567EEE /* MLScreenshot.framework */,
 				5AFBF5801D83F64D00B95D2D /* Eureka.framework */,
 				5AFF704E1D7EB1B800252E53 /* MapKit.framework */,
@@ -737,7 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/MLScreenshot",

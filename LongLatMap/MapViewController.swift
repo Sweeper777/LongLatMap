@@ -208,10 +208,10 @@ class MapViewController: UIViewController {
             }
             mapView.animate(toLocation: editedMarker.location)
         } else {
+            coordinateFormatter.style = UserSettings.longLatStyle
             reloadMarkers()
             updateGraticules()
             mapView.mapType = MapType.mapTypeDict[UserSettings.mapType]!
-            coordinateFormatter.style = UserSettings.longLatStyle
             updateLongLatLabel(toCoordinate: mapView.projection.coordinate(for: mapView.center))
             if let markerToGoTo = (segue.source as? MarkersListViewController)?.selectedMarker {
                 selectMarker(markerToGoTo)

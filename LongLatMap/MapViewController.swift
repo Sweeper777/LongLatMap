@@ -23,7 +23,7 @@ class MapViewController: UIViewController {
     
     let coordinateFormatter = CoordinateFormatter(style: UserSettings.longLatStyle)
 
-    var interstitialAd: GADInterstitial!
+    var interstitialAd: GADInterstitialAd!
     
     fileprivate func setupMap() {
         mapView = GMSMapView()
@@ -33,10 +33,12 @@ class MapViewController: UIViewController {
     }
 
     func reloadAds() {
-        interstitialAd = GADInterstitial(adUnitID: adUnitID)
-        let request = GADRequest()
-        interstitialAd.load(request)
-        interstitialAd.delegate = self
+        GADInterstitialAd.load(
+            withAdUnitID: adUnitID,
+            request: GADRequest()) { [weak self] ad, error in
+                self?.interstitialAd = ad
+                ad?.fullScreenContentDelegate = self
+            }
     }
     
     override func viewDidLoad() {

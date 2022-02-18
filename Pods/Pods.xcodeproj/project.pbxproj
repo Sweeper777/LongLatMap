@@ -18,6 +18,7 @@
 				B71C9DC4605A2386DCC5BF6F137A262A /* PBXTargetDependency */,
 			);
 			name = "GoogleAppMeasurement-library";
+			productName = "GoogleAppMeasurement-library";
 		};
 		458B188365A307B3C128ABF524D1A3E3 /* GoogleUserMessagingPlatform */ = {
 			isa = PBXAggregateTarget;
@@ -28,6 +29,7 @@
 			dependencies = (
 			);
 			name = GoogleUserMessagingPlatform;
+			productName = GoogleUserMessagingPlatform;
 		};
 		6890A8A3971EA3CCE887BE65B0C041B3 /* GoogleAppMeasurement-framework */ = {
 			isa = PBXAggregateTarget;
@@ -40,6 +42,7 @@
 				2EEFDDE0E7936FB60301AD68024BE5D2 /* PBXTargetDependency */,
 			);
 			name = "GoogleAppMeasurement-framework";
+			productName = "GoogleAppMeasurement-framework";
 		};
 		8C8B032DC26DBD3A3C9A028FD8F95004 /* Firebase-Core-CoreOnly */ = {
 			isa = PBXAggregateTarget;
@@ -51,6 +54,7 @@
 				7AFC9F9E7612ED11C2F4768B2DE55E90 /* PBXTargetDependency */,
 			);
 			name = "Firebase-Core-CoreOnly";
+			productName = "Firebase-Core-CoreOnly";
 		};
 		96DC0FA7DA971E5152F24F934B07B747 /* FirebaseAnalytics-library */ = {
 			isa = PBXAggregateTarget;
@@ -66,6 +70,7 @@
 				27B6A884E4837ED4B95315DDB1DC3384 /* PBXTargetDependency */,
 			);
 			name = "FirebaseAnalytics-library";
+			productName = "FirebaseAnalytics-library";
 		};
 		A701D65EF295364805D592B4C7BE36CD /* FirebaseAnalytics-framework */ = {
 			isa = PBXAggregateTarget;
@@ -81,6 +86,7 @@
 				D82BCC8E96B8A2B95C3A1275822643D9 /* PBXTargetDependency */,
 			);
 			name = "FirebaseAnalytics-framework";
+			productName = "FirebaseAnalytics-framework";
 		};
 		BEEBA5DF7C1134009596C7D45C99372B /* Firebase.default-CoreOnly */ = {
 			isa = PBXAggregateTarget;
@@ -92,6 +98,7 @@
 				08E430E85ED0EEFC7DC58E1FEC8D1078 /* PBXTargetDependency */,
 			);
 			name = "Firebase.default-CoreOnly";
+			productName = "Firebase.default-CoreOnly";
 		};
 		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
 			isa = PBXAggregateTarget;
@@ -101,6 +108,7 @@
 			dependencies = (
 			);
 			name = GoogleMaps;
+			productName = GoogleMaps;
 		};
 		FEA3B3A570634836C0457F3D7CEF1699 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXAggregateTarget;
@@ -113,6 +121,7 @@
 				9CE90C18CFFF274CCE9C309360CEA68D /* PBXTargetDependency */,
 			);
 			name = "Google-Mobile-Ads-SDK";
+			productName = "Google-Mobile-Ads-SDK";
 		};
 /* End PBXAggregateTarget section */
 
@@ -1796,11 +1805,11 @@
 		074A232BE7CDE167F38A4252FB8F7453 /* RealmSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-prefix.pch"; sourceTree = "<group>"; };
 		07B4B48FF274E79924424D10BA5F5B9D /* FIRAppInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAppInternal.h; path = FirebaseCore/Sources/Private/FIRAppInternal.h; sourceTree = "<group>"; };
 		08114DDD70C6B9675E2EE6A842B1B226 /* SCLAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.debug.xcconfig; sourceTree = "<group>"; };
-		082977F3777A7D434AB35C357B487F83 /* Eureka */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Eureka; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		082977F3777A7D434AB35C357B487F83 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B62FFF369DAEED9C800FC3C0FA329B /* FIRInstallationsStoredItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsStoredItem.h; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.h; sourceTree = "<group>"; };
 		09445D87BACEFEE0336653C3D454FF00 /* GoogleDataTransport-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GoogleDataTransport-library.debug.xcconfig"; path = "../GoogleDataTransport-library/GoogleDataTransport-library.debug.xcconfig"; sourceTree = "<group>"; };
 		09AC08D345DB5A0857BB412DA3083AD9 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = RealmSwift/Util.swift; sourceTree = "<group>"; };
-		09B481FF32F1B03D8932F5C6D8EFCD77 /* FirebaseInstallations-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "FirebaseInstallations-library"; path = "libFirebaseInstallations-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B481FF32F1B03D8932F5C6D8EFCD77 /* libFirebaseInstallations-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFirebaseInstallations-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C82960BD71B9A5848EB6FE08A67DC2 /* FIRInstallationsErrorUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsErrorUtil.m; path = FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.m; sourceTree = "<group>"; };
 		0B9C130277EC44BC6053A40F59958085 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
 		0C2A50E8BED429CBB66EF872C1D526A2 /* FIRLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLibrary.h; path = FirebaseCore/Sources/Private/FIRLibrary.h; sourceTree = "<group>"; };
@@ -1824,7 +1833,7 @@
 		1282696196218F1844D37C5BA92A2F34 /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
 		1311C7414EAC61F9E57DB41A4841B88E /* RLMCollection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection_Private.h; path = include/RLMCollection_Private.h; sourceTree = "<group>"; };
 		1349CABE74C862E4E8B781C0AA45B50D /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
-		13A3923B71463C658E3510928B51CD11 /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
+		13A3923B71463C658E3510928B51CD11 /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
 		13D4B3A26D3230F244B21E2AE2142EF9 /* RuleEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEmail.swift; path = Source/Validations/RuleEmail.swift; sourceTree = "<group>"; };
 		1400C4C19CA392D8AF2F11F1E6A0C127 /* FIRComponentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponentType.m; path = FirebaseCore/Sources/FIRComponentType.m; sourceTree = "<group>"; };
 		1417828F5A0DCC3B551DD51654E8BBF1 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = RealmSwift/Property.swift; sourceTree = "<group>"; };
@@ -1838,7 +1847,7 @@
 		16CDD14BAEF287C3829DDDADFB7454DE /* NSLayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraintsExtension.swift; path = Sources/Extensions/Foundation/NSLayoutConstraint/NSLayoutConstraintsExtension.swift; sourceTree = "<group>"; };
 		17A44CA7B9868E0A97E141F67D2FE916 /* RLMDecimal128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMDecimal128.h; path = include/RLMDecimal128.h; sourceTree = "<group>"; };
 		17B8A2E4E4DD9A14858D7F3A2A1373FA /* RealmSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealmSwift.release.xcconfig; sourceTree = "<group>"; };
-		17CCACDFA79125F3480A854110B7ED83 /* RLMSwiftValueStorage.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSwiftValueStorage.mm; path = Realm/RLMSwiftValueStorage.mm; sourceTree = "<group>"; };
+		17CCACDFA79125F3480A854110B7ED83 /* RLMSwiftValueStorage.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSwiftValueStorage.mm; path = Realm/RLMSwiftValueStorage.mm; sourceTree = "<group>"; };
 		181E4649011EA6CF09EE5DB38A7AF2E1 /* FIRCurrentDateProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCurrentDateProvider.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRCurrentDateProvider.m; sourceTree = "<group>"; };
 		1850BDE467E3E80D5A7132053A465E3F /* RLMSwiftValueStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSwiftValueStorage.h; path = include/RLMSwiftValueStorage.h; sourceTree = "<group>"; };
 		18CA8F501D14A6D8EA7F0D3945B02B18 /* RLMProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty.h; path = include/RLMProperty.h; sourceTree = "<group>"; };
@@ -1846,7 +1855,7 @@
 		1A133FC712CDEA7471651D50365683D9 /* GoogleUserMessagingPlatform-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleUserMessagingPlatform-xcframeworks.sh"; sourceTree = "<group>"; };
 		1A5D8715DB5B45D25F96ABE4496D355B /* PromisesObjC-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PromisesObjC-library.release.xcconfig"; path = "../PromisesObjC-library/PromisesObjC-library.release.xcconfig"; sourceTree = "<group>"; };
 		1A770762C76083423AC45224145879CF /* FIRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfiguration.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h; sourceTree = "<group>"; };
-		1AAD88909CA56D0D55D5B21DFF7C779A /* RLMUUID.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUUID.mm; path = Realm/RLMUUID.mm; sourceTree = "<group>"; };
+		1AAD88909CA56D0D55D5B21DFF7C779A /* RLMUUID.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUUID.mm; path = Realm/RLMUUID.mm; sourceTree = "<group>"; };
 		1AAF7CFAC8DABB8DB32571C2D62F00E3 /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
 		1ABB2B6C0AD8B0D82708A929E15A2E50 /* DoublePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoublePickerRow.swift; path = Source/Rows/DoublePickerRow.swift; sourceTree = "<group>"; };
 		1AF58F72EED47AD5BEFEE49793802947 /* nanopb-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "nanopb-framework.release.xcconfig"; sourceTree = "<group>"; };
@@ -1855,15 +1864,15 @@
 		1BF4741CA514B3DE6871B94B8AF611BB /* FIRInstallationsStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsStore.h; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStore.h; sourceTree = "<group>"; };
 		1C025314B551C0CEFA2104295989CD86 /* FirebaseAnalytics-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FirebaseAnalytics-framework.release.xcconfig"; sourceTree = "<group>"; };
 		1C754EAE5F93436254032AF0387CECBC /* FIROptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptions.h; path = FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h; sourceTree = "<group>"; };
-		1C90D5B6E831A4BD3361E83C711AD79B /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Frameworks/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		1C90D5B6E831A4BD3361E83C711AD79B /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Frameworks/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
 		1D22F4CAF0E6C73254E0BD15425F7FEC /* FIRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLogger.h; path = FirebaseCore/Sources/Private/FIRLogger.h; sourceTree = "<group>"; };
 		1D2D677C2017195CC99BAAC05552A960 /* ColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = Sources/Extensions/Foundation/Color/ColorExtension.swift; sourceTree = "<group>"; };
 		1D9644371E6D9C5A0DFE55DAB201BECC /* FIRComponentContainerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentContainerInternal.h; path = FirebaseCore/Sources/FIRComponentContainerInternal.h; sourceTree = "<group>"; };
-		1DBC204768F7A523D701EEDFA5431AB5 /* RLMRealm+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealm+Sync.mm"; path = "Realm/RLMRealm+Sync.mm"; sourceTree = "<group>"; };
-		1E2A38810A9D048C397B9C2D556CA96A /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
+		1DBC204768F7A523D701EEDFA5431AB5 /* RLMRealm+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "RLMRealm+Sync.mm"; path = "Realm/RLMRealm+Sync.mm"; sourceTree = "<group>"; };
+		1E2A38810A9D048C397B9C2D556CA96A /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
 		1E84A345559B0276B2BE078DF2A3DF0C /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = RealmSwift/Query.swift; sourceTree = "<group>"; };
 		1EC9DE4E6211F841D7F90009107F4D55 /* FIRInstallationsStoredItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsStoredItem.m; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredItem.m; sourceTree = "<group>"; };
-		1F82A1C7454D26239B4CB0BE35A1958C /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
+		1F82A1C7454D26239B4CB0BE35A1958C /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
 		1F95B7C8FFA73D9AA4C1BF3B6DEF45C9 /* SwitchRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchRow.swift; path = Source/Rows/SwitchRow.swift; sourceTree = "<group>"; };
 		1FE10E5B3D8D192B4D76CABC55E9B233 /* GDTCCTUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCCTUploader.h; path = GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploader.h; sourceTree = "<group>"; };
 		2027C58320919EC933A83D176B2FA834 /* CollectionAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionAccess.swift; path = RealmSwift/Impl/CollectionAccess.swift; sourceTree = "<group>"; };
@@ -1890,21 +1899,21 @@
 		2DE491ABD191913A675A582A4123369E /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = HEXColor/StringExtension.swift; sourceTree = "<group>"; };
 		2F17C3E8595F54D67ACABCE80F8E436D /* FIRHeartbeatInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRHeartbeatInfo.h; path = FirebaseCore/Sources/Private/FIRHeartbeatInfo.h; sourceTree = "<group>"; };
 		2F8975763CECEB42872B298F48B87E79 /* FBLPromise+Wrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Wrap.m"; path = "Sources/FBLPromises/FBLPromise+Wrap.m"; sourceTree = "<group>"; };
-		2FC15DBB39232CA9D866C12A605F2598 /* RLMUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUser.mm; path = Realm/RLMUser.mm; sourceTree = "<group>"; };
+		2FC15DBB39232CA9D866C12A605F2598 /* RLMUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUser.mm; path = Realm/RLMUser.mm; sourceTree = "<group>"; };
 		30324539610E7B8BEA1F36321F60EA5F /* FBLPromise+Await.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Await.m"; path = "Sources/FBLPromises/FBLPromise+Await.m"; sourceTree = "<group>"; };
 		30BF888E4ECC2E46FB11CF3FF272CD2C /* GDTCORTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransformer.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransformer.m; sourceTree = "<group>"; };
 		30F1ABB49C8E4106D000C111FBEC9E61 /* FIRInstallationsHTTPError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsHTTPError.h; path = FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.h; sourceTree = "<group>"; };
 		31169930EC816BA2B240A376BC5D524E /* NSObjectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSObjectExtension.swift; path = Sources/Extensions/Foundation/NSObject/NSObjectExtension.swift; sourceTree = "<group>"; };
-		3129C9AC502EEDBB2AA5935FB5CA9614 /* RLMDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMDictionary.mm; path = Realm/RLMDictionary.mm; sourceTree = "<group>"; };
-		31B184C345A2CAAAFEBC49210A4FDD53 /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
+		3129C9AC502EEDBB2AA5935FB5CA9614 /* RLMDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMDictionary.mm; path = Realm/RLMDictionary.mm; sourceTree = "<group>"; };
+		31B184C345A2CAAAFEBC49210A4FDD53 /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
 		31D5D5A10622EBD2285F84DB21F719CE /* GoogleDataTransport-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GoogleDataTransport-library.release.xcconfig"; path = "../GoogleDataTransport-library/GoogleDataTransport-library.release.xcconfig"; sourceTree = "<group>"; };
 		31DA12120146FA2C1A4B865B2B8B75B1 /* ColorPickerRow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorPickerRow.debug.xcconfig; sourceTree = "<group>"; };
 		325F4C89D6330BA0E6E001E503CB83CC /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
 		329F2539ADCF2DFD26454EE391C14527 /* RLMObjectSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema_Private.h; path = include/RLMObjectSchema_Private.h; sourceTree = "<group>"; };
-		32CB7BCF5A3FAF24B88F36447CA7A5F6 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		32CB7BCF5A3FAF24B88F36447CA7A5F6 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		32DE2A37F7FDFBC21FFA822AACD832E3 /* GDTCORTargets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTargets.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORTargets.h; sourceTree = "<group>"; };
 		3383B334DB82D9E9CDDEB3E85D52455B /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
-		33ADC10BAB3D8FA01FA08D92A3F1F665 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
+		33ADC10BAB3D8FA01FA08D92A3F1F665 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
 		33AFAE3D1AD34FDD6A4686A0AC80E6E2 /* RuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleURL.swift; path = Source/Validations/RuleURL.swift; sourceTree = "<group>"; };
 		33C23662D42F64629372325D8188AE2F /* GDTCOREvent+GDTCCTSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GDTCOREvent+GDTCCTSupport.m"; path = "GoogleDataTransport/GDTCCTLibrary/GDTCOREvent+GDTCCTSupport.m"; sourceTree = "<group>"; };
 		33FE34526C048481012969A17836AFB6 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
@@ -1917,7 +1926,7 @@
 		36125E857F3CB184AA2B2954498F863B /* MutableSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableSet.swift; path = RealmSwift/MutableSet.swift; sourceTree = "<group>"; };
 		3670CECC125B77597CDAB7DA90DAB1DD /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Sources/Extensions/UIKit/UIStoryboard/UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		3682C4D190D756275377BF5026DF4529 /* GoogleAppMeasurement-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GoogleAppMeasurement-library.release.xcconfig"; path = "../GoogleAppMeasurement-library/GoogleAppMeasurement-library.release.xcconfig"; sourceTree = "<group>"; };
-		3687C268120EF36DA11F78D028EA4D08 /* Pods-LongLatMap */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LongLatMap"; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3687C268120EF36DA11F78D028EA4D08 /* Pods_LongLatMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongLatMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3704CFBE1CF791C25E00784CB8F8C98B /* FBLPromise+Retry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Retry.h"; path = "Sources/FBLPromises/include/FBLPromise+Retry.h"; sourceTree = "<group>"; };
 		372EC8C8017FB20F3DC09ED6164B9F91 /* GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.debug.xcconfig; sourceTree = "<group>"; };
 		38012E384C8D69927D0BC6A21B410333 /* GDTCORTransformer_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTransformer_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORTransformer_Private.h; sourceTree = "<group>"; };
@@ -1925,7 +1934,7 @@
 		38798D550C92C831ABC8E3D6851419A4 /* AlertOptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertOptionsRow.swift; path = Source/Rows/Common/AlertOptionsRow.swift; sourceTree = "<group>"; };
 		38EE21A0AD59D3D6AF66FA12C3312C01 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = RealmSwift/Error.swift; sourceTree = "<group>"; };
 		38FD34A4C72A23648B2E9ED5B12AA41B /* FIRInstallationsIIDStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsIIDStore.h; path = FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDStore.h; sourceTree = "<group>"; };
-		3901A9B90CBCA80B331FD4E0BFF28214 /* PromisesObjC-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "PromisesObjC-framework"; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3901A9B90CBCA80B331FD4E0BFF28214 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391C67815D867DEF62A4C9A480ADD837 /* UITextViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextViewExtension.swift; path = Sources/Extensions/UIKit/UITextView/UITextViewExtension.swift; sourceTree = "<group>"; };
 		399179E5814D7D1CF6793D7881085E32 /* MongoClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoClient.swift; path = RealmSwift/MongoClient.swift; sourceTree = "<group>"; };
 		39CACD7F2BEEC9E202943FFB7717BAB9 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Sources/Extensions/UIKit/UIViewController/UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -1936,7 +1945,7 @@
 		3AE545C660E68B9201C2782DAF4A9ADC /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
 		3B20DFBE3DDDB916105B93D6B26BAACC /* RLMSyncSubscription_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSubscription_Private.h; path = include/RLMSyncSubscription_Private.h; sourceTree = "<group>"; };
 		3B292834E154B19E34B543C5FBD0FB89 /* GDTCORPlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORPlatform.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORPlatform.m; sourceTree = "<group>"; };
-		3BAA3CA50E60121371D0F414656BC531 /* RLMValue.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMValue.mm; path = Realm/RLMValue.mm; sourceTree = "<group>"; };
+		3BAA3CA50E60121371D0F414656BC531 /* RLMValue.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMValue.mm; path = Realm/RLMValue.mm; sourceTree = "<group>"; };
 		3BC86C04F5BCF4BE33A08E5B7180FD0C /* Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.debug.xcconfig; sourceTree = "<group>"; };
 		3BE2F94288EF3AAFC367BB904621CA8C /* GULUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULUserDefaults.h; path = GoogleUtilities/UserDefaults/Public/GoogleUtilities/GULUserDefaults.h; sourceTree = "<group>"; };
 		3C38821BADEB0A0AA3CC8262493CD3E3 /* FIRAppInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAppInternal.h; path = FirebaseCore/Sources/Private/FIRAppInternal.h; sourceTree = "<group>"; };
@@ -1947,7 +1956,7 @@
 		3E12D67576306C761F0E233F2E06FE6A /* PromisesObjC-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesObjC-framework-umbrella.h"; sourceTree = "<group>"; };
 		3ECB23F053EC742A62BC6D109E19BA2D /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
 		3EF005445E24E512F43842603F98CFBC /* GULHeartbeatDateStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULHeartbeatDateStorage.m; path = GoogleUtilities/Environment/GULHeartbeatDateStorage.m; sourceTree = "<group>"; };
-		3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "GoogleDataTransport-framework"; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4004249E6C12F076B98B0A776B86DD95 /* SwiftyUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUtils-umbrella.h"; sourceTree = "<group>"; };
 		40284381C4C38B1982FEA198777E5DCE /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
 		4055DA1DFD9576A0F389868046E3FC25 /* FBLPromise+Timeout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Timeout.h"; path = "Sources/FBLPromises/include/FBLPromise+Timeout.h"; sourceTree = "<group>"; };
@@ -1959,17 +1968,17 @@
 		419D97CA3E80E4CAF9DD6B7C729AA5C9 /* Pods-LongLatMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LongLatMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		41A2AE49FF7E607C55DF9417FAF724CE /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
 		43638F40F392B478D0E4E46B631F0616 /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
-		437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RealmSwift; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B36292E11BB958CC886D99BB518323 /* FirebaseAnalytics-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FirebaseAnalytics-framework.debug.xcconfig"; sourceTree = "<group>"; };
 		443B18F0CE0DFC9163EF552A312D98A1 /* ThreadSafeReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadSafeReference.swift; path = RealmSwift/ThreadSafeReference.swift; sourceTree = "<group>"; };
 		44C3D8D0E0543784E2EB9865B24FBFD3 /* FIRInstallationsLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsLogger.m; path = FirebaseInstallations/Source/Library/FIRInstallationsLogger.m; sourceTree = "<group>"; };
-		44DCBA443B6756FC2A93FFA139913FC2 /* nanopb-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "nanopb-framework"; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DCBA443B6756FC2A93FFA139913FC2 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46521940F6982AF0BCE60EAFBBF1AA90 /* FIRInstallations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallations.h; path = FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallations.h; sourceTree = "<group>"; };
 		4673827CA75E15C68613FCF14D891BF4 /* FBLPromise+Catch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Catch.m"; path = "Sources/FBLPromises/FBLPromise+Catch.m"; sourceTree = "<group>"; };
 		46BED10DB08E1820058414BA729C33E8 /* TriplePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TriplePickerRow.swift; path = Source/Rows/TriplePickerRow.swift; sourceTree = "<group>"; };
-		46C707DCC9E9E176C5EC3E56F91A503F /* RLMNetworkTransport.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMNetworkTransport.mm; path = Realm/RLMNetworkTransport.mm; sourceTree = "<group>"; };
-		46DD208DE5C452B800DC01E3099774E2 /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
-		475324DD10D1449B63BD7CDB8C040F7F /* RLMCredentials.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMCredentials.mm; path = Realm/RLMCredentials.mm; sourceTree = "<group>"; };
+		46C707DCC9E9E176C5EC3E56F91A503F /* RLMNetworkTransport.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMNetworkTransport.mm; path = Realm/RLMNetworkTransport.mm; sourceTree = "<group>"; };
+		46DD208DE5C452B800DC01E3099774E2 /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
+		475324DD10D1449B63BD7CDB8C040F7F /* RLMCredentials.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCredentials.mm; path = Realm/RLMCredentials.mm; sourceTree = "<group>"; };
 		47660200CBCD15710CDB1BA26BBD6631 /* FIRCurrentDateProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCurrentDateProvider.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRCurrentDateProvider.h; sourceTree = "<group>"; };
 		47F57670D206BAC5EA93A95B5B3220E7 /* GDTCORFlatFileStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORFlatFileStorage.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORFlatFileStorage.h; sourceTree = "<group>"; };
 		4802AC928C0903E4961AC775B7C55E8D /* FirebaseCoreDiagnostics-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FirebaseCoreDiagnostics-framework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1979,7 +1988,7 @@
 		495A2D95C9D40CBE8E5DC391DD90AD6A /* firebasecore.nanopb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = firebasecore.nanopb.h; path = Firebase/CoreDiagnostics/FIRCDLibrary/Protogen/nanopb/firebasecore.nanopb.h; sourceTree = "<group>"; };
 		49B76A07C20F5FF388826216E171ED52 /* DataExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataExtension.swift; path = Sources/Extensions/Swift/Data/DataExtension.swift; sourceTree = "<group>"; };
 		4A1E703B2EAEEB9C63BE7062124E8156 /* RLMSwiftCollectionBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSwiftCollectionBase.h; path = include/RLMSwiftCollectionBase.h; sourceTree = "<group>"; };
-		4AF0D8A0578EE768C2F9BB8B7A2D87A8 /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
+		4AF0D8A0578EE768C2F9BB8B7A2D87A8 /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
 		4B6D6C77352D75867C1D552DEAE968D8 /* FirebaseCore-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCore-framework-umbrella.h"; sourceTree = "<group>"; };
 		4B9A537DEA762519CF41EC57BCC30564 /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
 		4BBAF497C7325C7F2A7F73BFC9009972 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = CoreOnly/Sources/Firebase.h; sourceTree = "<group>"; };
@@ -2011,7 +2020,7 @@
 		535EFE94CA4B21E2D3DC498EEC19FF48 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
 		537222780E2B9559BB68DB99D43AC0EB /* Pods-LongLatMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LongLatMap-acknowledgements.plist"; sourceTree = "<group>"; };
 		5384C9616624E3C7F06F5F6225CBA22A /* RealmSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RealmSwift.modulemap; sourceTree = "<group>"; };
-		53E146F5CF9D7C6805D2BE77EE55E920 /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
+		53E146F5CF9D7C6805D2BE77EE55E920 /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
 		53E3D90BAE59DDE53230235337B5762D /* GDTCORFlatFileStorage+Promises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GDTCORFlatFileStorage+Promises.h"; path = "GoogleDataTransport/GDTCORLibrary/Private/GDTCORFlatFileStorage+Promises.h"; sourceTree = "<group>"; };
 		53EFE813DA0030309FCB92FE8E034D05 /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = Sources/Extensions/Swift/Dictionary/DictionaryExtension.swift; sourceTree = "<group>"; };
 		5425D21DFA4B674DCDB416C250D842CE /* FileManagerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerExtension.swift; path = Sources/Extensions/Foundation/FileManager/FileManagerExtension.swift; sourceTree = "<group>"; };
@@ -2031,16 +2040,16 @@
 		57DE31D7A8CFC165407A9659C0943607 /* PromisesObjC-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PromisesObjC-framework.debug.xcconfig"; sourceTree = "<group>"; };
 		5825DF755F2851FD4C3B0895B2DEA3A9 /* GDTCCTNanopbHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCCTNanopbHelpers.m; path = GoogleDataTransport/GDTCCTLibrary/GDTCCTNanopbHelpers.m; sourceTree = "<group>"; };
 		582F3A17C8F531FE598AB83543E3B379 /* FBLPromise+Await.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Await.h"; path = "Sources/FBLPromises/include/FBLPromise+Await.h"; sourceTree = "<group>"; };
-		5843BD1748646CB5A1800D53F5B8F09F /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
+		5843BD1748646CB5A1800D53F5B8F09F /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
 		585B0595D1E9BE9A193B83ADA11AE29E /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = LiquidButton/Classes/CGRectEx.swift; sourceTree = "<group>"; };
 		585DF47FB0C8A5FED9A04EAEFA5FB87E /* FIRCoreDiagnostics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCoreDiagnostics.m; path = Firebase/CoreDiagnostics/FIRCDLibrary/FIRCoreDiagnostics.m; sourceTree = "<group>"; };
 		58DA52DFFFE5B7BF48CE9A02E48D6A26 /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GoogleUtilities/GULLoggerLevel.h; sourceTree = "<group>"; };
 		58E19080902BA8002F58D1C42648D2D0 /* GULKeychainUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULKeychainUtils.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULKeychainUtils.h; sourceTree = "<group>"; };
-		58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex_Swift; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59128FB46B20C9E9824526C4905EBD6C /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
 		5934FB06ED74C5BAB506C6724BD7F291 /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
-		5988FC04C121ECADB7582CBAE4D7A560 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleAppMeasurement.xcframework; path = Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
-		599A2CD7AA9ABAFAE15A3B395702C951 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
+		5988FC04C121ECADB7582CBAE4D7A560 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		599A2CD7AA9ABAFAE15A3B395702C951 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
 		5A23436A655385485005EB45B8CAF852 /* GDTCORUploadCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORUploadCoordinator.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORUploadCoordinator.m; sourceTree = "<group>"; };
 		5A6B6576EB243FB17E082B636E468C50 /* Eureka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.release.xcconfig; sourceTree = "<group>"; };
 		5A7167F587C651763A5CB869A18F0CC7 /* RLMSyncConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration.h; path = include/RLMSyncConfiguration.h; sourceTree = "<group>"; };
@@ -2054,11 +2063,11 @@
 		5BE282F535DDE2EF2F0419C3529FA71C /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
 		5C1C87AD0ED277AA873A6B7EC6A4A044 /* RealmCollectionImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmCollectionImpl.swift; path = RealmSwift/Impl/RealmCollectionImpl.swift; sourceTree = "<group>"; };
 		5D76C4192ECCED76133E6251ED7BA66E /* ColorPickerRow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ColorPickerRow.modulemap; sourceTree = "<group>"; };
-		5D7E7BDC447591936F18CD42E32C6319 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		5D7E7BDC447591936F18CD42E32C6319 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		5DACD243EDD7D7B726D6B601D0D5A39F /* FBLPromise+Race.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Race.h"; path = "Sources/FBLPromises/include/FBLPromise+Race.h"; sourceTree = "<group>"; };
 		5DFF453565236DBCA81C7D77BBF9C5FC /* GULLoggerCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerCodes.h; path = GoogleUtilities/Common/GULLoggerCodes.h; sourceTree = "<group>"; };
 		5E8BBBF8D0046BB1353BA79D84CA6F9E /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
-		5EB2AF9355B049C2B25B5191CD222AB6 /* FirebaseCoreDiagnostics-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "FirebaseCoreDiagnostics-library"; path = "libFirebaseCoreDiagnostics-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB2AF9355B049C2B25B5191CD222AB6 /* libFirebaseCoreDiagnostics-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFirebaseCoreDiagnostics-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD6BF1F6B14524D2A13C383524BA3AE /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
 		5FDDAF2DEBECC257BE103EF4E8C1C3F6 /* FIRCoreDiagnosticsConnector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreDiagnosticsConnector.h; path = FirebaseCore/Sources/Private/FIRCoreDiagnosticsConnector.h; sourceTree = "<group>"; };
 		5FE6A56F921998D614B35DC04C2B7F49 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
@@ -2090,13 +2099,13 @@
 		68FEE21D89FFA48641E8BD3D0D289865 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = LiquidButton/Classes/LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
 		6A9EC529AF145E514DF7368D050CD550 /* LiquidButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidButton-umbrella.h"; sourceTree = "<group>"; };
 		6ADC707EA71E9C5A21BF6E0181CF654E /* RLMSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema_Private.h; path = include/RLMSchema_Private.h; sourceTree = "<group>"; };
-		6AF7F258FF63892ABC14CF402C9110EA /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
+		6AF7F258FF63892ABC14CF402C9110EA /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
 		6B298510288F048668DE5603FC7562E4 /* FIRDependency.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDependency.m; path = FirebaseCore/Sources/FIRDependency.m; sourceTree = "<group>"; };
 		6B62960DE157921E788955DE6D0794EE /* GDTCORFlatFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORFlatFileStorage.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORFlatFileStorage.m; sourceTree = "<group>"; };
 		6B6394E3481D06843B7C496D57A3B671 /* Eureka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.debug.xcconfig; sourceTree = "<group>"; };
 		6B703FCF744BA6D50DD5EB1194E778AC /* Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.release.xcconfig; sourceTree = "<group>"; };
 		6BDD7E68C3DE10F6B57B2DA5C97FE6D7 /* FIRComponentContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentContainer.h; path = FirebaseCore/Sources/Private/FIRComponentContainer.h; sourceTree = "<group>"; };
-		6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "FirebaseCore-framework"; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C23BE3AAFA93C715C81E4C8D4FA0BC2 /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
 		6C84AF80C1877EA9EA12ACF170141E13 /* Google-Mobile-Ads-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Google-Mobile-Ads-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		6C905D945DA54B3E926B2B195C1937E5 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
@@ -2118,7 +2127,7 @@
 		71DFFB74217FC279C5DD65C64BD58C4F /* FIRBundleUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRBundleUtil.h; path = FirebaseCore/Sources/FIRBundleUtil.h; sourceTree = "<group>"; };
 		7363D09F84A96C52FFAB15AD141A253A /* ColorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorRow.swift; path = ColorPicker/ColorRow.swift; sourceTree = "<group>"; };
 		73869AAC853DD6DBED816C7A7B2FCB1F /* SwiftyUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyUtils.debug.xcconfig; sourceTree = "<group>"; };
-		7469B525F70812DA797030809B11BBFD /* RLMObjectId.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectId.mm; path = Realm/RLMObjectId.mm; sourceTree = "<group>"; };
+		7469B525F70812DA797030809B11BBFD /* RLMObjectId.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectId.mm; path = Realm/RLMObjectId.mm; sourceTree = "<group>"; };
 		75958BB7B8E886872A6274B040A5CDE3 /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
 		75FD0A46B1CF2A3B490FB10B5F1F7DE3 /* RealmSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-umbrella.h"; sourceTree = "<group>"; };
 		7687B1BE350F522C6E92616EDE8962CE /* FIRInstallationsAPIService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsAPIService.h; path = FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsAPIService.h; sourceTree = "<group>"; };
@@ -2136,7 +2145,7 @@
 		7BA5D406474847A9975BA90B7A2F6CD5 /* FirebaseInstallations-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FirebaseInstallations-framework-Info.plist"; sourceTree = "<group>"; };
 		7C0D70E857F0F2B5A463D6C0D3050001 /* ComplexTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComplexTypes.swift; path = RealmSwift/Impl/ComplexTypes.swift; sourceTree = "<group>"; };
 		7C9904CA0D48AB86A342C054E15668FB /* FIRComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponent.m; path = FirebaseCore/Sources/FIRComponent.m; sourceTree = "<group>"; };
-		7CB1C2374D78103C0123FC70C6270B3F /* Pods-LongLatMapTests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-LongLatMapTests"; path = "libPods-LongLatMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB1C2374D78103C0123FC70C6270B3F /* libPods-LongLatMapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LongLatMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2E1E02E20A8192BFE91B95470943D9 /* SwiftyUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyUtils-dummy.m"; sourceTree = "<group>"; };
 		7DC30BF5D57769C93C0102FDCCBEDC3D /* FIRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRLogger.m; path = FirebaseCore/Sources/FIRLogger.m; sourceTree = "<group>"; };
 		7DF634939612BDF93E32CCD404EB41C8 /* FIRHeartbeatInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatInfo.m; path = FirebaseCore/Sources/FIRHeartbeatInfo.m; sourceTree = "<group>"; };
@@ -2151,7 +2160,7 @@
 		810C359B7CEAE3E60EF0EAAF1402691D /* FirebaseCoreDiagnostics-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FirebaseCoreDiagnostics-framework.release.xcconfig"; sourceTree = "<group>"; };
 		814903F35E59F88BEB31E7720AA3DA5A /* GULMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULMutableDictionary.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULMutableDictionary.h; sourceTree = "<group>"; };
 		8198B0E1B113DBBFCAB053AA2A5A7CA0 /* FIRInstallationsBackoffController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsBackoffController.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsBackoffController.h; sourceTree = "<group>"; };
-		8220FB2DC2A95B7CF0E4CF53C1A6720D /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
+		8220FB2DC2A95B7CF0E4CF53C1A6720D /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
 		82AB1BF9126788CFD8132CCE9313DD28 /* GULSceneDelegateSwizzler_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSceneDelegateSwizzler_Private.h; path = GoogleUtilities/AppDelegateSwizzler/Internal/GULSceneDelegateSwizzler_Private.h; sourceTree = "<group>"; };
 		83A08C4DA6F4EACCF009B02C7CF3B7E5 /* DateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Sources/Extensions/Foundation/Date/DateExtension.swift; sourceTree = "<group>"; };
 		83BBD89E0C00188E994F2FC4C1B1508E /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
@@ -2178,42 +2187,42 @@
 		8C374CA9C6050F511201DFEC7E3749CB /* UIScreenExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScreenExtension.swift; path = Sources/Extensions/UIKit/UIScreen/UIScreenExtension.swift; sourceTree = "<group>"; };
 		8C91C6D6A54DD6B911FFBED455BA060F /* RLMEmailPasswordAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMEmailPasswordAuth.h; path = include/RLMEmailPasswordAuth.h; sourceTree = "<group>"; };
 		8C9831E2B4B3BCACF9E2BC64BB9C77CE /* FIRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLogger.h; path = FirebaseCore/Sources/Private/FIRLogger.h; sourceTree = "<group>"; };
-		8D8354136219638B5CA24AAB0795DD69 /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
+		8D8354136219638B5CA24AAB0795DD69 /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
 		8D87E11E53406E50EE43CCDC6959D77F /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
 		8DA81D213211E2BA2EDE1D143513F070 /* RLMSyncUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUtil.h; path = include/RLMSyncUtil.h; sourceTree = "<group>"; };
-		8DAE6D97CB684EBA2DB9A20481CB3E32 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
+		8DAE6D97CB684EBA2DB9A20481CB3E32 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
 		8DDF40516674374180BA34C3710ADEEB /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
 		8E4E30A8DC968795B8B98C510F44F8BA /* GDTCORReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORReachability.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORReachability.m; sourceTree = "<group>"; };
 		8EA40F71ED3324B0360CB5E7EEEEF342 /* Results.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Results.swift; path = RealmSwift/Results.swift; sourceTree = "<group>"; };
 		8FF0D46D79D615EF6853A40B37ABE730 /* GDTCOREvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCOREvent.m; path = GoogleDataTransport/GDTCORLibrary/GDTCOREvent.m; sourceTree = "<group>"; };
-		9030ACB93F05BB92307BC2F51A7895A4 /* RLMManagedSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedSet.mm; path = Realm/RLMManagedSet.mm; sourceTree = "<group>"; };
+		9030ACB93F05BB92307BC2F51A7895A4 /* RLMManagedSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMManagedSet.mm; path = Realm/RLMManagedSet.mm; sourceTree = "<group>"; };
 		90B1B93D6B2F12991ADA9DCAC20633D2 /* Aliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = RealmSwift/Aliases.swift; sourceTree = "<group>"; };
 		90CE782FF89DA272AE7C0E451BE7C54B /* Decimal128.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decimal128.swift; path = RealmSwift/Decimal128.swift; sourceTree = "<group>"; };
 		90FCA55C2765FB64A245B658B762CE08 /* FIRInstallationsErrorUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsErrorUtil.h; path = FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h; sourceTree = "<group>"; };
 		918935A30667ED094D5A17B8C830F2E4 /* FirebaseAnalytics-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FirebaseAnalytics-library.release.xcconfig"; path = "../FirebaseAnalytics-library/FirebaseAnalytics-library.release.xcconfig"; sourceTree = "<group>"; };
 		91BC3BA7147774405CA9445AAB302AC3 /* RLMNetworkTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMNetworkTransport.h; path = include/RLMNetworkTransport.h; sourceTree = "<group>"; };
 		91CF59CF3AEC700F5E6A9BD93968969A /* GULNetworkLoggerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkLoggerProtocol.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkLoggerProtocol.h; sourceTree = "<group>"; };
-		91FEF41A769C00ED923A0391D3194E68 /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
-		921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FEF41A769C00ED923A0391D3194E68 /* cct.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = cct.nanopb.c; path = GoogleDataTransport/GDTCCTLibrary/Protogen/nanopb/cct.nanopb.c; sourceTree = "<group>"; };
+		921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		929B5DBB890D096F0946CC41552592AF /* FirebaseInstallations-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FirebaseInstallations-framework.release.xcconfig"; sourceTree = "<group>"; };
 		92F2BC80ECF491421D1B69AC5C67F8F9 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = RealmSwift/Migration.swift; sourceTree = "<group>"; };
 		92FAE725127107469D599A8D4DC6945C /* FIRInstallationsIIDTokenStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsIIDTokenStore.h; path = FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDTokenStore.h; sourceTree = "<group>"; };
 		92FFCE85AC2F48DF6DDE5F8CA0972A16 /* GULNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkConstants.m; path = GoogleUtilities/Network/GULNetworkConstants.m; sourceTree = "<group>"; };
 		93081524C7F09E50481D075EC5CBC12F /* Eureka-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Eureka-Info.plist"; sourceTree = "<group>"; };
-		9335153FFFB9793EBCAFBC84D485140A /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		9335153FFFB9793EBCAFBC84D485140A /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		9372E3885FBAAD524AE90423D39AB8C9 /* RLMSyncConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration_Private.h; path = include/RLMSyncConfiguration_Private.h; sourceTree = "<group>"; };
-		93AFDCA71B899A8E17D181C3543D21AA /* RLMSyncSession.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSession.mm; path = Realm/RLMSyncSession.mm; sourceTree = "<group>"; };
-		93BAA99514B6D1EFFE64E855CD6470E2 /* RLMFindOneAndModifyOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMFindOneAndModifyOptions.mm; path = Realm/RLMFindOneAndModifyOptions.mm; sourceTree = "<group>"; };
+		93AFDCA71B899A8E17D181C3543D21AA /* RLMSyncSession.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncSession.mm; path = Realm/RLMSyncSession.mm; sourceTree = "<group>"; };
+		93BAA99514B6D1EFFE64E855CD6470E2 /* RLMFindOneAndModifyOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMFindOneAndModifyOptions.mm; path = Realm/RLMFindOneAndModifyOptions.mm; sourceTree = "<group>"; };
 		93DA35077FC43929C7CF20201ED902CB /* GDTCORLifecycle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORLifecycle.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORLifecycle.m; sourceTree = "<group>"; };
 		940D2A7F8CB81EC470E0AAA21BEDB924 /* FIRInstallationsStoredAuthToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsStoredAuthToken.m; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredAuthToken.m; sourceTree = "<group>"; };
-		946DC4B1A52DA04D02E5278EAF1EF5D2 /* PromisesObjC-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "PromisesObjC-library"; path = "libPromisesObjC-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		946DC4B1A52DA04D02E5278EAF1EF5D2 /* libPromisesObjC-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPromisesObjC-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E9152E2DF7BE75526EBDE149B7CFD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		959724059EC397192DCEECE97BBEC144 /* UIColor_Hex_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.debug.xcconfig; sourceTree = "<group>"; };
 		95984412F1A63880918E05B19902DD45 /* RLMMongoClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMongoClient.h; path = include/RLMMongoClient.h; sourceTree = "<group>"; };
 		95A09086CCAD0C505AB725A18CBA8BA3 /* CGSizeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSizeExtension.swift; path = Sources/Extensions/CoreGraphics/CGSize/CGSizeExtension.swift; sourceTree = "<group>"; };
-		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9699F8E6EF257388B79FB0B61EC16DAE /* GULSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSwizzler.m; path = GoogleUtilities/MethodSwizzler/GULSwizzler.m; sourceTree = "<group>"; };
-		96A10DEA125E9078A3987B294A9C7929 /* RLMMongoCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMongoCollection.mm; path = Realm/RLMMongoCollection.mm; sourceTree = "<group>"; };
+		96A10DEA125E9078A3987B294A9C7929 /* RLMMongoCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMongoCollection.mm; path = Realm/RLMMongoCollection.mm; sourceTree = "<group>"; };
 		96EF2AB4A1CC5EBE1226679E359787D2 /* FIRInstallationsItem+RegisterInstallationAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FIRInstallationsItem+RegisterInstallationAPI.h"; path = "FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.h"; sourceTree = "<group>"; };
 		97590D7B90F113F4419203BFEE1FB81F /* ObjectId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectId.swift; path = RealmSwift/ObjectId.swift; sourceTree = "<group>"; };
 		97804B81CC6A194D89FF83FC81912F12 /* RLMObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase.h; path = include/RLMObjectBase.h; sourceTree = "<group>"; };
@@ -2222,7 +2231,7 @@
 		983B6222098D9751E98B2759F09833C8 /* RLMObjectStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectStore.h; path = include/RLMObjectStore.h; sourceTree = "<group>"; };
 		986284AC426A716AE0F041E268E83F87 /* RLMSyncSubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSubscription.h; path = include/RLMSyncSubscription.h; sourceTree = "<group>"; };
 		986C06D8E0372C82E3E6CFF9EA36BD5F /* FIRInstallationsItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsItem.h; path = FirebaseInstallations/Source/Library/FIRInstallationsItem.h; sourceTree = "<group>"; };
-		98C894D103B76D5F2462A92A84BC337D /* RLMRealmConfiguration+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealmConfiguration+Sync.mm"; path = "Realm/RLMRealmConfiguration+Sync.mm"; sourceTree = "<group>"; };
+		98C894D103B76D5F2462A92A84BC337D /* RLMRealmConfiguration+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "RLMRealmConfiguration+Sync.mm"; path = "Realm/RLMRealmConfiguration+Sync.mm"; sourceTree = "<group>"; };
 		98E2AB7F31C73A72BB8AFD926F25647D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		98E72873BD9E7EF99BE16B515DE5EA10 /* RLMResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults.h; path = include/RLMResults.h; sourceTree = "<group>"; };
 		98ECDEEB14B4A4395B0125B6A24F3BD6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Core/Validation.swift; sourceTree = "<group>"; };
@@ -2234,19 +2243,19 @@
 		9A3FEF0CD7F800B39B9F5B6C0EBEE9CE /* GULReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULReachabilityChecker+Internal.h"; path = "GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
 		9AAB6FABEFE53B45455319611E731745 /* FirebaseCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCore.h; path = FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h; sourceTree = "<group>"; };
 		9B5DFED41826080FD441BA694DA0BB95 /* FIRDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDependency.h; path = FirebaseCore/Sources/Private/FIRDependency.h; sourceTree = "<group>"; };
-		9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "GoogleUtilities-framework"; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB73206F37DA8BB7F485931376C39F9 /* Projection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Projection.swift; path = RealmSwift/Projection.swift; sourceTree = "<group>"; };
 		9D145BE02DE3FD88B6BB5A42F22FF4E5 /* RLMObjectBase_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Private.h; path = include/RLMObjectBase_Private.h; sourceTree = "<group>"; };
 		9D451D4130647033E1BBD1CC3F84DA0E /* ReusableFormatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableFormatters.swift; path = Sources/Extensions/Foundation/ReusableFormatters/ReusableFormatters.swift; sourceTree = "<group>"; };
 		9D4A6F0B16EB16BC64A46A575FDE7688 /* ObjectiveCSupport+BSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjectiveCSupport+BSON.swift"; path = "RealmSwift/ObjectiveCSupport+BSON.swift"; sourceTree = "<group>"; };
 		9D4DF169C65D8CD56D4E7DBA18E9D855 /* FIROptionsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptionsInternal.h; path = FirebaseCore/Sources/Private/FIROptionsInternal.h; sourceTree = "<group>"; };
 		9D87C136FD9BE840B638702511F598F4 /* Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sync.swift; path = RealmSwift/Sync.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA880C5D8B8B15B568809996053E92C /* FirebaseCoreDiagnostics-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FirebaseCoreDiagnostics-library.debug.xcconfig"; path = "../FirebaseCoreDiagnostics-library/FirebaseCoreDiagnostics-library.debug.xcconfig"; sourceTree = "<group>"; };
 		9DFA88177837B457DEB8E524C56A77DB /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = RealmSwift/Map.swift; sourceTree = "<group>"; };
 		9E1BE2B838947482D8391A79A11B6F0C /* PromisesObjC-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesObjC-framework-Info.plist"; sourceTree = "<group>"; };
 		9ED03D6F60DD0AAFCA4481D1AA1FF02E /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = LiquidButton/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
-		9F18EDF59FFC1C766F98CCE2BE8B5321 /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
+		9F18EDF59FFC1C766F98CCE2BE8B5321 /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
 		9F966B90A5EF636DC0C118CB46D55EE4 /* SwiftyUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyUtils.modulemap; sourceTree = "<group>"; };
 		9FD65C4DD4DF4A1F83207344931CFACE /* GoogleUtilities-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleUtilities-framework-Info.plist"; sourceTree = "<group>"; };
 		A018E9600DB9C5690F4C18D2C721EAA6 /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
@@ -2256,16 +2265,16 @@
 		A20B6B9ACBD39CCCF125C9E62CD5C3C7 /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSMutableAttributedStringExtension.swift; path = Sources/Extensions/Foundation/NSMutableAttributedString/NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
 		A27E5360F39070A0CEFB0B05E2B14541 /* Persistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Persistable.swift; path = RealmSwift/Impl/Persistable.swift; sourceTree = "<group>"; };
 		A3B4DD02B98DFC7002F5A261792804B7 /* GULNetworkURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkURLSession.m; path = GoogleUtilities/Network/GULNetworkURLSession.m; sourceTree = "<group>"; };
-		A3EA6FB51132DAAC7BAB8314C75D96C7 /* RLMSwiftCollectionBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSwiftCollectionBase.mm; path = Realm/RLMSwiftCollectionBase.mm; sourceTree = "<group>"; };
+		A3EA6FB51132DAAC7BAB8314C75D96C7 /* RLMSwiftCollectionBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSwiftCollectionBase.mm; path = Realm/RLMSwiftCollectionBase.mm; sourceTree = "<group>"; };
 		A3F4471426A5ABC33DA16A16D9C62DA3 /* GDTCORReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORReachability.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORReachability.h; sourceTree = "<group>"; };
 		A441896E65E65359849ED8F3EF7A67AD /* FIRConfigurationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfigurationInternal.h; path = FirebaseCore/Sources/FIRConfigurationInternal.h; sourceTree = "<group>"; };
 		A45FD614862EAF077B2A0F72D8A347C7 /* FIRCoreDiagnosticsConnector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreDiagnosticsConnector.h; path = FirebaseCore/Sources/Private/FIRCoreDiagnosticsConnector.h; sourceTree = "<group>"; };
-		A469F313BCEFCD337F24B18B778BCCC4 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = UserMessagingPlatform.xcframework; path = Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		A469F313BCEFCD337F24B18B778BCCC4 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = Frameworks/Release/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
 		A56CE59F831F16DDBDCA75CEEE1071E6 /* CGPointExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointExtension.swift; path = Sources/Extensions/CoreGraphics/CGPoint/CGPointExtension.swift; sourceTree = "<group>"; };
 		A59781FE84E9B6151519EB8A4BBBC11E /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
 		A5FF2AE5204959DF81D2EF45D607A144 /* FIRInstallationsIDController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsIDController.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.h; sourceTree = "<group>"; };
 		A69A44B56FC7F488CE04489C8178504B /* GULSceneDelegateSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULSceneDelegateSwizzler.m; path = GoogleUtilities/AppDelegateSwizzler/GULSceneDelegateSwizzler.m; sourceTree = "<group>"; };
-		A7669B40B9C2FF0930D71B246C2B72B0 /* RLMPushClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMPushClient.mm; path = Realm/RLMPushClient.mm; sourceTree = "<group>"; };
+		A7669B40B9C2FF0930D71B246C2B72B0 /* RLMPushClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMPushClient.mm; path = Realm/RLMPushClient.mm; sourceTree = "<group>"; };
 		A79B0C6EEFC2F2A1D43025A4F605E3B6 /* FirebaseInstallations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseInstallations.h; path = FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FirebaseInstallations.h; sourceTree = "<group>"; };
 		A81EB38E46D89E6B33559639899AAEEC /* FirebaseInstallations-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseInstallations-framework-umbrella.h"; sourceTree = "<group>"; };
 		A82F066FA205152D923FBF5CE7890308 /* FIRBundleUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRBundleUtil.m; path = FirebaseCore/Sources/FIRBundleUtil.m; sourceTree = "<group>"; };
@@ -2299,19 +2308,19 @@
 		B0246949CCAA710B5408DAD3E04DDC29 /* GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.release.xcconfig; sourceTree = "<group>"; };
 		B06DB07DE15DD62C0C2B8F88ADAE2698 /* FIRConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRConfiguration.m; path = FirebaseCore/Sources/FIRConfiguration.m; sourceTree = "<group>"; };
 		B0A0DDE86E756AA899844A1E9B3DE343 /* FBLPromise+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Delay.m"; path = "Sources/FBLPromises/FBLPromise+Delay.m"; sourceTree = "<group>"; };
-		B13499C062323F4B2BEE07FF3C326EE5 /* RLMUpdateResult.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUpdateResult.mm; path = Realm/RLMUpdateResult.mm; sourceTree = "<group>"; };
-		B1C4E49B6FC7012E8734D243B115EBD9 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FirebaseAnalytics.xcframework; path = Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		B13499C062323F4B2BEE07FF3C326EE5 /* RLMUpdateResult.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUpdateResult.mm; path = Realm/RLMUpdateResult.mm; sourceTree = "<group>"; };
+		B1C4E49B6FC7012E8734D243B115EBD9 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		B1F13DD8C36C09CC94A7C02617D8B9CC /* ObjectiveCSupport+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObjectiveCSupport+Sync.swift"; path = "RealmSwift/ObjectiveCSupport+Sync.swift"; sourceTree = "<group>"; };
 		B27FDE1ABE0320AF833161C16740F71C /* FBLPromise+Any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Any.h"; path = "Sources/FBLPromises/include/FBLPromise+Any.h"; sourceTree = "<group>"; };
 		B2DE25736D5709B6F5E9A32B17FEAEBD /* FirebaseCore-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "FirebaseCore-framework.modulemap"; sourceTree = "<group>"; };
 		B3645E3D308FCBEC7B60EAD7491603AD /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Sources/Extensions/Swift/Array/ArrayExtension.swift; sourceTree = "<group>"; };
-		B450289DC6A01CF69D7BD1F21BD3FCE2 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleMobileAds.xcframework; path = "Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
+		B450289DC6A01CF69D7BD1F21BD3FCE2 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = "Frameworks/GoogleMobileAdsFramework-Current/GoogleMobileAds.xcframework"; sourceTree = "<group>"; };
 		B4A5BCC1D1FC0037479D96E0A0F6BF02 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = Sources/Extensions/UIKit/UIDevice/UIDeviceExtension.swift; sourceTree = "<group>"; };
 		B4BE4AB448A6E9796D5050681457E819 /* FBLPromise+Delay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Delay.h"; path = "Sources/FBLPromises/include/FBLPromise+Delay.h"; sourceTree = "<group>"; };
 		B4D3BA3EA5DB176DA2CF93D0BCF80823 /* FirebaseAnalytics-library-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "FirebaseAnalytics-library-xcframeworks.sh"; path = "../FirebaseAnalytics-library/FirebaseAnalytics-library-xcframeworks.sh"; sourceTree = "<group>"; };
-		B52B929422451BBD2E90C710801EAC65 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
+		B52B929422451BBD2E90C710801EAC65 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
 		B5D08750E27E4CCE3B1C986BD7340AE1 /* GULAppEnvironmentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppEnvironmentUtil.m; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.m; sourceTree = "<group>"; };
-		B6727779529310C6D59161D77722B6AE /* RLMAPIKeyAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAPIKeyAuth.mm; path = Realm/RLMAPIKeyAuth.mm; sourceTree = "<group>"; };
+		B6727779529310C6D59161D77722B6AE /* RLMAPIKeyAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAPIKeyAuth.mm; path = Realm/RLMAPIKeyAuth.mm; sourceTree = "<group>"; };
 		B6A188CBF52CA75E182EDA17CC4FDEDA /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
 		B6C51B1052BABDAF0AE5A8C994A58F8E /* FIRInstallationsIDController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIDController.m; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.m; sourceTree = "<group>"; };
 		B70D9EA8E07939E41BF2C9B6230D47EF /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
@@ -2334,24 +2343,24 @@
 		BB6EAD386783CA102096B7BD93138DFB /* nanopb-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-framework-umbrella.h"; sourceTree = "<group>"; };
 		BB7E60B46354214F2C47AA0AEC3A5D77 /* NSError+RLMSync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+RLMSync.h"; path = "include/NSError+RLMSync.h"; sourceTree = "<group>"; };
 		BBC57332F67A2CF832984606C3EEA5D5 /* LiquidButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LiquidButton.modulemap; sourceTree = "<group>"; };
-		BBC72C2657636A834EA93D48676825B9 /* ColorPickerRow */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ColorPickerRow; path = ColorPickerRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC72C2657636A834EA93D48676825B9 /* ColorPickerRow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorPickerRow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF2B6CA895E9A9A6E657B777329EE63 /* UIColor_Hex_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIColor_Hex_Swift-Info.plist"; sourceTree = "<group>"; };
 		BBF47CFCB699635A8E65B271F8D3C472 /* AnyOptional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyOptional.swift; path = Sources/Protocols/AnyOptional.swift; sourceTree = "<group>"; };
 		BC319A4503D84E557F77EEE3DA3382F2 /* NSRangeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSRangeExtension.swift; path = Sources/Extensions/Foundation/NSRange/NSRangeExtension.swift; sourceTree = "<group>"; };
 		BC682610A5DF711AE32EBB8865D7730C /* FIRInstallationsIIDTokenStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsIIDTokenStore.m; path = FirebaseInstallations/Source/Library/IIDMigration/FIRInstallationsIIDTokenStore.m; sourceTree = "<group>"; };
 		BC828AE2ECF3775DB29B657515DE52DB /* ColorPickerRow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorPickerRow-umbrella.h"; sourceTree = "<group>"; };
-		BD0047B9E2090C56F1B2413A2900D931 /* RLMSyncSubscription.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSubscription.mm; path = Realm/RLMSyncSubscription.mm; sourceTree = "<group>"; };
+		BD0047B9E2090C56F1B2413A2900D931 /* RLMSyncSubscription.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncSubscription.mm; path = Realm/RLMSyncSubscription.mm; sourceTree = "<group>"; };
 		BD2D8AEBE0CB5786090EC9211381DCEA /* GoogleDataTransport-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleDataTransport-framework.debug.xcconfig"; sourceTree = "<group>"; };
-		BD5F973C4E86408179F02FABCA15F54D /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
+		BD5F973C4E86408179F02FABCA15F54D /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
 		BDA894D0CEAD6768371756D1950BBDAB /* nanopb-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "nanopb-library-dummy.m"; path = "../nanopb-library/nanopb-library-dummy.m"; sourceTree = "<group>"; };
 		BDE6851F50287520B47D0848046C5186 /* GULNetworkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkConstants.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULNetworkConstants.h; sourceTree = "<group>"; };
 		BE00130A8069D6777E12C457DF326B43 /* GDTCOREventTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREventTransformer.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREventTransformer.h; sourceTree = "<group>"; };
 		BEB616096FE8DA5505CBEC04108CEE4C /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		BEBAD3223436A8D535399506579F0842 /* RLMManagedDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedDictionary.mm; path = Realm/RLMManagedDictionary.mm; sourceTree = "<group>"; };
+		BEBAD3223436A8D535399506579F0842 /* RLMManagedDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMManagedDictionary.mm; path = Realm/RLMManagedDictionary.mm; sourceTree = "<group>"; };
 		BEBBAD9212E040D89CA191AC04136C5F /* Pods-LongLatMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LongLatMap-resources.sh"; sourceTree = "<group>"; };
-		BEC0919FA946F3CD8CC53EB737CCAEF0 /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
+		BEC0919FA946F3CD8CC53EB737CCAEF0 /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
 		BF39DECE263A4880F9689BE50AA06381 /* FIRInstallationsItem+RegisterInstallationAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FIRInstallationsItem+RegisterInstallationAPI.m"; path = "FirebaseInstallations/Source/Library/InstallationsAPI/FIRInstallationsItem+RegisterInstallationAPI.m"; sourceTree = "<group>"; };
-		BF60DD3384212E140E58B5BA9E89DAE2 /* realm-monorepo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = "realm-monorepo.xcframework"; path = "core/realm-monorepo.xcframework"; sourceTree = "<group>"; };
+		BF60DD3384212E140E58B5BA9E89DAE2 /* realm-monorepo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = "realm-monorepo.xcframework"; path = "core/realm-monorepo.xcframework"; sourceTree = "<group>"; };
 		BF6ECA86771FD82657F75FC307F59DB1 /* FBLPromise+Recover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Recover.h"; path = "Sources/FBLPromises/include/FBLPromise+Recover.h"; sourceTree = "<group>"; };
 		BF9698C2E9DD3F556F0B0C0ACDB52DB4 /* FIRInstallationsHTTPError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsHTTPError.m; path = FirebaseInstallations/Source/Library/Errors/FIRInstallationsHTTPError.m; sourceTree = "<group>"; };
 		C052F81AE81E68309B23B7DBBF608CF9 /* FirebaseCore-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FirebaseCore-library.debug.xcconfig"; path = "../FirebaseCore-library/FirebaseCore-library.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2359,7 +2368,7 @@
 		C0A292883A3D2D1E9BC2FE7CFBE1014F /* FirebaseInstallations-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseInstallations-framework-dummy.m"; sourceTree = "<group>"; };
 		C0DAED7C05992932EFFC18BA7312EB9F /* GDTCORClock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORClock.h; path = GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORClock.h; sourceTree = "<group>"; };
 		C16F7FDFCF7638C9372C04F4CE4D1271 /* RLMAPIKeyAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAPIKeyAuth.h; path = include/RLMAPIKeyAuth.h; sourceTree = "<group>"; };
-		C1F247F17C7FE1B22AA3F26FAAEEFE82 /* nanopb-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "nanopb-library"; path = "libnanopb-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F247F17C7FE1B22AA3F26FAAEEFE82 /* libnanopb-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnanopb-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25D2B0617B9C6E84B847B8D5F6D0AD6 /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
 		C2E24CC6EF0C05577527AF8AB9AC00A9 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationCenterExtension.swift; path = Sources/Extensions/Foundation/NotificationCenter/NotificationCenterExtension.swift; sourceTree = "<group>"; };
 		C2F4380879BD8EC92B9EBABC6443DB0F /* ColorSwatchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorSwatchView.swift; path = ColorPicker/ColorSwatchView.swift; sourceTree = "<group>"; };
@@ -2368,14 +2377,14 @@
 		C435B42C87089F4B87BD44AE18293F03 /* FBLPromise+Timeout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Timeout.m"; path = "Sources/FBLPromises/FBLPromise+Timeout.m"; sourceTree = "<group>"; };
 		C44ED694D7CF041A938CC23EBBF2DE6E /* FBLPromise+Testing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Testing.m"; path = "Sources/FBLPromises/FBLPromise+Testing.m"; sourceTree = "<group>"; };
 		C4E9AD9E6763F35E46DD55DC01F81CD4 /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
-		C6376827ADCB78C50F23D821A2680D02 /* LiquidButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiquidButton; path = LiquidButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6376827ADCB78C50F23D821A2680D02 /* LiquidButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65C3261A124CC107037EFED4F207B9A /* Pods-LongLatMap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LongLatMap-frameworks.sh"; sourceTree = "<group>"; };
 		C670F90E96816062D5FE2BA2E13820F6 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
 		C6B33501DF8310E31FCC27F1F1F59014 /* GDTCCTUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCCTUploadOperation.m; path = GoogleDataTransport/GDTCCTLibrary/GDTCCTUploadOperation.m; sourceTree = "<group>"; };
 		C6D966F981555E01F8F00DE37A239418 /* ListCheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListCheckRow.swift; path = Source/Rows/SelectableRows/ListCheckRow.swift; sourceTree = "<group>"; };
 		C6E0036F6C478876568DB33DA0941510 /* GULUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULUserDefaults.m; path = GoogleUtilities/UserDefaults/GULUserDefaults.m; sourceTree = "<group>"; };
 		C7AC06533FD0F6D7F3B55605F751C8BC /* InlineColorPickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineColorPickerRow.swift; path = ColorPicker/InlineColorPickerRow.swift; sourceTree = "<group>"; };
-		C7D35B1D0CCCEF99F208C35CBF863129 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
+		C7D35B1D0CCCEF99F208C35CBF863129 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
 		C7F0D2E677CE660482381208900EF39C /* FirebaseCoreDiagnostics-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCoreDiagnostics-framework-dummy.m"; sourceTree = "<group>"; };
 		C8039A6091EAB054A81E47A8AA8BC906 /* FIRDiagnosticsData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDiagnosticsData.m; path = FirebaseCore/Sources/FIRDiagnosticsData.m; sourceTree = "<group>"; };
 		C86EA95DC6DCD74AE11BF50711BC7DC0 /* RLMFindOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMFindOptions.h; path = include/RLMFindOptions.h; sourceTree = "<group>"; };
@@ -2383,9 +2392,9 @@
 		C894653672A7ADC8735FACBC7C77920A /* RLMPushClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMPushClient.h; path = include/RLMPushClient.h; sourceTree = "<group>"; };
 		C89ED2B894B910CED9C9476F633AAC24 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplicationExtension.swift; path = Sources/Extensions/UIKit/UIApplication/UIApplicationExtension.swift; sourceTree = "<group>"; };
 		C8ABC2D4FE9C03F6C3AB658774550DAA /* EmbeddedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmbeddedObject.swift; path = RealmSwift/EmbeddedObject.swift; sourceTree = "<group>"; };
-		C989E94FA69ACF8D5447ECB752E60782 /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
+		C989E94FA69ACF8D5447ECB752E60782 /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
 		C98E5CB789535AD9653DE29294ED60AA /* GoogleUtilities-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleUtilities-framework.debug.xcconfig"; sourceTree = "<group>"; };
-		C9E5291DD5538EDE8249C78EB92EFF69 /* RLMUpdateChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUpdateChecker.mm; path = Realm/RLMUpdateChecker.mm; sourceTree = "<group>"; };
+		C9E5291DD5538EDE8249C78EB92EFF69 /* RLMUpdateChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUpdateChecker.mm; path = Realm/RLMUpdateChecker.mm; sourceTree = "<group>"; };
 		CAEBD0AB74E5A50E4CC89400B2414499 /* FIRFirebaseUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRFirebaseUserAgent.h; path = FirebaseCore/Sources/FIRFirebaseUserAgent.h; sourceTree = "<group>"; };
 		CBE52CC38D9A432ABC430F44E9CF7139 /* RLMResults_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults_Private.h; path = include/RLMResults_Private.h; sourceTree = "<group>"; };
 		CC2A405DB8C92CE1579E762018B79AE4 /* RLMObject_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject_Private.h; path = include/RLMObject_Private.h; sourceTree = "<group>"; };
@@ -2394,7 +2403,7 @@
 		CC9466A654607F39E581BC251031A2A9 /* RLMSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema.h; path = include/RLMSchema.h; sourceTree = "<group>"; };
 		CD3CECB33606792512258E7944279C94 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
 		CDBF9C8F8CC1ED369E1A2DDEBA75CF2B /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
-		CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "FirebaseCoreDiagnostics-framework"; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE342FCB0AAEAE4A7D773424C8FAC151 /* FBLPromise+Then.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Then.m"; path = "Sources/FBLPromises/FBLPromise+Then.m"; sourceTree = "<group>"; };
 		CE5917C6BB1D2E60EC4C0DFF6D3A1288 /* Pods-LongLatMapTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LongLatMapTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE6792B31FA0DFC14F716887F32FA770 /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
@@ -2402,15 +2411,15 @@
 		CF3317851AD6B3E07895683B299F989C /* GoogleUtilities-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GoogleUtilities-library-dummy.m"; path = "../GoogleUtilities-library/GoogleUtilities-library-dummy.m"; sourceTree = "<group>"; };
 		CF6A038BF6B72BA1B8F1861BD2453577 /* BSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSON.swift; path = RealmSwift/BSON.swift; sourceTree = "<group>"; };
 		CFB78962166CF71E2004EC9A9CABB9EB /* GoogleDataTransport-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GoogleDataTransport-library-dummy.m"; path = "../GoogleDataTransport-library/GoogleDataTransport-library-dummy.m"; sourceTree = "<group>"; };
-		CFE854CDD649A328A729DDBD371D3676 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
+		CFE854CDD649A328A729DDBD371D3676 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
 		D0B31B9D98D43A18370ED537B7E80685 /* PropertyAccessors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyAccessors.swift; path = RealmSwift/Impl/PropertyAccessors.swift; sourceTree = "<group>"; };
 		D0CFFB546D3F2DA8404EBC7836646423 /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		D2022FA4F3134893FC1534E586F5EEEA /* Pods-LongLatMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LongLatMap-dummy.m"; sourceTree = "<group>"; };
 		D232A26D855DAFA5408B184F7EFBA4FB /* CustomPersistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomPersistable.swift; path = RealmSwift/CustomPersistable.swift; sourceTree = "<group>"; };
 		D32ABD90794DBBE0F4DED88305E0BE60 /* FirebaseInstallations-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FirebaseInstallations-library.release.xcconfig"; path = "../FirebaseInstallations-library/FirebaseInstallations-library.release.xcconfig"; sourceTree = "<group>"; };
-		D38CD6117F38127D5A534B9425CA65BD /* FirebaseCore-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "FirebaseCore-library"; path = "libFirebaseCore-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38CD6117F38127D5A534B9425CA65BD /* libFirebaseCore-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFirebaseCore-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B13DBF84EDFB533B9AE5C64D2083A4 /* Google-Mobile-Ads-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Google-Mobile-Ads-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		D3B382D881ACE36D8C8F3288699DD3DA /* RLMEmailPasswordAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMEmailPasswordAuth.mm; path = Realm/RLMEmailPasswordAuth.mm; sourceTree = "<group>"; };
+		D3B382D881ACE36D8C8F3288699DD3DA /* RLMEmailPasswordAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMEmailPasswordAuth.mm; path = Realm/RLMEmailPasswordAuth.mm; sourceTree = "<group>"; };
 		D3B8EE0D056CCD8045A7C605B5316AD8 /* GDTCOREndpoints.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCOREndpoints.m; path = GoogleDataTransport/GDTCORLibrary/GDTCOREndpoints.m; sourceTree = "<group>"; };
 		D4353377B071BA4A723DB3972027760F /* GDTCORDirectorySizeTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORDirectorySizeTracker.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORDirectorySizeTracker.h; sourceTree = "<group>"; };
 		D4393A4EAFB30F3EAAB5C35EAAD7F25E /* GDTCORTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTCORTransport.m; path = GoogleDataTransport/GDTCORLibrary/GDTCORTransport.m; sourceTree = "<group>"; };
@@ -2418,23 +2427,23 @@
 		D4C7BE29DE22B3B9B1A35075B8CBE4D9 /* GULReachabilityChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULReachabilityChecker.h; path = GoogleUtilities/Reachability/Public/GoogleUtilities/GULReachabilityChecker.h; sourceTree = "<group>"; };
 		D4CDEA26683B15520AD62837CB6EE085 /* FBLPromiseError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromiseError.h; path = Sources/FBLPromises/include/FBLPromiseError.h; sourceTree = "<group>"; };
 		D5579C05F1805D44E5AC42FA6A0A8277 /* Pods-LongLatMapTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LongLatMapTests-dummy.m"; sourceTree = "<group>"; };
-		D68FF0E5A3FB7FD2F0E3FA5E5381745A /* RLMSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSet.mm; path = Realm/RLMSet.mm; sourceTree = "<group>"; };
+		D68FF0E5A3FB7FD2F0E3FA5E5381745A /* RLMSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSet.mm; path = Realm/RLMSet.mm; sourceTree = "<group>"; };
 		D6A56B156E5DD7A20E846F079F54ECC3 /* ColorPickerRow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorPickerRow-prefix.pch"; sourceTree = "<group>"; };
-		D6A6C0049BDEB135DCEF33F68C78DA50 /* RLMApp.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMApp.mm; path = Realm/RLMApp.mm; sourceTree = "<group>"; };
+		D6A6C0049BDEB135DCEF33F68C78DA50 /* RLMApp.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMApp.mm; path = Realm/RLMApp.mm; sourceTree = "<group>"; };
 		D8209AEF2C253F45794F86CD59FF854F /* FIRCoreDiagnosticsData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreDiagnosticsData.h; path = Interop/CoreDiagnostics/Public/FIRCoreDiagnosticsData.h; sourceTree = "<group>"; };
 		D86EC0050C9D297817A000DEE7E17282 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
 		D8B1F2F7F25CFA8B626A440E479EB755 /* GDTCORRegistrar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar.h; path = GoogleDataTransport/GDTCORLibrary/Internal/GDTCORRegistrar.h; sourceTree = "<group>"; };
-		D93EFCB717D65887C71F09ACA07A339B /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
+		D93EFCB717D65887C71F09ACA07A339B /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
 		D9C3A324BF9E867B0153ABD4847EC3F3 /* FIRInstallationsStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstallationsStore.m; path = FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStore.m; sourceTree = "<group>"; };
 		D9D450557486BB6D41CA7CFDEFEE9F71 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Constants.swift; sourceTree = "<group>"; };
 		D9DFCC2116B0786307E05815A7ACF2D5 /* RLMApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMApp.h; path = include/RLMApp.h; sourceTree = "<group>"; };
 		DA5FCFB6B00DE9DF98FFF27445503C36 /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
 		DAED6172761D6CAB7D3E0C9B288C0D9B /* TimerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimerExtension.swift; path = Sources/Extensions/Foundation/Timer/TimerExtension.swift; sourceTree = "<group>"; };
 		DAF688BAABBBBCCCADCF17C7BA387836 /* GDTCCTUploadOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCCTUploadOperation.h; path = GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploadOperation.h; sourceTree = "<group>"; };
-		DB464E644EB0D26991F38724A537E31F /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
+		DB464E644EB0D26991F38724A537E31F /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
 		DB98DBDB1BE3E499CFC8A8DD7E79705B /* RLMThreadSafeReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMThreadSafeReference.h; path = include/RLMThreadSafeReference.h; sourceTree = "<group>"; };
 		DBEA6483C85805E276C03A50FD3061E1 /* Realm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Realm.modulemap; sourceTree = "<group>"; };
-		DC0EEBBCD95D778F55C5D7D851302AFA /* RLMFindOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMFindOptions.mm; path = Realm/RLMFindOptions.mm; sourceTree = "<group>"; };
+		DC0EEBBCD95D778F55C5D7D851302AFA /* RLMFindOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMFindOptions.mm; path = Realm/RLMFindOptions.mm; sourceTree = "<group>"; };
 		DC10DD6FAA131AD2D3E265789806590F /* FirebaseInstallations-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FirebaseInstallations-library-dummy.m"; path = "../FirebaseInstallations-library/FirebaseInstallations-library-dummy.m"; sourceTree = "<group>"; };
 		DC60574DE763DD94C488D2BF8C52DCCA /* FIRInstallationsStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsStatus.h; path = FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsStatus.h; sourceTree = "<group>"; };
 		DD929B87D4A11C4075FEBB2754C4FC04 /* UITesting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITesting.swift; path = Sources/Others/UITesting.swift; sourceTree = "<group>"; };
@@ -2445,14 +2454,14 @@
 		DF4D834E723560566414B7AE39FA7973 /* NSURLSession+GULPromises.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+GULPromises.m"; path = "GoogleUtilities/Environment/URLSessionPromiseWrapper/NSURLSession+GULPromises.m"; sourceTree = "<group>"; };
 		DF60523E570A192B8B9D70CDC1EE5201 /* nanopb-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-framework-prefix.pch"; sourceTree = "<group>"; };
 		DF7DD9C16504C8A4D2FAAC9F17CD5104 /* PickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerRow.swift; path = Source/Rows/PickerRow.swift; sourceTree = "<group>"; };
-		E088AF8F3DC3A04112863D2643EB35ED /* SwiftyUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyUtils; path = SwiftyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E088AF8F3DC3A04112863D2643EB35ED /* SwiftyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BA2CBAB15385CBC68035D5542FB14A /* GULApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULApplication.h; path = GoogleUtilities/AppDelegateSwizzler/Public/GoogleUtilities/GULApplication.h; sourceTree = "<group>"; };
 		E1182F97212F9F395C486E727732616B /* FirebaseCoreDiagnostics-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FirebaseCoreDiagnostics-library.release.xcconfig"; path = "../FirebaseCoreDiagnostics-library/FirebaseCoreDiagnostics-library.release.xcconfig"; sourceTree = "<group>"; };
 		E1C21B78EB315822C88477A24D6EF11C /* FIRVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVersion.m; path = FirebaseCore/Sources/FIRVersion.m; sourceTree = "<group>"; };
 		E1C8725EFB2000003764F600237FF006 /* GULNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetwork.h; path = GoogleUtilities/Network/Public/GoogleUtilities/GULNetwork.h; sourceTree = "<group>"; };
 		E1FA36F20575C19F29CCF5B919257216 /* MultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorRow.swift; path = Source/Rows/MultipleSelectorRow.swift; sourceTree = "<group>"; };
 		E1FB7D48040E36CCB18F96DCB1851508 /* nanopb-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "nanopb-framework.debug.xcconfig"; sourceTree = "<group>"; };
-		E28C5B0E8536A1178AE2EC9D8E3CF88A /* RLMBSON.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMBSON.mm; path = Realm/RLMBSON.mm; sourceTree = "<group>"; };
+		E28C5B0E8536A1178AE2EC9D8E3CF88A /* RLMBSON.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMBSON.mm; path = Realm/RLMBSON.mm; sourceTree = "<group>"; };
 		E296575EFE1C692D835B3B4D72D1658D /* GULURLSessionDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULURLSessionDataResponse.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULURLSessionDataResponse.h; sourceTree = "<group>"; };
 		E2D5FB145B439F4DBBAEF25770499189 /* ColorPalettes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPalettes.swift; path = ColorPicker/ColorPalettes.swift; sourceTree = "<group>"; };
 		E30D76A85A352E026B3DD5DD880696C8 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RealmSwift/Optional.swift; sourceTree = "<group>"; };
@@ -2462,7 +2471,7 @@
 		E46C699CF384FF2ACC267F75F2DAE1EA /* GULAppEnvironmentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppEnvironmentUtil.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULAppEnvironmentUtil.h; sourceTree = "<group>"; };
 		E4C916CB1920B7B60F8E8A1C45184533 /* RLMSyncManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncManager.h; path = include/RLMSyncManager.h; sourceTree = "<group>"; };
 		E4F28443FE27427CD4890F2BA608EA27 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
-		E56F1D36EBF2EAC889B92716D3FAEFC0 /* FirebaseInstallations-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "FirebaseInstallations-framework"; path = FirebaseInstallations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E56F1D36EBF2EAC889B92716D3FAEFC0 /* FirebaseInstallations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseInstallations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5DFC99C87E51D7D6D20F5C6BDD4F180 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextFieldExtension.swift; path = Sources/Extensions/UIKit/UITextField/UITextFieldExtension.swift; sourceTree = "<group>"; };
 		E5E56F7EAAE6CAD16BEE721ADEEFAE94 /* FIRDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDependency.h; path = FirebaseCore/Sources/Private/FIRDependency.h; sourceTree = "<group>"; };
 		E71142B81E35BFE8FA86AA7EB1AACFC0 /* GDTCORRegistrar_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORRegistrar_Private.h; sourceTree = "<group>"; };
@@ -2474,9 +2483,9 @@
 		E8B2A70C0E954A78CC40E0B91DDF4D48 /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
 		E8D155F51D83AC585A460E79E44DD56B /* RLMObjectId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectId.h; path = include/RLMObjectId.h; sourceTree = "<group>"; };
 		E8D4485825AD1EA2F1ED3B04B7FFC1DF /* AnyRealmValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyRealmValue.swift; path = RealmSwift/AnyRealmValue.swift; sourceTree = "<group>"; };
-		E9F30C3A3D5257D2D390F2E6F88572AB /* GoogleDataTransport-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "GoogleDataTransport-library"; path = "libGoogleDataTransport-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F30C3A3D5257D2D390F2E6F88572AB /* libGoogleDataTransport-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGoogleDataTransport-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0978BD3815C740963ACAFC3C17FA81 /* LiquidButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidButton.release.xcconfig; sourceTree = "<group>"; };
-		EA27D3CFC73C88D425A77DAFB37940CA /* GoogleUtilities-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "GoogleUtilities-library"; path = "libGoogleUtilities-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA27D3CFC73C88D425A77DAFB37940CA /* libGoogleUtilities-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGoogleUtilities-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F626B1964CA37DB91ED8391B2FB78 /* FBLPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromise.m; path = Sources/FBLPromises/FBLPromise.m; sourceTree = "<group>"; };
 		EBD3A33FA5BF1B3595C6AF2CB8C0CB98 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtension.swift; path = Sources/Extensions/Foundation/UserDefaults/UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		EC636CE103EC0DFE07FBEE53AD6EF0B8 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
@@ -2488,11 +2497,11 @@
 		EE1A1C2EAF1745087F105CD803A809E6 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = LiquidButton/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
 		EE1C51FA0FE726E39F4CCEE187CFBDE9 /* GULLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLogger.h; path = GoogleUtilities/Logger/Public/GoogleUtilities/GULLogger.h; sourceTree = "<group>"; };
 		EF0AB63DD11543F4951D0F1B75B49F9B /* UISwitchExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISwitchExtension.swift; path = Sources/Extensions/UIKit/UISwitch/UISwitchExtension.swift; sourceTree = "<group>"; };
-		EF4C44E9FCCB697652012909952839DA /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
+		EF4C44E9FCCB697652012909952839DA /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
 		EF5EBD60892A071D72C2411224D8FD4F /* FirebaseCoreInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCoreInternal.h; path = FirebaseCore/Sources/Private/FirebaseCoreInternal.h; sourceTree = "<group>"; };
-		EF83BE5EDD26BA12471451D878E4A1B4 /* RLMUserAPIKey.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUserAPIKey.mm; path = Realm/RLMUserAPIKey.mm; sourceTree = "<group>"; };
+		EF83BE5EDD26BA12471451D878E4A1B4 /* RLMUserAPIKey.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUserAPIKey.mm; path = Realm/RLMUserAPIKey.mm; sourceTree = "<group>"; };
 		F070CDD417E38A1A5F5D196B3F9202E0 /* FIRInstallationsAuthTokenResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstallationsAuthTokenResult.h; path = FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h; sourceTree = "<group>"; };
-		F08AAFEB8366301BBB6BCCFFCC9629E8 /* RLMDecimal128.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMDecimal128.mm; path = Realm/RLMDecimal128.mm; sourceTree = "<group>"; };
+		F08AAFEB8366301BBB6BCCFFCC9629E8 /* RLMDecimal128.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMDecimal128.mm; path = Realm/RLMDecimal128.mm; sourceTree = "<group>"; };
 		F0D4EDF51721FF4166975B29F5B7E45C /* GULURLSessionDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULURLSessionDataResponse.m; path = GoogleUtilities/Environment/URLSessionPromiseWrapper/GULURLSessionDataResponse.m; sourceTree = "<group>"; };
 		F12DB9FEC01240B2AAD4B23B3C471A0B /* Pods-LongLatMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LongLatMapTests.release.xcconfig"; sourceTree = "<group>"; };
 		F1880EAB804CD49CB6B4F15ABFE23086 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
@@ -2517,14 +2526,14 @@
 		F84F49B3078BE5AF7712C22279D3AF7E /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
 		F880A3057DA8D5C22BD586B3E41B3B5F /* ColorPickerRow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorPickerRow.release.xcconfig; sourceTree = "<group>"; };
 		F8AB072E0D74B026D83EAB3B26500578 /* ObjectiveCSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectiveCSupport.swift; path = RealmSwift/ObjectiveCSupport.swift; sourceTree = "<group>"; };
-		F8DCA702CF744BA2D3CA91C888B39F84 /* RLMProviderClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProviderClient.mm; path = Realm/RLMProviderClient.mm; sourceTree = "<group>"; };
+		F8DCA702CF744BA2D3CA91C888B39F84 /* RLMProviderClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMProviderClient.mm; path = Realm/RLMProviderClient.mm; sourceTree = "<group>"; };
 		F9055A66BA3098F3575B21CEF068E873 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		FA0844361E0CFDD6BEBC6ECADB811232 /* RLMUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMUser.h; path = include/RLMUser.h; sourceTree = "<group>"; };
-		FA21DB23D01DE69D246BC869154F1793 /* RLMEmbeddedObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMEmbeddedObject.mm; path = Realm/RLMEmbeddedObject.mm; sourceTree = "<group>"; };
-		FA22DF5433FA3A5E14024ACF6DE68635 /* RLMMongoClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMongoClient.mm; path = Realm/RLMMongoClient.mm; sourceTree = "<group>"; };
-		FA2453BDF554B2135190A9FAC3D8505A /* RLMClassInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMClassInfo.mm; path = Realm/RLMClassInfo.mm; sourceTree = "<group>"; };
+		FA21DB23D01DE69D246BC869154F1793 /* RLMEmbeddedObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMEmbeddedObject.mm; path = Realm/RLMEmbeddedObject.mm; sourceTree = "<group>"; };
+		FA22DF5433FA3A5E14024ACF6DE68635 /* RLMMongoClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMongoClient.mm; path = Realm/RLMMongoClient.mm; sourceTree = "<group>"; };
+		FA2453BDF554B2135190A9FAC3D8505A /* RLMClassInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMClassInfo.mm; path = Realm/RLMClassInfo.mm; sourceTree = "<group>"; };
 		FA2DC6B5AE910223673D330753775A4F /* GULHeartbeatDateStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULHeartbeatDateStorage.h; path = GoogleUtilities/Environment/Public/GoogleUtilities/GULHeartbeatDateStorage.h; sourceTree = "<group>"; };
-		FACED71BCB97F3CB7D36AE026D4064DD /* firebasecore.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = firebasecore.nanopb.c; path = Firebase/CoreDiagnostics/FIRCDLibrary/Protogen/nanopb/firebasecore.nanopb.c; sourceTree = "<group>"; };
+		FACED71BCB97F3CB7D36AE026D4064DD /* firebasecore.nanopb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = firebasecore.nanopb.c; path = Firebase/CoreDiagnostics/FIRCDLibrary/Protogen/nanopb/firebasecore.nanopb.c; sourceTree = "<group>"; };
 		FB0E306F429119BA1E47194D9362E344 /* FBLPromise+Async.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Async.m"; path = "Sources/FBLPromises/FBLPromise+Async.m"; sourceTree = "<group>"; };
 		FB10AA4EA7876B3DE173BD35CB281CE6 /* RLMValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMValue.h; path = include/RLMValue.h; sourceTree = "<group>"; };
 		FB649571EC945C140E3217FE64D47AD1 /* RLMRealm+Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RLMRealm+Sync.h"; path = "include/RLMRealm+Sync.h"; sourceTree = "<group>"; };
@@ -2801,7 +2810,6 @@
 				82240262B4B16B93886B8960B50514C5 /* Support Files */,
 				1452E16DA997762EEB59282141D123DF /* WithoutAdIdSupport */,
 			);
-			name = GoogleAppMeasurement;
 			path = GoogleAppMeasurement;
 			sourceTree = "<group>";
 		};
@@ -2927,7 +2935,6 @@
 				98ECDEEB14B4A4395B0125B6A24F3BD6 /* Validation.swift */,
 				BB8F5AC9728251F1DD8D104DC9182FEF /* Support Files */,
 			);
-			name = Eureka;
 			path = Eureka;
 			sourceTree = "<group>";
 		};
@@ -2981,7 +2988,6 @@
 				43B310CADE8D37840C8263890D5315F9 /* Maps */,
 				F2E04404FE2B61758DEF0171AEC67DC6 /* Support Files */,
 			);
-			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
@@ -3041,7 +3047,6 @@
 				E1C21B78EB315822C88477A24D6EF11C /* FIRVersion.m */,
 				FB4D3ED86A62B7D56DAD2AF529F62E80 /* Support Files */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -3210,7 +3215,6 @@
 				AB1401AC15C25393CC1559EB515A4F72 /* GoogleDataTransport.h */,
 				50E03ADF9B7062FD4CF38E6932EFC543 /* Support Files */,
 			);
-			name = GoogleDataTransport;
 			path = GoogleDataTransport;
 			sourceTree = "<group>";
 		};
@@ -3238,7 +3242,6 @@
 				0F5F3B0498394B407AE8F933CE5F9D4C /* UIColorInputError.swift */,
 				3FAA536E7CB8A170BA33952AC4F2B1D8 /* Support Files */,
 			);
-			name = UIColor_Hex_Swift;
 			path = UIColor_Hex_Swift;
 			sourceTree = "<group>";
 		};
@@ -3265,7 +3268,6 @@
 				E6C0576162A124DD14056A7E36484C62 /* Frameworks */,
 				103FBD790007A65FC5AF5AB7979E9D9A /* Support Files */,
 			);
-			name = GoogleUserMessagingPlatform;
 			path = GoogleUserMessagingPlatform;
 			sourceTree = "<group>";
 		};
@@ -3333,7 +3335,6 @@
 				60C1F0E2CCD178C99483AFE463ADEB5B /* Support Files */,
 				494FF1D9D16A77AF8DC508534A83C005 /* UserDefaults */,
 			);
-			name = GoogleUtilities;
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
@@ -3354,30 +3355,30 @@
 		7B23446123E3352090A38A9C0F89F06B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBC72C2657636A834EA93D48676825B9 /* ColorPickerRow */,
-				082977F3777A7D434AB35C357B487F83 /* Eureka */,
-				6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore-framework */,
-				D38CD6117F38127D5A534B9425CA65BD /* FirebaseCore-library */,
-				CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics-framework */,
-				5EB2AF9355B049C2B25B5191CD222AB6 /* FirebaseCoreDiagnostics-library */,
-				E56F1D36EBF2EAC889B92716D3FAEFC0 /* FirebaseInstallations-framework */,
-				09B481FF32F1B03D8932F5C6D8EFCD77 /* FirebaseInstallations-library */,
-				3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport-framework */,
-				E9F30C3A3D5257D2D390F2E6F88572AB /* GoogleDataTransport-library */,
-				9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities-framework */,
-				EA27D3CFC73C88D425A77DAFB37940CA /* GoogleUtilities-library */,
-				C6376827ADCB78C50F23D821A2680D02 /* LiquidButton */,
-				44DCBA443B6756FC2A93FFA139913FC2 /* nanopb-framework */,
-				C1F247F17C7FE1B22AA3F26FAAEEFE82 /* nanopb-library */,
-				3687C268120EF36DA11F78D028EA4D08 /* Pods-LongLatMap */,
-				7CB1C2374D78103C0123FC70C6270B3F /* Pods-LongLatMapTests */,
-				3901A9B90CBCA80B331FD4E0BFF28214 /* PromisesObjC-framework */,
-				946DC4B1A52DA04D02E5278EAF1EF5D2 /* PromisesObjC-library */,
-				921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */,
-				437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift */,
-				962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView */,
-				E088AF8F3DC3A04112863D2643EB35ED /* SwiftyUtils */,
-				58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift */,
+				BBC72C2657636A834EA93D48676825B9 /* ColorPickerRow.framework */,
+				082977F3777A7D434AB35C357B487F83 /* Eureka.framework */,
+				6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore.framework */,
+				D38CD6117F38127D5A534B9425CA65BD /* libFirebaseCore-library.a */,
+				CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics.framework */,
+				5EB2AF9355B049C2B25B5191CD222AB6 /* libFirebaseCoreDiagnostics-library.a */,
+				E56F1D36EBF2EAC889B92716D3FAEFC0 /* FirebaseInstallations.framework */,
+				09B481FF32F1B03D8932F5C6D8EFCD77 /* libFirebaseInstallations-library.a */,
+				3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport.framework */,
+				E9F30C3A3D5257D2D390F2E6F88572AB /* libGoogleDataTransport-library.a */,
+				9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities.framework */,
+				EA27D3CFC73C88D425A77DAFB37940CA /* libGoogleUtilities-library.a */,
+				C6376827ADCB78C50F23D821A2680D02 /* LiquidButton.framework */,
+				44DCBA443B6756FC2A93FFA139913FC2 /* nanopb.framework */,
+				C1F247F17C7FE1B22AA3F26FAAEEFE82 /* libnanopb-library.a */,
+				3687C268120EF36DA11F78D028EA4D08 /* Pods_LongLatMap.framework */,
+				7CB1C2374D78103C0123FC70C6270B3F /* libPods-LongLatMapTests.a */,
+				3901A9B90CBCA80B331FD4E0BFF28214 /* FBLPromises.framework */,
+				946DC4B1A52DA04D02E5278EAF1EF5D2 /* libPromisesObjC-library.a */,
+				921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm.framework */,
+				437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift.framework */,
+				962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */,
+				E088AF8F3DC3A04112863D2643EB35ED /* SwiftyUtils.framework */,
+				58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3396,7 +3397,6 @@
 				E4526BCD7B3A483292E576A4704FC30C /* encode */,
 				448C3AA1599D9BD6E8D5EF8B4E844610 /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -3411,7 +3411,6 @@
 				C7AC06533FD0F6D7F3B55605F751C8BC /* InlineColorPickerRow.swift */,
 				91E65B15C7206A4A3437BE71952CFFEE /* Support Files */,
 			);
-			name = ColorPickerRow;
 			path = ColorPickerRow;
 			sourceTree = "<group>";
 		};
@@ -3451,7 +3450,6 @@
 				F1880EAB804CD49CB6B4F15ABFE23086 /* SCLExtensions.swift */,
 				264AC961EE8650731C24362FDE42049B /* Support Files */,
 			);
-			name = SCLAlertView;
 			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
@@ -3557,7 +3555,6 @@
 				9E37E0E33D205952793C49C7C2C8FAB8 /* CoreOnly */,
 				A8C998AEA6CF799AC885F12077396439 /* Support Files */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -3594,7 +3591,6 @@
 				04A7A984B84A989B06BBE5EEB81830F2 /* UIColorEx.swift */,
 				2E203539C77A60265A67204DD57B440F /* Support Files */,
 			);
-			name = LiquidButton;
 			path = LiquidButton;
 			sourceTree = "<group>";
 		};
@@ -3680,7 +3676,6 @@
 				9D4DF169C65D8CD56D4E7DBA18E9D855 /* FIROptionsInternal.h */,
 				BA12C39B63E600803DEA7FE3A2CEC081 /* Support Files */,
 			);
-			name = FirebaseInstallations;
 			path = FirebaseInstallations;
 			sourceTree = "<group>";
 		};
@@ -3695,7 +3690,6 @@
 				495A2D95C9D40CBE8E5DC391DD90AD6A /* firebasecore.nanopb.h */,
 				6DE0203A6F91AC4539D9FFB136C27E57 /* Support Files */,
 			);
-			name = FirebaseCoreDiagnostics;
 			path = FirebaseCoreDiagnostics;
 			sourceTree = "<group>";
 		};
@@ -3764,7 +3758,6 @@
 				00D8EF2DC000FD9F33F2F650FB337E7A /* AdIdSupport */,
 				7A9AB13C20A1263A41199A2E1DD1893D /* Support Files */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -3822,7 +3815,6 @@
 				09AC08D345DB5A0857BB412DA3083AD9 /* Util.swift */,
 				5C09D96D4CCBB2AE8D48C6499E330C2D /* Support Files */,
 			);
-			name = RealmSwift;
 			path = RealmSwift;
 			sourceTree = "<group>";
 		};
@@ -3878,7 +3870,6 @@
 				EBD3A33FA5BF1B3595C6AF2CB8C0CB98 /* UserDefaultsExtension.swift */,
 				59BA93F554B25333A6EB783109C79FD7 /* Support Files */,
 			);
-			name = SwiftyUtils;
 			path = SwiftyUtils;
 			sourceTree = "<group>";
 		};
@@ -3950,7 +3941,6 @@
 				5776C11A0FAC18F204C2259C9B7E8B48 /* FBLPromises.h */,
 				B1AB72DB0FCBEE470082078D8F975476 /* Support Files */,
 			);
-			name = PromisesObjC;
 			path = PromisesObjC;
 			sourceTree = "<group>";
 		};
@@ -4040,7 +4030,6 @@
 				25F316B1242792C2D569BC60C0050ACE /* Frameworks */,
 				BA0D37DFD304D8373E42D2C689C0FC09 /* Support Files */,
 			);
-			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
@@ -4130,7 +4119,6 @@
 				A06C08F88BC7D317D5F654ADFE664928 /* Headers */,
 				CCFC42E88EF6786DF7576A90DD49F237 /* Support Files */,
 			);
-			name = Realm;
 			path = Realm;
 			sourceTree = "<group>";
 		};
@@ -4735,7 +4723,7 @@
 			);
 			name = "FirebaseCoreDiagnostics-library";
 			productName = "FirebaseCoreDiagnostics-library";
-			productReference = 5EB2AF9355B049C2B25B5191CD222AB6 /* FirebaseCoreDiagnostics-library */;
+			productReference = 5EB2AF9355B049C2B25B5191CD222AB6 /* libFirebaseCoreDiagnostics-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		008D28317A79D3064D6C9A835A1C93BC /* nanopb-framework */ = {
@@ -4753,7 +4741,7 @@
 			);
 			name = "nanopb-framework";
 			productName = nanopb;
-			productReference = 44DCBA443B6756FC2A93FFA139913FC2 /* nanopb-framework */;
+			productReference = 44DCBA443B6756FC2A93FFA139913FC2 /* nanopb.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		06A6C967BF13F3D8A63EFC3896D07243 /* GoogleUtilities-framework */ = {
@@ -4772,7 +4760,7 @@
 			);
 			name = "GoogleUtilities-framework";
 			productName = GoogleUtilities;
-			productReference = 9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities-framework */;
+			productReference = 9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		14CDEB6EAA9C6C27FC6FF74BB6B777FE /* SwiftyUtils */ = {
@@ -4790,7 +4778,7 @@
 			);
 			name = SwiftyUtils;
 			productName = SwiftyUtils;
-			productReference = E088AF8F3DC3A04112863D2643EB35ED /* SwiftyUtils */;
+			productReference = E088AF8F3DC3A04112863D2643EB35ED /* SwiftyUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1D727042A924FBE25EE174EF54B5D344 /* FirebaseInstallations-library */ = {
@@ -4810,7 +4798,7 @@
 			);
 			name = "FirebaseInstallations-library";
 			productName = "FirebaseInstallations-library";
-			productReference = 09B481FF32F1B03D8932F5C6D8EFCD77 /* FirebaseInstallations-library */;
+			productReference = 09B481FF32F1B03D8932F5C6D8EFCD77 /* libFirebaseInstallations-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		277C63636C4FB61E253443B5E17BDCFD /* FirebaseCore-framework */ = {
@@ -4830,7 +4818,7 @@
 			);
 			name = "FirebaseCore-framework";
 			productName = FirebaseCore;
-			productReference = 6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore-framework */;
+			productReference = 6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3D2D98ED7278422B9AC91255D784C3EA /* GoogleUtilities-library */ = {
@@ -4848,7 +4836,7 @@
 			);
 			name = "GoogleUtilities-library";
 			productName = "GoogleUtilities-library";
-			productReference = EA27D3CFC73C88D425A77DAFB37940CA /* GoogleUtilities-library */;
+			productReference = EA27D3CFC73C88D425A77DAFB37940CA /* libGoogleUtilities-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		525013EF7C5BF9D0DBFE988307FD9224 /* FirebaseCore-library */ = {
@@ -4867,7 +4855,7 @@
 			);
 			name = "FirebaseCore-library";
 			productName = "FirebaseCore-library";
-			productReference = D38CD6117F38127D5A534B9425CA65BD /* FirebaseCore-library */;
+			productReference = D38CD6117F38127D5A534B9425CA65BD /* libFirebaseCore-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5C895369120F450AADC9A777714415BA /* FirebaseCoreDiagnostics-framework */ = {
@@ -4888,7 +4876,7 @@
 			);
 			name = "FirebaseCoreDiagnostics-framework";
 			productName = FirebaseCoreDiagnostics;
-			productReference = CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics-framework */;
+			productReference = CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		68494F30B4A13F8E5E88BCCAEC25B0A4 /* Realm */ = {
@@ -4910,7 +4898,7 @@
 			);
 			name = Realm;
 			productName = Realm;
-			productReference = 921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */;
+			productReference = 921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		782725687624F8665247B84AB581BEB1 /* RealmSwift */ = {
@@ -4929,7 +4917,7 @@
 			);
 			name = RealmSwift;
 			productName = RealmSwift;
-			productReference = 437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift */;
+			productReference = 437919EE08EC6BFCCBAC3BD346309742 /* RealmSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		813AB5521623D59957BF1361368EADDC /* Pods-LongLatMap */ = {
@@ -4968,7 +4956,7 @@
 			);
 			name = "Pods-LongLatMap";
 			productName = Pods_LongLatMap;
-			productReference = 3687C268120EF36DA11F78D028EA4D08 /* Pods-LongLatMap */;
+			productReference = 3687C268120EF36DA11F78D028EA4D08 /* Pods_LongLatMap.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8205E68662EA94D4FF9D8E17C87B04E4 /* PromisesObjC-framework */ = {
@@ -4989,7 +4977,7 @@
 			);
 			name = "PromisesObjC-framework";
 			productName = FBLPromises;
-			productReference = 3901A9B90CBCA80B331FD4E0BFF28214 /* PromisesObjC-framework */;
+			productReference = 3901A9B90CBCA80B331FD4E0BFF28214 /* FBLPromises.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8335CDC4E6DF5983A6857EADDE5EEAE1 /* LiquidButton */ = {
@@ -5007,7 +4995,7 @@
 			);
 			name = LiquidButton;
 			productName = LiquidButton;
-			productReference = C6376827ADCB78C50F23D821A2680D02 /* LiquidButton */;
+			productReference = C6376827ADCB78C50F23D821A2680D02 /* LiquidButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8366B26507014B0F85C92FA3395D2AC5 /* ColorPickerRow */ = {
@@ -5027,7 +5015,7 @@
 			);
 			name = ColorPickerRow;
 			productName = ColorPickerRow;
-			productReference = BBC72C2657636A834EA93D48676825B9 /* ColorPickerRow */;
+			productReference = BBC72C2657636A834EA93D48676825B9 /* ColorPickerRow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88BE8BE7A2FE6CED4193CCD8FF3CBEF7 /* Eureka */ = {
@@ -5045,7 +5033,7 @@
 			);
 			name = Eureka;
 			productName = Eureka;
-			productReference = 082977F3777A7D434AB35C357B487F83 /* Eureka */;
+			productReference = 082977F3777A7D434AB35C357B487F83 /* Eureka.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */ = {
@@ -5062,7 +5050,7 @@
 			);
 			name = "nanopb-library";
 			productName = "nanopb-library";
-			productReference = C1F247F17C7FE1B22AA3F26FAAEEFE82 /* nanopb-library */;
+			productReference = C1F247F17C7FE1B22AA3F26FAAEEFE82 /* libnanopb-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9AC2C6F9888B1CD3EDE51B0934312E76 /* GoogleDataTransport-framework */ = {
@@ -5083,7 +5071,7 @@
 			);
 			name = "GoogleDataTransport-framework";
 			productName = GoogleDataTransport;
-			productReference = 3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport-framework */;
+			productReference = 3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A0CA3B0841360687C00D0E48D3E4C1B9 /* UIColor_Hex_Swift */ = {
@@ -5101,7 +5089,7 @@
 			);
 			name = UIColor_Hex_Swift;
 			productName = UIColor_Hex_Swift;
-			productReference = 58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift */;
+			productReference = 58FA08FD4595D3CA9B2AA81405DE2EFA /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CAAEE42801C9C96768F04FD79DFCC491 /* FirebaseInstallations-framework */ = {
@@ -5122,7 +5110,7 @@
 			);
 			name = "FirebaseInstallations-framework";
 			productName = FirebaseInstallations;
-			productReference = E56F1D36EBF2EAC889B92716D3FAEFC0 /* FirebaseInstallations-framework */;
+			productReference = E56F1D36EBF2EAC889B92716D3FAEFC0 /* FirebaseInstallations.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D7210A56E8A77AC7232961BE7F0EBB87 /* GoogleDataTransport-library */ = {
@@ -5142,7 +5130,7 @@
 			);
 			name = "GoogleDataTransport-library";
 			productName = "GoogleDataTransport-library";
-			productReference = E9F30C3A3D5257D2D390F2E6F88572AB /* GoogleDataTransport-library */;
+			productReference = E9F30C3A3D5257D2D390F2E6F88572AB /* libGoogleDataTransport-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E0152970E5467A11DF89E7D22C63B47C /* SCLAlertView */ = {
@@ -5160,7 +5148,7 @@
 			);
 			name = SCLAlertView;
 			productName = SCLAlertView;
-			productReference = 962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView */;
+			productReference = 962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F2D30643ED8DECD11C70450AB8934F31 /* PromisesObjC-library */ = {
@@ -5177,7 +5165,7 @@
 			);
 			name = "PromisesObjC-library";
 			productName = "PromisesObjC-library";
-			productReference = 946DC4B1A52DA04D02E5278EAF1EF5D2 /* PromisesObjC-library */;
+			productReference = 946DC4B1A52DA04D02E5278EAF1EF5D2 /* libPromisesObjC-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F33B26263D8AD4CD1723F486F3ABABC9 /* Pods-LongLatMapTests */ = {
@@ -5204,7 +5192,7 @@
 			);
 			name = "Pods-LongLatMapTests";
 			productName = "Pods-LongLatMapTests";
-			productReference = 7CB1C2374D78103C0123FC70C6270B3F /* Pods-LongLatMapTests */;
+			productReference = 7CB1C2374D78103C0123FC70C6270B3F /* libPods-LongLatMapTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -5214,7 +5202,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -6659,7 +6647,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B6394E3481D06843B7C496D57A3B671 /* Eureka.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6671,7 +6658,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Eureka/Eureka-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
 				PRODUCT_MODULE_NAME = Eureka;
@@ -6690,7 +6677,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65BC1782E53908B1156303DC8C138012 /* FirebaseCore-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6701,7 +6687,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/FirebaseCore-framework/FirebaseCore-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseCore-framework/FirebaseCore-framework.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseCore;
@@ -6721,7 +6707,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAFA38658AC2508F63737AC14A329F97 /* SCLAlertView.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6733,7 +6718,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
 				PRODUCT_MODULE_NAME = SCLAlertView;
@@ -6753,12 +6738,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57375F96FE0EC87155CA2D927C71EB8F /* nanopb-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb-library/nanopb-library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -6777,7 +6761,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B9966D663284D4E077F456D9FCAA31F /* SwiftyUtils.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6789,7 +6772,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUtils/SwiftyUtils-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyUtils;
@@ -6809,11 +6792,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE4F000FC3929CE383BAB24804EC646C /* PromisesObjC-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -6832,7 +6814,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53196E888B614B3D1121384918E05508 /* RealmSwift.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6844,7 +6825,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RealmSwift/RealmSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RealmSwift/RealmSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RealmSwift/RealmSwift.modulemap";
 				PRODUCT_MODULE_NAME = RealmSwift;
@@ -6863,10 +6844,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35FACC1FC571F5A95071E4A1252EA529 /* GoogleUserMessagingPlatform.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6878,7 +6858,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 810C359B7CEAE3E60EF0EAAF1402691D /* FirebaseCoreDiagnostics-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6889,7 +6868,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/FirebaseCoreDiagnostics-framework/FirebaseCoreDiagnostics-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseCoreDiagnostics-framework/FirebaseCoreDiagnostics-framework.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseCoreDiagnostics;
@@ -6909,7 +6888,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA0978BD3815C740963ACAFC3C17FA81 /* LiquidButton.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6921,7 +6899,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LiquidButton/LiquidButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LiquidButton/LiquidButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LiquidButton/LiquidButton.modulemap";
 				PRODUCT_MODULE_NAME = LiquidButton;
@@ -6941,7 +6919,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B140260A655BF495FD3131E3D39F64C /* GoogleDataTransport-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6952,7 +6929,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/GoogleDataTransport-framework/GoogleDataTransport-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GoogleDataTransport-framework/GoogleDataTransport-framework.modulemap";
 				PRODUCT_MODULE_NAME = GoogleDataTransport;
@@ -6972,7 +6949,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08114DDD70C6B9675E2EE6A842B1B226 /* SCLAlertView.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -6984,7 +6960,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
 				PRODUCT_MODULE_NAME = SCLAlertView;
@@ -7004,7 +6980,6 @@
 			baseConfigurationReference = 419D97CA3E80E4CAF9DD6B7C729AA5C9 /* Pods-LongLatMapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -7025,7 +7000,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AF58F72EED47AD5BEFEE49793802947 /* nanopb-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7037,7 +7011,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb-framework/nanopb-framework-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/nanopb-framework/nanopb-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/nanopb-framework/nanopb-framework.modulemap";
 				PRODUCT_MODULE_NAME = nanopb;
@@ -7058,7 +7032,6 @@
 			baseConfigurationReference = B73E0659138C2CDDEB1FA8C1969D6694 /* Pods-LongLatMap.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -7092,10 +7065,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9AF2F30D561F7D81BA0733BE581ABFC /* Firebase-Core-CoreOnly.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7106,7 +7078,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57DE31D7A8CFC165407A9659C0943607 /* PromisesObjC-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7117,7 +7088,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/PromisesObjC-framework/PromisesObjC-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PromisesObjC-framework/PromisesObjC-framework.modulemap";
 				PRODUCT_MODULE_NAME = FBLPromises;
@@ -7136,10 +7107,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C025314B551C0CEFA2104295989CD86 /* FirebaseAnalytics-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7151,11 +7121,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D2F6BBEEC71EC210078DC1BB74C9C96 /* Google-Mobile-Ads-SDK.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7167,10 +7136,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 918935A30667ED094D5A17B8C830F2E4 /* FirebaseAnalytics-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7182,7 +7150,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99B975534E115D98D8A792309EBE3E5B /* GoogleUtilities-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7193,7 +7160,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/GoogleUtilities-framework/GoogleUtilities-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GoogleUtilities-framework/GoogleUtilities-framework.modulemap";
 				PRODUCT_MODULE_NAME = GoogleUtilities;
@@ -7213,11 +7180,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DA880C5D8B8B15B568809996053E92C /* FirebaseCoreDiagnostics-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7236,7 +7202,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1FB7D48040E36CCB18F96DCB1851508 /* nanopb-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7248,7 +7213,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb-framework/nanopb-framework-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/nanopb-framework/nanopb-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/nanopb-framework/nanopb-framework.modulemap";
 				PRODUCT_MODULE_NAME = nanopb;
@@ -7267,11 +7232,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 779B3DA730C19680E69E001E4EB4AA64 /* FirebaseCore-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7291,7 +7255,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4802AC928C0903E4961AC775B7C55E8D /* FirebaseCoreDiagnostics-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7302,7 +7265,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/FirebaseCoreDiagnostics-framework/FirebaseCoreDiagnostics-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseCoreDiagnostics-framework/FirebaseCoreDiagnostics-framework.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseCoreDiagnostics;
@@ -7321,11 +7284,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09445D87BACEFEE0336653C3D454FF00 /* GoogleDataTransport-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7345,7 +7307,6 @@
 			baseConfigurationReference = F12DB9FEC01240B2AAD4B23B3C471A0B /* Pods-LongLatMapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -7367,7 +7328,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0246949CCAA710B5408DAD3E04DDC29 /* GoogleMaps.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -7383,11 +7343,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7360AF0EA3705B228EE6E5E856A5A62 /* GoogleUtilities-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7407,11 +7366,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 059DBD7508F7BEFE667B678137F39AAB /* FirebaseInstallations-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7430,10 +7388,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A975AD96AE287EFDDF6A3B2BC5232EF /* FirebaseAnalytics-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7444,7 +7401,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73869AAC853DD6DBED816C7A7B2FCB1F /* SwiftyUtils.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7456,7 +7412,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUtils/SwiftyUtils-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyUtils;
@@ -7475,10 +7431,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3580FF83B1871F377B3BCABE026958D4 /* Firebase-Core-CoreOnly.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7490,11 +7445,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDCAAE7361D088027BD590C7ED603D18 /* Firebase.default-CoreOnly.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7506,10 +7460,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB568CC5450AC9CE3AA60BA4BCE91A54 /* GoogleAppMeasurement-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7520,7 +7473,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A6B6576EB243FB17E082B636E468C50 /* Eureka.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7532,7 +7484,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Eureka/Eureka-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Eureka/Eureka-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Eureka/Eureka.modulemap";
 				PRODUCT_MODULE_NAME = Eureka;
@@ -7552,10 +7504,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3682C4D190D756275377BF5026DF4529 /* GoogleAppMeasurement-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7567,7 +7518,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16A6634AF0B2ECE0E80059725959DE4B /* UIColor_Hex_Swift.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7579,7 +7529,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
 				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
@@ -7599,10 +7549,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E787025F2DB3FB79B706881DBE740465 /* GoogleUserMessagingPlatform.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7613,11 +7562,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A5D8715DB5B45D25F96ABE4496D355B /* PromisesObjC-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7637,12 +7585,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5125AD3A2DDE23D5C8DF3CE6E48D3666 /* nanopb-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb-library/nanopb-library-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -7662,10 +7609,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43B36292E11BB958CC886D99BB518323 /* FirebaseAnalytics-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7742,7 +7688,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDB75E6967512741A720FC81C9D2F381 /* PromisesObjC-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7753,7 +7698,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/PromisesObjC-framework/PromisesObjC-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PromisesObjC-framework/PromisesObjC-framework.modulemap";
 				PRODUCT_MODULE_NAME = FBLPromises;
@@ -7773,11 +7718,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF4FC22853558EC2A3D1134C467F73DC /* Firebase.default-CoreOnly.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7788,7 +7732,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C98E5CB789535AD9653DE29294ED60AA /* GoogleUtilities-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7799,7 +7742,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/GoogleUtilities-framework/GoogleUtilities-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GoogleUtilities-framework/GoogleUtilities-framework.modulemap";
 				PRODUCT_MODULE_NAME = GoogleUtilities;
@@ -7819,7 +7762,6 @@
 			baseConfigurationReference = A154E8CEA0047516416BF18A47939AFF /* Pods-LongLatMap.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -7852,7 +7794,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BC86C04F5BCF4BE33A08E5B7180FD0C /* Realm.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7864,7 +7805,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Realm/Realm-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Realm/Realm-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Realm/Realm.modulemap";
 				PRODUCT_MODULE_NAME = Realm;
@@ -7883,7 +7824,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 929B5DBB890D096F0946CC41552592AF /* FirebaseInstallations-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -7894,7 +7834,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/FirebaseInstallations-framework/FirebaseInstallations-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseInstallations-framework/FirebaseInstallations-framework.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseInstallations;
@@ -7965,8 +7905,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -7976,11 +7915,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3B13DBF84EDFB533B9AE5C64D2083A4 /* Google-Mobile-Ads-SDK.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -7991,7 +7929,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31DA12120146FA2C1A4B865B2B8B75B1 /* ColorPickerRow.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8003,7 +7940,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ColorPickerRow/ColorPickerRow-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ColorPickerRow/ColorPickerRow-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ColorPickerRow/ColorPickerRow.modulemap";
 				PRODUCT_MODULE_NAME = ColorPickerRow;
@@ -8022,7 +7959,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F880A3057DA8D5C22BD586B3E41B3B5F /* ColorPickerRow.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8034,7 +7970,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ColorPickerRow/ColorPickerRow-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ColorPickerRow/ColorPickerRow-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ColorPickerRow/ColorPickerRow.modulemap";
 				PRODUCT_MODULE_NAME = ColorPickerRow;
@@ -8054,11 +7990,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C052F81AE81E68309B23B7DBBF608CF9 /* FirebaseCore-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -8077,7 +8012,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE56FA38690E616E9264AE95BDF10F57 /* LiquidButton.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8089,7 +8023,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LiquidButton/LiquidButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LiquidButton/LiquidButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LiquidButton/LiquidButton.modulemap";
 				PRODUCT_MODULE_NAME = LiquidButton;
@@ -8108,11 +8042,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31D5D5A10622EBD2285F84DB21F719CE /* GoogleDataTransport-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -8132,11 +8065,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D32ABD90794DBBE0F4DED88305E0BE60 /* FirebaseInstallations-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -8156,7 +8088,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD2D8AEBE0CB5786090EC9211381DCEA /* GoogleDataTransport-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8167,7 +8098,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/GoogleDataTransport-framework/GoogleDataTransport-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GoogleDataTransport-framework/GoogleDataTransport-framework.modulemap";
 				PRODUCT_MODULE_NAME = GoogleDataTransport;
@@ -8186,11 +8117,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7CB75744FCB7976061D5D9907B67A51 /* GoogleUtilities-library.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -8209,7 +8139,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 372EC8C8017FB20F3DC09ED6164B9F91 /* GoogleMaps.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -8224,7 +8153,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17B8A2E4E4DD9A14858D7F3A2A1373FA /* RealmSwift.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8236,7 +8164,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RealmSwift/RealmSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RealmSwift/RealmSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RealmSwift/RealmSwift.modulemap";
 				PRODUCT_MODULE_NAME = RealmSwift;
@@ -8256,11 +8184,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1182F97212F9F395C486E727732616B /* FirebaseCoreDiagnostics-library.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -8280,10 +8207,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6FACB5C0484024AF89B28A490380BB0 /* GoogleAppMeasurement-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8294,10 +8220,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AAC46F27925F3EE978CF86F44F55E645 /* GoogleAppMeasurement-framework.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -8309,7 +8234,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 959724059EC397192DCEECE97BBEC144 /* UIColor_Hex_Swift.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8321,7 +8245,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
 				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
@@ -8340,7 +8264,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04483875FB4651B649EE45E974ADB289 /* FirebaseCore-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8351,7 +8274,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/FirebaseCore-framework/FirebaseCore-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseCore-framework/FirebaseCore-framework.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseCore;
@@ -8370,7 +8293,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7FE85AC120A2CFE4281D43C79551E4C /* FirebaseInstallations-framework.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8381,7 +8303,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/FirebaseInstallations-framework/FirebaseInstallations-framework-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseInstallations-framework/FirebaseInstallations-framework.modulemap";
 				PRODUCT_MODULE_NAME = FirebaseInstallations;
@@ -8400,7 +8322,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B703FCF744BA6D50DD5EB1194E778AC /* Realm.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -8412,7 +8333,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Realm/Realm-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Realm/Realm-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Realm/Realm.modulemap";
 				PRODUCT_MODULE_NAME = Realm;

@@ -130,6 +130,6 @@ class LongLatInputView : UIView {
     }
 }
 
-protocol LongLatInputViewDelegate : class {
+protocol LongLatInputViewDelegate : AnyObject {
     func didSelectDegrees(_ degrees: CLLocationDegrees)
 }
